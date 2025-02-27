@@ -1,60 +1,222 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --primary: #007bff;
-  --primary-dark: #0056b3;
-  --secondary: #6c757d;
-  --dark: #212529;
-  --light: #f8f9fa;
-  --success: #28a745;
-  --danger: #dc3545;
-  --background: #ffffff;
+  /* Base colors */
+  --background-light: #ffffff;
+  --background-dark: #0f172a;
+  --text-light: #111827;
+  --text-dark: #f9fafb;
+  
+  /* Breakpoints - kept as CSS variables for JS access if needed */
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #0d6efd;
-    --primary-dark: #0a58ca;
-    --secondary: #6c757d;
-    --dark: #f8f9fa;
-    --light: #212529;
-    --success: #198754;
-    --danger: #dc3545;
-    --background: #121212;
-  }
+/* Modern scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-body {
-  color: var(--dark);
-  background: var(--background);
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-600;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
   body {
-    @apply antialiased;
+    @apply antialiased bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl font-bold leading-tight;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl font-semibold;
+  }
+  
+  a:focus-visible, button:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-950;
+  }
+  
+  /* Improved focus for keyboard users */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-950;
+  }
+  
+  /* Custom selection color */
+  ::selection {
+    @apply bg-primary-200 dark:bg-primary-900 text-primary-900 dark:text-primary-100;
   }
 }
 
 @layer components {
+  /* Container with multiple sizing options */
   .container {
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
-
+  
+  .container-sm {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl;
+  }
+  
+  .container-md {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl;
+  }
+  
+  /* Modern button styles */
   .btn {
-    @apply px-4 py-2 rounded font-medium transition-colors;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-200 focus-ring;
   }
-
+  
+  .btn-sm {
+    @apply px-4 py-2 text-sm rounded-lg;
+  }
+  
+  .btn-lg {
+    @apply px-8 py-4 text-lg rounded-xl;
+  }
+  
   .btn-primary {
-    @apply bg-blue-600 text-white hover:bg-blue-700;
+    @apply bg-primary-600 hover:bg-primary-700 text-white shadow-soft hover:shadow-md;
   }
-
+  
   .btn-secondary {
-    @apply bg-gray-600 text-white hover:bg-gray-700;
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white shadow-soft hover:shadow-md;
   }
-
+  
+  .btn-outline {
+    @apply border-2 border-gray-300 dark:border-gray-700 hover:border-primary-500 hover:bg-primary-50 dark:hover:bg-gray-900 hover:text-primary-700 dark:hover:text-primary-300;
+  }
+  
+  .btn-ghost {
+    @apply text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-white;
+  }
+  
+  /* Card variants */
   .card {
-    @apply bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden;
+    @apply bg-white dark:bg-gray-900 rounded-2xl shadow-soft overflow-hidden border border-gray-100 dark:border-gray-800 transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-highlight hover:border-primary-200 dark:hover:border-primary-800 hover:-translate-y-1;
+  }
+  
+  .card-glass {
+    @apply bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg;
+  }
+  
+  /* Section styling */
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-hero {
+    @apply pt-32 pb-20;
+  }
+  
+  /* Form elements */
+  .form-input {
+    @apply w-full rounded-xl border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 px-4 py-3 text-gray-900 dark:text-white focus:border-primary-500 focus:ring-primary-500 shadow-sm;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2;
+  }
+  
+  /* Badge components */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-primary {
+    @apply bg-primary-100 text-primary-800 dark:bg-primary-900 dark:text-primary-300;
+  }
+  
+  .badge-secondary {
+    @apply bg-secondary-100 text-secondary-800 dark:bg-secondary-900 dark:text-secondary-300;
+  }
+  
+  /* Modern styling elements */
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-500;
+  }
+  
+  .gradient-border {
+    @apply border-2 border-transparent bg-gradient-to-r from-primary-500 to-secondary-500 mask-border-2;
+  }
+  
+  .noise-bg {
+    @apply bg-noise bg-gray-100 dark:bg-gray-900 bg-blend-overlay;
+  }
+  
+  /* Subtle divider */
+  .divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent;
+  }
+}
+
+@layer utilities {
+  /* Improved vertical rhythm */
+  .vr-tight > * + * {
+    @apply mt-3;
+  }
+  
+  .vr-normal > * + * {
+    @apply mt-5;
+  }
+  
+  .vr-loose > * + * {
+    @apply mt-8;
+  }
+  
+  /* Border mask utility */
+  .mask-border-2 {
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  
+  /* Text balance for improved typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Subtle text for improved accessibility */
+  .text-subtle {
+    @apply text-gray-600 dark:text-gray-400;
   }
 }
