@@ -318,7 +318,7 @@ const Hero = () => {
           {/* Stats Section - Spans 5 columns */}
           <div className="lg:col-span-5 order-1 lg:order-2">
             <h2 className="text-white text-3xl font-display font-bold mb-8 text-center lg:text-left">
-              {t('stats.label')}
+              <span className="gradient-text">Results</span> That Speak Volumes
             </h2>
             
             {/* Stats cards */}
