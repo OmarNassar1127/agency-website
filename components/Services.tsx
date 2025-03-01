@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 
-const getServiceData = (t) => [
+const getServiceData = (t: (key: string) => string) => [
   {
     id: 1,
     title: t('services.items.customSoftware.title'),

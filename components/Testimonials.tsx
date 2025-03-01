@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
-const getTestimonials = (t) => [
+const getTestimonials = (t: (key: string) => string) => [
   {
     id: 1,
     content: t('testimonials.items.0.content'),
