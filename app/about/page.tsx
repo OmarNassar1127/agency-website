@@ -15,10 +15,10 @@ import { useLanguage } from "../../contexts/LanguageContext";
 export default function AboutPage() {
   const { t } = useLanguage();
   return (
-    <main>
+    <main className="page-background-dots">
       <Navbar />
 
-      <div className="pt-24 pb-20">
+      <div className="">
         {/* Hero Section with Animated Elements */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -388,7 +388,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Core Values - Interactive Cards */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <section className="py-24 bg-gray-50/80 dark:bg-gray-900 backdrop-blur-sm relative overflow-hidden section-card-border">
           {/* Background pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
@@ -738,7 +738,7 @@ export default function AboutPage() {
         </section>
 
         {/* Meet Our Team - Creative Display */}
-        <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
+        <section className="py-24 bg-white/90 dark:bg-gray-950 backdrop-blur-sm overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">

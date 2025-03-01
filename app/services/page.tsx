@@ -14,7 +14,7 @@ const ServicesPage = () => {
     <>
       <Navbar />
       
-      <main className="pt-24 pb-20">
+      <main className="">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}

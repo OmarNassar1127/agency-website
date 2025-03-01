@@ -14,7 +14,7 @@ const WorkPage = () => {
     <>
       <Navbar />
 
-      <main className="pt-24 pb-20">
+      <main className=" page-background-pattern">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -30,65 +30,71 @@ const WorkPage = () => {
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
               <span className="text-sm font-medium text-white/80">
-                {t('work.portfolio')}
+                {t("work.portfolio")}
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              {t('work.heading')}
+              {t("work.heading")}
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              {t('work.subheading')}
+              {t("work.subheading")}
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <a href="#featured-work" className="btn btn-lg btn-primary">
-                {t('work.viewProjects')}
+                {t("work.viewProjects")}
               </a>
               <Link
                 href="/contact"
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
-                {t('work.startYourProject')}
+                {t("work.startYourProject")}
               </Link>
             </div>
           </div>
         </section>
 
         {/* Featured Work Filter */}
-        <section id="featured-work" className="py-20 bg-white dark:bg-gray-950">
+        <section
+          id="featured-work"
+          className="py-20 bg-white/90 dark:bg-gray-950 backdrop-blur-sm"
+        >
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
                 <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                  {t('work.featuredProjects')}
+                  {t("work.featuredProjects")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                {t('work.heading')} <span className="gradient-text">{t('work.successStories')}</span>
+                {t("work.heading")}{" "}
+                <span className="gradient-text">
+                  {t("work.successStories")}
+                </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                {t('work.browseText')}
+                {t("work.browseText")}
               </p>
             </div>
 
             {/* Filter Buttons */}
             <div className="flex flex-wrap justify-center gap-3 mb-12">
               <button className="px-5 py-2 rounded-full bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors">
-                {t('work.filters.all')}
+                {t("work.filters.all")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                {t('work.filters.webDev')}
+                {t("work.filters.webDev")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                {t('work.filters.mobileApps')}
+                {t("work.filters.mobileApps")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                {t('work.filters.ecommerce')}
+                {t("work.filters.ecommerce")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                {t('work.filters.aiSolutions')}
+                {t("work.filters.aiSolutions")}
               </button>
             </div>
 
@@ -117,7 +123,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        {t('work.projectPlaceholder')}
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -128,15 +134,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-primary-600 hover:bg-gray-100"
                     >
-                      {t('work.viewProject')}
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {t('work.projects.crm.title')}
+                  {t("work.projects.crm.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  {t('work.projects.crm.description')}
+                  {t("work.projects.crm.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded dark:bg-primary-900/30 dark:text-primary-300">
@@ -174,7 +180,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        {t('work.projectPlaceholder')}
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -185,15 +191,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-secondary-600 hover:bg-gray-100"
                     >
-                      {t('work.viewProject')}
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {t('work.projects.healthApp.title')}
+                  {t("work.projects.healthApp.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  {t('work.projects.healthApp.description')}
+                  {t("work.projects.healthApp.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded dark:bg-secondary-900/30 dark:text-secondary-300">
@@ -231,7 +237,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        {t('work.projectPlaceholder')}
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -242,15 +248,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-purple-600 hover:bg-gray-100"
                     >
-                      {t('work.viewProject')}
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {t('work.projects.aiAnalytics.title')}
+                  {t("work.projects.aiAnalytics.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  {t('work.projects.aiAnalytics.description')}
+                  {t("work.projects.aiAnalytics.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded dark:bg-purple-900/30 dark:text-purple-300">
@@ -288,7 +294,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        {t('work.projectPlaceholder')}
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -299,15 +305,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-teal-600 hover:bg-gray-100"
                     >
-                      {t('work.viewProject')}
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {t('work.projects.ecommerce.title')}
+                  {t("work.projects.ecommerce.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  {t('work.projects.ecommerce.description')}
+                  {t("work.projects.ecommerce.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded dark:bg-teal-900/30 dark:text-teal-300">
@@ -345,7 +351,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        {t('work.projectPlaceholder')}
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -356,15 +362,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-amber-600 hover:bg-gray-100"
                     >
-                      {t('work.viewProject')}
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  {t('work.projects.banking.title')}
+                  {t("work.projects.banking.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  {t('work.projects.banking.description')}
+                  {t("work.projects.banking.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded dark:bg-amber-900/30 dark:text-amber-300">
@@ -672,31 +678,27 @@ const WorkPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* Load More Button - Can be functional with JavaScript */}
-            <div className="text-center mt-16">
-              <button className="btn btn-lg btn-primary">
-                {t('work.loadMore')}
-              </button>
-            </div>
           </div>
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-900">
+        <section className="py-24 bg-gray-50/80 dark:bg-gray-900 backdrop-blur-sm section-card-border">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
                 <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">
-                  {t('work.testimonials.label')}
+                  {t("work.testimonials.label")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                {t('work.testimonials.heading').split(' ')[0]} <span className="gradient-text">{t('work.testimonials.heading').split(' ').slice(1).join(' ')}</span>
+                {t("work.testimonials.heading").split(" ")[0]}{" "}
+                <span className="gradient-text">
+                  {t("work.testimonials.heading").split(" ").slice(1).join(" ")}
+                </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                {t('work.testimonials.subheading')}
+                {t("work.testimonials.subheading")}
               </p>
             </div>
 
@@ -739,7 +741,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  {t('testimonials.items.0.content')}
+                  {t("testimonials.items.0.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -748,10 +750,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      {t('testimonials.items.0.author')}
+                      {t("testimonials.items.0.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {t('testimonials.items.0.position')}, {t('testimonials.items.0.company')}
+                      {t("testimonials.items.0.position")},{" "}
+                      {t("testimonials.items.0.company")}
                     </p>
                   </div>
                 </div>
@@ -795,7 +798,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  {t('testimonials.items.1.content')}
+                  {t("testimonials.items.1.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -804,10 +807,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      {t('testimonials.items.1.author')}
+                      {t("testimonials.items.1.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {t('testimonials.items.1.position')}, {t('testimonials.items.1.company')}
+                      {t("testimonials.items.1.position")},{" "}
+                      {t("testimonials.items.1.company")}
                     </p>
                   </div>
                 </div>
@@ -851,7 +855,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  {t('testimonials.items.2.content')}
+                  {t("testimonials.items.2.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -860,10 +864,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      {t('testimonials.items.2.author')}
+                      {t("testimonials.items.2.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      {t('testimonials.items.2.position')}, {t('testimonials.items.2.company')}
+                      {t("testimonials.items.2.position")},{" "}
+                      {t("testimonials.items.2.company")}
                     </p>
                   </div>
                 </div>
@@ -876,16 +881,16 @@ const WorkPage = () => {
         <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('work.cta.heading')}
+              {t("work.cta.heading")}
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto mb-10">
-              {t('work.cta.subheading')}
+              {t("work.cta.subheading")}
             </p>
             <Link
               href="/contact"
               className="inline-block bg-white text-primary-700 hover:bg-gray-100 font-medium rounded-lg px-8 py-4 text-lg transition-colors"
             >
-              {t('work.cta.button')}
+              {t("work.cta.button")}
             </Link>
           </div>
         </section>

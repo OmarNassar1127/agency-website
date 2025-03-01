@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-950 text-white">
       {/* Newsletter & upper section */}
-      <div className="border-b border-gray-800/50">
+      {/* <div className="border-b border-gray-800/50">
         <div className="container py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       {/* Main footer content */}
       <div className="container py-16">
