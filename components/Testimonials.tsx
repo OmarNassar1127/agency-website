@@ -66,7 +66,7 @@ const Testimonials = () => {
   }, [autoplay, isHovering]);
 
   // Navigation functions
-  const goToTestimonial = (index) => {
+  const goToTestimonial = (index: number) => {
     setActiveIndex(index);
     setAutoplay(false); // Stop autoplay when user manually navigates
   };
@@ -82,7 +82,7 @@ const Testimonials = () => {
   };
 
   // Generate star rating
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, i) => (
       <svg 
         key={i}

@@ -1,7 +1,15 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
 
-const FooterLink = ({ href, children }) => (
+interface FooterLinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const FooterLink = ({ href, children }: FooterLinkProps) => (
   <Link 
     href={href} 
     className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
@@ -11,6 +19,7 @@ const FooterLink = ({ href, children }) => (
 );
 
 const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gray-950 text-white">
       {/* Newsletter & upper section */}
@@ -107,7 +116,7 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
               {/* Services Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Services</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.services')}</h4>
                 <ul className="space-y-4">
                   <li><FooterLink href="/services/custom-software">Custom Software</FooterLink></li>
                   <li><FooterLink href="/services/web-development">Web Applications</FooterLink></li>
@@ -120,19 +129,19 @@ const Footer = () => {
               
               {/* Company Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Company</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.about')}</h4>
                 <ul className="space-y-4">
                   <li><FooterLink href="/about">About Us</FooterLink></li>
-                  <li><FooterLink href="/work">Our Work</FooterLink></li>
+                  <li><FooterLink href="/work">{t('footer.work')}</FooterLink></li>
                   <li><FooterLink href="/process">How We Work</FooterLink></li>
                   <li><FooterLink href="/careers">Careers</FooterLink></li>
-                  <li><FooterLink href="/contact">Contact Us</FooterLink></li>
+                  <li><FooterLink href="/contact">{t('footer.contact')}</FooterLink></li>
                 </ul>
               </div>
               
               {/* Contact Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Contact</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.contactInfo')}</h4>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -179,11 +188,11 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Nexus Digital. All rights reserved.
+              {t('footer.copyright')}
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Terms of Service</Link>
+              <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.privacyPolicy')}</Link>
+              <Link href="/terms" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.termsOfService')}</Link>
               <Link href="/cookies" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
               <Link href="/sitemap" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Sitemap</Link>
             </div>

@@ -2,10 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import SettingsDropdown from "./SettingsDropdown";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { t } = useLanguage();
 
   // Handle scroll event for changing navbar appearance
   useEffect(() => {
@@ -25,6 +28,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Navigation items with translations
+  const navItems = [
+    { name: t('navbar.home'), href: '/' },
+    { name: t('navbar.services'), href: '/services' },
+    { name: t('navbar.work'), href: '/work' },
+    { name: t('navbar.about'), href: '/about' },
+    { name: t('navbar.contact'), href: '/contact' }
+  ];
 
   return (
     <header 
@@ -51,13 +63,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-1">
-          {[
-            { name: 'Home', href: '/' },
-            { name: 'Services', href: '/services' },
-            { name: 'Work', href: '/work' },
-            { name: 'About', href: '/about' },
-            { name: 'Contact', href: '/contact' }
-          ].map((item) => (
+          {navItems.map((item) => (
             <Link 
               key={item.name}
               href={item.href} 
@@ -72,8 +78,9 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* CTA Buttons - Desktop */}
+        {/* Settings and CTA Buttons - Desktop */}
         <div className="hidden lg:flex items-center space-x-3">
+          <SettingsDropdown />
           <Link 
             href="/contact" 
             className={`btn-sm ${
@@ -82,43 +89,49 @@ const Navbar = () => {
                 : 'border-2 border-white/30 text-white hover:bg-white/10'
             }`}
           >
-            Start a project
+            {t('navbar.startProject')}
           </Link>
           <Link 
             href="/contact" 
             className="btn-sm btn-primary"
           >
-            <span className="mr-2">Get a Quote</span>
+            <span className="mr-2">{t('navbar.getQuote')}</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
               <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
             </svg>
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className={`lg:hidden p-2 rounded-lg transition-colors ${
-            scrolled 
-              ? 'text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800' 
-              : 'text-white hover:bg-white/10'
-          }`}
-          onClick={toggleMenu}
-          aria-label="Toggle Menu"
-        >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor" 
-            className="w-6 h-6"
+        {/* Mobile buttons */}
+        <div className="lg:hidden flex items-center space-x-1">
+          {/* Settings button - Mobile */}
+          <SettingsDropdown />
+          
+          {/* Mobile Menu Toggle */}
+          <button 
+            className={`p-2 rounded-lg transition-colors ${
+              scrolled 
+                ? 'text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800' 
+                : 'text-white hover:bg-white/10'
+            }`}
+            onClick={toggleMenu}
+            aria-label="Toggle Menu"
           >
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor" 
+              className="w-6 h-6"
+            >
+              {isMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu - Slide down animation */}
@@ -130,13 +143,7 @@ const Navbar = () => {
         <div className="container mx-auto p-4 space-y-4">
           {/* Navigation Links */}
           <nav className="grid gap-2">
-            {[
-              { name: 'Home', href: '/' },
-              { name: 'Services', href: '/services' },
-              { name: 'Work', href: '/work' },
-              { name: 'About', href: '/about' },
-              { name: 'Contact', href: '/contact' }
-            ].map((item) => (
+            {navItems.map((item) => (
               <Link 
                 key={item.name}
                 href={item.href} 
@@ -162,14 +169,14 @@ const Navbar = () => {
               className="btn btn-outline w-full justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              Start a project
+              {t('navbar.startProject')}
             </Link>
             <Link 
               href="/contact"
               className="btn btn-primary w-full justify-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              Get a Quote
+              {t('navbar.getQuote')}
             </Link>
           </div>
           
