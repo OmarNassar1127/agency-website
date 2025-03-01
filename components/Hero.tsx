@@ -237,15 +237,6 @@ const Hero = () => {
       </div>
       
       <div className="container relative z-10">
-        {/* Company logo - Centered at top */}
-        <div className="text-center mb-12">
-          <div className="mb-8 flex items-center justify-center">
-            <span className="text-5xl md:text-7xl font-display font-bold">
-              <span className="gradient-text">{t('navbar.logo.first')}</span>
-              <span className="text-white">{t('navbar.logo.second')}</span>
-            </span>
-          </div>
-        </div>
         
         {/* Main content - Side by side on desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -323,7 +314,7 @@ const Hero = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                   <div className="mx-auto text-center text-xs text-gray-400 font-mono">
-                    nexusdigital.dev - Building Your Website
+                    nexusdigital.cloud - Building Your Website
                   </div>
                 </div>
                 
@@ -335,7 +326,7 @@ const Hero = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
                       </svg>
                     </div>
-                    <span className="ml-2 text-xs text-gray-300 font-mono">https://nexusdigital.dev</span>
+                    <span className="ml-2 text-xs text-gray-300 font-mono">https://your-site.com</span>
                   </div>
                 </div>
                 
@@ -353,11 +344,6 @@ const Hero = () => {
                     <div className="text-green-400 text-xs font-mono">Building website...</div>
                   </div>
                   
-                  {/* Tech stack labels */}
-                  <div className="absolute bottom-4 right-4 flex space-x-2 z-20">
-                    <div className="badge badge-sm bg-blue-600/30 text-blue-400 border-blue-700/50">{t('hero.techStack.react')}</div>
-                    <div className="badge badge-sm bg-blue-600/30 text-blue-400 border-blue-700/50">{t('hero.techStack.typescript')}</div>
-                  </div>
                   
                   {/* Glowing elements */}
                   <div className="absolute top-10 left-10 w-2 h-2 bg-primary-400 rounded-full animate-ping-slow opacity-70 z-20"></div>
