@@ -54,7 +54,7 @@ const Navbar = () => {
           {[
             { name: 'Home', href: '/' },
             { name: 'Services', href: '/services' },
-            { name: 'Work', href: '/portfolio' },
+            { name: 'Work', href: '/work' },
             { name: 'About', href: '/about' },
             { name: 'Blog', href: '/blog' },
             { name: 'Contact', href: '/contact' }
@@ -134,7 +134,7 @@ const Navbar = () => {
             {[
               { name: 'Home', href: '/' },
               { name: 'Services', href: '/services' },
-              { name: 'Work', href: '/portfolio' },
+              { name: 'Work', href: '/work' },
               { name: 'About', href: '/about' },
               { name: 'Blog', href: '/blog' },
               { name: 'Contact', href: '/contact' }

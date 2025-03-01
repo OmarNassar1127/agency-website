@@ -123,7 +123,7 @@ const Footer = () => {
                 <h4 className="text-lg font-semibold mb-6 text-white">Company</h4>
                 <ul className="space-y-4">
                   <li><FooterLink href="/about">About Us</FooterLink></li>
-                  <li><FooterLink href="/portfolio">Our Work</FooterLink></li>
+                  <li><FooterLink href="/work">Our Work</FooterLink></li>
                   <li><FooterLink href="/process">How We Work</FooterLink></li>
                   <li><FooterLink href="/careers">Careers</FooterLink></li>
                   <li><FooterLink href="/blog">Blog & Insights</FooterLink></li>

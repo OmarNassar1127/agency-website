@@ -70,7 +70,7 @@ const CTA = () => {
                   </svg>
                 </Link>
                 <Link 
-                  href="/portfolio" 
+                  href="/work" 
                   className="btn-lg bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white"
                 >
                   Explore Our Work
