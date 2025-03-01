@@ -266,7 +266,7 @@ const Hero = () => {
                   </svg>
                 </Link>
                 <Link 
-                  href="/work" 
+                  href="/services" 
                   className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
                 >
                   <span>{t('hero.cta1')}</span>
