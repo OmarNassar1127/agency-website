@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  // Required for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '/agency-site' : '',
+  // Custom domain - no basePath needed with custom domain
+  basePath: '',
   images: {
     unoptimized: true,
   },
