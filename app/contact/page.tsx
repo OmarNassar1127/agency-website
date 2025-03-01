@@ -17,7 +17,7 @@ const ContactPage = () => {
     <>
       <Navbar />
 
-      <main className="page-background-waves">
+      <main className="page-background-light">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -67,7 +67,7 @@ const ContactPage = () => {
         {/* Contact Form Section */}
         <section id="contact-form" className="py-24 relative">
           {/* Background with subtle gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-gray-50/90 dark:from-gray-950 dark:to-gray-900 backdrop-blur-sm -z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 -z-10"></div>
 
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-start">
@@ -488,9 +488,9 @@ const ContactPage = () => {
         {/* Map Section */}
         <section
           id="offices"
-          className="py-24 relative bg-gray-50/80 dark:bg-gray-900 backdrop-blur-sm section-card-border"
+          className="py-24 relative bg-gray-50 dark:bg-gray-900"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-gray-50/80 dark:from-gray-950 dark:to-gray-900/70 -z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900/70 -z-10"></div>
 
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
@@ -773,7 +773,7 @@ const ContactPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-white/90 dark:bg-gray-950 backdrop-blur-sm">
+        <section className="py-24 bg-white dark:bg-gray-950">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               {/* Section header */}

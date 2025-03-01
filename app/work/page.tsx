@@ -14,7 +14,7 @@ const WorkPage = () => {
     <>
       <Navbar />
 
-      <main className=" page-background-pattern">
+      <main className="page-background-light">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -58,7 +58,7 @@ const WorkPage = () => {
         {/* Featured Work Filter */}
         <section
           id="featured-work"
-          className="py-20 bg-white/90 dark:bg-gray-950 backdrop-blur-sm"
+          className="py-20 bg-white dark:bg-gray-950"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
@@ -682,7 +682,7 @@ const WorkPage = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-24 bg-gray-50/80 dark:bg-gray-900 backdrop-blur-sm section-card-border">
+        <section className="py-24 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">

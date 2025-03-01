@@ -15,7 +15,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 export default function AboutPage() {
   const { t } = useLanguage();
   return (
-    <main className="page-background-dots">
+    <main className="page-background-light">
       <Navbar />
 
       <div className="">
@@ -388,7 +388,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Core Values - Interactive Cards */}
-        <section className="py-24 bg-gray-50/80 dark:bg-gray-900 backdrop-blur-sm relative overflow-hidden section-card-border">
+        <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
           {/* Background pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
@@ -738,7 +738,7 @@ export default function AboutPage() {
         </section>
 
         {/* Meet Our Team - Creative Display */}
-        <section className="py-24 bg-white/90 dark:bg-gray-950 backdrop-blur-sm overflow-hidden">
+        <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
@@ -971,26 +971,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="text-center mt-12">
-              <Link
-                href="/contact"
-                className="btn-lg btn-primary inline-flex items-center"
-              >
-                <span className="mr-2">Join Our Team</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
-            </div>
           </div>
         </section>
 
