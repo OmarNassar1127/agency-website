@@ -1027,7 +1027,7 @@ export default function AboutPage() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-24 bg-white dark:bg-gray-950 relative overflow-hidden">
+        <section className="py-24 bg-gray-100 dark:bg-gray-900 relative overflow-hidden">
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
@@ -1038,7 +1038,7 @@ export default function AboutPage() {
               </p>
 
               <div className="bg-gradient-to-r from-primary-600 to-secondary-600 p-1 rounded-xl shadow-xl">
-                <div className="bg-white dark:bg-gray-900 rounded-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="bg-white dark:bg-gray-800 rounded-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="text-left">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                       {t('about.cta.section.title')}
@@ -1079,7 +1079,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-
+      
       <Footer />
 
       {/* Add these style definitions for the animations */}
