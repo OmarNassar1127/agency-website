@@ -5,113 +5,179 @@ const serviceData = [
   {
     id: 1,
     title: 'Custom Software Development',
-    description: 'Tailor-made software solutions designed specifically for your business needs, workflows, and challenges.',
+    description: 'Bespoke software solutions meticulously crafted to align with your specific business workflows, challenges, and growth objectives.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ),
-    link: '/services/custom-software'
+    link: '/services/custom-software',
+    bgClass: 'from-blue-500/5 to-indigo-500/5',
+    iconBgClass: 'bg-blue-50 dark:bg-blue-950/30 text-blue-500 dark:text-blue-400',
+    highlights: ['End-to-end solutions', 'Scalable architecture', 'User-centered design']
   },
   {
     id: 2,
     title: 'Web Application Development',
-    description: 'Modern, responsive web applications with intuitive UIs and powerful backend systems.',
+    description: 'Powerful, responsive web applications built with cutting-edge technologies that deliver exceptional user experiences and robust functionality.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
       </svg>
     ),
-    link: '/services/web-development'
+    link: '/services/web-development',
+    bgClass: 'from-purple-500/5 to-pink-500/5',
+    iconBgClass: 'bg-purple-50 dark:bg-purple-950/30 text-purple-500 dark:text-purple-400',
+    highlights: ['Modern frameworks', 'Responsive design', 'API integration']
   },
   {
     id: 3,
     title: 'Mobile Application Development',
-    description: 'Native and cross-platform mobile apps that deliver exceptional user experiences on any device.',
+    description: 'Native and cross-platform mobile applications that provide seamless experiences across devices while leveraging platform-specific features.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    link: '/services/mobile-apps'
+    link: '/services/mobile-apps',
+    bgClass: 'from-indigo-500/5 to-blue-500/5',
+    iconBgClass: 'bg-indigo-50 dark:bg-indigo-950/30 text-indigo-500 dark:text-indigo-400',
+    highlights: ['iOS & Android', 'Cross-platform', 'Offline capabilities']
   },
   {
     id: 4,
     title: 'Cloud Solutions',
-    description: 'Secure, scalable cloud infrastructure and migration services to modernize your business operations.',
+    description: 'Secure, scalable cloud infrastructure and migration strategies that optimize performance, reduce costs, and enhance operational efficiency.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
       </svg>
     ),
-    link: '/services/cloud-solutions'
+    link: '/services/cloud-solutions',
+    bgClass: 'from-sky-500/5 to-cyan-500/5',
+    iconBgClass: 'bg-sky-50 dark:bg-sky-950/30 text-sky-500 dark:text-sky-400',
+    highlights: ['AWS & Azure expertise', 'Auto-scaling', 'Security focused']
   },
   {
     id: 5,
     title: 'AI & Machine Learning',
-    description: 'Advanced AI solutions that analyze data, automate processes, and provide actionable insights.',
+    description: 'Advanced AI solutions that transform raw data into actionable insights, automate complex processes, and enable predictive capabilities.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
       </svg>
     ),
-    link: '/services/ai-ml'
+    link: '/services/ai-ml',
+    bgClass: 'from-rose-500/5 to-orange-500/5',
+    iconBgClass: 'bg-rose-50 dark:bg-rose-950/30 text-rose-500 dark:text-rose-400',
+    highlights: ['Predictive analytics', 'Data visualization', 'ML model training']
   },
   {
     id: 6,
     title: 'DevOps & CI/CD',
-    description: 'Streamlined development operations with continuous integration and delivery pipelines.',
+    description: 'Streamlined development operations with automated testing, continuous integration, and efficient deployment pipelines for faster time-to-market.',
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
       </svg>
     ),
-    link: '/services/devops'
+    link: '/services/devops',
+    bgClass: 'from-teal-500/5 to-green-500/5',
+    iconBgClass: 'bg-teal-50 dark:bg-teal-950/30 text-teal-500 dark:text-teal-400',
+    highlights: ['CI/CD pipelines', 'Infrastructure as code', 'Monitoring & logging']
   }
 ];
 
 const Services = () => {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Services</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            We offer a comprehensive range of software development services to help businesses innovate and grow.
+    <section className="py-24 bg-white dark:bg-gray-950">
+      <div className="container mx-auto">
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          {/* Section label */}
+          <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
+            <span className="text-sm font-medium text-primary-700 dark:text-primary-300">What We Offer</span>
+          </div>
+          
+          {/* Heading with gradient text */}
+          <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gray-900 dark:text-white">
+            Comprehensive <span className="gradient-text">Digital Solutions</span>
+          </h2>
+          
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
+            We deliver end-to-end software development services that empower businesses to innovate, scale, and thrive in today's competitive marketplace.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Service cards in grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {serviceData.map((service) => (
             <div 
               key={service.id} 
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-transform duration-300 hover:scale-105 hover:shadow-xl border border-gray-100 dark:border-gray-700"
+              className={`group card card-hover p-8 pb-10 bg-gradient-to-br ${service.bgClass} dark:bg-opacity-30 relative overflow-hidden`}
             >
-              <div className="bg-blue-50 dark:bg-blue-900/20 rounded-full w-20 h-20 flex items-center justify-center mb-6">
+              {/* Icon with background */}
+              <div className={`rounded-2xl w-16 h-16 flex items-center justify-center mb-6 ${service.iconBgClass} transition-transform group-hover:scale-110 duration-300`}>
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">{service.title}</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">{service.description}</p>
+              
+              {/* Title with animation */}
+              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                {service.title}
+              </h3>
+              
+              {/* Description */}
+              <p className="text-gray-600 dark:text-gray-300 mb-6 text-balance">
+                {service.description}
+              </p>
+              
+              {/* Feature highlights */}
+              <div className="mb-8 space-y-2">
+                {service.highlights.map((highlight, index) => (
+                  <div key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg className="w-4 h-4 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {highlight}
+                  </div>
+                ))}
+              </div>
+              
+              {/* Learn more link with animation */}
               <Link 
                 href={service.link} 
-                className="text-blue-600 dark:text-blue-400 font-medium flex items-center hover:text-blue-700 dark:hover:text-blue-300"
+                className="absolute bottom-8 inline-flex items-center font-medium group-hover:font-semibold text-primary-600 dark:text-primary-400 transition-all"
               >
-                Learn more
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                <span className="mr-1">Learn more</span>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  className="h-5 w-5 transform transition-transform group-hover:translate-x-1" 
+                  viewBox="0 0 20 20" 
+                  fill="currentColor"
+                >
+                  <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </Link>
+              
+              {/* Decorative gradient corner */}
+              <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-br from-primary-400/10 to-primary-600/10 blur-sm rounded-tl-3xl"></div>
             </div>
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <Link 
-            href="/services" 
-            className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-8 py-3 transition-colors"
-          >
-            View All Services
-          </Link>
+        {/* CTA section */}
+        <div className="mt-16 text-center">
+          <div className="inline-flex flex-col sm:flex-row gap-4 sm:gap-2 items-center justify-center bg-gray-50 dark:bg-gray-900 p-2 rounded-full">
+            <span className="text-gray-700 dark:text-gray-300 px-4">Need a custom solution?</span>
+            <Link 
+              href="/services" 
+              className="btn-sm btn-primary rounded-full inline-flex items-center"
+            >
+              <span className="mr-2">View All Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ export const metadata = {
   description: 'We create custom software solutions tailored to your business needs.',
 };
 
+
 export default function RootLayout({
   children,
 }: {

@@ -3,73 +3,160 @@ import Link from 'next/link';
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute top-1/2 -left-20 w-60 h-60 bg-indigo-500 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-cyan-500 rounded-full opacity-20 blur-3xl"></div>
+    <section className="py-24 relative overflow-hidden">
+      {/* Background with layered gradients for depth */}
+      <div className="absolute inset-0 -z-10">
+        {/* Background base gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-800 to-gray-900"></div>
+        
+        {/* Noise texture overlay */}
+        <div className="absolute inset-0 bg-noise opacity-[0.03] mix-blend-soft-light"></div>
+        
+        {/* Glow effects */}
+        <div className="absolute -top-40 -right-40 w-[40rem] h-[40rem] bg-secondary-500 opacity-20 blur-[6rem] rounded-full"></div>
+        <div className="absolute top-1/2 -left-40 w-[30rem] h-[30rem] bg-primary-400 opacity-10 blur-[6rem] rounded-full"></div>
+        <div className="absolute bottom-0 right-1/4 w-[35rem] h-[35rem] bg-secondary-400 opacity-10 blur-[7rem] rounded-full"></div>
         
         {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="h-full w-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRoLTJ2LTRoMnY0em0wLTZoLTJ2LTRoMnY0em0wLTZoLTJ2LTRoMnY0em0wLTZoLTJWNmgydjR6bS0yMCAyMmgtMnYtNGgydjR6bTAtNmgtMnYtNGgydjR6bTAtNmgtMnYtNGgydjR6bTAtNmgtMlY2aDJ2NHptMTAgMjJoLTJ2LTRoMnY0em0wLTZoLTJ2LTRoMnY0em0wLTZoLTJ2LTRoMnY0em0wLTZoLTJWNmgydjR6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
+        <div className="absolute inset-0">
+          <div className="h-full w-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNNjAgMEgwdjYwaDYwVjB6TTEgNTlWMWg1OHY1OEgxeiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNNjAgMzBIMzB2MzBoMzBWMzB6TTMwIDMwSDB2MzBoMzBWMzB6TTMwIDBIMHYzMGgzMFYwek02MCAwSDMwdjMwaDMwVjB6IiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMikiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==')]"></div>
         </div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto text-center text-white">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Ready to Transform Your Business with Custom Software?
-          </h2>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            Let's discuss how we can help you achieve your goals with tailored software solutions designed specifically for your business.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
-              href="/contact" 
-              className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-lg hover:shadow-xl"
-            >
-              Schedule a Consultation
-            </Link>
-            <Link 
-              href="/portfolio" 
-              className="bg-transparent hover:bg-white/10 border-2 border-white/60 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
-            >
-              View Our Work
-            </Link>
+      <div className="container relative">
+        <div className="max-w-5xl mx-auto">
+          {/* Two-column layout for larger screens */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left column with text content */}
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center mb-6 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <span className="inline-block w-2 h-2 rounded-full bg-secondary-400 mr-2 animate-pulse"></span>
+                <span className="text-sm font-medium text-white/90">Start Your Digital Transformation</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-white leading-tight">
+                Ready to Elevate Your Business with Custom Software?
+              </h2>
+              
+              <p className="text-xl text-white/80 mb-8 max-w-xl lg:pr-6">
+                Let's collaborate to create innovative digital solutions that drive efficiency, growth, and competitive advantage for your organization.
+              </p>
+              
+              {/* Statistics highlight */}
+              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-10 mb-8 md:mb-12">
+                <div className="text-center">
+                  <div className="text-3xl font-display font-bold text-white mb-1">97%</div>
+                  <p className="text-white/70 text-sm">Client satisfaction</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-display font-bold text-white mb-1">2 week</div>
+                  <p className="text-white/70 text-sm">Average response time</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-display font-bold text-white mb-1">24/7</div>
+                  <p className="text-white/70 text-sm">Support available</p>
+                </div>
+              </div>
+              
+              {/* CTA buttons */}
+              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
+                <Link 
+                  href="/contact" 
+                  className="btn-lg bg-white text-primary-700 hover:bg-white/95 shadow-highlight transition-all group"
+                >
+                  <span className="mr-2">Schedule a Free Consultation</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                    <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+                <Link 
+                  href="/work" 
+                  className="btn-lg bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white"
+                >
+                  Explore Our Work
+                </Link>
+              </div>
+            </div>
+            
+            {/* Right column with form card */}
+            <div className="relative">
+              {/* Card with subtle glow effect */}
+              <div className="absolute -inset-1.5 bg-gradient-to-br from-white/20 to-white/0 rounded-3xl blur-sm"></div>
+              <div className="card card-glass bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 p-8 relative">
+                <h3 className="text-2xl font-display font-bold text-white mb-6">Get a Free Project Estimate</h3>
+                
+                <form className="space-y-5">
+                  {/* Name field */}
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1.5">Your Name</label>
+                    <input 
+                      type="text" 
+                      id="name" 
+                      className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  
+                  {/* Email field */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">Email Address</label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  
+                  {/* Project type field */}
+                  <div>
+                    <label htmlFor="project-type" className="block text-sm font-medium text-white/80 mb-1.5">Project Type</label>
+                    <select 
+                      id="project-type" 
+                      className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-white/25 appearance-none"
+                      style={{ backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`, backgroundPosition: "right 0.5rem center", backgroundRepeat: "no-repeat", backgroundSize: "1.5em 1.5em", paddingRight: "2.5rem" }}
+                    >
+                      <option value="" className="bg-gray-900">Select project type</option>
+                      <option value="web-app" className="bg-gray-900">Web Application</option>
+                      <option value="mobile-app" className="bg-gray-900">Mobile Application</option>
+                      <option value="custom-software" className="bg-gray-900">Custom Software</option>
+                      <option value="cloud-solutions" className="bg-gray-900">Cloud Solutions</option>
+                      <option value="ai-ml" className="bg-gray-900">AI & Machine Learning</option>
+                    </select>
+                  </div>
+                  
+                  {/* Submit button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-white hover:bg-white/95 text-primary-700 font-bold rounded-xl py-3 transition-all shadow-md hover:shadow-lg mt-2"
+                  >
+                    Get Your Free Estimate
+                  </button>
+                </form>
+                
+                {/* Guarantee text */}
+                <p className="text-white/70 text-sm text-center mt-5 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1.5">
+                    <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
+                  </svg>
+                  No obligation, 100% secure & confidential
+                </p>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-secondary-400/20 to-secondary-600/20 rounded-full blur-md hidden lg:block"></div>
+            </div>
           </div>
           
-          {/* Additional information */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">No-Obligation Quote</h3>
-              <p className="text-blue-100">Get a detailed project estimate with timeline and cost breakdown.</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Quick Response Time</h3>
-              <p className="text-blue-100">We respond to all inquiries within 24 hours, guaranteed.</p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Satisfaction Guarantee</h3>
-              <p className="text-blue-100">We don't consider a project complete until you're 100% satisfied.</p>
+          {/* Testimonial line */}
+          <div className="mt-16 text-center">
+            <div className="inline-flex items-center mx-auto px-6 py-3 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 text-yellow-300 mr-2">
+                <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+              </svg>
+              <span className="text-white/90 font-medium">
+                "Working with Nexus Digital has been transformative for our business." — CEO, TechCorp
+              </span>
             </div>
           </div>
         </div>
