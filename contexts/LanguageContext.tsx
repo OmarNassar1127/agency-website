@@ -7,6 +7,7 @@ type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  isLoaded: boolean;
 };
 
 const defaultLanguage: Language = 'nl';
@@ -16,45 +17,70 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>(defaultLanguage);
   const [translations, setTranslations] = useState<Record<string, any>>({});
+  const [isLoaded, setIsLoaded] = useState(false);
   
+  // Initial load of language preference and translations
   useEffect(() => {
-    // Client-side only code
-    if (typeof window !== 'undefined') {
-      // Load saved language preference from localStorage if available
-      const savedLanguage = localStorage.getItem('language') as Language;
-      if (savedLanguage && (savedLanguage === 'nl' || savedLanguage === 'en')) {
-        setLanguage(savedLanguage);
+    const initLanguage = async () => {
+      // Client-side only code
+      if (typeof window !== 'undefined') {
+        // Load saved language preference from localStorage if available
+        const savedLanguage = localStorage.getItem('language') as Language;
+        const detectedLanguage = savedLanguage && (savedLanguage === 'nl' || savedLanguage === 'en') 
+          ? savedLanguage 
+          : defaultLanguage;
+        
+        try {
+          // Preload translations before rendering UI
+          const data = detectedLanguage === 'nl'
+            ? (await import('../locales/nl.json')).default
+            : (await import('../locales/en.json')).default;
+          
+          setLanguage(detectedLanguage);
+          setTranslations(data);
+          setIsLoaded(true);
+        } catch (error) {
+          console.error('Failed to load translations:', error);
+          // Fall back to empty translations but still show UI
+          setIsLoaded(true);
+        }
       }
-    }
+    };
+    
+    initLanguage();
   }, []);
 
-  // Load translation file when language changes
+  // Load new translations when language changes (after initial load)
   useEffect(() => {
+    // Skip the first render as it's handled by the initialization
+    if (!isLoaded) return;
+    
     const loadTranslations = async () => {
+      setIsLoaded(false);
       try {
-        // Use dynamic import for translations to work with both server and client
-        let data;
-        if (language === 'nl') {
-          data = (await import('../locales/nl.json')).default;
-        } else {
-          data = (await import('../locales/en.json')).default;
-        }
+        // Use dynamic import for translations
+        const data = language === 'nl'
+          ? (await import('../locales/nl.json')).default
+          : (await import('../locales/en.json')).default;
+        
         setTranslations(data);
+        setIsLoaded(true);
       } catch (error) {
         console.error('Failed to load translations:', error);
+        setIsLoaded(true);
       }
     };
     
     loadTranslations();
-  }, [language]);
+  }, [language, isLoaded]);
 
   // Update html lang attribute when language changes
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined' || !isLoaded) return;
     
     document.documentElement.lang = language;
     localStorage.setItem('language', language);
-  }, [language]);
+  }, [language, isLoaded]);
 
   // Translation helper function
   const t = (key: string): string => {
@@ -74,7 +100,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, isLoaded }}>
       {children}
     </LanguageContext.Provider>
   );
