@@ -18,23 +18,48 @@
     "work": "Ons Werk",
     "about": "Over Ons",
     "contact": "Contact",
+    "howWeWork": "Hoe Wij Werken",
+    "careers": "Carrières",
+    "getInTouch": "Neem contact op",
     "legalInfo": "Juridische Informatie",
     "privacyPolicy": "Privacybeleid",
     "termsOfService": "Algemene Voorwaarden",
     "cookiePolicy": "Cookiebeleid",
     "sitemap": "Sitemap",
-    "copyright": "© 2025 Nexus Digital. Alle rechten voorbehouden."
+    "copyright": "© 2025 Nexus Digital. Alle rechten voorbehouden.",
+    "companyDescription": "Wij bouwen innovatieve digitale oplossingen die bedrijven in staat stellen te gedijen in een steeds meer verbonden wereld. Onze aangepaste software transformeert bedrijfsprocessen en zorgt voor concurrentievoordeel.",
+    "yearsExperience": "Jaren Ervaring",
+    "projectsCompleted": "Voltooide Projecten",
+    "expertDevelopers": "Expert Ontwikkelaars"
   },
   "hero": {
+    "preheading": "Revolutionaire Digitale Oplossingen",
     "heading": "Transformeer uw bedrijf met geavanceerde digitale oplossingen",
     "subheading": "Wij bouwen aangepaste software en webapplicaties die bedrijven helpen gedijen in het digitale tijdperk.",
     "cta1": "Onze Diensten",
     "cta2": "Offerte Aanvragen",
-    "scrollDown": "Scroll naar beneden voor meer informatie"
+    "scrollDown": "Scroll naar beneden voor meer informatie",
+    "stats": {
+      "clientSatisfaction": "Klanttevredenheid",
+      "projectsCompleted": "Afgeronde projecten",
+      "experience": "Branche-ervaring"
+    },
+    "trustedBy": {
+      "heading": "Vertrouwd door innovatieve bedrijven wereldwijd"
+    }
   },
   "services": {
     "heading": "Onze Diensten",
     "subheading": "Uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften",
+    "sectionLabel": "Wat Wij Bieden",
+    "titleStart": "Uitgebreide",
+    "titleHighlight": "Digitale Oplossingen",
+    "description": "Wij leveren end-to-end softwareontwikkelingsdiensten die bedrijven in staat stellen te innoveren, te schalen en te gedijen in de huidige concurrerende markt.",
+    "learnMore": "Meer lezen",
+    "cta": {
+      "question": "Heeft u een oplossing op maat nodig?",
+      "button": "Bekijk Alle Diensten"
+    },
     "webDev": {
       "title": "Webontwikkeling",
       "description": "Aangepaste websites en webapplicaties gebouwd met moderne technologieën."
@@ -58,6 +83,62 @@
     "consultancy": {
       "title": "IT Consultancy",
       "description": "Deskundig advies over technologiestrategie en implementatie."
+    },
+    "items": {
+      "customSoftware": {
+        "title": "Op Maat Gemaakte Softwareontwikkeling",
+        "description": "Oplossingen op maat die zorgvuldig zijn afgestemd op uw specifieke bedrijfsprocessen, uitdagingen en groeidoelstellingen.",
+        "highlights": {
+          "0": "End-to-end oplossingen",
+          "1": "Schaalbare architectuur",
+          "2": "Gebruikersgerichte ontwerpen"
+        }
+      },
+      "webDev": {
+        "title": "Web Applicatie Ontwikkeling",
+        "description": "Krachtige, responsieve webapplicaties gebouwd met geavanceerde technologieën die zorgen voor uitzonderlijke gebruikerservaringen en robuuste functionaliteit.",
+        "highlights": {
+          "0": "Moderne frameworks",
+          "1": "Responsief ontwerp",
+          "2": "API-integratie"
+        }
+      },
+      "mobileDev": {
+        "title": "Mobiele Applicatie Ontwikkeling",
+        "description": "Native en cross-platform mobiele applicaties die naadloze ervaringen bieden op alle apparaten met gebruikmaking van platformspecifieke functies.",
+        "highlights": {
+          "0": "iOS & Android",
+          "1": "Cross-platform",
+          "2": "Offline mogelijkheden"
+        }
+      },
+      "cloudSolutions": {
+        "title": "Cloud Oplossingen",
+        "description": "Veilige, schaalbare cloud-infrastructuur en migratiestrategieën die prestaties optimaliseren, kosten verlagen en operationele efficiëntie verbeteren.",
+        "highlights": {
+          "0": "AWS & Azure expertise",
+          "1": "Automatisch schalen",
+          "2": "Focus op veiligheid"
+        }
+      },
+      "aiMl": {
+        "title": "AI & Machine Learning",
+        "description": "Geavanceerde AI-oplossingen die ruwe gegevens omzetten in bruikbare inzichten, complexe processen automatiseren en voorspellende mogelijkheden bieden.",
+        "highlights": {
+          "0": "Voorspellende analyses",
+          "1": "Datavisualisatie",
+          "2": "ML-modeltraining"
+        }
+      },
+      "devOps": {
+        "title": "DevOps & CI/CD",
+        "description": "Gestroomlijnde ontwikkelingsoperaties met geautomatiseerd testen, continue integratie en efficiënte implementatiepijplijnen voor snellere marktintroductie.",
+        "highlights": {
+          "0": "CI/CD-pijplijnen",
+          "1": "Infrastructuur als code",
+          "2": "Monitoring & logging"
+        }
+      }
     }
   },
   "featuredProjects": {
@@ -160,18 +241,38 @@
   "process": {
     "heading": "Ons Proces",
     "subheading": "Een bewezen aanpak voor het leveren van succesvolle digitale projecten",
+    "titleStart": "Hoe Wij Uw",
+    "titleHighlight": "Visie tot Leven Brengen",
     "steps": {
       "discovery": {
+        "phase": "Fase 1",
         "title": "Ontdekking & Planning",
-        "description": "We beginnen met het begrijpen van uw bedrijfsdoelen, gebruikersbehoeften en technische vereisten om een uitgebreid projectplan te ontwikkelen."
+        "description": "We beginnen met het begrijpen van uw bedrijfsdoelen, gebruikersbehoeften en technische vereisten om een uitgebreid projectplan te ontwikkelen.",
+        "points": {
+          "0": "Interviews met belanghebbenden en verzamelen van vereisten",
+          "1": "Analyse van bestaande systemen en werkstromen",
+          "2": "Definiëring van projectomvang en tijdlijnplanning"
+        }
       },
       "design": {
+        "phase": "Fase 2",
         "title": "Ontwerp & Prototyping",
-        "description": "Onze ontwerpers creëren intuïtieve gebruikerservaringen en aantrekkelijke interfaces, met interactieve prototypes voor vroege validatie."
+        "description": "Onze ontwerpers creëren intuïtieve gebruikerservaringen en aantrekkelijke interfaces, met interactieve prototypes voor vroege validatie.",
+        "points": {
+          "0": "Gebruikerservaring (UX) onderzoek en wireframing",
+          "1": "Interactieve mockups en visueel ontwerp",
+          "2": "Prototyping en gebruikerstesten"
+        }
       },
       "development": {
-        "title": "Ontwikkeling",
-        "description": "Onze engineers bouwen uw oplossing met moderne technologieën en best practices, met regelmatige demo's en feedbackcycli."
+        "phase": "Fase 3",
+        "title": "Ontwikkeling & Testen",
+        "description": "Onze engineers bouwen uw oplossing met moderne technologieën en best practices, met regelmatige demo's en feedbackcycli.",
+        "points": {
+          "0": "Agile ontwikkeling met tweewekelijkse sprint-cycli",
+          "1": "Continue integratie en geautomatiseerd testen",
+          "2": "Regelmatige demo's en feedbacksessies"
+        }
       },
       "testing": {
         "title": "Testen & Kwaliteitsborging",
@@ -182,20 +283,80 @@
         "description": "We lanceren uw product met behulp van betrouwbare, schaalbare infrastructuur met monitoringsystemen."
       },
       "support": {
-        "title": "Doorlopende Ondersteuning & Optimalisatie",
-        "description": "Na de lancering bieden we continue ondersteuning, verbeteringen en datagestuurde optimalisatie."
+        "phase": "Fase 4",
+        "title": "Lancering & Doorlopende Ondersteuning",
+        "description": "We zorgen voor een soepele implementatie en bieden doorlopend onderhoud en optimalisatie om uw oplossing optimaal te laten presteren.",
+        "points": {
+          "0": "Implementatie- en lanceringsbeheer",
+          "1": "Gebruikerstraining en documentatie",
+          "2": "Doorlopende ondersteuning en continue verbetering"
+        }
       }
+    },
+    "cta": {
+      "heading": "Klaar om uw project te starten?",
+      "description": "Laten we bespreken hoe ons transparante ontwikkelingsproces uw visie met precisie en efficiëntie tot leven kan brengen.",
+      "button": "Plan een Gratis Consultatie"
     }
   },
   "testimonials": {
     "heading": "Klantsuccessen",
     "subheading": "Wat Onze Klanten Zeggen",
-    "description": "We hebben bedrijven van alle groottes geholpen hun digitale aanwezigheid te transformeren en opmerkelijke resultaten te behalen."
+    "titleStart": "Wat Onze",
+    "titleHighlight": "Klanten Zeggen",
+    "description": "We hebben bedrijven van alle groottes geholpen hun digitale aanwezigheid te transformeren en opmerkelijke resultaten te behalen.",
+    "items": {
+      "0": {
+        "content": "Nexus Digital heeft ons verouderde systeem getransformeerd in een modern, efficiënt platform dat onze productiviteit met 40% heeft verhoogd. Hun team begreep onze bedrijfsbehoeften echt en leverde een oplossing die onze verwachtingen overtrof.",
+        "author": "Sarah Johnson",
+        "position": "CTO, Innovate Inc.",
+        "company": "Innovate Inc.",
+        "industry": "Gezondheidstechnologie",
+        "service": "Op Maat Gemaakte Softwareontwikkeling"
+      },
+      "1": {
+        "content": "Samenwerken met Nexus Digital was een game-changer voor ons verkoopteam. Hun aangepaste CRM-oplossing hielp ons leads effectiever te koesteren, wat resulteerde in een stijging van 25% in conversieratio's binnen slechts drie maanden. De aandacht voor detail was indrukwekkend.",
+        "author": "Michael Chen",
+        "position": "Directeur Verkoop",
+        "company": "GrowthTech",
+        "industry": "SaaS",
+        "service": "Web Applicatie Ontwikkeling"
+      },
+      "2": {
+        "content": "De mobiele app die Nexus Digital voor ons heeft ontwikkeld, overtrof alle verwachtingen. Ze leverden niet alleen op tijd en binnen budget, maar ze gaven ook waardevolle inzichten die het eindproduct aanzienlijk verbeterden. De betrokkenheid van onze gebruikers is met 60% toegenomen.",
+        "author": "Jessica Martinez",
+        "position": "Product Manager",
+        "company": "AppWorks",
+        "industry": "E-commerce",
+        "service": "Mobiele Applicatie Ontwikkeling"
+      },
+      "3": {
+        "content": "De cloud-migratiestrategie van Nexus Digital bespaarde ons 30% op infrastructuurkosten terwijl de prestaties verbeterden. Hun expertise in AWS was duidelijk gedurende het hele project, en de overgang verliep naadloos zonder downtime.",
+        "author": "David Wilson",
+        "position": "IT Director",
+        "company": "Global Enterprises",
+        "industry": "Financiële Diensten",
+        "service": "Cloud Oplossingen"
+      }
+    }
   },
   "cta": {
+    "badge": "Start Uw Digitale Transformatie",
     "heading": "Klaar om uw project te starten?",
     "subheading": "Neem vandaag nog contact met ons op voor een gratis consultatie en offerte.",
-    "button": "Neem Contact Op"
+    "button": "Neem Contact Op",
+    "stats": {
+      "satisfaction": "Klanttevredenheid",
+      "week": "weken",
+      "responseTime": "Gemiddelde responstijd",
+      "support": "Ondersteuning beschikbaar"
+    },
+    "form": {
+      "heading": "Krijg een Gratis Projectschatting",
+      "selectType": "Selecteer projecttype",
+      "guarantee": "Geen verplichting, 100% veilig & vertrouwelijk"
+    },
+    "testimonial": "Samenwerken met Nexus Digital is transformerend geweest voor ons bedrijf. — CEO, TechCorp"
   },
   "contact": {
     "heading": "Neem Contact Op",

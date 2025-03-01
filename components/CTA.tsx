@@ -35,7 +35,7 @@ const CTA = () => {
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center mb-6 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
                 <span className="inline-block w-2 h-2 rounded-full bg-secondary-400 mr-2 animate-pulse"></span>
-                <span className="text-sm font-medium text-white/90">Start Your Digital Transformation</span>
+                <span className="text-sm font-medium text-white/90">{t('cta.badge')}</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-white leading-tight">
@@ -50,15 +50,15 @@ const CTA = () => {
               <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-10 mb-8 md:mb-12">
                 <div className="text-center">
                   <div className="text-3xl font-display font-bold text-white mb-1">97%</div>
-                  <p className="text-white/70 text-sm">Client satisfaction</p>
+                  <p className="text-white/70 text-sm">{t('cta.stats.satisfaction')}</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-display font-bold text-white mb-1">2 week</div>
-                  <p className="text-white/70 text-sm">Average response time</p>
+                  <div className="text-3xl font-display font-bold text-white mb-1">2 {t('cta.stats.week')}</div>
+                  <p className="text-white/70 text-sm">{t('cta.stats.responseTime')}</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-display font-bold text-white mb-1">24/7</div>
-                  <p className="text-white/70 text-sm">Support available</p>
+                  <p className="text-white/70 text-sm">{t('cta.stats.support')}</p>
                 </div>
               </div>
               
@@ -87,7 +87,7 @@ const CTA = () => {
               {/* Card with subtle glow effect */}
               <div className="absolute -inset-1.5 bg-gradient-to-br from-white/20 to-white/0 rounded-3xl blur-sm"></div>
               <div className="card card-glass bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 p-8 relative">
-                <h3 className="text-2xl font-display font-bold text-white mb-6">Get a Free Project Estimate</h3>
+                <h3 className="text-2xl font-display font-bold text-white mb-6">{t('cta.form.heading')}</h3>
                 
                 <form className="space-y-5">
                   {/* Name field */}
@@ -120,7 +120,7 @@ const CTA = () => {
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-white/25 appearance-none"
                       style={{ backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`, backgroundPosition: "right 0.5rem center", backgroundRepeat: "no-repeat", backgroundSize: "1.5em 1.5em", paddingRight: "2.5rem" }}
                     >
-                      <option value="" className="bg-gray-900">Select project type</option>
+                      <option value="" className="bg-gray-900">{t('cta.form.selectType')}</option>
                       <option value="web-app" className="bg-gray-900">{t('services.webDev.title')}</option>
                       <option value="mobile-app" className="bg-gray-900">{t('services.mobileDev.title')}</option>
                       <option value="custom-software" className="bg-gray-900">Custom Software</option>
@@ -143,7 +143,7 @@ const CTA = () => {
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 mr-1.5">
                     <path fillRule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clipRule="evenodd" />
                   </svg>
-                  No obligation, 100% secure & confidential
+                  {t('cta.form.guarantee')}
                 </p>
               </div>
               
@@ -159,7 +159,7 @@ const CTA = () => {
                 <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
               </svg>
               <span className="text-white/90 font-medium">
-                "Working with Nexus Digital has been transformative for our business." — CEO, TechCorp
+                {t('cta.testimonial')}
               </span>
             </div>
           </div>
