@@ -1,8 +1,12 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 min-h-screen pt-36 pb-24 overflow-hidden">
       {/* Mesh Gradient Background */}
@@ -33,10 +37,10 @@ const Hero = () => {
             {/* Main Heading with gradient text */}
             <h1 className="text-balance mb-6 font-display">
               <span className="block text-4xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in mb-2">
-                Transforming Ideas into 
+                {t('hero.heading')}
               </span>
-              <span className="block text-4xl md:text-6xl lg:text-7xl font-bold gradient-text animate-slide-up">
-                Exceptional Solutions
+              <span className="block text-xl md:text-2xl lg:text-3xl text-gray-300 mt-6">
+                {t('hero.subheading')}
               </span>
             </h1>
             
@@ -46,7 +50,7 @@ const Hero = () => {
                 href="/contact" 
                 className="btn btn-lg btn-primary group"
               >
-                <span className="mr-2">Schedule a Consultation</span>
+                <span className="mr-2">{t('hero.cta2')}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transition-transform group-hover:translate-x-1">
                   <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
                 </svg>
@@ -55,7 +59,7 @@ const Hero = () => {
                 href="/work" 
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
-                <span>Explore Our Work</span>
+                <span>{t('hero.cta1')}</span>
               </Link>
             </div>
             
@@ -149,7 +153,16 @@ const Hero = () => {
       </div>
       
       {/* Gradient divider */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white dark:from-gray-950 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white dark:from-gray-950 to-transparent">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
+          <div className="text-sm text-gray-400 dark:text-gray-500 flex flex-col items-center animate-pulse">
+            <span>{t('hero.scrollDown')}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

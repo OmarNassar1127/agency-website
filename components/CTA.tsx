@@ -1,7 +1,11 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const CTA = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background with layered gradients for depth */}
@@ -35,11 +39,11 @@ const CTA = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-white leading-tight">
-                Ready to Elevate Your Business with Custom Software?
+                {t('cta.heading')}
               </h2>
               
               <p className="text-xl text-white/80 mb-8 max-w-xl lg:pr-6">
-                Let's collaborate to create innovative digital solutions that drive efficiency, growth, and competitive advantage for your organization.
+                {t('cta.subheading')}
               </p>
               
               {/* Statistics highlight */}
@@ -64,7 +68,7 @@ const CTA = () => {
                   href="/contact" 
                   className="btn-lg bg-white text-primary-700 hover:bg-white/95 shadow-highlight transition-all group"
                 >
-                  <span className="mr-2">Schedule a Free Consultation</span>
+                  <span className="mr-2">{t('cta.button')}</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transform transition-transform group-hover:translate-x-1">
                     <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
                   </svg>
@@ -73,7 +77,7 @@ const CTA = () => {
                   href="/work" 
                   className="btn-lg bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white"
                 >
-                  Explore Our Work
+                  {t('hero.cta1')}
                 </Link>
               </div>
             </div>
@@ -88,18 +92,18 @@ const CTA = () => {
                 <form className="space-y-5">
                   {/* Name field */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1.5">Your Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.name')}</label>
                     <input 
                       type="text" 
                       id="name" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
-                      placeholder="Enter your name"
+                      placeholder={t('contact.form.name')}
                     />
                   </div>
                   
                   {/* Email field */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">Email Address</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.email')}</label>
                     <input 
                       type="email" 
                       id="email" 
@@ -110,17 +114,17 @@ const CTA = () => {
                   
                   {/* Project type field */}
                   <div>
-                    <label htmlFor="project-type" className="block text-sm font-medium text-white/80 mb-1.5">Project Type</label>
+                    <label htmlFor="project-type" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.subject')}</label>
                     <select 
                       id="project-type" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-white/25 appearance-none"
                       style={{ backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`, backgroundPosition: "right 0.5rem center", backgroundRepeat: "no-repeat", backgroundSize: "1.5em 1.5em", paddingRight: "2.5rem" }}
                     >
                       <option value="" className="bg-gray-900">Select project type</option>
-                      <option value="web-app" className="bg-gray-900">Web Application</option>
-                      <option value="mobile-app" className="bg-gray-900">Mobile Application</option>
+                      <option value="web-app" className="bg-gray-900">{t('services.webDev.title')}</option>
+                      <option value="mobile-app" className="bg-gray-900">{t('services.mobileDev.title')}</option>
                       <option value="custom-software" className="bg-gray-900">Custom Software</option>
-                      <option value="cloud-solutions" className="bg-gray-900">Cloud Solutions</option>
+                      <option value="cloud-solutions" className="bg-gray-900">{t('services.cloudSolutions.title')}</option>
                       <option value="ai-ml" className="bg-gray-900">AI & Machine Learning</option>
                     </select>
                   </div>
@@ -130,7 +134,7 @@ const CTA = () => {
                     type="submit"
                     className="w-full bg-white hover:bg-white/95 text-primary-700 font-bold rounded-xl py-3 transition-all shadow-md hover:shadow-lg mt-2"
                   >
-                    Get Your Free Estimate
+                    {t('contact.form.submit')}
                   </button>
                 </form>
                 

@@ -21,13 +21,16 @@
     "legalInfo": "Legal Information",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "sitemap": "Sitemap",
     "copyright": "© 2025 Nexus Digital. All rights reserved."
   },
   "hero": {
     "heading": "Transform your business with cutting-edge digital solutions",
     "subheading": "We build custom software and web applications that help businesses thrive in the digital age.",
     "cta1": "Our Services",
-    "cta2": "Get a Quote"
+    "cta2": "Get a Quote",
+    "scrollDown": "Scroll down to learn more"
   },
   "services": {
     "heading": "Our Services",
@@ -57,6 +60,126 @@
       "description": "Expert advice on technology strategy and implementation."
     }
   },
+  "featuredProjects": {
+    "heading": "Our Featured Projects",
+    "subheading": "Take a look at some of our recent work that showcases our expertise and innovative solutions.",
+    "viewAllButton": "View All Projects",
+    "viewCaseStudy": "View Case Study",
+    "projects": {
+      "crm": {
+        "title": "Enterprise CRM Solution",
+        "description": "Custom CRM platform built for a Fortune 500 company to streamline customer management and sales processes."
+      },
+      "healthApp": {
+        "title": "HealthTrack Mobile App",
+        "description": "A comprehensive health and fitness tracking mobile application for iOS and Android platforms."
+      },
+      "aiAnalytics": {
+        "title": "AI-Powered Analytics Platform",
+        "description": "A machine learning platform that provides predictive analytics for e-commerce businesses."
+      }
+    },
+    "technologies": {
+      "react": "React",
+      "nodejs": "Node.js",
+      "mongodb": "MongoDB",
+      "reactNative": "React Native",
+      "firebase": "Firebase",
+      "graphql": "GraphQL",
+      "python": "Python",
+      "tensorflow": "TensorFlow",
+      "aws": "AWS"
+    }
+  },
+  "statistics": {
+    "label": "Our Impact in Numbers",
+    "heading": "Delivering Measurable Results",
+    "description": "Our track record speaks for itself. Here's how we've helped businesses transform their digital presence and achieve remarkable growth.",
+    "clientSatisfaction": "Client Satisfaction Rate",
+    "projectsCompleted": "Projects Completed",
+    "roiIncrease": "Average ROI Increase",
+    "experience": "Industry Experience",
+    "performance": {
+      "label": "Average",
+      "value": "3x Faster",
+      "description": "Website and application performance improvement delivered to our clients, leading to higher conversion rates and better user engagement."
+    },
+    "costReduction": {
+      "label": "Cost Reduction",
+      "value": "35%",
+      "description": "Average operational cost savings for clients after implementing our custom software solutions and optimizing their digital infrastructure."
+    },
+    "timeToMarket": {
+      "label": "Time to Market",
+      "value": "40% Less",
+      "description": "Reduced development cycle time compared to traditional methodologies, helping our clients gain competitive advantage with faster market entry."
+    },
+    "testimonialQuote": "Working with Nexus Digital transformed our business completely. The custom software they developed increased our operational efficiency by 45% and helped us scale rapidly.",
+    "testimonialAuthor": "— Michael Chen, CTO at TechCorp"
+  },
+  "whyChooseUs": {
+    "label": "Our Advantage",
+    "heading": "Why Choose Nexus Digital",
+    "description": "We combine technical expertise with deep industry knowledge to deliver exceptional software solutions that drive real business value.",
+    "reasons": {
+      "experts": {
+        "title": "Seasoned Experts",
+        "description": "Our team of senior developers, designers, and project managers brings an average of 10+ years of experience to every project we undertake.",
+        "points": ["Senior-level talent", "Diverse tech expertise"]
+      },
+      "agile": {
+        "title": "Agile Excellence",
+        "description": "Our refined agile methodology ensures transparency, flexibility, and rapid adaptation to changing requirements throughout the development process.",
+        "points": ["2-week sprint cycles", "Continuous delivery"]
+      },
+      "futureProof": {
+        "title": "Future-Proof Solutions",
+        "description": "We architect scalable solutions using modern tech stacks that grow with your business, avoiding costly rebuilds down the line.",
+        "points": ["Cloud-native architecture", "Microservices approach"]
+      },
+      "support": {
+        "title": "Comprehensive Support",
+        "description": "Our relationship doesn't end at launch. We provide ongoing maintenance, monitoring, and optimization to ensure your software thrives.",
+        "points": ["24/7 emergency support", "Flexible maintenance plans"]
+      }
+    },
+    "cta": "Learn More About Our Approach"
+  },
+  "process": {
+    "heading": "Our Process",
+    "subheading": "A proven approach to delivering successful digital projects",
+    "steps": {
+      "discovery": {
+        "title": "Discovery & Planning",
+        "description": "We start by understanding your business goals, user needs, and technical requirements to develop a comprehensive project plan."
+      },
+      "design": {
+        "title": "Design & Prototyping",
+        "description": "Our designers create intuitive user experiences and appealing interfaces, with interactive prototypes for early validation."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Our engineers build your solution using modern technologies and best practices, with regular demos and feedback cycles."
+      },
+      "testing": {
+        "title": "Testing & Quality Assurance",
+        "description": "Comprehensive testing ensures your product works flawlessly across all devices and scenarios."
+      },
+      "deployment": {
+        "title": "Deployment",
+        "description": "We launch your product using reliable, scalable infrastructure with monitoring systems in place."
+      },
+      "support": {
+        "title": "Ongoing Support & Optimization",
+        "description": "Post-launch, we provide continuous support, enhancements, and data-driven optimization."
+      }
+    }
+  },
+  "testimonials": {
+    "heading": "Client Success Stories",
+    "subheading": "What Our Clients Say",
+    "description": "We've helped businesses of all sizes transform their digital presence and achieve remarkable results."
+  },
   "cta": {
     "heading": "Ready to start your project?",
     "subheading": "Contact us today for a free consultation and quote.",
@@ -81,6 +204,34 @@
       "hours": "Monday - Friday: 9am - 5pm"
     }
   },
+  "about": {
+    "heading": "We Are Nexus Digital",
+    "subheading": "A collective of digital craftspeople turning innovative ideas into extraordinary digital experiences.",
+    "journeyTitle": "Our Journey",
+    "journeySubtitle": "From Startup to Industry Leader",
+    "journey": "Founded in 2015 with a mission to bridge the gap between business strategy and technological innovation, Nexus Digital has grown from a small team of passionate developers to a full-service digital agency with global reach. Our journey has been marked by continuous learning, adaptation, and a relentless commitment to excellence.",
+    "valuesTitle": "Our Core Values",
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We stay at the forefront of technology to deliver cutting-edge solutions."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "We never compromise on quality, ensuring every line of code meets the highest standards."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We work closely with our clients to ensure their vision comes to life."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We build relationships based on trust, transparency, and honest communication."
+      }
+    },
+    "teamTitle": "Meet Our Team",
+    "teamDescription": "The creative minds behind our exceptional digital solutions."
+  },
   "settings": {
     "language": "Language",
     "theme": {
@@ -89,5 +240,11 @@
       "dark": "Dark",
       "system": "System"
     }
+  },
+  "newsletter": {
+    "heading": "Subscribe to our newsletter",
+    "description": "Stay updated with the latest trends in software development, tech insights, and industry news.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe"
   }
 }

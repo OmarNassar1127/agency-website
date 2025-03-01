@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -7,8 +9,11 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import Process from "../components/Process";
 import Link from "next/link";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <main>
       <Navbar />
@@ -20,11 +25,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-              Our Featured Projects
+              {t('featuredProjects.heading')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Take a look at some of our recent work that showcases our
-              expertise and innovative solutions.
+              {t('featuredProjects.subheading')}
             </p>
           </div>
 
@@ -56,28 +60,27 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  Enterprise CRM Solution
+                  {t('featuredProjects.projects.crm.title')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Custom CRM platform built for a Fortune 500 company to
-                  streamline customer management and sales processes.
+                  {t('featuredProjects.projects.crm.description')}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    React
+                    {t('featuredProjects.technologies.react')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    Node.js
+                    {t('featuredProjects.technologies.nodejs')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    MongoDB
+                    {t('featuredProjects.technologies.mongodb')}
                   </span>
                 </div>
                 <a
                   href="/work/enterprise-crm"
                   className="text-blue-600 dark:text-blue-400 font-medium flex items-center hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  View Case Study
+                  {t('featuredProjects.viewCaseStudy')}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 ml-1"
@@ -121,28 +124,27 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  HealthTrack Mobile App
+                  {t('featuredProjects.projects.healthApp.title')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  A comprehensive health and fitness tracking mobile application
-                  for iOS and Android platforms.
+                  {t('featuredProjects.projects.healthApp.description')}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    React Native
+                    {t('featuredProjects.technologies.reactNative')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    Firebase
+                    {t('featuredProjects.technologies.firebase')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    GraphQL
+                    {t('featuredProjects.technologies.graphql')}
                   </span>
                 </div>
                 <a
                   href="/work/health-track-app"
                   className="text-blue-600 dark:text-blue-400 font-medium flex items-center hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  View Case Study
+                  {t('featuredProjects.viewCaseStudy')}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 ml-1"
@@ -186,28 +188,27 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  AI-Powered Analytics Platform
+                  {t('featuredProjects.projects.aiAnalytics.title')}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  A machine learning platform that provides predictive analytics
-                  for e-commerce businesses.
+                  {t('featuredProjects.projects.aiAnalytics.description')}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    Python
+                    {t('featuredProjects.technologies.python')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    TensorFlow
+                    {t('featuredProjects.technologies.tensorflow')}
                   </span>
                   <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
-                    AWS
+                    {t('featuredProjects.technologies.aws')}
                   </span>
                 </div>
                 <a
                   href="/work/ai-analytics"
                   className="text-blue-600 dark:text-blue-400 font-medium flex items-center hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  View Case Study
+                  {t('featuredProjects.viewCaseStudy')}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 ml-1"
@@ -230,7 +231,7 @@ export default function Home() {
               href="/work"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg px-6 py-3 transition-colors"
             >
-              View All Projects
+              {t('featuredProjects.viewAllButton')}
             </a>
           </div>
         </div>
@@ -257,17 +258,15 @@ export default function Home() {
             <div className="inline-flex items-center mb-6 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-secondary-400 mr-2 animate-pulse"></span>
               <span className="text-sm font-medium text-white/90">
-                Our Impact in Numbers
+                {t('statistics.label')}
               </span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-white">
-              Delivering Measurable Results
+              {t('statistics.heading')}
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Our track record speaks for itself. Here's how we've helped
-              businesses transform their digital presence and achieve remarkable
-              growth.
+              {t('statistics.description')}
             </p>
           </div>
 
@@ -282,7 +281,7 @@ export default function Home() {
                 97<span className="text-secondary-400">%</span>
               </div>
               <p className="text-lg md:text-xl text-white/70 text-center">
-                Client Satisfaction Rate
+                {t('statistics.clientSatisfaction')}
               </p>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full"></div>
             </div>
@@ -296,7 +295,7 @@ export default function Home() {
                 250<span className="text-secondary-400">+</span>
               </div>
               <p className="text-lg md:text-xl text-white/70 text-center">
-                Projects Completed
+                {t('statistics.projectsCompleted')}
               </p>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full"></div>
             </div>
@@ -310,7 +309,7 @@ export default function Home() {
                 40<span className="text-secondary-400">%</span>
               </div>
               <p className="text-lg md:text-xl text-white/70 text-center">
-                Average ROI Increase
+                {t('statistics.roiIncrease')}
               </p>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full"></div>
             </div>
@@ -324,7 +323,7 @@ export default function Home() {
                 10<span className="text-secondary-400">y+</span>
               </div>
               <p className="text-lg md:text-xl text-white/70 text-center">
-                Industry Experience
+                {t('statistics.experience')}
               </p>
               <div className="mt-4 h-1 w-16 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full"></div>
             </div>
@@ -352,16 +351,14 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-white/70 text-sm mb-1">Average</div>
+                  <div className="text-white/70 text-sm mb-1">{t('statistics.performance.label')}</div>
                   <div className="text-3xl font-bold text-white font-display">
-                    3x Faster
+                    {t('statistics.performance.value')}
                   </div>
                 </div>
               </div>
               <p className="text-white/70">
-                Website and application performance improvement delivered to our
-                clients, leading to higher conversion rates and better user
-                engagement.
+                {t('statistics.performance.description')}
               </p>
             </div>
 
@@ -386,17 +383,15 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-white/70 text-sm mb-1">
-                    Cost Reduction
+                    {t('statistics.costReduction.label')}
                   </div>
                   <div className="text-3xl font-bold text-white font-display">
-                    35%
+                    {t('statistics.costReduction.value')}
                   </div>
                 </div>
               </div>
               <p className="text-white/70">
-                Average operational cost savings for clients after implementing
-                our custom software solutions and optimizing their digital
-                infrastructure.
+                {t('statistics.costReduction.description')}
               </p>
             </div>
 
@@ -421,17 +416,15 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-white/70 text-sm mb-1">
-                    Time to Market
+                    {t('statistics.timeToMarket.label')}
                   </div>
                   <div className="text-3xl font-bold text-white font-display">
-                    40% Less
+                    {t('statistics.timeToMarket.value')}
                   </div>
                 </div>
               </div>
               <p className="text-white/70">
-                Reduced development cycle time compared to traditional
-                methodologies, helping our clients gain competitive advantage
-                with faster market entry.
+                {t('statistics.timeToMarket.description')}
               </p>
             </div>
           </div>
@@ -452,13 +445,11 @@ export default function Home() {
                 />
               </svg>
               <span className="text-lg text-white italic">
-                "Working with Nexus Digital transformed our business completely.
-                The custom software they developed increased our operational
-                efficiency by 45% and helped us scale rapidly."
+                {t('statistics.testimonialQuote')}
               </span>
             </div>
             <p className="text-white/70 mt-4">
-              — Michael Chen, CTO at TechCorp
+              {t('statistics.testimonialAuthor')}
             </p>
           </div>
         </div>
@@ -470,17 +461,15 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
               <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                Our Advantage
+                {t('whyChooseUs.label')}
               </span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-              Why Choose <span className="gradient-text">Nexus Digital</span>
+              {t('whyChooseUs.heading')}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              We combine technical expertise with deep industry knowledge to
-              deliver exceptional software solutions that drive real business
-              value.
+              {t('whyChooseUs.description')}
             </p>
           </div>
 
@@ -504,43 +493,29 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                Seasoned Experts
+                {t('whyChooseUs.reasons.experts.title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Our team of senior developers, designers, and project managers
-                brings an average of 10+ years of experience to every project we
-                undertake.
+                {t('whyChooseUs.reasons.experts.description')}
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-primary-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Senior-level talent
-                  </li>
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-primary-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Diverse tech expertise
-                  </li>
+                  {t('whyChooseUs.reasons.experts.points').map((point, index) => (
+                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <svg
+                        className="w-4 h-4 mr-2 text-primary-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -564,43 +539,29 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">
-                Agile Excellence
+                {t('whyChooseUs.reasons.agile.title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Our refined agile methodology ensures transparency, flexibility,
-                and rapid adaptation to changing requirements throughout the
-                development process.
+                {t('whyChooseUs.reasons.agile.description')}
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-secondary-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    2-week sprint cycles
-                  </li>
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-secondary-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Continuous delivery
-                  </li>
+                  {t('whyChooseUs.reasons.agile.points').map((point, index) => (
+                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <svg
+                        className="w-4 h-4 mr-2 text-secondary-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -624,42 +585,29 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                Future-Proof Solutions
+                {t('whyChooseUs.reasons.futureProof.title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We architect scalable solutions using modern tech stacks that
-                grow with your business, avoiding costly rebuilds down the line.
+                {t('whyChooseUs.reasons.futureProof.description')}
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-purple-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Cloud-native architecture
-                  </li>
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-purple-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Microservices approach
-                  </li>
+                  {t('whyChooseUs.reasons.futureProof.points').map((point, index) => (
+                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <svg
+                        className="w-4 h-4 mr-2 text-purple-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -683,43 +631,29 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                Comprehensive Support
+                {t('whyChooseUs.reasons.support.title')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Our relationship doesn't end at launch. We provide ongoing
-                maintenance, monitoring, and optimization to ensure your
-                software thrives.
+                {t('whyChooseUs.reasons.support.description')}
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-teal-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    24/7 emergency support
-                  </li>
-                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                    <svg
-                      className="w-4 h-4 mr-2 text-teal-500"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Flexible maintenance plans
-                  </li>
+                  {t('whyChooseUs.reasons.support.points').map((point, index) => (
+                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                      <svg
+                        className="w-4 h-4 mr-2 text-teal-500"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {point}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -731,7 +665,7 @@ export default function Home() {
               href="/about"
               className="btn btn-lg btn-primary inline-flex items-center"
             >
-              <span className="mr-2">Learn More About Our Approach</span>
+              <span className="mr-2">{t('whyChooseUs.cta')}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
