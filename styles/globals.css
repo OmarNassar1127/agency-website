@@ -98,21 +98,12 @@
   }
   
   /* Navbar contrast helpers */
-  header[data-scrolled="false"] {
-    @apply bg-gradient-to-b from-black/60 to-black/30;
-  }
-  
   .nav-settings-btn, .nav-toggle-btn {
-    @apply text-white !important;
-  }
-  
-  header[data-scrolled="true"] .nav-settings-btn,
-  header[data-scrolled="true"] .nav-toggle-btn {
     @apply text-gray-800 dark:text-gray-300 !important;
   }
   
-  header[data-scrolled="true"] span.gradient-text + span {
-    @apply text-gray-900 dark:text-white !important;
+  span.gradient-text + span {
+    @apply text-gray-800 dark:text-white !important;
   }
   
   /* Modern button styles */

@@ -684,32 +684,19 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   }
 }
 /* Navbar contrast helpers */
-header[data-scrolled="false"]{
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-  --tw-gradient-from: rgb(0 0 0 / 0.6) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: rgb(0 0 0 / 0.3) var(--tw-gradient-to-position);
-}
 .nav-settings-btn, .nav-toggle-btn{
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
-}
-header[data-scrolled="true"] .nav-settings-btn,
-  header[data-scrolled="true"] .nav-toggle-btn{
   --tw-text-opacity: 1 !important;
   color: rgb(31 41 55 / var(--tw-text-opacity, 1)) !important;
 }
-header[data-scrolled="true"] .nav-settings-btn:is(.dark *),
-  header[data-scrolled="true"] .nav-toggle-btn:is(.dark *){
+.nav-settings-btn:is(.dark *), .nav-toggle-btn:is(.dark *){
   --tw-text-opacity: 1 !important;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1)) !important;
 }
-header[data-scrolled="true"] span.gradient-text + span{
+span.gradient-text + span{
   --tw-text-opacity: 1 !important;
-  color: rgb(17 24 39 / var(--tw-text-opacity, 1)) !important;
+  color: rgb(31 41 55 / var(--tw-text-opacity, 1)) !important;
 }
-header[data-scrolled="true"] span.gradient-text + span:is(.dark *){
+span.gradient-text + span:is(.dark *){
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
 }
@@ -2524,10 +2511,6 @@ header[data-scrolled="true"] span.gradient-text + span:is(.dark *){
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2535,6 +2518,10 @@ header[data-scrolled="true"] span.gradient-text + span:is(.dark *){
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .pb-10{
   padding-bottom: 2.5rem;
