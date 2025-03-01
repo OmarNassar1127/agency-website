@@ -64,9 +64,9 @@ const ServicesPage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
               {/* Service 1 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-primary-200 dark:hover:border-primary-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-primary-200 dark:hover:border-primary-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-primary-50 dark:bg-primary-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-100 dark:group-hover:bg-primary-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -105,7 +105,7 @@ const ServicesPage = () => {
               </div>
               
               {/* Service 2 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-secondary-200 dark:hover:border-secondary-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-secondary-200 dark:hover:border-secondary-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-secondary-50 dark:bg-secondary-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary-100 dark:group-hover:bg-secondary-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-secondary-600 dark:text-secondary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -144,7 +144,7 @@ const ServicesPage = () => {
               </div>
               
               {/* Service 3 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-purple-200 dark:hover:border-purple-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-purple-200 dark:hover:border-purple-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-purple-50 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-100 dark:group-hover:bg-purple-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
@@ -183,7 +183,7 @@ const ServicesPage = () => {
               </div>
               
               {/* Service 4 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-teal-200 dark:hover:border-teal-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-teal-200 dark:hover:border-teal-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-teal-50 dark:bg-teal-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-100 dark:group-hover:bg-teal-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-teal-600 dark:text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -222,7 +222,7 @@ const ServicesPage = () => {
               </div>
               
               {/* Service 5 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-amber-200 dark:hover:border-amber-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-amber-200 dark:hover:border-amber-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-amber-50 dark:bg-amber-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-amber-100 dark:group-hover:bg-amber-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-600 dark:text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -261,7 +261,7 @@ const ServicesPage = () => {
               </div>
               
               {/* Service 6 */}
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-rose-200 dark:hover:border-rose-800 hover:shadow-lg transition-all">
+              <div className="bg-white dark:bg-gray-900 p-6 sm:p-8 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 group hover:border-rose-200 dark:hover:border-rose-800 hover:shadow-lg transition-all">
                 <div className="w-16 h-16 bg-rose-50 dark:bg-rose-900/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-rose-100 dark:group-hover:bg-rose-800/30 transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-600 dark:text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -324,36 +324,41 @@ const ServicesPage = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-500 to-secondary-500 hidden md:block"></div>
                 
                 {/* Step 1 */}
-                <div className="relative z-10 mb-12">
+                <div className="relative z-10 mb-16">
                   <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.discovery.title')}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                    {/* Left side - Text on desktop, bottom on mobile */}
+                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.discovery.title')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                         {t('process.steps.discovery.description')}
                       </p>
                     </div>
+                    
+                    {/* Center circle */}
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-500 dark:bg-primary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
                       <span className="text-2xl font-bold text-white">1</span>
                     </div>
+                    
+                    {/* Right side - List on desktop, bottom on mobile */}
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 text-sm sm:text-base">
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-primary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.discovery.points.0')}
+                          <span>{t('process.steps.discovery.points.0')}</span>
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-primary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.discovery.points.1')}
+                          <span>{t('process.steps.discovery.points.1')}</span>
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-primary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.discovery.points.2')}
+                          <span>{t('process.steps.discovery.points.2')}</span>
                         </li>
                       </ul>
                     </div>
@@ -361,36 +366,41 @@ const ServicesPage = () => {
                 </div>
                 
                 {/* Step 2 */}
-                <div className="relative z-10 mb-12">
+                <div className="relative z-10 mb-16">
                   <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
-                      <ul className="space-y-2">
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
+                    {/* Left side - List on desktop, shown after circle on mobile */}
+                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 order-3 md:order-1">
+                      <ul className="space-y-2 text-sm sm:text-base text-center md:text-right">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-secondary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.design.points.0')}
+                          <span>{t('process.steps.design.points.0')}</span>
                         </li>
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-secondary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.design.points.1')}
+                          <span>{t('process.steps.design.points.1')}</span>
                         </li>
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-secondary-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.design.points.2')}
+                          <span>{t('process.steps.design.points.2')}</span>
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-500 dark:bg-secondary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                    
+                    {/* Center circle */}
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-500 dark:bg-secondary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-1 md:order-2">
                       <span className="text-2xl font-bold text-white">2</span>
                     </div>
-                    <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.design.title')}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                    
+                    {/* Right side - Text on desktop, shown after circle on mobile */}
+                    <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-2 md:order-3 text-center md:text-left">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.design.title')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                         {t('process.steps.design.description')}
                       </p>
                     </div>
@@ -398,36 +408,41 @@ const ServicesPage = () => {
                 </div>
                 
                 {/* Step 3 */}
-                <div className="relative z-10 mb-12">
+                <div className="relative z-10 mb-16">
                   <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.development.title')}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                    {/* Left side - Text on desktop, shown after circle on mobile */}
+                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.development.title')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                         {t('process.steps.development.description')}
                       </p>
                     </div>
+                    
+                    {/* Center circle */}
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-500 dark:bg-purple-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
                       <span className="text-2xl font-bold text-white">3</span>
                     </div>
+                    
+                    {/* Right side - List on desktop, shown after circle on mobile */}
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 text-sm sm:text-base">
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-purple-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.development.points.0')}
+                          <span>{t('process.steps.development.points.0')}</span>
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-purple-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.development.points.1')}
+                          <span>{t('process.steps.development.points.1')}</span>
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                          <svg className="w-5 h-5 mr-2 text-purple-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.development.points.2')}
+                          <span>{t('process.steps.development.points.2')}</span>
                         </li>
                       </ul>
                     </div>
@@ -437,34 +452,39 @@ const ServicesPage = () => {
                 {/* Step 4 */}
                 <div className="relative z-10">
                   <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right order-1 md:order-1">
-                      <ul className="space-y-2">
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
+                    {/* Left side - List on desktop, shown after circle on mobile */}
+                    <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 order-3 md:order-1">
+                      <ul className="space-y-2 text-sm sm:text-base text-center md:text-right">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-teal-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.support.points.0')}
+                          <span>{t('process.steps.support.points.0')}</span>
                         </li>
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-teal-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.support.points.1')}
+                          <span>{t('process.steps.support.points.1')}</span>
                         </li>
-                        <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
-                          <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
+                        <li className="flex md:flex-row-reverse items-center md:justify-start text-gray-600 dark:text-gray-400">
+                          <svg className="w-5 h-5 mr-2 md:ml-2 md:mr-0 text-teal-500 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          {t('process.steps.support.points.2')}
+                          <span>{t('process.steps.support.points.2')}</span>
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-yellow-500 dark:bg-yellow-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                    
+                    {/* Center circle */}
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-yellow-500 dark:bg-yellow-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-1 md:order-2">
                       <span className="text-2xl font-bold text-white">4</span>
                     </div>
-                    <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.support.title')}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">
+                    
+                    {/* Right side - Text on desktop, shown after circle on mobile */}
+                    <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-2 md:order-3 text-center md:text-left">
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.support.title')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
                         {t('process.steps.support.description')}
                       </p>
                     </div>
@@ -476,13 +496,16 @@ const ServicesPage = () => {
         </section>
         
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
+        <section className="py-16 sm:py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('services.ctaHeading')}</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">{t('services.ctaHeading')}</h2>
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-8 sm:mb-10 px-2">
               {t('services.ctaDescription')}
             </p>
-            <Link href="/contact" className="inline-block bg-white text-primary-700 hover:bg-gray-100 font-medium rounded-lg px-8 py-4 text-lg transition-colors">
+            <Link 
+              href="/contact" 
+              className="inline-block bg-white text-primary-700 hover:bg-gray-100 font-medium rounded-lg px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg transition-colors shadow-lg hover:shadow-xl"
+            >
               {t('services.ctaButton')}
             </Link>
           </div>

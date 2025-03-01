@@ -47,7 +47,7 @@ const CTA = () => {
               </p>
               
               {/* Statistics highlight */}
-              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-10 mb-8 md:mb-12">
+              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-8 md:gap-10 mb-8 md:mb-12">
                 <div className="text-center">
                   <div className="text-3xl font-display font-bold text-white mb-1">97%</div>
                   <p className="text-white/70 text-sm">{t('cta.stats.satisfaction')}</p>

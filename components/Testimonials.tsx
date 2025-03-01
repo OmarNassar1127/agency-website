@@ -136,7 +136,7 @@ const Testimonials = () => {
                   style={{ transform: `translateX(-${activeIndex * 100}%)` }}
                 >
                   {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="w-full flex-shrink-0 p-8 md:p-12">
+                    <div key={testimonial.id} className="w-full flex-shrink-0 p-6 sm:p-8 md:p-12">
                       <div className="flex flex-col h-full">
                         {/* Top section with quote and rating */}
                         <div className="flex justify-between items-start mb-8">

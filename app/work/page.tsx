@@ -878,8 +878,11 @@ const WorkPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
-          <div className="container mx-auto px-4 text-center">
+        <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white relative">
+          {/* This overlay prevents any gradient issues in dark mode */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-950 dark:to-gray-950 opacity-0 dark:opacity-100 pointer-events-none z-0"></div>
+          
+          <div className="container mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {t("work.cta.heading")}
             </h2>
