@@ -97,6 +97,24 @@
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl;
   }
   
+  /* Navbar contrast helpers */
+  header[data-scrolled="false"] {
+    @apply bg-gradient-to-b from-black/60 to-black/30;
+  }
+  
+  .nav-settings-btn, .nav-toggle-btn {
+    @apply text-white !important;
+  }
+  
+  header[data-scrolled="true"] .nav-settings-btn,
+  header[data-scrolled="true"] .nav-toggle-btn {
+    @apply text-gray-800 dark:text-gray-300 !important;
+  }
+  
+  header[data-scrolled="true"] span.gradient-text + span {
+    @apply text-gray-900 dark:text-white !important;
+  }
+  
   /* Modern button styles */
   .btn {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium transition-all duration-200 focus-ring;

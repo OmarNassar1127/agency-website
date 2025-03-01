@@ -33,7 +33,7 @@ const SettingsDropdown = () => {
     <div className="relative" ref={dropdownRef}>
       {/* Settings button */}
       <button 
-        className="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus-ring"
+        className="p-2 rounded-lg text-white dark:text-gray-300 hover:bg-white/10 dark:hover:bg-gray-800 transition-colors focus-ring nav-settings-btn"
         onClick={toggleDropdown}
         aria-expanded={isOpen}
         aria-haspopup="true"

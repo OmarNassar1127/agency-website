@@ -42,9 +42,10 @@ const Navbar = () => {
     <header 
       className={`fixed w-full z-40 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-md py-3'
-          : 'bg-transparent py-5'
+          ? 'bg-white dark:bg-gray-900/90 backdrop-blur-lg shadow-md py-3'
+          : 'py-5'
       }`}
+      data-scrolled={scrolled}
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
@@ -53,9 +54,7 @@ const Navbar = () => {
             <span className="text-2xl font-display font-bold mr-1">
               <span className="gradient-text">{t('navbar.logo.first')}</span>
             </span>
-            <span className={`text-2xl font-display font-semibold transition-colors duration-300 ${
-              scrolled ? 'text-gray-900 dark:text-white' : 'text-white dark:text-white'
-            }`}>
+            <span className="text-2xl font-display font-semibold transition-colors duration-300 text-white dark:text-white">
               {t('navbar.logo.second')}
             </span>
           </Link>
@@ -69,8 +68,8 @@ const Navbar = () => {
               href={item.href} 
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 scrolled 
-                  ? 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100/50 dark:hover:bg-gray-800/50' 
-                  : 'text-gray-100 dark:text-gray-300 hover:text-white dark:hover:text-white hover:bg-white/10 dark:hover:bg-gray-800/50'
+                  ? 'text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100/50 dark:hover:bg-gray-800/50' 
+                  : 'text-white dark:text-gray-300 hover:text-white/80 dark:hover:text-white hover:bg-white/10 dark:hover:bg-gray-800/50'
               }`}
             >
               {item.name}
@@ -86,7 +85,7 @@ const Navbar = () => {
             className={`btn-sm ${
               scrolled 
                 ? 'btn-outline border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200' 
-                : 'border-2 border-white/30 text-white hover:bg-white/10'
+                : 'border-2 border-white/80 text-white hover:bg-white/10'
             }`}
           >
             {t('navbar.startProject')}
@@ -109,11 +108,7 @@ const Navbar = () => {
           
           {/* Mobile Menu Toggle */}
           <button 
-            className={`p-2 rounded-lg transition-colors ${
-              scrolled 
-                ? 'text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800' 
-                : 'text-white hover:bg-white/10'
-            }`}
+            className="p-2 rounded-lg transition-colors text-white hover:bg-white/10 dark:hover:bg-gray-800 nav-toggle-btn"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
