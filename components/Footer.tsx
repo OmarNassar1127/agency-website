@@ -126,7 +126,6 @@ const Footer = () => {
                   <li><FooterLink href="/work">Our Work</FooterLink></li>
                   <li><FooterLink href="/process">How We Work</FooterLink></li>
                   <li><FooterLink href="/careers">Careers</FooterLink></li>
-                  <li><FooterLink href="/blog">Blog & Insights</FooterLink></li>
                   <li><FooterLink href="/contact">Contact Us</FooterLink></li>
                 </ul>
               </div>
