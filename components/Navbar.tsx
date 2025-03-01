@@ -54,7 +54,7 @@ const Navbar = () => {
             <span className="text-2xl font-display font-bold mr-1">
               <span className="gradient-text">{t('navbar.logo.first')}</span>
             </span>
-            <span className="text-2xl font-display font-semibold transition-colors duration-300 text-white dark:text-white">
+            <span className="text-2xl font-display font-semibold transition-colors duration-300 text-gray-800 dark:text-gray-800">
               {t('navbar.logo.second')}
             </span>
           </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                 scrolled 
                   ? 'text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100/50 dark:hover:bg-gray-800/50' 
-                  : 'text-white dark:text-gray-300 hover:text-white/80 dark:hover:text-white hover:bg-white/10 dark:hover:bg-gray-800/50'
+                  : 'text-gray-800 dark:text-gray-300 hover:text-gray-800/80 dark:hover:text-gray-800 hover:bg-white/10 dark:hover:bg-gray-800/50'
               }`}
             >
               {item.name}
@@ -80,16 +80,7 @@ const Navbar = () => {
         {/* Settings and CTA Buttons - Desktop */}
         <div className="hidden lg:flex items-center space-x-3">
           <SettingsDropdown />
-          <Link 
-            href="/contact" 
-            className={`btn-sm ${
-              scrolled 
-                ? 'btn-outline border-gray-300 dark:border-gray-700 text-gray-800 dark:text-gray-200' 
-                : 'border-2 border-white/80 text-white hover:bg-white/10'
-            }`}
-          >
-            {t('navbar.startProject')}
-          </Link>
+
           <Link 
             href="/contact" 
             className="btn-sm btn-primary"
@@ -108,7 +99,7 @@ const Navbar = () => {
           
           {/* Mobile Menu Toggle */}
           <button 
-            className="p-2 rounded-lg transition-colors text-white hover:bg-white/10 dark:hover:bg-gray-800 nav-toggle-btn"
+            className="p-2 rounded-lg transition-colors text-gray-800 hover:bg-white/10 dark:hover:bg-gray-800 nav-toggle-btn"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >
@@ -159,13 +150,6 @@ const Navbar = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col space-y-3">
-            <Link 
-              href="/contact"
-              className="btn btn-outline w-full justify-center"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t('navbar.startProject')}
-            </Link>
             <Link 
               href="/contact"
               className="btn btn-primary w-full justify-center"
