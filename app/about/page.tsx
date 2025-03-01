@@ -78,7 +78,7 @@ export default function AboutPage() {
                     ];<br/><br/>
                     
                     <span className="text-primary-400">function</span> <span className="text-secondary-400">createDigitalMagic</span>() {`{`}<br/>
-                    <span className="ml-4"><span className="text-primary-400">return</span> nexusTeam.reduce((product, value) =&gt; <br/>
+                    <span className="ml-4"><span className="text-primary-400">return</span> nexusTeam.reduce((product, value) =&gt; <br/> </span>
                     <span className="ml-8">product.enhancedWith(value),</span><br/>
                     <span className="ml-8">new Solution()</span><br/>
                     <span className="ml-4">);</span><br/>
