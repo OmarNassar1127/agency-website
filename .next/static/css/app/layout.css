@@ -683,14 +683,90 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
     padding-right: 2rem;
   }
 }
-/* Page-specific backgrounds for light mode */
+/* Professional page background */
 .page-background-light {
     background-color: #f8fafc;
     background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
-    background-size: 20px 20px;
+      linear-gradient(rgba(226, 232, 240, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(226, 232, 240, 0.3) 1px, transparent 1px);
+    background-size: 40px 40px;
     background-position: -1px -1px;
+    position: relative;
+  }
+.page-soft-gradient {
+    position: relative;
+  }
+.page-soft-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 240px; 
+    background: linear-gradient(180deg, rgba(59, 130, 246, 0.03) 0%, rgba(59, 130, 246, 0) 100%);
+    z-index: 0;
+  }
+.page-soft-gradient::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 240px;
+    background: linear-gradient(0deg, rgba(249, 250, 251, 0.8) 0%, rgba(249, 250, 251, 0) 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+.dark .page-soft-gradient::after {
+    background: linear-gradient(0deg, rgba(15, 23, 42, 0.8) 0%, rgba(15, 23, 42, 0) 100%);
+  }
+/* Elegant section styles */
+.section-elegant {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.01),
+      0 0 0 1px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+.dark .section-elegant {
+    background: #1e293b;
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 0 0 1px rgba(255, 255, 255, 0.03);
+  }
+/* Subtle accent line at the top of sections */
+.section-accent-top {
+    position: relative;
+  }
+.section-accent-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #8b5cf6 100%);
+    opacity: 0.8;
+  }
+/* Subtle texture overlay */
+.texture-overlay {
+    position: relative;
+  }
+.texture-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23a0aec0' fill-opacity='0.05' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
   }
 /* Modern button styles */
 .btn:focus-visible{
@@ -1157,9 +1233,17 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .mb-1{
   margin-bottom: 0.25rem;
@@ -3435,9 +3519,6 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
 .dark\:to-gray-900:is(.dark *){
   --tw-gradient-to: #111827 var(--tw-gradient-to-position);
 }
-.dark\:to-gray-900\/70:is(.dark *){
-  --tw-gradient-to: rgb(17 24 39 / 0.7) var(--tw-gradient-to-position);
-}
 .dark\:to-secondary-600:is(.dark *){
   --tw-gradient-to: #0D9488 var(--tw-gradient-to-position);
 }
@@ -3727,6 +3808,10 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   .md\:order-3{
     order: 3;
   }
+  .md\:mx-8{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .md\:mb-0{
     margin-bottom: 0px;
   }
@@ -3867,6 +3952,10 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   .lg\:col-span-8{
     grid-column: span 8 / span 8;
   }
+  .lg\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -3934,6 +4023,12 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
+  }
+}
+@media (min-width: 1280px){
+  .xl\:mx-16{
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }
 

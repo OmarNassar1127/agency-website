@@ -15,7 +15,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 export default function AboutPage() {
   const { t } = useLanguage();
   return (
-    <main className="page-background-light">
+    <main className="page-background-light page-soft-gradient texture-overlay">
       <Navbar />
 
       <div className="">
@@ -388,7 +388,7 @@ export default function AboutPage() {
         </section>
 
         {/* Our Core Values - Interactive Cards */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <section className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16 relative overflow-hidden">
           {/* Background pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
@@ -738,7 +738,7 @@ export default function AboutPage() {
         </section>
 
         {/* Meet Our Team - Creative Display */}
-        <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
+        <section className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
