@@ -40,12 +40,7 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed w-full z-40 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white dark:bg-gray-900/90 backdrop-blur-lg shadow-md py-3'
-          : 'py-5'
-      }`}
-      data-scrolled={scrolled}
+      className="fixed w-full z-40 transition-all duration-300 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-md py-3"
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
@@ -54,7 +49,7 @@ const Navbar = () => {
             <span className="text-2xl font-display font-bold mr-1">
               <span className="gradient-text">{t('navbar.logo.first')}</span>
             </span>
-            <span className="text-2xl font-display font-semibold transition-colors duration-300 text-gray-800 dark:text-gray-800">
+            <span className="text-2xl font-display font-semibold transition-colors duration-300 text-gray-800 dark:text-white">
               {t('navbar.logo.second')}
             </span>
           </Link>
@@ -66,11 +61,7 @@ const Navbar = () => {
             <Link 
               key={item.name}
               href={item.href} 
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                scrolled 
-                  ? 'text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100/50 dark:hover:bg-gray-800/50' 
-                  : 'text-gray-800 dark:text-gray-300 hover:text-gray-800/80 dark:hover:text-gray-800 hover:bg-white/10 dark:hover:bg-gray-800/50'
-              }`}
+              className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               {item.name}
             </Link>
@@ -99,7 +90,7 @@ const Navbar = () => {
           
           {/* Mobile Menu Toggle */}
           <button 
-            className="p-2 rounded-lg transition-colors text-gray-800 hover:bg-white/10 dark:hover:bg-gray-800 nav-toggle-btn"
+            className="p-2 rounded-lg transition-colors text-gray-800 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
             onClick={toggleMenu}
             aria-label="Toggle Menu"
           >

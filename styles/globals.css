@@ -97,14 +97,7 @@
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl;
   }
   
-  /* Navbar contrast helpers */
-  .nav-settings-btn, .nav-toggle-btn {
-    @apply text-gray-800 dark:text-gray-300 !important;
-  }
-  
-  span.gradient-text + span {
-    @apply text-gray-800 dark:text-white !important;
-  }
+  /* Navbar text colors - removing the !important flags as they're no longer needed */
   
   /* Modern button styles */
   .btn {
