@@ -18,19 +18,35 @@
     "work": "Ons Werk",
     "about": "Over Ons",
     "contact": "Contact",
+    "howWeWork": "Hoe Wij Werken",
+    "careers": "Carrières",
+    "getInTouch": "Neem contact op",
     "legalInfo": "Juridische Informatie",
     "privacyPolicy": "Privacybeleid",
     "termsOfService": "Algemene Voorwaarden",
     "cookiePolicy": "Cookiebeleid",
     "sitemap": "Sitemap",
-    "copyright": "© 2025 Nexus Digital. Alle rechten voorbehouden."
+    "copyright": "© 2025 Nexus Digital. Alle rechten voorbehouden.",
+    "companyDescription": "Wij bouwen innovatieve digitale oplossingen die bedrijven in staat stellen te gedijen in een steeds meer verbonden wereld. Onze aangepaste software transformeert bedrijfsprocessen en zorgt voor concurrentievoordeel.",
+    "yearsExperience": "Jaren Ervaring",
+    "projectsCompleted": "Voltooide Projecten",
+    "expertDevelopers": "Expert Ontwikkelaars"
   },
   "hero": {
+    "preheading": "Revolutionaire Digitale Oplossingen",
     "heading": "Transformeer uw bedrijf met geavanceerde digitale oplossingen",
     "subheading": "Wij bouwen aangepaste software en webapplicaties die bedrijven helpen gedijen in het digitale tijdperk.",
     "cta1": "Onze Diensten",
     "cta2": "Offerte Aanvragen",
-    "scrollDown": "Scroll naar beneden voor meer informatie"
+    "scrollDown": "Scroll naar beneden voor meer informatie",
+    "stats": {
+      "clientSatisfaction": "Klanttevredenheid",
+      "projectsCompleted": "Afgeronde projecten",
+      "experience": "Branche-ervaring"
+    },
+    "trustedBy": {
+      "heading": "Vertrouwd door innovatieve bedrijven wereldwijd"
+    }
   },
   "services": {
     "heading": "Onze Diensten",
@@ -160,18 +176,38 @@
   "process": {
     "heading": "Ons Proces",
     "subheading": "Een bewezen aanpak voor het leveren van succesvolle digitale projecten",
+    "titleStart": "Hoe Wij Uw",
+    "titleHighlight": "Visie tot Leven Brengen",
     "steps": {
       "discovery": {
+        "phase": "Fase 1",
         "title": "Ontdekking & Planning",
-        "description": "We beginnen met het begrijpen van uw bedrijfsdoelen, gebruikersbehoeften en technische vereisten om een uitgebreid projectplan te ontwikkelen."
+        "description": "We beginnen met het begrijpen van uw bedrijfsdoelen, gebruikersbehoeften en technische vereisten om een uitgebreid projectplan te ontwikkelen.",
+        "points": {
+          "0": "Interviews met belanghebbenden en verzamelen van vereisten",
+          "1": "Analyse van bestaande systemen en werkstromen",
+          "2": "Definiëring van projectomvang en tijdlijnplanning"
+        }
       },
       "design": {
+        "phase": "Fase 2",
         "title": "Ontwerp & Prototyping",
-        "description": "Onze ontwerpers creëren intuïtieve gebruikerservaringen en aantrekkelijke interfaces, met interactieve prototypes voor vroege validatie."
+        "description": "Onze ontwerpers creëren intuïtieve gebruikerservaringen en aantrekkelijke interfaces, met interactieve prototypes voor vroege validatie.",
+        "points": {
+          "0": "Gebruikerservaring (UX) onderzoek en wireframing",
+          "1": "Interactieve mockups en visueel ontwerp",
+          "2": "Prototyping en gebruikerstesten"
+        }
       },
       "development": {
-        "title": "Ontwikkeling",
-        "description": "Onze engineers bouwen uw oplossing met moderne technologieën en best practices, met regelmatige demo's en feedbackcycli."
+        "phase": "Fase 3",
+        "title": "Ontwikkeling & Testen",
+        "description": "Onze engineers bouwen uw oplossing met moderne technologieën en best practices, met regelmatige demo's en feedbackcycli.",
+        "points": {
+          "0": "Agile ontwikkeling met tweewekelijkse sprint-cycli",
+          "1": "Continue integratie en geautomatiseerd testen",
+          "2": "Regelmatige demo's en feedbacksessies"
+        }
       },
       "testing": {
         "title": "Testen & Kwaliteitsborging",
@@ -182,9 +218,20 @@
         "description": "We lanceren uw product met behulp van betrouwbare, schaalbare infrastructuur met monitoringsystemen."
       },
       "support": {
-        "title": "Doorlopende Ondersteuning & Optimalisatie",
-        "description": "Na de lancering bieden we continue ondersteuning, verbeteringen en datagestuurde optimalisatie."
+        "phase": "Fase 4",
+        "title": "Lancering & Doorlopende Ondersteuning",
+        "description": "We zorgen voor een soepele implementatie en bieden doorlopend onderhoud en optimalisatie om uw oplossing optimaal te laten presteren.",
+        "points": {
+          "0": "Implementatie- en lanceringsbeheer",
+          "1": "Gebruikerstraining en documentatie",
+          "2": "Doorlopende ondersteuning en continue verbetering"
+        }
       }
+    },
+    "cta": {
+      "heading": "Klaar om uw project te starten?",
+      "description": "Laten we bespreken hoe ons transparante ontwikkelingsproces uw visie met precisie en efficiëntie tot leven kan brengen.",
+      "button": "Plan een Gratis Consultatie"
     }
   },
   "testimonials": {

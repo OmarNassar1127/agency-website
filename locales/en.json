@@ -18,19 +18,35 @@
     "work": "Our Work",
     "about": "About Us",
     "contact": "Contact",
+    "howWeWork": "How We Work",
+    "careers": "Careers",
+    "getInTouch": "Get in touch",
     "legalInfo": "Legal Information",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "sitemap": "Sitemap",
-    "copyright": "© 2025 Nexus Digital. All rights reserved."
+    "copyright": "© 2025 Nexus Digital. All rights reserved.",
+    "companyDescription": "We build innovative digital solutions that empower businesses to thrive in an increasingly connected world. Our custom software transforms operations and drives competitive advantage.",
+    "yearsExperience": "Years of Experience",
+    "projectsCompleted": "Projects Completed",
+    "expertDevelopers": "Expert Developers"
   },
   "hero": {
+    "preheading": "Revolutionizing Digital Solutions",
     "heading": "Transform your business with cutting-edge digital solutions",
     "subheading": "We build custom software and web applications that help businesses thrive in the digital age.",
     "cta1": "Our Services",
     "cta2": "Get a Quote",
-    "scrollDown": "Scroll down to learn more"
+    "scrollDown": "Scroll down to learn more",
+    "stats": {
+      "clientSatisfaction": "Client satisfaction rate",
+      "projectsCompleted": "Projects completed",
+      "experience": "Industry experience"
+    },
+    "trustedBy": {
+      "heading": "Trusted by innovative companies worldwide"
+    }
   },
   "services": {
     "heading": "Our Services",
@@ -160,18 +176,38 @@
   "process": {
     "heading": "Our Process",
     "subheading": "A proven approach to delivering successful digital projects",
+    "titleStart": "How We Bring Your",
+    "titleHighlight": "Vision to Life",
     "steps": {
       "discovery": {
+        "phase": "Phase 1",
         "title": "Discovery & Planning",
-        "description": "We start by understanding your business goals, user needs, and technical requirements to develop a comprehensive project plan."
+        "description": "We start by understanding your business goals, user needs, and technical requirements to develop a comprehensive project plan.",
+        "points": {
+          "0": "Stakeholder interviews and requirements gathering",
+          "1": "Analysis of existing systems and workflows",
+          "2": "Project scope definition and timeline creation"
+        }
       },
       "design": {
+        "phase": "Phase 2",
         "title": "Design & Prototyping",
-        "description": "Our designers create intuitive user experiences and appealing interfaces, with interactive prototypes for early validation."
+        "description": "Our designers create intuitive user experiences and appealing interfaces, with interactive prototypes for early validation.",
+        "points": {
+          "0": "User experience (UX) research and wireframing",
+          "1": "Interactive mockups and visual design",
+          "2": "Prototyping and user testing"
+        }
       },
       "development": {
-        "title": "Development",
-        "description": "Our engineers build your solution using modern technologies and best practices, with regular demos and feedback cycles."
+        "phase": "Phase 3",
+        "title": "Development & Testing",
+        "description": "Our engineers build your solution using modern technologies and best practices, with regular demos and feedback cycles.",
+        "points": {
+          "0": "Agile development with two-week sprint cycles",
+          "1": "Continuous integration and automated testing",
+          "2": "Regular demos and feedback sessions"
+        }
       },
       "testing": {
         "title": "Testing & Quality Assurance",
@@ -182,9 +218,20 @@
         "description": "We launch your product using reliable, scalable infrastructure with monitoring systems in place."
       },
       "support": {
-        "title": "Ongoing Support & Optimization",
-        "description": "Post-launch, we provide continuous support, enhancements, and data-driven optimization."
+        "phase": "Phase 4",
+        "title": "Launch & Ongoing Support",
+        "description": "We ensure a smooth deployment and provide ongoing maintenance and optimization to keep your solution running at peak performance.",
+        "points": {
+          "0": "Deployment and launch management",
+          "1": "User training and documentation",
+          "2": "Ongoing support and continuous improvement"
+        }
       }
+    },
+    "cta": {
+      "heading": "Ready to start your project?",
+      "description": "Let's discuss how our transparent development process can bring your vision to life with precision and efficiency.",
+      "button": "Schedule a Free Consultation"
     }
   },
   "testimonials": {

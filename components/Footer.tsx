@@ -27,16 +27,16 @@ const Footer = () => {
         <div className="container py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h4 className="text-2xl font-display font-bold mb-4">Subscribe to our newsletter</h4>
+              <h4 className="text-2xl font-display font-bold mb-4">{t('newsletter.heading')}</h4>
               <p className="text-gray-400 mb-6 max-w-md">
-                Stay updated with the latest trends in software development, tech insights, and industry news.
+                {t('newsletter.description')}
               </p>
               
               <form className="flex flex-col sm:flex-row gap-3">
                 <div className="flex-grow">
                   <input 
                     type="email" 
-                    placeholder="Enter your email" 
+                    placeholder={t('newsletter.placeholder')} 
                     className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 text-white"
                     required 
                   />
@@ -45,7 +45,7 @@ const Footer = () => {
                   type="submit" 
                   className="btn-primary rounded-xl px-6 py-3 whitespace-nowrap"
                 >
-                  Subscribe
+                  {t('newsletter.button')}
                 </button>
               </form>
             </div>
@@ -53,17 +53,17 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-8">
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">10+</div>
-                <div className="text-gray-400 text-sm">Years of Experience</div>
+                <div className="text-gray-400 text-sm">{t('footer.yearsExperience')}</div>
               </div>
               <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">250+</div>
-                <div className="text-gray-400 text-sm">Projects Completed</div>
+                <div className="text-gray-400 text-sm">{t('footer.projectsCompleted')}</div>
               </div>
               <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">50+</div>
-                <div className="text-gray-400 text-sm">Expert Developers</div>
+                <div className="text-gray-400 text-sm">{t('footer.expertDevelopers')}</div>
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
             
             <p className="text-gray-400 mb-6 max-w-md">
-              We build innovative digital solutions that empower businesses to thrive in an increasingly connected world. Our custom software transforms operations and drives competitive advantage.
+              {t('footer.companyDescription')}
             </p>
             
             {/* Social Media Icons */}
@@ -129,12 +129,12 @@ const Footer = () => {
               
               {/* Company Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.about')}</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.links')}</h4>
                 <ul className="space-y-4">
-                  <li><FooterLink href="/about">About Us</FooterLink></li>
+                  <li><FooterLink href="/about">{t('footer.about')}</FooterLink></li>
                   <li><FooterLink href="/work">{t('footer.work')}</FooterLink></li>
-                  <li><FooterLink href="/process">How We Work</FooterLink></li>
-                  <li><FooterLink href="/careers">Careers</FooterLink></li>
+                  <li><FooterLink href="/process">{t('footer.howWeWork')}</FooterLink></li>
+                  <li><FooterLink href="/careers">{t('footer.careers')}</FooterLink></li>
                   <li><FooterLink href="/contact">{t('footer.contact')}</FooterLink></li>
                 </ul>
               </div>
@@ -170,7 +170,7 @@ const Footer = () => {
                       href="/contact" 
                       className="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium"
                     >
-                      <span>Get in touch</span>
+                      <span>{t('footer.getInTouch')}</span>
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -193,8 +193,8 @@ const Footer = () => {
             <div className="flex flex-wrap gap-6">
               <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.privacyPolicy')}</Link>
               <Link href="/terms" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.termsOfService')}</Link>
-              <Link href="/cookies" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
-              <Link href="/sitemap" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Sitemap</Link>
+              <Link href="/cookies" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.cookiePolicy')}</Link>
+              <Link href="/sitemap" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.sitemap')}</Link>
             </div>
           </div>
         </div>

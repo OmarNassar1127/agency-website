@@ -31,7 +31,7 @@ const Hero = () => {
             {/* Pre-heading badge */}
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
-              <span className="text-sm font-medium text-white/80">Revolutionizing Digital Solutions</span>
+              <span className="text-sm font-medium text-white/80">{t('hero.preheading')}</span>
             </div>
             
             {/* Main Heading with gradient text */}
@@ -67,15 +67,15 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">97%</div>
-                <p className="text-sm text-gray-100/70">Client satisfaction rate</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.clientSatisfaction')}</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">120+</div>
-                <p className="text-sm text-gray-100/70">Projects completed</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.projectsCompleted')}</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">10+ yrs</div>
-                <p className="text-sm text-gray-100/70">Industry experience</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.experience')}</p>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ const Hero = () => {
         <div className="mt-24 relative">
           <div className="divider mb-12"></div>
           <div className="text-center">
-            <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">Trusted by innovative companies worldwide</h4>
+            <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">{t('hero.trustedBy.heading')}</h4>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               {['TechCorp', 'Innovate', 'GlobalSoft', 'FutureTech', 'ZenithSystems'].map((brand, index) => (
                 <div key={index} className="text-white/50 font-bold font-display text-xl md:text-2xl">
