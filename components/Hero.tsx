@@ -237,148 +237,123 @@ const Hero = () => {
       </div>
       
       <div className="container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-16 items-center">
-          {/* Logo and Headline - Centered for impact */}
-          <div className="lg:col-span-12 text-center mb-12">
-            <div className="inline-flex flex-col items-center">
-              {/* Logo-style headline */}
-              <div className="mb-8 flex items-center text-center">
-                <span className="text-5xl md:text-7xl font-display font-bold mr-2">
-                  <span className="gradient-text">{t('navbar.logo.first')}</span>
-                  <span className="text-white">{t('navbar.logo.second')}</span>
-                </span>
+        
+        {/* Main content - Side by side on desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          {/* Left column - Content and tagline */}
+          <div className="lg:col-span-5 order-2 lg:order-1 px-4 flex flex-col justify-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-white">
+              Building <span className="gradient-text">Digital</span> Experiences
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-200 font-light mb-8">
+              {t('hero.subheading')}
+            </p>
+            
+            {/* Call to action buttons */}
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2 mb-8">
+              <Link 
+                href="/contact" 
+                className="btn btn-lg btn-primary group"
+              >
+                <span className="mr-2">{t('hero.cta2')}</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transition-transform group-hover:translate-x-1">
+                  <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+                </svg>
+              </Link>
+              <Link 
+                href="/services" 
+                className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
+              >
+                <span>{t('hero.cta1')}</span>
+              </Link>
+            </div>
+            
+            {/* Stats highlights */}
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                <div className="flex items-center space-x-3">
+                  <div className="rounded-full w-10 h-10 flex items-center justify-center bg-primary-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-display font-bold text-2xl text-white">97%</div>
+                    <p className="text-xs text-gray-100/70">{t('hero.stats.clientSatisfaction')}</p>
+                  </div>
+                </div>
               </div>
               
-              {/* Modern one-liner tag */}
-              <h1 className="text-2xl md:text-3xl lg:text-4xl text-gray-200 font-light max-w-4xl mx-auto mb-8">
-                {t('hero.subheading')}
-              </h1>
-              
-              {/* Call to action buttons */}
-              <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6">
-                <Link 
-                  href="/contact" 
-                  className="btn btn-lg btn-primary group"
-                >
-                  <span className="mr-2">{t('hero.cta2')}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transition-transform group-hover:translate-x-1">
-                    <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
-                  </svg>
-                </Link>
-                <Link 
-                  href="/services" 
-                  className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
-                >
-                  <span>{t('hero.cta1')}</span>
-                </Link>
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                <div className="flex items-center space-x-3">
+                  <div className="rounded-full w-10 h-10 flex items-center justify-center bg-secondary-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-secondary-300" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="font-display font-bold text-2xl text-white">120+</div>
+                    <p className="text-xs text-gray-100/70">{t('hero.stats.projectsCompleted')}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           
-          {/* Website Building Animation - Spans 7 columns */}
-          <div className="lg:col-span-7 flex justify-center relative order-2 lg:order-1">
-            <div className="relative w-full max-w-3xl">
-              {/* Animation canvas */}
-              <div className="rounded-3xl p-1 bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-md border border-white/10 shadow-highlight overflow-hidden group h-[500px] md:h-[600px]">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-900/40 to-secondary-900/40 backdrop-blur-sm rounded-[calc(1.5rem-4px)]"></div>
-                <canvas 
-                  ref={canvasRef} 
-                  className="w-full h-full rounded-[calc(1.5rem-4px)] relative z-10"
-                ></canvas>
-                
-                {/* Glowing elements and particles */}
-                <div className="absolute top-10 left-10 w-3 h-3 bg-primary-400 rounded-full animate-ping-slow opacity-70"></div>
-                <div className="absolute bottom-32 right-14 w-2 h-2 bg-secondary-400 rounded-full animate-ping-slow opacity-70 animation-delay-1000"></div>
-                <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-purple-400 rounded-full animate-ping-slow opacity-70 animation-delay-2000"></div>
-                
-                {/* IDE Window decoration */}
-                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-white/40 text-sm font-mono opacity-80">
-                  index.tsx - Nexus Digital Project
+          {/* Right column - Mac-style browser window animation */}
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="relative w-full max-w-3xl mx-auto">
+              {/* Mac-style window frame */}
+              <div className="rounded-xl overflow-hidden bg-[#1E1E1E] shadow-2xl border border-gray-700">
+                {/* Window controls */}
+                <div className="h-8 bg-gradient-to-r from-gray-800 to-gray-900 flex items-center px-4 border-b border-gray-700">
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <div className="mx-auto text-center text-xs text-gray-400 font-mono">
+                    nexusdigital.cloud - Building Your Website
+                  </div>
                 </div>
                 
-                {/* Building indicators */}
-                <div className="absolute bottom-6 left-6 flex items-center space-x-3">
-                  <div className="animate-pulse-slow w-3 h-3 bg-green-500 rounded-full"></div>
-                  <div className="text-white/70 text-xs font-mono">Building website...</div>
+                {/* Address bar */}
+                <div className="h-9 bg-gray-800 border-b border-gray-700 px-4 flex items-center">
+                  <div className="flex-1 bg-gray-700 rounded-md h-6 px-3 flex items-center">
+                    <div className="w-4 h-4 text-gray-400">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+                      </svg>
+                    </div>
+                    <span className="ml-2 text-xs text-gray-300 font-mono">https://your-site.com</span>
+                  </div>
                 </div>
                 
-                {/* Tech stack labels */}
-                <div className="absolute bottom-6 right-6 flex space-x-2">
-                  <div className="badge badge-sm badge-primary opacity-60">{t('hero.techStack.react')}</div>
-                  <div className="badge badge-sm badge-secondary opacity-60">{t('hero.techStack.typescript')}</div>
+                {/* Browser content - Canvas */}
+                <div className="relative h-[450px] md:h-[500px]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800"></div>
+                  <canvas 
+                    ref={canvasRef} 
+                    className="w-full h-full relative z-10"
+                  ></canvas>
+                  
+                  {/* Building indicators */}
+                  <div className="absolute bottom-4 left-4 flex items-center space-x-3 z-20">
+                    <div className="animate-pulse-slow w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div className="text-green-400 text-xs font-mono">Building website...</div>
+                  </div>
+                  
+                  
+                  {/* Glowing elements */}
+                  <div className="absolute top-10 left-10 w-2 h-2 bg-primary-400 rounded-full animate-ping-slow opacity-70 z-20"></div>
+                  <div className="absolute bottom-32 right-14 w-2 h-2 bg-secondary-400 rounded-full animate-ping-slow opacity-70 animation-delay-1000 z-20"></div>
                 </div>
               </div>
               
               {/* Decorative Elements */}
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-primary-400 to-secondary-500 rounded-2xl rotate-12 opacity-20 blur-md animate-pulse-slow"></div>
               <div className="absolute -bottom-8 -left-8 w-28 h-28 bg-gradient-to-br from-secondary-400 to-primary-500 rounded-2xl -rotate-12 opacity-20 blur-md animate-pulse-slow"></div>
-            </div>
-          </div>
-          
-          {/* Stats Section - Spans 5 columns */}
-          <div className="lg:col-span-5 order-1 lg:order-2">
-            <h2 className="text-white text-3xl font-display font-bold mb-8 text-center lg:text-left">
-              <span className="gradient-text">Results</span> That Speak Volumes
-            </h2>
-            
-            {/* Stats cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center bg-primary-500/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-primary-300" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-3xl text-white">97%</div>
-                    <p className="text-sm text-gray-100/70">{t('hero.stats.clientSatisfaction')}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center bg-secondary-500/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary-300" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-3xl text-white">120+</div>
-                    <p className="text-sm text-gray-100/70">{t('hero.stats.projectsCompleted')}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center bg-purple-500/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-300" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
-                      <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-3xl text-white">10+ yrs</div>
-                    <p className="text-sm text-gray-100/70">{t('hero.stats.experience')}</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full w-12 h-12 flex items-center justify-center bg-emerald-500/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-emerald-300" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="font-display font-bold text-3xl text-white">24/7</div>
-                    <p className="text-sm text-gray-100/70">{t('cta.stats.support')}</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
