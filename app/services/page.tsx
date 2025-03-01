@@ -332,8 +332,8 @@ const ServicesPage = () => {
                         {t('process.steps.discovery.description')}
                       </p>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
-                      <span className="text-2xl font-bold text-primary-600 dark:text-primary-400">1</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-500 dark:bg-primary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
+                      <span className="text-2xl font-bold text-white">1</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
                       <ul className="space-y-2">
@@ -385,8 +385,8 @@ const ServicesPage = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-100 dark:bg-secondary-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
-                      <span className="text-2xl font-bold text-secondary-600 dark:text-secondary-400">2</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-500 dark:bg-secondary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                      <span className="text-2xl font-bold text-white">2</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.design.title')}</h3>
@@ -406,8 +406,8 @@ const ServicesPage = () => {
                         {t('process.steps.development.description')}
                       </p>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
-                      <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">3</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-500 dark:bg-purple-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
+                      <span className="text-2xl font-bold text-white">3</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
                       <ul className="space-y-2">
@@ -459,8 +459,8 @@ const ServicesPage = () => {
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-teal-100 dark:bg-teal-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
-                      <span className="text-2xl font-bold text-teal-600 dark:text-teal-400">4</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-yellow-500 dark:bg-yellow-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                      <span className="text-2xl font-bold text-white">4</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.support.title')}</h3>
