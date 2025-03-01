@@ -1,7 +1,15 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
 
-const FooterLink = ({ href, children }) => (
+interface FooterLinkProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+const FooterLink = ({ href, children }: FooterLinkProps) => (
   <Link 
     href={href} 
     className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
@@ -11,23 +19,24 @@ const FooterLink = ({ href, children }) => (
 );
 
 const Footer = () => {
+  const { t } = useLanguage();
   return (
     <footer className="bg-gray-950 text-white">
       {/* Newsletter & upper section */}
-      <div className="border-b border-gray-800/50">
+      {/* <div className="border-b border-gray-800/50">
         <div className="container py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h4 className="text-2xl font-display font-bold mb-4">Subscribe to our newsletter</h4>
+              <h4 className="text-2xl font-display font-bold mb-4">{t('newsletter.heading')}</h4>
               <p className="text-gray-400 mb-6 max-w-md">
-                Stay updated with the latest trends in software development, tech insights, and industry news.
+                {t('newsletter.description')}
               </p>
               
               <form className="flex flex-col sm:flex-row gap-3">
                 <div className="flex-grow">
                   <input 
                     type="email" 
-                    placeholder="Enter your email" 
+                    placeholder={t('newsletter.placeholder')} 
                     className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 text-white"
                     required 
                   />
@@ -36,7 +45,7 @@ const Footer = () => {
                   type="submit" 
                   className="btn-primary rounded-xl px-6 py-3 whitespace-nowrap"
                 >
-                  Subscribe
+                  {t('newsletter.button')}
                 </button>
               </form>
             </div>
@@ -44,22 +53,22 @@ const Footer = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-8">
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">10+</div>
-                <div className="text-gray-400 text-sm">Years of Experience</div>
+                <div className="text-gray-400 text-sm">{t('footer.yearsExperience')}</div>
               </div>
               <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">250+</div>
-                <div className="text-gray-400 text-sm">Projects Completed</div>
+                <div className="text-gray-400 text-sm">{t('footer.projectsCompleted')}</div>
               </div>
               <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
               <div className="text-center">
                 <div className="text-3xl font-display font-bold mb-1">50+</div>
-                <div className="text-gray-400 text-sm">Expert Developers</div>
+                <div className="text-gray-400 text-sm">{t('footer.expertDevelopers')}</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       {/* Main footer content */}
       <div className="container py-16">
@@ -68,13 +77,13 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <div className="flex items-center mb-6">
               <h3 className="text-2xl font-display font-bold">
-                <span className="gradient-text">Nexus</span>
-                <span className="ml-1 text-white">Digital</span>
+                <span className="gradient-text">{t('footer.logo.first')}</span>
+                <span className="ml-1 text-white">{t('footer.logo.second')}</span>
               </h3>
             </div>
             
             <p className="text-gray-400 mb-6 max-w-md">
-              We build innovative digital solutions that empower businesses to thrive in an increasingly connected world. Our custom software transforms operations and drives competitive advantage.
+              {t('footer.companyDescription')}
             </p>
             
             {/* Social Media Icons */}
@@ -107,61 +116,58 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
               {/* Services Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Services</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.services')}</h4>
                 <ul className="space-y-4">
-                  <li><FooterLink href="/services/custom-software">Custom Software</FooterLink></li>
-                  <li><FooterLink href="/services/web-development">Web Applications</FooterLink></li>
-                  <li><FooterLink href="/services/mobile-apps">Mobile Development</FooterLink></li>
-                  <li><FooterLink href="/services/cloud-solutions">Cloud Solutions</FooterLink></li>
-                  <li><FooterLink href="/services/ai-ml">AI & Machine Learning</FooterLink></li>
-                  <li><FooterLink href="/services/devops">DevOps & CI/CD</FooterLink></li>
+                  <li><FooterLink href="/services/custom-software">{t('footer.serviceLinks.customSoftware')}</FooterLink></li>
+                  <li><FooterLink href="/services/web-development">{t('footer.serviceLinks.webDevelopment')}</FooterLink></li>
+                  <li><FooterLink href="/services/mobile-apps">{t('footer.serviceLinks.mobileDevelopment')}</FooterLink></li>
+                  <li><FooterLink href="/services/cloud-solutions">{t('footer.serviceLinks.cloudSolutions')}</FooterLink></li>
+                  <li><FooterLink href="/services/ai-ml">{t('footer.serviceLinks.aiML')}</FooterLink></li>
+                  <li><FooterLink href="/services/devops">{t('footer.serviceLinks.devOps')}</FooterLink></li>
                 </ul>
               </div>
               
               {/* Company Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Company</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.links')}</h4>
                 <ul className="space-y-4">
-                  <li><FooterLink href="/about">About Us</FooterLink></li>
-                  <li><FooterLink href="/work">Our Work</FooterLink></li>
-                  <li><FooterLink href="/process">How We Work</FooterLink></li>
-                  <li><FooterLink href="/careers">Careers</FooterLink></li>
-                  <li><FooterLink href="/contact">Contact Us</FooterLink></li>
+                  <li><FooterLink href="/about">{t('footer.about')}</FooterLink></li>
+                  <li><FooterLink href="/work">{t('footer.work')}</FooterLink></li>
+                  <li><FooterLink href="/process">{t('footer.howWeWork')}</FooterLink></li>
+                  <li><FooterLink href="/careers">{t('footer.careers')}</FooterLink></li>
+                  <li><FooterLink href="/contact">{t('footer.contact')}</FooterLink></li>
                 </ul>
               </div>
               
               {/* Contact Column */}
               <div>
-                <h4 className="text-lg font-semibold mb-6 text-white">Contact</h4>
+                <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.contactInfo')}</h4>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg className="w-5 h-5 text-primary-500 mr-2 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <span className="text-gray-400">
-                      123 Innovation Drive<br/>
-                      San Francisco, CA 94105
-                    </span>
+                    <span className="text-gray-400" dangerouslySetInnerHTML={{ __html: t('footer.contactDetails.address') }}></span>
                   </li>
                   <li className="flex items-center">
                     <svg className="w-5 h-5 text-primary-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
-                    <span className="text-gray-400">(555) 123-4567</span>
+                    <span className="text-gray-400">{t('footer.contactDetails.phone')}</span>
                   </li>
                   <li className="flex items-center">
                     <svg className="w-5 h-5 text-primary-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    <span className="text-gray-400">info@nexusdigital.com</span>
+                    <span className="text-gray-400">{t('footer.contactDetails.email')}</span>
                   </li>
                   <li className="pt-4">
                     <Link 
                       href="/contact" 
                       className="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium"
                     >
-                      <span>Get in touch</span>
+                      <span>{t('footer.getInTouch')}</span>
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                       </svg>
@@ -179,13 +185,13 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Nexus Digital. All rights reserved.
+              {t('footer.copyright')}
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</Link>
-              <Link href="/terms" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Terms of Service</Link>
-              <Link href="/cookies" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Cookie Policy</Link>
-              <Link href="/sitemap" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">Sitemap</Link>
+              <Link href="/privacy" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.privacyPolicy')}</Link>
+              <Link href="/terms" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.termsOfService')}</Link>
+              <Link href="/cookies" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.cookiePolicy')}</Link>
+              <Link href="/sitemap" className="text-sm text-gray-500 hover:text-primary-400 transition-colors">{t('footer.sitemap')}</Link>
             </div>
           </div>
         </div>

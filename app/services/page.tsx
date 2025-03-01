@@ -1,19 +1,20 @@
+"use client";
+
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import { useLanguage } from '../../contexts/LanguageContext';
 
-export const metadata = {
-  title: 'Our Services - Nexus Digital',
-  description: 'Explore our comprehensive range of digital services including web development, mobile apps, software solutions, and digital marketing.',
-};
+// Metadata is handled in layout.tsx for client components
 
 const ServicesPage = () => {
+  const { t } = useLanguage();
   return (
     <>
       <Navbar />
       
-      <main className="pt-24 pb-20">
+      <main className="">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -28,20 +29,20 @@ const ServicesPage = () => {
           <div className="container relative z-10 mx-auto px-4 text-center">
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
-              <span className="text-sm font-medium text-white/80">Innovative Digital Solutions</span>
+              <span className="text-sm font-medium text-white/80">{t('services.preheading')}</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">{t('services.heading')}</h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              We offer comprehensive digital solutions tailored to your business needs, from custom software development to digital marketing and beyond.
+              {t('services.pageSubheading')}
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link href="#services" className="btn btn-lg btn-primary">
-                Explore Services
+                {t('services.exploreServices')}
               </Link>
               <Link href="/contact" className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10">
-                Get in Touch
+                {t('services.getInTouch')}
               </Link>
             </div>
           </div>
@@ -52,14 +53,14 @@ const ServicesPage = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
-                <span className="text-sm font-medium text-primary-700 dark:text-primary-300">What We Offer</span>
+                <span className="text-sm font-medium text-primary-700 dark:text-primary-300">{t('services.sectionLabel')}</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                Comprehensive Digital <span className="gradient-text">Solutions</span>
+                {t('services.titleStart')} <span className="gradient-text">{t('services.titleHighlight')}</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                We provide end-to-end digital services to help businesses transform, innovate, and thrive in the digital landscape.
+                {t('services.description')}
               </p>
             </div>
             
@@ -71,9 +72,9 @@ const ServicesPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Web Development</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{t('services.webDev.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Custom websites and web applications built with modern technologies that are fast, responsive, and user-friendly.
+                  {t('services.items.webDev.description')}
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
@@ -96,7 +97,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-primary-600 dark:text-primary-400 font-medium flex items-center hover:text-primary-700 dark:hover:text-primary-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -110,9 +111,9 @@ const ServicesPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">Mobile App Development</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">{t('services.mobileDev.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Native and cross-platform mobile applications that deliver exceptional user experiences across all devices.
+                  {t('services.items.mobileDev.description')}
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
@@ -135,7 +136,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-secondary-600 dark:text-secondary-400 font-medium flex items-center hover:text-secondary-700 dark:hover:text-secondary-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -149,9 +150,9 @@ const ServicesPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">AI & Machine Learning</h3>
+                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">{t('services.items.aiMl.title')}</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Advanced AI solutions that analyze data, automate processes, and deliver actionable insights for your business.
+                  {t('services.items.aiMl.description')}
                 </p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
@@ -174,7 +175,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-purple-600 dark:text-purple-400 font-medium flex items-center hover:text-purple-700 dark:hover:text-purple-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -213,7 +214,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-teal-600 dark:text-teal-400 font-medium flex items-center hover:text-teal-700 dark:hover:text-teal-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -252,7 +253,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-amber-600 dark:text-amber-400 font-medium flex items-center hover:text-amber-700 dark:hover:text-amber-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -291,7 +292,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-rose-600 dark:text-rose-400 font-medium flex items-center hover:text-rose-700 dark:hover:text-rose-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -306,14 +307,14 @@ const ServicesPage = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
-                <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">Our Process</span>
+                <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">{t('services.processLabel')}</span>
               </div>
               
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                How We Deliver <span className="gradient-text">Results</span>
+                {t('services.processHeading')}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Our streamlined process ensures effective communication, on-time delivery, and exceptional quality.
+                {t('services.processDescription')}
               </p>
             </div>
             
@@ -326,13 +327,13 @@ const ServicesPage = () => {
                 <div className="relative z-10 mb-12">
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Discovery & Planning</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.discovery.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We start by understanding your business goals, target audience, and project requirements to create a detailed roadmap.
+                        {t('process.steps.discovery.description')}
                       </p>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
-                      <span className="text-2xl font-bold text-primary-600 dark:text-primary-400">1</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-500 dark:bg-primary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
+                      <span className="text-2xl font-bold text-white">1</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
                       <ul className="space-y-2">
@@ -340,19 +341,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Requirements gathering
+                          {t('process.steps.discovery.points.0')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Market research
+                          {t('process.steps.discovery.points.1')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Strategic planning
+                          {t('process.steps.discovery.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -368,29 +369,29 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Wireframing and prototyping
+                          {t('process.steps.design.points.0')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          User experience design
+                          {t('process.steps.design.points.1')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Visual design
+                          {t('process.steps.design.points.2')}
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-100 dark:bg-secondary-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
-                      <span className="text-2xl font-bold text-secondary-600 dark:text-secondary-400">2</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-secondary-500 dark:bg-secondary-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                      <span className="text-2xl font-bold text-white">2</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Design & Prototyping</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.design.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We create intuitive user interfaces and engaging user experiences that align with your brand and business objectives.
+                        {t('process.steps.design.description')}
                       </p>
                     </div>
                   </div>
@@ -400,13 +401,13 @@ const ServicesPage = () => {
                 <div className="relative z-10 mb-12">
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Development & Testing</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.development.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Our experienced developers build your solution using cutting-edge technologies, with rigorous testing at every stage.
+                        {t('process.steps.development.description')}
                       </p>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
-                      <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">3</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-500 dark:bg-purple-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
+                      <span className="text-2xl font-bold text-white">3</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0">
                       <ul className="space-y-2">
@@ -414,19 +415,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Agile development
+                          {t('process.steps.development.points.0')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Continuous integration
+                          {t('process.steps.development.points.1')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Quality assurance
+                          {t('process.steps.development.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -442,29 +443,29 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Deployment
+                          {t('process.steps.support.points.0')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Training & documentation
+                          {t('process.steps.support.points.1')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Ongoing support
+                          {t('process.steps.support.points.2')}
                         </li>
                       </ul>
                     </div>
-                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-teal-100 dark:bg-teal-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
-                      <span className="text-2xl font-bold text-teal-600 dark:text-teal-400">4</span>
+                    <div className="flex-shrink-0 w-16 h-16 rounded-full bg-yellow-500 dark:bg-yellow-500 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg order-2 md:order-2">
+                      <span className="text-2xl font-bold text-white">4</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Launch & Support</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.support.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We ensure a smooth deployment and provide ongoing maintenance and support to keep your digital solution running optimally.
+                        {t('process.steps.support.description')}
                       </p>
                     </div>
                   </div>
@@ -477,12 +478,12 @@ const ServicesPage = () => {
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('services.ctaHeading')}</h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto mb-10">
-              Contact us today to discuss your project and discover how our services can help you achieve your business goals.
+              {t('services.ctaDescription')}
             </p>
             <Link href="/contact" className="inline-block bg-white text-primary-700 hover:bg-gray-100 font-medium rounded-lg px-8 py-4 text-lg transition-colors">
-              Get Started
+              {t('services.ctaButton')}
             </Link>
           </div>
         </section>

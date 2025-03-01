@@ -1,20 +1,20 @@
+"use client";
+
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import { useLanguage } from "../../contexts/LanguageContext";
 
-export const metadata = {
-  title: "Our Work - Nexus Digital Agency",
-  description:
-    "Explore our work of successful digital projects. See how we've helped businesses transform their digital presence with custom solutions.",
-};
+// Metadata is handled in layout.tsx for client components
 
 const WorkPage = () => {
+  const { t } = useLanguage();
   return (
     <>
       <Navbar />
 
-      <main className="pt-24 pb-20">
+      <main className="page-background-light page-soft-gradient texture-overlay">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -30,68 +30,71 @@ const WorkPage = () => {
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
               <span className="text-sm font-medium text-white/80">
-                Our Portfolio
+                {t("work.portfolio")}
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Our Work
+              {t("work.heading")}
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              Explore our showcase of successful projects across various
-              industries. Each project represents our commitment to excellence
-              and innovation.
+              {t("work.subheading")}
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <a href="#featured-work" className="btn btn-lg btn-primary">
-                View Projects
+                {t("work.viewProjects")}
               </a>
               <Link
                 href="/contact"
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
-                Start Your Project
+                {t("work.startYourProject")}
               </Link>
             </div>
           </div>
         </section>
 
         {/* Featured Work Filter */}
-        <section id="featured-work" className="py-20 bg-white dark:bg-gray-950">
+        <section
+          id="featured-work"
+          className="py-20 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16"
+        >
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
                 <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                  Featured Projects
+                  {t("work.featuredProjects")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                Our <span className="gradient-text">Success Stories</span>
+                {t("work.heading")}{" "}
+                <span className="gradient-text">
+                  {t("work.successStories")}
+                </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Browse through our diverse work of projects that showcase our
-                expertise across various industries and technologies.
+                {t("work.browseText")}
               </p>
             </div>
 
             {/* Filter Buttons */}
             <div className="flex flex-wrap justify-center gap-3 mb-12">
               <button className="px-5 py-2 rounded-full bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors">
-                All Projects
+                {t("work.filters.all")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                Web Development
+                {t("work.filters.webDev")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                Mobile Apps
+                {t("work.filters.mobileApps")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                E-commerce
+                {t("work.filters.ecommerce")}
               </button>
               <button className="px-5 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-                AI Solutions
+                {t("work.filters.aiSolutions")}
               </button>
             </div>
 
@@ -120,7 +123,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Project Image Placeholder
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -131,16 +134,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-primary-600 hover:bg-gray-100"
                     >
-                      View Project
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Enterprise CRM Platform
+                  {t("work.projects.crm.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  A custom CRM solution developed for a Fortune 500 company to
-                  streamline customer management and boost sales efficiency.
+                  {t("work.projects.crm.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded dark:bg-primary-900/30 dark:text-primary-300">
@@ -178,7 +180,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Project Image Placeholder
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -189,16 +191,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-secondary-600 hover:bg-gray-100"
                     >
-                      View Project
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  HealthTrack Mobile App
+                  {t("work.projects.healthApp.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  A comprehensive health and fitness tracking mobile application
-                  for iOS and Android with personalized insights and coaching.
+                  {t("work.projects.healthApp.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-secondary-100 text-secondary-800 px-2 py-1 rounded dark:bg-secondary-900/30 dark:text-secondary-300">
@@ -236,7 +237,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Project Image Placeholder
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -247,16 +248,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-purple-600 hover:bg-gray-100"
                     >
-                      View Project
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  AI-Powered Analytics Platform
+                  {t("work.projects.aiAnalytics.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  A machine learning platform that provides predictive analytics
-                  for e-commerce businesses, increasing conversion rates by 45%.
+                  {t("work.projects.aiAnalytics.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded dark:bg-purple-900/30 dark:text-purple-300">
@@ -294,7 +294,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Project Image Placeholder
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -305,17 +305,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-teal-600 hover:bg-gray-100"
                     >
-                      View Project
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  LuxuryGoods E-commerce Platform
+                  {t("work.projects.ecommerce.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  A high-end e-commerce platform featuring AR product
-                  visualization, personalized recommendations, and seamless
-                  checkout flow.
+                  {t("work.projects.ecommerce.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded dark:bg-teal-900/30 dark:text-teal-300">
@@ -353,7 +351,7 @@ const WorkPage = () => {
                         </svg>
                       </div>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Project Image Placeholder
+                        {t("work.projectPlaceholder")}
                       </p>
                     </div>
                   </div>
@@ -364,16 +362,15 @@ const WorkPage = () => {
                       href="#"
                       className="btn bg-white text-amber-600 hover:bg-gray-100"
                     >
-                      View Project
+                      {t("work.viewProject")}
                     </a>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  SecureBank Financial Dashboard
+                  {t("work.projects.banking.title")}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-3">
-                  A secure banking dashboard with real-time analytics,
-                  transaction monitoring, and advanced fraud detection systems.
+                  {t("work.projects.banking.description")}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded dark:bg-amber-900/30 dark:text-amber-300">
@@ -681,32 +678,27 @@ const WorkPage = () => {
                 </div>
               </div>
             </div>
-
-            {/* Load More Button - Can be functional with JavaScript */}
-            <div className="text-center mt-16">
-              <button className="btn btn-lg btn-primary">
-                Load More Projects
-              </button>
-            </div>
           </div>
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-24 bg-gray-50 dark:bg-gray-900">
+        <section className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
                 <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">
-                  Client Testimonials
+                  {t("work.testimonials.label")}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                What Our <span className="gradient-text">Clients Say</span>
+                {t("work.testimonials.heading").split(" ")[0]}{" "}
+                <span className="gradient-text">
+                  {t("work.testimonials.heading").split(" ").slice(1).join(" ")}
+                </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Don't just take our word for it. Here's what our clients have to
-                say about working with us.
+                {t("work.testimonials.subheading")}
               </p>
             </div>
 
@@ -749,11 +741,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  "Working with Nexus Digital transformed our business
-                  completely. The custom software they developed increased our
-                  operational efficiency by 45% and helped us scale rapidly.
-                  Their team's expertise and professionalism exceeded our
-                  expectations."
+                  {t("testimonials.items.0.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -762,10 +750,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      Michael Chen
+                      {t("testimonials.items.0.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      CTO, TechCorp
+                      {t("testimonials.items.0.position")},{" "}
+                      {t("testimonials.items.0.company")}
                     </p>
                   </div>
                 </div>
@@ -809,11 +798,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  "The e-commerce platform Nexus Digital built for us has
-                  revolutionized our online sales. The UI/UX design is
-                  exceptional, and the customer feedback has been overwhelmingly
-                  positive. Our conversion rate has improved by 32% since
-                  launch."
+                  {t("testimonials.items.1.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -822,10 +807,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      Sarah Johnson
+                      {t("testimonials.items.1.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Marketing Director, LuxuryGoods
+                      {t("testimonials.items.1.position")},{" "}
+                      {t("testimonials.items.1.company")}
                     </p>
                   </div>
                 </div>
@@ -869,10 +855,7 @@ const WorkPage = () => {
                 </div>
 
                 <p className="text-gray-600 dark:text-gray-300 mb-6 italic">
-                  "The AI analytics solution developed by Nexus Digital has been
-                  a game-changer for our business. We're now able to predict
-                  market trends with remarkable accuracy and make data-driven
-                  decisions that have significantly improved our ROI."
+                  {t("testimonials.items.2.content")}
                 </p>
 
                 <div className="flex items-center">
@@ -881,10 +864,11 @@ const WorkPage = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 dark:text-white">
-                      David Rodriguez
+                      {t("testimonials.items.2.author")}
                     </h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      CEO, MarketInsight
+                      {t("testimonials.items.2.position")},{" "}
+                      {t("testimonials.items.2.company")}
                     </p>
                   </div>
                 </div>
@@ -897,17 +881,16 @@ const WorkPage = () => {
         <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Start Your Next Project?
+              {t("work.cta.heading")}
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto mb-10">
-              Contact us today to discuss how we can help bring your vision to
-              life with our expertise in digital solutions.
+              {t("work.cta.subheading")}
             </p>
             <Link
               href="/contact"
               className="inline-block bg-white text-primary-700 hover:bg-gray-100 font-medium rounded-lg px-8 py-4 text-lg transition-colors"
             >
-              Get in Touch
+              {t("work.cta.button")}
             </Link>
           </div>
         </section>

@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Process = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
       {/* Background elements */}
@@ -16,15 +18,15 @@ const Process = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800">
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Our Development Process</span>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{t('process.heading')}</span>
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-            How We Bring Your <span className="gradient-text">Vision to Life</span>
+            {t('process.titleStart')} <span className="gradient-text">{t('process.titleHighlight')}</span>
           </h2>
           
           <p className="text-xl text-gray-600 dark:text-gray-300">
-            Our streamlined process ensures transparency, quality, and timely delivery for every project.
+            {t('process.subheading')}
           </p>
         </div>
         
@@ -39,26 +41,26 @@ const Process = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Content */}
                 <div className="md:text-right order-2 md:order-1">
-                  <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">Phase 1</span>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Discovery & Planning</h3>
+                  <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.discovery.phase')}</span>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.discovery.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                    We begin by understanding your business needs, goals, and challenges through in-depth discussions and research.
+                    {t('process.steps.discovery.description')}
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Stakeholder interviews and requirements gathering</span>
+                      <span className="md:order-2">{t('process.steps.discovery.points.0')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </li>
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Analysis of existing systems and workflows</span>
+                      <span className="md:order-2">{t('process.steps.discovery.points.1')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </li>
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Project scope definition and timeline creation</span>
+                      <span className="md:order-2">{t('process.steps.discovery.points.2')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -121,29 +123,29 @@ const Process = () => {
                 
                 {/* Step Content */}
                 <div className="text-left md:order-2">
-                  <span className="inline-block text-sm text-white font-medium bg-secondary-600 dark:bg-secondary-500 py-1 px-3 rounded-full mb-4">Phase 2</span>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Design & Prototyping</h3>
+                  <span className="inline-block text-sm text-white font-medium bg-secondary-600 dark:bg-secondary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.design.phase')}</span>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.design.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                    Our design team creates intuitive user interfaces and experiences that align with your brand and user needs.
+                    {t('process.steps.design.description')}
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>User experience (UX) research and wireframing</span>
+                      <span>{t('process.steps.design.points.0')}</span>
                     </li>
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>Interactive mockups and visual design</span>
+                      <span>{t('process.steps.design.points.1')}</span>
                     </li>
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>Prototyping and user testing</span>
+                      <span>{t('process.steps.design.points.2')}</span>
                     </li>
                   </ul>
                 </div>
@@ -155,26 +157,26 @@ const Process = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Content */}
                 <div className="md:text-right order-2 md:order-1">
-                  <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">Phase 3</span>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Development & Testing</h3>
+                  <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.development.phase')}</span>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.development.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                    Our engineers build your solution using best practices and modern technologies, with rigorous quality assurance at every step.
+                    {t('process.steps.development.description')}
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Agile development with two-week sprint cycles</span>
+                      <span className="md:order-2">{t('process.steps.development.points.0')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </li>
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Continuous integration and automated testing</span>
+                      <span className="md:order-2">{t('process.steps.development.points.1')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </li>
                     <li className="flex items-center md:justify-end text-gray-600 dark:text-gray-300">
-                      <span className="md:order-2">Regular demos and feedback sessions</span>
+                      <span className="md:order-2">{t('process.steps.development.points.2')}</span>
                       <svg className="w-5 h-5 ml-2 mr-2 md:ml-2 md:mr-0 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -237,29 +239,29 @@ const Process = () => {
                 
                 {/* Step Content */}
                 <div className="text-left md:order-2">
-                  <span className="inline-block text-sm text-white font-medium bg-teal-600 dark:bg-teal-500 py-1 px-3 rounded-full mb-4">Phase 4</span>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Launch & Ongoing Support</h3>
+                  <span className="inline-block text-sm text-white font-medium bg-teal-600 dark:bg-teal-500 py-1 px-3 rounded-full mb-4">{t('process.steps.support.phase')}</span>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.support.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                    We ensure a smooth deployment and provide ongoing maintenance and optimization to keep your solution running at peak performance.
+                    {t('process.steps.support.description')}
                   </p>
                   <ul className="space-y-3">
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>Deployment and launch management</span>
+                      <span>{t('process.steps.support.points.0')}</span>
                     </li>
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>User training and documentation</span>
+                      <span>{t('process.steps.support.points.1')}</span>
                     </li>
                     <li className="flex items-center text-gray-600 dark:text-gray-300">
                       <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <span>Ongoing support and continuous improvement</span>
+                      <span>{t('process.steps.support.points.2')}</span>
                     </li>
                   </ul>
                 </div>
@@ -271,12 +273,12 @@ const Process = () => {
         {/* CTA Banner */}
         <div className="mt-20 text-center">
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-gray-700 max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">Ready to start your project?</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">{t('process.cta.heading')}</h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our transparent development process can bring your vision to life with precision and efficiency.
+              {t('process.cta.description')}
             </p>
             <Link href="/contact" className="btn-lg btn-primary inline-flex items-center">
-              <span className="mr-2">Schedule a Free Consultation</span>
+              <span className="mr-2">{t('process.cta.button')}</span>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                 <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
               </svg>

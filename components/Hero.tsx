@@ -1,8 +1,12 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 min-h-screen pt-36 pb-24 overflow-hidden">
       {/* Mesh Gradient Background */}
@@ -27,16 +31,16 @@ const Hero = () => {
             {/* Pre-heading badge */}
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
-              <span className="text-sm font-medium text-white/80">Revolutionizing Digital Solutions</span>
+              <span className="text-sm font-medium text-white/80">{t('hero.preheading')}</span>
             </div>
             
             {/* Main Heading with gradient text */}
             <h1 className="text-balance mb-6 font-display">
               <span className="block text-4xl md:text-6xl lg:text-7xl font-bold text-white animate-fade-in mb-2">
-                Transforming Ideas into 
+                {t('hero.heading')}
               </span>
-              <span className="block text-4xl md:text-6xl lg:text-7xl font-bold gradient-text animate-slide-up">
-                Exceptional Solutions
+              <span className="block text-xl md:text-2xl lg:text-3xl text-gray-300 mt-6">
+                {t('hero.subheading')}
               </span>
             </h1>
             
@@ -46,7 +50,7 @@ const Hero = () => {
                 href="/contact" 
                 className="btn btn-lg btn-primary group"
               >
-                <span className="mr-2">Schedule a Consultation</span>
+                <span className="mr-2">{t('hero.cta2')}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transition-transform group-hover:translate-x-1">
                   <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
                 </svg>
@@ -55,7 +59,7 @@ const Hero = () => {
                 href="/work" 
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
-                <span>Explore Our Work</span>
+                <span>{t('hero.cta1')}</span>
               </Link>
             </div>
             
@@ -63,15 +67,15 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">97%</div>
-                <p className="text-sm text-gray-100/70">Client satisfaction rate</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.clientSatisfaction')}</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">120+</div>
-                <p className="text-sm text-gray-100/70">Projects completed</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.projectsCompleted')}</p>
               </div>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
                 <div className="font-display font-bold text-3xl text-white mb-1">10+ yrs</div>
-                <p className="text-sm text-gray-100/70">Industry experience</p>
+                <p className="text-sm text-gray-100/70">{t('hero.stats.experience')}</p>
               </div>
             </div>
           </div>
@@ -124,9 +128,9 @@ const Hero = () => {
               
               {/* Tech stack badges */}
               <div className="absolute -right-4 -bottom-4 hidden lg:flex flex-col space-y-2">
-                <div className="badge badge-primary">React</div>
-                <div className="badge badge-secondary">Node.js</div>
-                <div className="badge bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">TypeScript</div>
+                <div className="badge badge-primary">{t('hero.techStack.react')}</div>
+                <div className="badge badge-secondary">{t('hero.techStack.nodejs')}</div>
+                <div className="badge bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">{t('hero.techStack.typescript')}</div>
               </div>
             </div>
           </div>
@@ -136,7 +140,7 @@ const Hero = () => {
         <div className="mt-24 relative">
           <div className="divider mb-12"></div>
           <div className="text-center">
-            <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">Trusted by innovative companies worldwide</h4>
+            <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">{t('hero.trustedBy.heading')}</h4>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               {['TechCorp', 'Innovate', 'GlobalSoft', 'FutureTech', 'ZenithSystems'].map((brand, index) => (
                 <div key={index} className="text-white/50 font-bold font-display text-xl md:text-2xl">
@@ -149,7 +153,16 @@ const Hero = () => {
       </div>
       
       {/* Gradient divider */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white dark:from-gray-950 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white dark:from-gray-950 to-transparent">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
+          <div className="text-sm text-gray-400 dark:text-gray-500 flex flex-col items-center animate-pulse">
+            <span>{t('hero.scrollDown')}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

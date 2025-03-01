@@ -1,20 +1,23 @@
+"use client";
+
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import { useLanguage } from "../../contexts/LanguageContext";
 
-export const metadata = {
-  title: "Contact Us - Nexus Digital",
-  description:
-    "Get in touch with Nexus Digital. Let's discuss your project and help bring your vision to life.",
-};
+// Metadata moved to app/layout.tsx since this is a client component
+// title: "Contact Us - Nexus Digital",
+// description: "Get in touch with Nexus Digital. Let's discuss your project and help bring your vision to life."
 
 const ContactPage = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
       <Navbar />
 
-      <main className="pt-24 pb-20">
+      <main className="page-background-light page-soft-gradient texture-overlay">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -36,36 +39,34 @@ const ContactPage = () => {
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
               <span className="text-sm font-medium text-white/80">
-                We'd Love to Hear From You
+                {t('contact.subheading')}
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Get in Touch
+              {t('contact.heading')}
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              Ready to start your digital transformation? Contact our team to
-              discuss how we can help bring your vision to life.
+              {t('contact.description') || "Ready to start your digital transformation? Contact our team to discuss how we can help bring your vision to life."}
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <Link href="#contact-form" className="btn btn-lg btn-primary">
-                Send a Message
+                {t('contact.form.submit')}
               </Link>
               <Link
                 href="#offices"
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
-                Visit Our Office
+                {t('contact.visitOffice') || "Visit Our Office"}
               </Link>
             </div>
           </div>
         </section>
 
         {/* Contact Form Section */}
-        <section id="contact-form" className="py-24 relative">
-          {/* Background with subtle gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 -z-10"></div>
+        <section id="contact-form" className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16 relative">
+          {/* Removed background gradient as we're using glass effect now */}
 
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-start">
@@ -73,19 +74,16 @@ const ContactPage = () => {
               <div className="order-2 lg:order-1 mt-8 lg:mt-0">
                 <div className="inline-block mb-6 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
                   <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                    How to Reach Us
+                    {t('contact.info.heading')}
                   </span>
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                  Let's Build Something{" "}
-                  <span className="gradient-text">Extraordinary</span>
+                  {t('contact.form.heading').split(' ')[0]} <span className="gradient-text">{t('contact.form.heading').split(' ').slice(1).join(' ')}</span>
                 </h2>
 
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-xl">
-                  Whether you have a specific project in mind or just want to
-                  explore possibilities, our team is ready to help you navigate
-                  the digital landscape and achieve your goals.
+                  {t('contact.form.description') || "Whether you have a specific project in mind or just want to explore possibilities, our team is ready to help you navigate the digital landscape and achieve your goals."}
                 </p>
 
                 <div className="space-y-8">
@@ -108,13 +106,13 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                        Call Us Directly
+                        {t('contact.info.callUsDirectly') || "Call Us Directly"}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 text-lg mb-1">
-                        (555) 123-4567
+                        {t('contact.info.phone') || "(555) 123-4567"}
                       </p>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Monday-Friday, 9am-6pm PST
+                        {t('contact.info.hours') || "Monday-Friday, 9am-6pm PST"}
                       </p>
                     </div>
                   </div>
@@ -138,13 +136,13 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                        Email Us
+                        {t('contact.info.emailUs') || "Email Us"}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300 text-lg mb-1">
-                        info@nexusdigital.com
+                        {t('contact.info.email') || "info@nexusdigital.com"}
                       </p>
                       <p className="text-gray-500 dark:text-gray-400">
-                        We respond within 24 hours
+                        {t('contact.info.response') || "We respond within 24 hours"}
                       </p>
                     </div>
                   </div>
@@ -174,19 +172,19 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                        Visit Our Office
+                        {t('contact.info.visitOffice') || "Visit Our Office"}
                       </h3>
                       <div className="text-gray-600 dark:text-gray-300 text-lg mb-1">
-                        123 Innovation Drive
+                        {t('contact.info.address').split('<br/>')[0] || "123 Innovation Drive"}
                       </div>
                       <div className="text-gray-600 dark:text-gray-300 mb-1">
-                        San Francisco, CA 94105
+                        {t('contact.info.address').split('<br/>')[1] || "San Francisco, CA 94105"}
                       </div>
                       <Link
                         href="#map"
                         className="flex items-center text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mt-2 font-medium"
                       >
-                        <span>View on map</span>
+                        <span>{t('contact.info.viewMap') || "View on map"}</span>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="ml-1 h-5 w-5"
@@ -207,7 +205,7 @@ const ContactPage = () => {
                 {/* Social Media with improved styling */}
                 <div className="mt-12">
                   <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
-                    Connect With Us
+                    {t('contact.info.connectWithUs') || "Connect With Us"}
                   </h3>
                   <div className="flex space-x-4">
                     <a
@@ -292,11 +290,10 @@ const ContactPage = () => {
                 <div className="absolute -inset-1.5 bg-gradient-to-br from-primary-500/10 to-secondary-500/10 rounded-3xl blur-sm"></div>
                 <div className="card card-glass bg-white/90 dark:bg-gray-800/90 backdrop-blur-md rounded-2xl border border-white/10 dark:border-gray-700/80 shadow-highlight p-8 relative">
                   <h3 className="text-2xl font-display font-bold mb-2 text-gray-900 dark:text-white">
-                    Start Your Project
+                    {t('contact.form.startProject') || "Start Your Project"}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-6">
-                    Fill out the form below and we'll get back to you within 24
-                    hours.
+                    {t('contact.form.formDescription') || "Fill out the form below and we'll get back to you within 24 hours."}
                   </p>
 
                   <form className="space-y-6">
@@ -306,13 +303,13 @@ const ContactPage = () => {
                           htmlFor="name"
                           className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                         >
-                          Your Name <span className="text-primary-600">*</span>
+                          {t('contact.form.name')} <span className="text-primary-600">*</span>
                         </label>
                         <input
                           type="text"
                           id="name"
                           className="form-input"
-                          placeholder="John Doe"
+                          placeholder={t('contact.form.namePlaceholder') || "John Doe"}
                           required
                         />
                       </div>
@@ -321,14 +318,14 @@ const ContactPage = () => {
                           htmlFor="email"
                           className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
                         >
-                          Email Address{" "}
+                          {t('contact.form.email')}{" "}
                           <span className="text-primary-600">*</span>
                         </label>
                         <input
                           type="email"
                           id="email"
                           className="form-input"
-                          placeholder="you@company.com"
+                          placeholder={t('contact.form.emailPlaceholder') || "you@company.com"}
                           required
                         />
                       </div>
@@ -458,7 +455,7 @@ const ContactPage = () => {
                         type="submit"
                         className="w-full btn-lg btn-primary"
                       >
-                        Submit Request
+                        {t('contact.form.submitButton') || "Submit Request"}
                       </button>
                       <p className="text-center text-gray-500 dark:text-gray-400 text-sm mt-4">
                         <span className="inline-flex items-center">
@@ -476,7 +473,7 @@ const ContactPage = () => {
                               d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
                             />
                           </svg>
-                          Your information is secure and encrypted
+                          {t('contact.form.secure') || "Your information is secure and encrypted"}
                         </span>
                       </p>
                     </div>
@@ -490,9 +487,9 @@ const ContactPage = () => {
         {/* Map Section */}
         <section
           id="offices"
-          className="py-24 relative bg-gray-50 dark:bg-gray-900"
+          className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16 relative"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900/70 -z-10"></div>
+          {/* Removed background gradient as we're using glass effect now */}
 
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
@@ -500,16 +497,15 @@ const ContactPage = () => {
               <div className="text-center mb-12">
                 <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
                   <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">
-                    Our Global Presence
+                    {t('contact.offices.globalPresence') || "Our Global Presence"}
                   </span>
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-gray-900 dark:text-white">
-                  Visit Our Offices
+                  {t('contact.offices.title') || "Visit Our Offices"}
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                  We have offices in strategic locations to better serve our
-                  global clients. Feel free to stop by for a coffee and a chat.
+                  {t('contact.offices.description') || "We have offices in strategic locations to better serve our global clients. Feel free to stop by for a coffee and a chat."}
                 </p>
               </div>
 
@@ -597,7 +593,7 @@ const ContactPage = () => {
                 {/* Office locations cards with hover effect */}
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                    Our Locations
+                    {t('contact.offices.ourLocations') || "Our Locations"}
                   </h3>
 
                   {/* Headquarters */}
@@ -776,23 +772,22 @@ const ContactPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-white dark:bg-gray-950">
+        <section className="py-24 section-elegant section-accent-top my-8 mx-4 md:mx-8 lg:mx-12 xl:mx-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               {/* Section header */}
               <div className="text-center mb-16">
                 <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800">
                   <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Common Questions
+                    {t('contact.faq.label') || "Common Questions"}
                   </span>
                 </div>
 
                 <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-gray-900 dark:text-white">
-                  Frequently Asked Questions
+                  {t('contact.faq.title') || "Frequently Asked Questions"}
                 </h2>
                 <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                  Everything you need to know about working with our team and
-                  our development process.
+                  {t('contact.faq.description') || "Everything you need to know about working with our team and our development process."}
                 </p>
               </div>
 
@@ -990,11 +985,11 @@ const ContactPage = () => {
               {/* CTA Section */}
               <div className="mt-16 text-center">
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                  Still have questions? We're here to help.
+                  {t('contact.faq.moreQuestions') || "Still have questions? We're here to help."}
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <Link href="#contact-form" className="btn btn-primary">
-                    Send Us a Message
+                    {t('contact.faq.sendMessage') || "Send Us a Message"}
                   </Link>
                   <a
                     href="tel:+15551234567"
@@ -1014,7 +1009,7 @@ const ContactPage = () => {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    Call Us
+                    {t('contact.faq.callUs') || "Call Us"}
                   </a>
                 </div>
               </div>

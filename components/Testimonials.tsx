@@ -1,58 +1,62 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
 
-const testimonials = [
+const getTestimonials = (t) => [
   {
     id: 1,
-    content: "Nexus Digital transformed our outdated system into a modern, efficient platform that's increased our productivity by 40%. Their team truly understood our business needs and delivered a solution that exceeded our expectations.",
-    author: "Sarah Johnson",
-    position: "CTO, Innovate Inc.",
-    company: "Innovate Inc.",
+    content: t('testimonials.items.0.content'),
+    author: t('testimonials.items.0.author'),
+    position: t('testimonials.items.0.position'),
+    company: t('testimonials.items.0.company'),
     rating: 5,
-    industry: "Healthcare Technology",
-    service: "Custom Software Development",
+    industry: t('testimonials.items.0.industry'),
+    service: t('testimonials.items.0.service'),
     image: "/img/testimonial-1.jpg" // This is a placeholder, you'll need to add actual images
   },
   {
     id: 2,
-    content: "Working with Nexus Digital was a game-changer for our sales team. Their custom CRM solution helped us nurture leads more effectively, resulting in a 25% increase in conversion rates within just three months. The attention to detail was impressive.",
-    author: "Michael Chen",
-    position: "Director of Sales",
-    company: "GrowthTech",
+    content: t('testimonials.items.1.content'),
+    author: t('testimonials.items.1.author'),
+    position: t('testimonials.items.1.position'),
+    company: t('testimonials.items.1.company'),
     rating: 5,
-    industry: "SaaS",
-    service: "Web Application Development",
+    industry: t('testimonials.items.1.industry'),
+    service: t('testimonials.items.1.service'),
     image: "/img/testimonial-2.jpg" // This is a placeholder, you'll need to add actual images
   },
   {
     id: 3,
-    content: "The mobile app Nexus Digital developed for us exceeded all expectations. Not only did they deliver on time and within budget, but they also provided valuable insights that significantly improved the final product. Our user engagement has increased by 60%.",
-    author: "Jessica Martinez",
-    position: "Product Manager",
-    company: "AppWorks",
+    content: t('testimonials.items.2.content'),
+    author: t('testimonials.items.2.author'),
+    position: t('testimonials.items.2.position'),
+    company: t('testimonials.items.2.company'),
     rating: 5,
-    industry: "E-commerce",
-    service: "Mobile Application Development",
+    industry: t('testimonials.items.2.industry'),
+    service: t('testimonials.items.2.service'),
     image: "/img/testimonial-3.jpg" // This is a placeholder, you'll need to add actual images
   },
   {
     id: 4,
-    content: "Nexus Digital's cloud migration strategy saved us 30% on infrastructure costs while improving performance. Their expertise in AWS was evident throughout the project, and the transition was seamless with zero downtime.",
-    author: "David Wilson",
-    position: "IT Director",
-    company: "Global Enterprises",
+    content: t('testimonials.items.3.content'),
+    author: t('testimonials.items.3.author'),
+    position: t('testimonials.items.3.position'),
+    company: t('testimonials.items.3.company'),
     rating: 5,
-    industry: "Financial Services",
-    service: "Cloud Solutions",
+    industry: t('testimonials.items.3.industry'),
+    service: t('testimonials.items.3.service'),
     image: "/img/testimonial-4.jpg" // This is a placeholder, you'll need to add actual images
   },
 ];
 
 const Testimonials = () => {
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
   const [autoplay, setAutoplay] = useState(true);
   const [isHovering, setIsHovering] = useState(false);
+  
+  const testimonials = getTestimonials(t);
 
   // Handle automatic testimonial rotation
   useEffect(() => {
@@ -66,7 +70,7 @@ const Testimonials = () => {
   }, [autoplay, isHovering]);
 
   // Navigation functions
-  const goToTestimonial = (index) => {
+  const goToTestimonial = (index: number) => {
     setActiveIndex(index);
     setAutoplay(false); // Stop autoplay when user manually navigates
   };
@@ -82,7 +86,7 @@ const Testimonials = () => {
   };
 
   // Generate star rating
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }).map((_, i) => (
       <svg 
         key={i}
@@ -103,16 +107,16 @@ const Testimonials = () => {
         <div className="max-w-4xl mx-auto text-center mb-16">
           {/* Section label */}
           <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
-            <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">Client Success Stories</span>
+            <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">{t('testimonials.heading')}</span>
           </div>
           
           {/* Heading with gradient text */}
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-            What Our <span className="gradient-text">Clients Say</span>
+            {t('testimonials.titleStart')} <span className="gradient-text">{t('testimonials.titleHighlight')}</span>
           </h2>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-balance">
-            We've helped businesses of all sizes transform their digital presence and achieve remarkable results.
+            {t('testimonials.description')}
           </p>
         </div>
 
