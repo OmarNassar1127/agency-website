@@ -125,22 +125,34 @@
       "experts": {
         "title": "Ervaren Experts",
         "description": "Ons team van senior ontwikkelaars, ontwerpers en projectmanagers brengt gemiddeld meer dan 10 jaar ervaring mee naar elk project dat we ondernemen.",
-        "points": ["Senior-niveau talent", "Diverse technische expertise"]
+        "points": {
+          "0": "Senior-niveau talent",
+          "1": "Diverse technische expertise"
+        }
       },
       "agile": {
         "title": "Agile Excellentie",
         "description": "Onze verfijnde agile methodologie zorgt voor transparantie, flexibiliteit en snelle aanpassing aan veranderende eisen gedurende het ontwikkelingsproces.",
-        "points": ["2-weekse sprint cycli", "Continue levering"]
+        "points": {
+          "0": "2-weekse sprint cycli",
+          "1": "Continue levering"
+        }
       },
       "futureProof": {
         "title": "Toekomstbestendige Oplossingen",
         "description": "We ontwerpen schaalbare oplossingen met moderne technologiestacks die meegroeien met uw bedrijf, waardoor kostbare herstructureringen worden vermeden.",
-        "points": ["Cloud-native architectuur", "Microservices aanpak"]
+        "points": {
+          "0": "Cloud-native architectuur",
+          "1": "Microservices aanpak"
+        }
       },
       "support": {
         "title": "Uitgebreide Ondersteuning",
         "description": "Onze relatie eindigt niet bij de lancering. We bieden doorlopend onderhoud, monitoring en optimalisatie om ervoor te zorgen dat uw software floreert.",
-        "points": ["24/7 noodondersteuning", "Flexibele onderhoudsplannen"]
+        "points": {
+          "0": "24/7 noodondersteuning",
+          "1": "Flexibele onderhoudsplannen"
+        }
       }
     },
     "cta": "Meer Over Onze Aanpak"

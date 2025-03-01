@@ -1544,9 +1544,6 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
 .flex-grow{
   flex-grow: 1;
 }
-.grow{
-  flex-grow: 1;
-}
 .origin-top-right{
   transform-origin: top right;
 }
@@ -1626,19 +1623,6 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
 }
 .animate-pulse-slow{
   animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-@keyframes slideUp{
-  0%{
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.animate-slide-up{
-  animation: slideUp 0.5s ease-in-out;
 }
 .appearance-none{
   -webkit-appearance: none;
@@ -3544,6 +3528,10 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
+.dark\:text-gray-500:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+}
 .dark\:text-green-300:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(134 239 172 / var(--tw-text-opacity, 1));
@@ -3992,6 +3980,10 @@ a:focus-visible:is(.dark *), button:focus-visible:is(.dark *){
   }
   .lg\:text-left{
     text-align: left;
+  }
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
   .lg\:text-5xl{
     font-size: 3rem;

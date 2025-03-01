@@ -125,22 +125,34 @@
       "experts": {
         "title": "Seasoned Experts",
         "description": "Our team of senior developers, designers, and project managers brings an average of 10+ years of experience to every project we undertake.",
-        "points": ["Senior-level talent", "Diverse tech expertise"]
+        "points": {
+          "0": "Senior-level talent",
+          "1": "Diverse tech expertise"
+        }
       },
       "agile": {
         "title": "Agile Excellence",
         "description": "Our refined agile methodology ensures transparency, flexibility, and rapid adaptation to changing requirements throughout the development process.",
-        "points": ["2-week sprint cycles", "Continuous delivery"]
+        "points": {
+          "0": "2-week sprint cycles",
+          "1": "Continuous delivery"
+        }
       },
       "futureProof": {
         "title": "Future-Proof Solutions",
         "description": "We architect scalable solutions using modern tech stacks that grow with your business, avoiding costly rebuilds down the line.",
-        "points": ["Cloud-native architecture", "Microservices approach"]
+        "points": {
+          "0": "Cloud-native architecture",
+          "1": "Microservices approach"
+        }
       },
       "support": {
         "title": "Comprehensive Support",
         "description": "Our relationship doesn't end at launch. We provide ongoing maintenance, monitoring, and optimization to ensure your software thrives.",
-        "points": ["24/7 emergency support", "Flexible maintenance plans"]
+        "points": {
+          "0": "24/7 emergency support",
+          "1": "Flexible maintenance plans"
+        }
       }
     },
     "cta": "Learn More About Our Approach"

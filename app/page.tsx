@@ -500,22 +500,34 @@ export default function Home() {
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  {t('whyChooseUs.reasons.experts.points').map((point, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                      <svg
-                        className="w-4 h-4 mr-2 text-primary-500"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      {point}
-                    </li>
-                  ))}
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-primary-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.experts.points.0')}
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-primary-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.experts.points.1')}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -546,22 +558,34 @@ export default function Home() {
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  {t('whyChooseUs.reasons.agile.points').map((point, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                      <svg
-                        className="w-4 h-4 mr-2 text-secondary-500"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      {point}
-                    </li>
-                  ))}
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-secondary-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.agile.points.0')}
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-secondary-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.agile.points.1')}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -592,22 +616,34 @@ export default function Home() {
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  {t('whyChooseUs.reasons.futureProof.points').map((point, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                      <svg
-                        className="w-4 h-4 mr-2 text-purple-500"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      {point}
-                    </li>
-                  ))}
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-purple-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.futureProof.points.0')}
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-purple-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.futureProof.points.1')}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -638,22 +674,34 @@ export default function Home() {
               </p>
               <div className="mt-6 pt-4 border-t border-gray-100 dark:border-gray-800">
                 <ul className="space-y-2">
-                  {t('whyChooseUs.reasons.support.points').map((point, index) => (
-                    <li key={index} className="flex items-center text-sm text-gray-600 dark:text-gray-400">
-                      <svg
-                        className="w-4 h-4 mr-2 text-teal-500"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                      {point}
-                    </li>
-                  ))}
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-teal-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.support.points.0')}
+                  </li>
+                  <li className="flex items-center text-sm text-gray-600 dark:text-gray-400">
+                    <svg
+                      className="w-4 h-4 mr-2 text-teal-500"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {t('whyChooseUs.reasons.support.points.1')}
+                  </li>
                 </ul>
               </div>
             </div>
