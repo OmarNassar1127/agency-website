@@ -87,6 +87,16 @@
     "titleHighlight": "Digital Solutions",
     "description": "We deliver end-to-end software development services that empower businesses to innovate, scale, and thrive in today's competitive marketplace.",
     "learnMore": "Learn more",
+    "exploreServices": "Explore Services",
+    "getInTouch": "Get in Touch",
+    "preheading": "Innovative Digital Solutions",
+    "pageSubheading": "We offer comprehensive digital solutions tailored to your business needs, from custom software development to digital marketing and beyond.",
+    "processHeading": "How We Deliver Results",
+    "processDescription": "Our streamlined process ensures effective communication, on-time delivery, and exceptional quality.",
+    "processLabel": "Our Process",
+    "ctaHeading": "Ready to Transform Your Business?",
+    "ctaDescription": "Contact us today to discuss your project and discover how our services can help you achieve your business goals.",
+    "ctaButton": "Get Started",
     "cta": {
       "question": "Need a custom solution?",
       "button": "View All Services"
@@ -578,6 +588,78 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
+    }
+  },
+  "work": {
+    "portfolio": "Our Portfolio",
+    "heading": "Our Work",
+    "subheading": "Explore our showcase of successful projects across various industries. Each project represents our commitment to excellence and innovation.",
+    "viewProjects": "View Projects",
+    "startYourProject": "Start Your Project",
+    "featuredProjects": "Featured Projects",
+    "successStories": "Success Stories",
+    "browseText": "Browse through our diverse work of projects that showcase our expertise across various industries and technologies.",
+    "filters": {
+      "all": "All Projects",
+      "webDev": "Web Development",
+      "mobileApps": "Mobile Apps",
+      "ecommerce": "E-commerce",
+      "aiSolutions": "AI Solutions"
+    },
+    "viewProject": "View Project",
+    "loadMore": "Load More Projects",
+    "projectPlaceholder": "Project Image Placeholder",
+    "testimonials": {
+      "label": "Client Testimonials",
+      "heading": "What Our Clients Say",
+      "subheading": "Don't just take our word for it. Here's what our clients have to say about working with us."
+    },
+    "cta": {
+      "heading": "Ready to Start Your Next Project?",
+      "subheading": "Contact us today to discuss how we can help bring your vision to life with our expertise in digital solutions.",
+      "button": "Get in Touch"
+    },
+    "projects": {
+      "crm": {
+        "title": "Enterprise CRM Platform",
+        "description": "A custom CRM solution developed for a Fortune 500 company to streamline customer management and boost sales efficiency."
+      },
+      "healthApp": {
+        "title": "HealthTrack Mobile App",
+        "description": "A comprehensive health and fitness tracking mobile application for iOS and Android with personalized insights and coaching."
+      },
+      "aiAnalytics": {
+        "title": "AI-Powered Analytics Platform",
+        "description": "A machine learning platform that provides predictive analytics for e-commerce businesses, increasing conversion rates by 45%."
+      },
+      "ecommerce": {
+        "title": "LuxuryGoods E-commerce Platform",
+        "description": "A high-end e-commerce platform featuring AR product visualization, personalized recommendations, and seamless checkout flow."
+      },
+      "banking": {
+        "title": "SecureBank Financial Dashboard",
+        "description": "A secure banking dashboard with real-time analytics, transaction monitoring, and advanced fraud detection systems."
+      },
+      "messaging": {
+        "title": "ConnectNow Messaging Platform",
+        "description": "A real-time messaging platform with end-to-end encryption, voice/video calls, and seamless file sharing capabilities."
+      },
+      "events": {
+        "title": "TicketMaster Event Platform",
+        "description": "A comprehensive event management platform with ticketing, seat selection, and real-time analytics for event organizers."
+      },
+      "iot": {
+        "title": "SmartHome IoT Control Center",
+        "description": "An integrated IoT platform for controlling smart home devices with voice commands, automation rules, and energy optimization."
+      },
+      "education": {
+        "title": "EduLearn Virtual Classroom",
+        "description": "An interactive virtual classroom platform with live sessions, collaborative tools, and comprehensive learning management features."
+      },
+      "financial": {
+        "title": "MarketInsight Analytics Dashboard",
+        "description": "A data visualization platform for financial markets with real-time updates, predictive models, and customizable dashboards."
+      }
     }
   },
   "newsletter": {

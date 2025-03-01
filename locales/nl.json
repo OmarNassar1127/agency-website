@@ -87,6 +87,16 @@
     "titleHighlight": "Digitale Oplossingen",
     "description": "Wij leveren end-to-end softwareontwikkelingsdiensten die bedrijven in staat stellen te innoveren, te schalen en te gedijen in de huidige concurrerende markt.",
     "learnMore": "Meer lezen",
+    "exploreServices": "Verken Diensten",
+    "getInTouch": "Neem Contact Op",
+    "preheading": "Innovatieve Digitale Oplossingen",
+    "pageSubheading": "Wij bieden uitgebreide digitale oplossingen op maat van uw bedrijfsbehoeften, van aangepaste softwareontwikkeling tot digitale marketing en meer.",
+    "processHeading": "Hoe Wij Resultaten Leveren",
+    "processDescription": "Ons gestroomlijnde proces zorgt voor effectieve communicatie, tijdige levering en uitzonderlijke kwaliteit.",
+    "processLabel": "Ons Proces",
+    "ctaHeading": "Klaar om Uw Bedrijf te Transformeren?",
+    "ctaDescription": "Neem vandaag nog contact met ons op om uw project te bespreken en te ontdekken hoe onze diensten u kunnen helpen uw bedrijfsdoelen te bereiken.",
+    "ctaButton": "Begin Nu",
     "cta": {
       "question": "Heeft u een oplossing op maat nodig?",
       "button": "Bekijk Alle Diensten"
@@ -578,6 +588,78 @@
       "light": "Licht",
       "dark": "Donker",
       "system": "Systeem"
+    }
+  },
+  "work": {
+    "portfolio": "Onze Portfolio",
+    "heading": "Ons Werk",
+    "subheading": "Verken ons overzicht van succesvolle projecten in verschillende sectoren. Elk project vertegenwoordigt onze toewijding aan excellentie en innovatie.",
+    "viewProjects": "Bekijk Projecten",
+    "startYourProject": "Start Uw Project",
+    "featuredProjects": "Uitgelichte Projecten",
+    "successStories": "Succesverhalen",
+    "browseText": "Blader door ons diverse werk van projecten die onze expertise tonen in verschillende industrieën en technologieën.",
+    "filters": {
+      "all": "Alle Projecten",
+      "webDev": "Webontwikkeling",
+      "mobileApps": "Mobiele Apps",
+      "ecommerce": "E-commerce",
+      "aiSolutions": "AI-oplossingen"
+    },
+    "viewProject": "Bekijk Project",
+    "loadMore": "Meer Projecten Laden",
+    "projectPlaceholder": "Project Afbeelding Placeholder",
+    "testimonials": {
+      "label": "Klantgetuigenissen",
+      "heading": "Wat Onze Klanten Zeggen",
+      "subheading": "Neem niet alleen ons woord aan. Hier is wat onze klanten te zeggen hebben over samenwerken met ons."
+    },
+    "cta": {
+      "heading": "Klaar om Uw Volgende Project te Starten?",
+      "subheading": "Neem vandaag nog contact met ons op om te bespreken hoe we uw visie tot leven kunnen brengen met onze expertise in digitale oplossingen.",
+      "button": "Neem Contact Op"
+    },
+    "projects": {
+      "crm": {
+        "title": "Enterprise CRM Platform",
+        "description": "Een op maat gemaakte CRM-oplossing ontwikkeld voor een Fortune 500-bedrijf om klantenbeheer te stroomlijnen en verkoopefficiëntie te verhogen."
+      },
+      "healthApp": {
+        "title": "HealthTrack Mobiele App",
+        "description": "Een uitgebreide gezondheids- en fitness-tracking mobiele applicatie voor iOS en Android met gepersonaliseerde inzichten en coaching."
+      },
+      "aiAnalytics": {
+        "title": "AI-Gedreven Analyseplatform",
+        "description": "Een machine learning platform dat voorspellende analyses biedt voor e-commerce bedrijven, waardoor conversiepercentages met 45% zijn toegenomen."
+      },
+      "ecommerce": {
+        "title": "LuxuryGoods E-commerce Platform",
+        "description": "Een high-end e-commerce platform met AR-productvisualisatie, gepersonaliseerde aanbevelingen en een naadloze checkout-flow."
+      },
+      "banking": {
+        "title": "SecureBank Financieel Dashboard",
+        "description": "Een veilig bankdashboard met realtime analyses, transactiemonitoring en geavanceerde fraudedetectiesystemen."
+      },
+      "messaging": {
+        "title": "ConnectNow Berichtenplatform",
+        "description": "Een realtime berichtenplatform met end-to-end encryptie, spraak/videogesprekken en naadloze bestandsdelingmogelijkheden."
+      },
+      "events": {
+        "title": "TicketMaster Evenementenplatform",
+        "description": "Een uitgebreid evenementenbeheerplatform met ticketing, stoelselectie en realtime analyses voor evenementorganisatoren."
+      },
+      "iot": {
+        "title": "SmartHome IoT Bedieningscentrum",
+        "description": "Een geïntegreerd IoT-platform voor het bedienen van smart home-apparaten met spraakopdrachten, automatiseringsregels en energieoptimalisatie."
+      },
+      "education": {
+        "title": "EduLearn Virtueel Klaslokaal",
+        "description": "Een interactief virtueel klaslokaalplatform met live sessies, samenwerkingstools en uitgebreide leermanagementfuncties."
+      },
+      "financial": {
+        "title": "MarketInsight Analysedashboard",
+        "description": "Een datavisualisatieplatform voor financiële markten met realtime updates, voorspellende modellen en aanpasbare dashboards."
+      }
     }
   },
   "newsletter": {
