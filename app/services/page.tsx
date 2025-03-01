@@ -214,7 +214,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-teal-600 dark:text-teal-400 font-medium flex items-center hover:text-teal-700 dark:hover:text-teal-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -253,7 +253,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-amber-600 dark:text-amber-400 font-medium flex items-center hover:text-amber-700 dark:hover:text-amber-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -292,7 +292,7 @@ const ServicesPage = () => {
                   </li>
                 </ul>
                 <Link href="/contact" className="text-rose-600 dark:text-rose-400 font-medium flex items-center hover:text-rose-700 dark:hover:text-rose-300">
-                  Learn More
+                  {t('services.learnMore')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -327,9 +327,9 @@ const ServicesPage = () => {
                 <div className="relative z-10 mb-12">
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Discovery & Planning</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.discovery.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We start by understanding your business goals, target audience, and project requirements to create a detailed roadmap.
+                        {t('process.steps.discovery.description')}
                       </p>
                     </div>
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary-100 dark:bg-primary-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
@@ -341,19 +341,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Requirements gathering
+                          {t('process.steps.discovery.points.0')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Market research
+                          {t('process.steps.discovery.points.1')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-primary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Strategic planning
+                          {t('process.steps.discovery.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -369,19 +369,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Wireframing and prototyping
+                          {t('process.steps.design.points.0')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          User experience design
+                          {t('process.steps.design.points.1')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-secondary-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Visual design
+                          {t('process.steps.design.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -389,9 +389,9 @@ const ServicesPage = () => {
                       <span className="text-2xl font-bold text-secondary-600 dark:text-secondary-400">2</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Design & Prototyping</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.design.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We create intuitive user interfaces and engaging user experiences that align with your brand and business objectives.
+                        {t('process.steps.design.description')}
                       </p>
                     </div>
                   </div>
@@ -401,9 +401,9 @@ const ServicesPage = () => {
                 <div className="relative z-10 mb-12">
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-12 md:text-right">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Development & Testing</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.development.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Our experienced developers build your solution using cutting-edge technologies, with rigorous testing at every stage.
+                        {t('process.steps.development.description')}
                       </p>
                     </div>
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900/50 border-4 border-white dark:border-gray-900 flex items-center justify-center z-10 shadow-lg">
@@ -415,19 +415,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Agile development
+                          {t('process.steps.development.points.0')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Continuous integration
+                          {t('process.steps.development.points.1')}
                         </li>
                         <li className="flex items-center text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Quality assurance
+                          {t('process.steps.development.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -443,19 +443,19 @@ const ServicesPage = () => {
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Deployment
+                          {t('process.steps.support.points.0')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Training & documentation
+                          {t('process.steps.support.points.1')}
                         </li>
                         <li className="flex items-center justify-end text-gray-600 dark:text-gray-400">
                           <svg className="w-5 h-5 mr-2 text-teal-500" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
-                          Ongoing support
+                          {t('process.steps.support.points.2')}
                         </li>
                       </ul>
                     </div>
@@ -463,9 +463,9 @@ const ServicesPage = () => {
                       <span className="text-2xl font-bold text-teal-600 dark:text-teal-400">4</span>
                     </div>
                     <div className="md:w-1/2 md:pl-12 mt-6 md:mt-0 order-3 md:order-3">
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Launch & Support</h3>
+                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">{t('process.steps.support.title')}</h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        We ensure a smooth deployment and provide ongoing maintenance and support to keep your digital solution running optimally.
+                        {t('process.steps.support.description')}
                       </p>
                     </div>
                   </div>

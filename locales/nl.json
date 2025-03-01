@@ -402,20 +402,50 @@
   "contact": {
     "heading": "Neem Contact Op",
     "subheading": "Heeft u een vraag of wilt u samenwerken?",
+    "description": "Klaar om uw digitale transformatie te starten? Neem contact op met ons team om te bespreken hoe we uw visie tot leven kunnen brengen.",
+    "visitOffice": "Bezoek Ons Kantoor",
     "form": {
       "name": "Uw Naam",
       "email": "E-mailadres",
+      "namePlaceholder": "Jan Jansen",
+      "emailPlaceholder": "uw@bedrijf.nl",
       "phone": "Telefoonnummer (Optioneel)",
       "message": "Bericht",
       "subject": "Onderwerp",
-      "submit": "Verstuur Bericht"
+      "submit": "Verstuur Bericht",
+      "heading": "Laten we Iets Buitengewoons Bouwen",
+      "startProject": "Start Uw Project",
+      "formDescription": "Vul het onderstaande formulier in en we nemen binnen 24 uur contact met u op.",
+      "submitButton": "Verstuur Aanvraag",
+      "secure": "Uw informatie is veilig en versleuteld",
+      "description": "Of u nu een specifiek project in gedachten heeft of gewoon mogelijkheden wilt verkennen, ons team staat klaar om u te helpen navigeren in het digitale landschap en uw doelen te bereiken."
     },
     "info": {
-      "heading": "Contactgegevens",
-      "address": "123 Zakelijke Straat, Stad, 12345",
+      "heading": "Hoe U Ons Kunt Bereiken",
+      "address": "123 Innovatielaan<br/>Amsterdam, 1012 AB",
       "phone": "(555) 123-4567",
       "email": "info@nexusdigital.com",
-      "hours": "Maandag - Vrijdag: 9:00 - 17:00"
+      "hours": "Maandag - Vrijdag: 9:00 - 17:00",
+      "callUsDirectly": "Bel Ons Direct",
+      "emailUs": "E-mail Ons",
+      "response": "We reageren binnen 24 uur",
+      "visitOffice": "Bezoek Ons Kantoor",
+      "viewMap": "Bekijk op kaart",
+      "connectWithUs": "Verbind Met Ons"
+    },
+    "offices": {
+      "globalPresence": "Onze Wereldwijde Aanwezigheid",
+      "title": "Bezoek Onze Kantoren",
+      "description": "We hebben kantoren op strategische locaties om onze wereldwijde klanten beter van dienst te zijn. Kom gerust langs voor een koffie en een gesprek.",
+      "ourLocations": "Onze Locaties"
+    },
+    "faq": {
+      "label": "Veelgestelde Vragen",
+      "title": "Veelgestelde Vragen",
+      "description": "Alles wat u moet weten over samenwerken met ons team en ons ontwikkelingsproces.",
+      "moreQuestions": "Nog vragen? We zijn er om te helpen.",
+      "sendMessage": "Stuur Ons een Bericht",
+      "callUs": "Bel Ons"
     }
   },
   "about": {
@@ -495,6 +525,14 @@
     },
     "teamTitle": "Ontmoet Ons Team",
     "teamDescription": "De creatieve geesten achter onze uitzonderlijke digitale oplossingen.",
+    "leadershipTeam": {
+      "title": "Ontmoet Ons Leiderschapsteam",
+      "description": "Ons diverse team brengt ervaring samen van enkele van 's werelds meest innovatieve bedrijven."
+    },
+    "teamOrbit": {
+      "title": "Nexus Team",
+      "description": "80+ Digitale Experts"
+    },
     "teamMembers": {
       "leadership": {
         "title": "Leiderschapsteam",
@@ -571,11 +609,30 @@
         "label": "Brancheprijzen"
       },
       "team": {
-        "number": "50+",
+        "number": "80+",
         "label": "Teamleden"
+      },
+      "countries": {
+        "number": "15",
+        "label": "Landen Bediend"
+      },
+      "years": {
+        "number": "8",
+        "label": "Jaren van Excellentie"
       }
     },
-    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Nexus Digital gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid."
+    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Nexus Digital gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid.",
+    "cta": {
+      "heading": "Klaar om met ons samen te werken?",
+      "description": "Laten we bespreken hoe we u kunnen helpen uw digitale doelen te bereiken en uitzonderlijke ervaringen voor uw gebruikers te creëren.",
+      "section": {
+        "title": "Start een gesprek",
+        "description": "Deel uw projectideeën met ons, en laten we onderzoeken hoe we ze tot leven kunnen brengen.",
+        "button": "Neem Contact Op"
+      },
+      "tagline": "Laten we creëren",
+      "taglineDescription": "Digitale ervaringen die ertoe doen"
+    }
   },
   "settings": {
     "language": "Taal",

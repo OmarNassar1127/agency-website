@@ -402,20 +402,50 @@
   "contact": {
     "heading": "Contact Us",
     "subheading": "Have a question or want to work together?",
+    "description": "Ready to start your digital transformation? Contact our team to discuss how we can help bring your vision to life.",
+    "visitOffice": "Visit Our Office",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "you@company.com",
       "phone": "Phone Number (Optional)",
       "message": "Message",
       "subject": "Subject",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "heading": "Let's Build Something Extraordinary",
+      "startProject": "Start Your Project",
+      "formDescription": "Fill out the form below and we'll get back to you within 24 hours.",
+      "submitButton": "Submit Request",
+      "secure": "Your information is secure and encrypted",
+      "description": "Whether you have a specific project in mind or just want to explore possibilities, our team is ready to help you navigate the digital landscape and achieve your goals."
     },
     "info": {
-      "heading": "Contact Information",
-      "address": "123 Business Street, City, 12345",
+      "heading": "How to Reach Us",
+      "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
       "phone": "(555) 123-4567",
       "email": "info@nexusdigital.com",
-      "hours": "Monday - Friday: 9am - 5pm"
+      "hours": "Monday - Friday: 9am - 6pm PST",
+      "callUsDirectly": "Call Us Directly",
+      "emailUs": "Email Us",
+      "response": "We respond within 24 hours",
+      "visitOffice": "Visit Our Office",
+      "viewMap": "View on map",
+      "connectWithUs": "Connect With Us"
+    },
+    "offices": {
+      "globalPresence": "Our Global Presence",
+      "title": "Visit Our Offices",
+      "description": "We have offices in strategic locations to better serve our global clients. Feel free to stop by for a coffee and a chat.",
+      "ourLocations": "Our Locations"
+    },
+    "faq": {
+      "label": "Common Questions",
+      "title": "Frequently Asked Questions",
+      "description": "Everything you need to know about working with our team and our development process.",
+      "moreQuestions": "Still have questions? We're here to help.",
+      "sendMessage": "Send Us a Message",
+      "callUs": "Call Us"
     }
   },
   "about": {
@@ -495,24 +525,42 @@
     },
     "teamTitle": "Meet Our Team",
     "teamDescription": "The creative minds behind our exceptional digital solutions.",
+    "leadershipTeam": {
+      "title": "Meet Our Leadership Team",
+      "description": "Our diverse team brings together experience from some of the world's most innovative companies."
+    },
+    "teamOrbit": {
+      "title": "Nexus Team",
+      "description": "80+ Digital Experts"
+    },
     "teamMembers": {
       "leadership": {
         "title": "Leadership Team",
         "members": [
           {
-            "name": "Sarah Johnson",
-            "position": "CEO & Co-Founder",
-            "bio": "With 15+ years in tech leadership, Sarah drives our strategic vision and growth initiatives."
+            "name": "James Anderson",
+            "position": "CEO",
+            "bio": "With 15+ years in tech leadership, James drives our strategic vision and growth initiatives."
           },
           {
-            "name": "Michael Chen",
-            "position": "CTO & Co-Founder",
+            "name": "Sophia Martinez",
+            "position": "CTO",
             "bio": "A brilliant technologist who oversees our technical strategy and innovation efforts."
           },
           {
             "name": "David Rodriguez",
             "position": "Creative Director",
             "bio": "Award-winning designer with a passion for creating beautiful, functional digital experiences."
+          },
+          {
+            "name": "Emily Wong",
+            "position": "Director of Operations",
+            "bio": "Keeps our projects running smoothly and ensures exceptional delivery for all clients."
+          },
+          {
+            "name": "Michael Li",
+            "position": "Lead Developer",
+            "bio": "Technical mastermind behind our most complex and innovative solutions."
           }
         ]
       },
@@ -558,21 +606,30 @@
       }
     },
     "stats": {
-      "clients": {
-        "number": "100+",
-        "label": "Happy Clients"
-      },
       "projects": {
         "number": "250+",
         "label": "Projects Completed"
       },
-      "awards": {
-        "number": "15+",
-        "label": "Industry Awards"
-      },
       "team": {
-        "number": "50+",
+        "number": "80+",
         "label": "Team Members"
+      },
+      "countries": {
+        "number": "15",
+        "label": "Countries Served"
+      },
+      "years": {
+        "number": "8",
+        "label": "Years of Excellence"
+      }
+    },
+    "cta": {
+      "heading": "Ready to Work With Us?",
+      "description": "Let's discuss how we can help you achieve your digital goals and create exceptional experiences for your users.",
+      "section": {
+        "title": "Start a Conversation",
+        "description": "Share your project ideas with us, and let's explore how we can bring them to life.",
+        "button": "Contact Us"
       }
     },
     "journey": "Founded in 2015 with a mission to bridge the gap between business strategy and technological innovation, Nexus Digital has grown from a small team of passionate developers to a full-service digital agency with global reach. Our journey has been marked by continuous learning, adaptation, and a relentless commitment to excellence."

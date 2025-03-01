@@ -236,15 +236,13 @@ export default function AboutPage() {
                     </div>
                     <div className="md:w-1/2 md:pl-16 mt-6 md:mt-0 md:text-left order-3 md:order-1">
                       <span className="text-secondary-600 dark:text-secondary-400 font-bold text-sm uppercase tracking-wider mb-2 block">
-                        Rapid Growth
+                        {t('about.timeline.2017.label')}
                       </span>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        2017 - First Office & Expansion
+                        {t('about.timeline.2017.title')}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Moved into our first official office space and expanded
-                        to a team of 15. Completed our 50th project and secured
-                        our first major enterprise client.
+                        {t('about.timeline.2017.description')}
                       </p>
                     </div>
                   </div>
@@ -255,15 +253,13 @@ export default function AboutPage() {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-16 md:text-right order-2 md:order-1">
                       <span className="text-purple-600 dark:text-purple-400 font-bold text-sm uppercase tracking-wider mb-2 block">
-                        Innovation
+                        {t('about.timeline.2019.label')}
                       </span>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        2019 - AI Division Launch
+                        {t('about.timeline.2019.title')}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Launched our dedicated AI solutions division, focusing
-                        on machine learning and predictive analytics. Won our
-                        first industry award for innovation.
+                        {t('about.timeline.2019.description')}
                       </p>
                     </div>
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 border-4 border-white dark:border-gray-950 flex items-center justify-center z-10 shadow-lg order-1 md:order-2">
@@ -330,15 +326,13 @@ export default function AboutPage() {
                     </div>
                     <div className="md:w-1/2 md:pl-16 mt-6 md:mt-0 md:text-left order-3 md:order-1">
                       <span className="text-teal-600 dark:text-teal-400 font-bold text-sm uppercase tracking-wider mb-2 block">
-                        Global Expansion
+                        {t('about.timeline.2021.label')}
                       </span>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        2021 - International Offices
+                        {t('about.timeline.2021.title')}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Expanded to New York, London, and Singapore. Team grew
-                        to over 50 professionals across development, design, and
-                        marketing disciplines.
+                        {t('about.timeline.2021.description')}
                       </p>
                     </div>
                   </div>
@@ -349,16 +343,13 @@ export default function AboutPage() {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-16 md:text-right order-2 md:order-1">
                       <span className="text-rose-600 dark:text-rose-400 font-bold text-sm uppercase tracking-wider mb-2 block">
-                        Today & Beyond
+                        {t('about.timeline.2023.label')}
                       </span>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        2023 - Present Day
+                        {t('about.timeline.2023.title')}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Today, we're a team of 80+ digital experts working with
-                        clients across 15 countries. We've completed over 250
-                        projects and continue to push the boundaries of what's
-                        possible in digital.
+                        {t('about.timeline.present.description')}
                       </p>
                     </div>
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-rose-500 to-rose-600 border-4 border-white dark:border-gray-950 flex items-center justify-center z-10 shadow-lg order-1 md:order-2">
@@ -549,15 +540,14 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                      Innovation
+                      {t('about.values.innovation.title')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                      We embrace new technologies and approaches, constantly
-                      exploring better ways to solve problems.
+                      {t('about.values.innovation.description')}
                     </p>
                     <div className="mt-auto">
                       <button className="text-secondary-600 dark:text-secondary-400 font-medium flex items-center group-hover:text-secondary-700 dark:group-hover:text-secondary-300">
-                        Learn More
+                        {t('about.values.learnMore')}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5 ml-1"
@@ -657,15 +647,14 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                      Collaboration
+                      {t('about.values.collaboration.title')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                      We believe in the power of teamwork – both within our team
-                      and with our clients.
+                      {t('about.values.collaboration.description')}
                     </p>
                     <div className="mt-auto">
                       <button className="text-purple-600 dark:text-purple-400 font-medium flex items-center group-hover:text-purple-700 dark:group-hover:text-purple-300">
-                        Learn More
+                        {t('about.values.learnMore')}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5 ml-1"
@@ -754,16 +743,15 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
                 <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                  The People Behind Our Success
+                  {t('about.teamTitle')}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                Meet Our <span className="gradient-text">Leadership Team</span>
+                {t('about.leadershipTeam.title').split(' ')[0]} <span className="gradient-text">{t('about.leadershipTeam.title').split(' ').slice(1).join(' ')}</span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Our diverse team brings together experience from some of the
-                world's most innovative companies.
+                {t('about.leadershipTeam.description')}
               </p>
             </div>
 
@@ -773,10 +761,10 @@ export default function AboutPage() {
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] rounded-full bg-gradient-to-br from-primary-500/20 to-secondary-500/20 backdrop-blur flex items-center justify-center z-10">
                 <div className="text-center">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
-                    Nexus Team
+                    {t('about.teamOrbit.title')}
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 text-sm">
-                    80+ Digital Experts
+                    {t('about.teamOrbit.description')}
                   </p>
                 </div>
               </div>
@@ -807,10 +795,10 @@ export default function AboutPage() {
                     </div>
                     <div className="mt-3 text-center">
                       <h4 className="font-bold text-gray-900 dark:text-white">
-                        James Anderson
+                        {t('about.teamMembers.leadership.members.0.name') || "James Anderson"}
                       </h4>
                       <p className="text-primary-600 dark:text-primary-400 text-sm">
-                        CEO
+                        {t('about.teamMembers.leadership.members.0.position') || "CEO"}
                       </p>
                     </div>
                   </div>
@@ -1019,42 +1007,40 @@ export default function AboutPage() {
               <div className="counter-item">
                 <div className="text-5xl md:text-6xl font-bold font-display text-white mb-2">
                   <span className="counter-value" data-target="250">
-                    250
+                    {t('about.stats.projects.number')}
                   </span>
-                  <span className="text-secondary-400">+</span>
                 </div>
-                <p className="text-lg text-white/80">Projects Completed</p>
+                <p className="text-lg text-white/80">{t('about.stats.projects.label')}</p>
               </div>
 
               {/* Stat 2 */}
               <div className="counter-item">
                 <div className="text-5xl md:text-6xl font-bold font-display text-white mb-2">
                   <span className="counter-value" data-target="80">
-                    80
+                    {t('about.stats.team.number')}
                   </span>
-                  <span className="text-secondary-400">+</span>
                 </div>
-                <p className="text-lg text-white/80">Team Members</p>
+                <p className="text-lg text-white/80">{t('about.stats.team.label')}</p>
               </div>
 
               {/* Stat 3 */}
               <div className="counter-item">
                 <div className="text-5xl md:text-6xl font-bold font-display text-white mb-2">
                   <span className="counter-value" data-target="15">
-                    15
+                    {t('about.stats.countries.number')}
                   </span>
                 </div>
-                <p className="text-lg text-white/80">Countries Served</p>
+                <p className="text-lg text-white/80">{t('about.stats.countries.label')}</p>
               </div>
 
               {/* Stat 4 */}
               <div className="counter-item">
                 <div className="text-5xl md:text-6xl font-bold font-display text-white mb-2">
                   <span className="counter-value" data-target="8">
-                    8
+                    {t('about.stats.years.number')}
                   </span>
                 </div>
-                <p className="text-lg text-white/80">Years of Excellence</p>
+                <p className="text-lg text-white/80">{t('about.stats.years.label')}</p>
               </div>
             </div>
           </div>
@@ -1065,28 +1051,26 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-                Ready to Work With Us?
+                {t('about.cta.heading')}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-10">
-                Let's discuss how we can help you achieve your digital goals and
-                create exceptional experiences for your users.
+                {t('about.cta.description')}
               </p>
 
               <div className="bg-gradient-to-r from-primary-600 to-secondary-600 p-1 rounded-xl shadow-xl">
                 <div className="bg-white dark:bg-gray-900 rounded-lg p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div className="text-left">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                      Start a Conversation
+                      {t('about.cta.section.title')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                      Share your project ideas with us, and let's explore how we
-                      can bring them to life.
+                      {t('about.cta.section.description')}
                     </p>
                     <Link
                       href="/contact"
                       className="btn-lg btn-primary inline-flex items-center"
                     >
-                      <span className="mr-2">Contact Us</span>
+                      <span className="mr-2">{t('about.cta.section.button')}</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-5 w-5"
@@ -1103,10 +1087,10 @@ export default function AboutPage() {
                   </div>
                   <div className="text-center md:text-right">
                     <span className="inline-block text-5xl font-display font-bold gradient-text mb-4">
-                      Let's Create
+                      {t('about.cta.tagline') || "Let's Create"}
                     </span>
                     <p className="text-gray-600 dark:text-gray-300">
-                      Digital experiences that matter
+                      {t('about.cta.taglineDescription') || "Digital experiences that matter"}
                     </p>
                   </div>
                 </div>
