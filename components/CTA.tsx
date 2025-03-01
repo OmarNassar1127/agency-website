@@ -108,7 +108,7 @@ const CTA = () => {
                       type="email" 
                       id="email" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
-                      placeholder="your@email.com"
+                      placeholder={t('newsletter.placeholder')}
                     />
                   </div>
                   
@@ -123,9 +123,9 @@ const CTA = () => {
                       <option value="" className="bg-gray-900">{t('cta.form.selectType')}</option>
                       <option value="web-app" className="bg-gray-900">{t('services.webDev.title')}</option>
                       <option value="mobile-app" className="bg-gray-900">{t('services.mobileDev.title')}</option>
-                      <option value="custom-software" className="bg-gray-900">Custom Software</option>
+                      <option value="custom-software" className="bg-gray-900">{t('services.items.customSoftware.title')}</option>
                       <option value="cloud-solutions" className="bg-gray-900">{t('services.cloudSolutions.title')}</option>
-                      <option value="ai-ml" className="bg-gray-900">AI & Machine Learning</option>
+                      <option value="ai-ml" className="bg-gray-900">{t('services.items.aiMl.title')}</option>
                     </select>
                   </div>
                   

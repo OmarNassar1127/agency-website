@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 // export const metadata = {
 //   title: "About Us - Nexus Digital Agency",
@@ -12,6 +13,7 @@ import Link from "next/link";
 // };
 
 export default function AboutPage() {
+  const { t } = useLanguage();
   return (
     <main>
       <Navbar />
@@ -70,19 +72,18 @@ export default function AboutPage() {
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
               <span className="text-sm font-medium text-white/80">
-                Our Story
+                {t('about.ourStory')}
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-              We Are{" "}
+              {t('about.heading.start')}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 animate-gradient-x">
-                Nexus Digital
+                {t('about.heading.highlight')}
               </span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              A collective of digital craftspeople turning innovative ideas into
-              extraordinary digital experiences.
+              {t('about.subheading')}
             </p>
 
             {/* Creative intro animation - replacing standard buttons */}
@@ -94,10 +95,10 @@ export default function AboutPage() {
                     <span className="text-secondary-400">nexusTeam</span> = [
                     <br />
                     <span className="ml-4">
-                      passion, expertise, innovation, creativity
+                      {t("about.codeAnimation.line2")}
                     </span>
                     <br />
-                    ];
+                    {t("about.codeAnimation.line3")}
                     <br />
                     <br />
                     <span className="text-primary-400">function</span>{" "}
@@ -110,9 +111,9 @@ export default function AboutPage() {
                       <span className="text-primary-400">return</span>{" "}
                       nexusTeam.reduce((product, value) =&gt; <br />{" "}
                     </span>
-                    <span className="ml-8">product.enhancedWith(value),</span>
+                    <span className="ml-8">{t("about.codeAnimation.line6")}</span>
                     <br />
-                    <span className="ml-8">new Solution()</span>
+                    <span className="ml-8">{t("about.codeAnimation.line7")}</span>
                     <br />
                     <span className="ml-4">);</span>
                     <br />
@@ -120,7 +121,7 @@ export default function AboutPage() {
                     <br />
                     <br />
                     <span className="text-primary-400">
-                      // Let's build something amazing together
+                      {t("about.codeAnimation.line10")}
                     </span>
                   </p>
                 </div>
@@ -135,19 +136,18 @@ export default function AboutPage() {
             <div className="mb-16 text-center">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
                 <span className="text-sm font-medium text-primary-700 dark:text-primary-300">
-                  Our Journey
+                  {t('about.journeyTitle')}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                From{" "}
+                {t('about.journeySubtitle').split(' ')[0]}{" "}
                 <span className="gradient-text">
-                  Startup to Industry Leader
+                  {t('about.journeySubtitle').split(' ').slice(1).join(' ')}
                 </span>
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                A journey of innovation, growth, and digital excellence that
-                started with a simple idea.
+                {t('about.journeyDescription')}
               </p>
             </div>
 
@@ -163,15 +163,13 @@ export default function AboutPage() {
                   <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-6 md:mb-0 md:pr-16 md:text-right order-2 md:order-1">
                       <span className="text-primary-600 dark:text-primary-400 font-bold text-sm uppercase tracking-wider mb-2 block">
-                        The Beginning
+                        {t('about.timeline.2015.label')}
                       </span>
                       <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
-                        2015 - Nexus Digital Founded
+                        {t('about.timeline.2015.title')}
                       </h3>
                       <p className="text-gray-600 dark:text-gray-300">
-                        Founded by three college friends with a shared vision to
-                        transform how businesses interact with technology.
-                        Started in a small apartment with just 3 clients.
+                        {t('about.timeline.2015.description')}
                       </p>
                     </div>
                     <div className="flex-shrink-0 w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 border-4 border-white dark:border-gray-950 flex items-center justify-center z-10 shadow-lg order-1 md:order-2">
@@ -407,16 +405,15 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-secondary-50 dark:bg-secondary-950/60">
                 <span className="text-sm font-medium text-secondary-700 dark:text-secondary-300">
-                  What Drives Us
+                  {t('about.valuesTitle')}
                 </span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-gray-900 dark:text-white">
-                Our Core <span className="gradient-text">Values</span>
+                {t('about.valuesTitle')}
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                These principles guide every decision we make and every line of
-                code we write.
+                {t('about.values.description') || "These principles guide every decision we make and every line of code we write."}
               </p>
             </div>
 
@@ -444,15 +441,14 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                      Excellence
+                      {t('about.values.innovation.title')}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                      We strive for excellence in everything we do, from the
-                      code we write to the strategies we develop.
+                      {t('about.values.innovation.description')}
                     </p>
                     <div className="mt-auto">
                       <button className="text-primary-600 dark:text-primary-400 font-medium flex items-center group-hover:text-primary-700 dark:group-hover:text-primary-300">
-                        Learn More
+                        {t('about.values.learnMore')}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           className="h-5 w-5 ml-1"

@@ -217,7 +217,11 @@
     }
   },
   "about": {
-    "heading": "We Are Nexus Digital",
+    "ourStory": "Our Story",
+    "heading": {
+      "start": "We Are",
+      "highlight": "Nexus Digital"
+    },
     "subheading": "A collective of digital craftspeople turning innovative ideas into extraordinary digital experiences.",
     "journeyTitle": "Our Journey",
     "journeySubtitle": "From Startup to Industry Leader",

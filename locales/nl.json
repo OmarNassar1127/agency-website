@@ -6,7 +6,15 @@
     "about": "Over Ons",
     "contact": "Contact",
     "startProject": "Start een project",
-    "getQuote": "Vraag offerte aan"
+    "getQuote": "Vraag offerte aan",
+    "logo": {
+      "first": "Nexus",
+      "second": "Digital"
+    },
+    "contactInfo": {
+      "phone": "(555) 123-4567",
+      "email": "info@nexusdigital.com"
+    }
   },
   "footer": {
     "contactInfo": "Contactgegevens",
@@ -30,7 +38,24 @@
     "companyDescription": "Wij bouwen innovatieve digitale oplossingen die bedrijven in staat stellen te gedijen in een steeds meer verbonden wereld. Onze aangepaste software transformeert bedrijfsprocessen en zorgt voor concurrentievoordeel.",
     "yearsExperience": "Jaren Ervaring",
     "projectsCompleted": "Voltooide Projecten",
-    "expertDevelopers": "Expert Ontwikkelaars"
+    "expertDevelopers": "Expert Ontwikkelaars",
+    "logo": {
+      "first": "Nexus",
+      "second": "Digital"
+    },
+    "serviceLinks": {
+      "customSoftware": "Maatwerk Software",
+      "webDevelopment": "Webapplicaties",
+      "mobileDevelopment": "Mobiele Ontwikkeling",
+      "cloudSolutions": "Cloud Oplossingen",
+      "aiML": "AI & Machine Learning",
+      "devOps": "DevOps & CI/CD"
+    },
+    "contactDetails": {
+      "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
+      "phone": "(555) 123-4567",
+      "email": "info@nexusdigital.com"
+    }
   },
   "hero": {
     "preheading": "Revolutionaire Digitale Oplossingen",
@@ -45,7 +70,13 @@
       "experience": "Branche-ervaring"
     },
     "trustedBy": {
-      "heading": "Vertrouwd door innovatieve bedrijven wereldwijd"
+      "heading": "Vertrouwd door innovatieve bedrijven wereldwijd",
+      "brands": ["TechCorp", "Innovate", "GlobalSoft", "FutureTech", "ZenithSystems"]
+    },
+    "techStack": {
+      "react": "React",
+      "nodejs": "Node.js",
+      "typescript": "TypeScript"
     }
   },
   "services": {
@@ -378,13 +409,63 @@
     }
   },
   "about": {
-    "heading": "Wij Zijn Nexus Digital",
+    "ourStory": "Ons Verhaal",
+    "heading": {
+      "start": "Wij Zijn",
+      "highlight": "Nexus Digital"
+    },
     "subheading": "Een collectief van digitale ambachtslieden die innovatieve ideeën omzetten in buitengewone digitale ervaringen.",
+    "codeAnimation": {
+      "line1": "const nexusTeam = [",
+      "line2": "passie, expertise, innovatie, creativiteit",
+      "line3": "];",
+      "line4": "function creëerDigitaleMagie() {",
+      "line5": "return nexusTeam.reduce((product, value) =>",
+      "line6": "product.verbeterdMet(value),",
+      "line7": "new Oplossing()",
+      "line8": ");",
+      "line9": "}",
+      "line10": "// Laten we samen iets geweldigs bouwen"
+    },
     "journeyTitle": "Onze Reis",
     "journeySubtitle": "Van Startup tot Marktleider",
-    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Nexus Digital gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid.",
+    "journeyDescription": "Een reis van innovatie, groei en digitale excellentie die begon met een eenvoudig idee.",
+    "timeline": {
+      "2015": {
+        "label": "Het Begin",
+        "title": "2015 - Nexus Digital Opgericht",
+        "description": "Opgericht door drie studievrienden met een gedeelde visie om te transformeren hoe bedrijven met technologie omgaan. Begonnen in een klein appartement met slechts 3 klanten."
+      },
+      "2017": {
+        "label": "Groeifase",
+        "title": "2017 - Eerste Kantoor & Teamuitbreiding",
+        "description": "Verhuisd naar onze eerste officiële kantoorruimte en uitgebreid naar een team van 15 getalenteerde individuen. Ons eerste project op ondernemingsniveau voltooid."
+      },
+      "2019": {
+        "label": "Internationaal Gaan",
+        "title": "2019 - Internationale Uitbreiding",
+        "description": "Ons eerste internationale kantoor geopend en begonnen met het bedienen van klanten op drie continenten. Erkend als een top opkomend digitaal bureau."
+      },
+      "2021": {
+        "label": "Innovatie Hub",
+        "title": "2021 - Innovatielab Gelanceerd",
+        "description": "Onze speciale R&D-faciliteit opgezet om opkomende technologieën zoals AI, AR/VR en blockchain te verkennen, en oplossingen te creëren voor de uitdagingen van morgen."
+      },
+      "2023": {
+        "label": "Marktleiderschap",
+        "title": "2023 - Branche-erkenning",
+        "description": "Erkend met meerdere brancheprijzen voor onze innovatieve aanpak en uitzonderlijke klantresultaten. Uitgebreid naar een team van meer dan 50 digitale experts."
+      },
+      "present": {
+        "label": "Vandaag",
+        "title": "Heden - Vormgeven van Digitale Toekomsten",
+        "description": "We blijven grenzen verleggen en transformatieve digitale ervaringen creëren voor vooruitstrevende bedrijven over de hele wereld."
+      }
+    },
     "valuesTitle": "Onze Kernwaarden",
     "values": {
+      "description": "Deze principes leiden elke beslissing die we nemen en elke regel code die we schrijven.",
+      "learnMore": "Meer Informatie",
       "innovation": {
         "title": "Innovatie",
         "description": "We blijven voorop lopen in technologie om cutting-edge oplossingen te leveren."
@@ -403,10 +484,95 @@
       }
     },
     "teamTitle": "Ontmoet Ons Team",
-    "teamDescription": "De creatieve geesten achter onze uitzonderlijke digitale oplossingen."
+    "teamDescription": "De creatieve geesten achter onze uitzonderlijke digitale oplossingen.",
+    "teamMembers": {
+      "leadership": {
+        "title": "Leiderschapsteam",
+        "members": [
+          {
+            "name": "Sarah Johnson",
+            "position": "CEO & Mede-oprichter",
+            "bio": "Met meer dan 15 jaar ervaring in tech-leiderschap, stuurt Sarah onze strategische visie en groei-initiatieven."
+          },
+          {
+            "name": "Michael Chen",
+            "position": "CTO & Mede-oprichter",
+            "bio": "Een briljante technoloog die toezicht houdt op onze technische strategie en innovatie-inspanningen."
+          },
+          {
+            "name": "David Rodriguez",
+            "position": "Creatief Directeur",
+            "bio": "Bekroonde ontwerper met een passie voor het creëren van mooie, functionele digitale ervaringen."
+          }
+        ]
+      },
+      "development": {
+        "title": "Ontwikkelingsteam",
+        "members": [
+          {
+            "name": "Emily Wong",
+            "position": "Lead Frontend Ontwikkelaar",
+            "bio": "React-expert gespecialiseerd in het creëren van intuïtieve gebruikersinterfaces."
+          },
+          {
+            "name": "James Taylor",
+            "position": "Backend Architect",
+            "bio": "Infrastructuurgenie die schaalbare, veilige backend-systemen bouwt."
+          },
+          {
+            "name": "Priya Patel",
+            "position": "Mobile Development Lead",
+            "bio": "Gepassioneerd over het creëren van naadloze mobiele ervaringen op alle platforms."
+          }
+        ]
+      },
+      "design": {
+        "title": "Ontwerpteam",
+        "members": [
+          {
+            "name": "Thomas Wright",
+            "position": "UX Research Lead",
+            "bio": "Toegewijd aan het begrijpen van gebruikersbehoeften en het vertalen ervan naar effectieve ontwerpen."
+          },
+          {
+            "name": "Sofia Garcia",
+            "position": "UI Ontwerper",
+            "bio": "Creëert visueel verbluffende interfaces die gebruikers boeien en verrukken."
+          },
+          {
+            "name": "Lucas Kim",
+            "position": "Motion Design Specialist",
+            "bio": "Brengt interfaces tot leven door doordachte animaties en overgangen."
+          }
+        ]
+      }
+    },
+    "stats": {
+      "clients": {
+        "number": "100+",
+        "label": "Tevreden Klanten"
+      },
+      "projects": {
+        "number": "250+",
+        "label": "Voltooide Projecten"
+      },
+      "awards": {
+        "number": "15+",
+        "label": "Brancheprijzen"
+      },
+      "team": {
+        "number": "50+",
+        "label": "Teamleden"
+      }
+    },
+    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Nexus Digital gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid."
   },
   "settings": {
     "language": "Taal",
+    "languages": {
+      "en": "English",
+      "nl": "Nederlands"
+    },
     "theme": {
       "label": "Thema",
       "light": "Licht",

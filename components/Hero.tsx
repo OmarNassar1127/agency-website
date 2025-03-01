@@ -128,9 +128,9 @@ const Hero = () => {
               
               {/* Tech stack badges */}
               <div className="absolute -right-4 -bottom-4 hidden lg:flex flex-col space-y-2">
-                <div className="badge badge-primary">React</div>
-                <div className="badge badge-secondary">Node.js</div>
-                <div className="badge bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">TypeScript</div>
+                <div className="badge badge-primary">{t('hero.techStack.react')}</div>
+                <div className="badge badge-secondary">{t('hero.techStack.nodejs')}</div>
+                <div className="badge bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">{t('hero.techStack.typescript')}</div>
               </div>
             </div>
           </div>

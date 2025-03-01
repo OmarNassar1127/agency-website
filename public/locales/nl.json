@@ -378,7 +378,11 @@
     }
   },
   "about": {
-    "heading": "Wij Zijn Nexus Digital",
+    "ourStory": "Ons Verhaal",
+    "heading": {
+      "start": "Wij Zijn",
+      "highlight": "Nexus Digital"
+    },
     "subheading": "Een collectief van digitale ambachtslieden die innovatieve ideeën omzetten in buitengewone digitale ervaringen.",
     "journeyTitle": "Onze Reis",
     "journeySubtitle": "Van Startup tot Marktleider",

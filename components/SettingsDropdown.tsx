@@ -63,7 +63,7 @@ const SettingsDropdown = () => {
                   }`}
                   onClick={() => setLanguage('nl')}
                 >
-                  Nederlands
+                  {t('settings.languages.nl')}
                 </button>
                 <button
                   className={`px-3 py-1.5 text-sm flex-1 transition-colors ${
@@ -73,7 +73,7 @@ const SettingsDropdown = () => {
                   }`}
                   onClick={() => setLanguage('en')}
                 >
-                  English
+                  {t('settings.languages.en')}
                 </button>
               </div>
             </div>
