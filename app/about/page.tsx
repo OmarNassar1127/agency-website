@@ -15,10 +15,10 @@ import { useLanguage } from "../../contexts/LanguageContext";
 export default function AboutPage() {
   const { t } = useLanguage();
   return (
-    <main className="page-background-light page-soft-gradient texture-overlay">
+    <>
       <Navbar />
 
-      <div className="">
+      <main className="page-background-light texture-overlay">
         {/* Hero Section with Animated Elements */}
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
@@ -153,7 +153,7 @@ export default function AboutPage() {
 
             {/* Interactive Timeline */}
             <div className="relative">
-              {/* Central line */}
+              {/* Central line - Only visible on md screens and larger */}
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-secondary-500 to-primary-500"></div>
 
               {/* Timeline nodes */}
@@ -1078,7 +1078,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-      </div>
+      </main>
 
       <Footer />
 
@@ -1257,7 +1257,35 @@ export default function AboutPage() {
         .bg-grid-pattern {
           background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.12'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
+
+        /* Mobile timeline fixes */
+        @media (max-width: 767px) {
+          .timeline-node {
+            position: relative;
+            padding-left: 28px;
+          }
+          
+          .timeline-node::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #3b82f6);
+            z-index: 1;
+          }
+          
+          .timeline-node:last-child::before {
+            height: 50%;
+          }
+          
+          .timeline-node .flex-shrink-0 {
+            margin-left: -36px !important;
+            z-index: 2;
+          }
+        }
       `}</style>
-    </main>
+    </>
   );
 }
