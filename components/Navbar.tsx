@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SettingsDropdown from "./SettingsDropdown";
 import { useLanguage } from "../contexts/LanguageContext";
 
@@ -9,6 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t } = useLanguage();
+  const pathname = usePathname();
 
   // Handle scroll event for changing navbar appearance
   useEffect(() => {
@@ -57,30 +59,38 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center space-x-1">
-          {navItems.map((item) => (
-            <Link 
-              key={item.name}
-              href={item.href} 
-              className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href || 
+                            (item.href !== '/' && pathname?.startsWith(item.href));
+            return (
+              <Link 
+                key={item.name}
+                href={item.href} 
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  isActive 
+                    ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400'
+                    : 'text-gray-800 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                }`}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Settings and CTA Buttons - Desktop */}
         <div className="hidden lg:flex items-center space-x-3">
           <SettingsDropdown />
 
-          <Link 
+            <Link 
             href="/contact" 
-            className="btn-sm btn-primary"
-          >
+            className="btn-sm btn-primary flex items-center"
+            >
             <span className="mr-2">{t('navbar.getQuote')}</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
               <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
             </svg>
-          </Link>
+            </Link>
         </div>
 
         {/* Mobile buttons */}
@@ -120,19 +130,27 @@ const Navbar = () => {
         <div className="container mx-auto p-4 space-y-4">
           {/* Navigation Links */}
           <nav className="grid gap-2">
-            {navItems.map((item) => (
-              <Link 
-                key={item.name}
-                href={item.href} 
-                className="py-3 px-4 rounded-xl text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium flex items-center justify-between"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <span>{item.name}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-primary-500">
-                  <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
-                </svg>
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href || 
+                              (item.href !== '/' && pathname?.startsWith(item.href));
+              return (
+                <Link 
+                  key={item.name}
+                  href={item.href} 
+                  className={`py-3 px-4 rounded-xl font-medium flex items-center justify-between ${
+                    isActive
+                      ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400'
+                      : 'text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
+                  }`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <span>{item.name}</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 text-primary-500">
+                    <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+              );
+            })}
           </nav>
           
           <div className="py-3 px-1">
