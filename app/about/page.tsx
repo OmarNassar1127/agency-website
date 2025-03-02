@@ -154,7 +154,7 @@ export default function AboutPage() {
             {/* Interactive Timeline */}
             <div className="relative">
               {/* Central line - Only visible on md screens and larger */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-secondary-500 to-primary-500"></div>
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary-500 via-secondary-500 to-primary-500"></div>
 
               {/* Timeline nodes */}
               <div className="relative z-10">
@@ -1262,17 +1262,19 @@ export default function AboutPage() {
         @media (max-width: 767px) {
           .timeline-node {
             position: relative;
-            padding-left: 28px;
+            padding-left: 40px; /* Increased padding */
+            margin-bottom: 2rem; /* Better spacing */
           }
           
           .timeline-node::before {
             content: '';
             position: absolute;
-            left: 8px;
+            left: 16px; /* Moved from 8px to 16px */
             top: 0;
             bottom: 0;
             width: 2px;
             background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #3b82f6);
+            opacity: 0.8; /* Added subtle opacity */
             z-index: 1;
           }
           
@@ -1281,7 +1283,7 @@ export default function AboutPage() {
           }
           
           .timeline-node .flex-shrink-0 {
-            margin-left: -36px !important;
+            margin-left: -28px !important; /* Adjusted to account for new line position */
             z-index: 2;
           }
         }
