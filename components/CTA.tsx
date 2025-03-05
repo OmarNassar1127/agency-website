@@ -62,20 +62,20 @@ const CTA = () => {
                 </div>
               </div>
               
-              {/* CTA buttons */}
+              {/* CTA buttons - FIXED SIZE */}
               <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
                 <Link 
                   href="/contact" 
-                  className="btn-lg bg-white text-primary-700 hover:bg-white/95 shadow-highlight transition-all group"
+                  className="px-5 py-2.5 bg-white text-primary-700 hover:bg-white/95 shadow-highlight transition-all group rounded-lg text-sm font-medium flex items-center"
                 >
                   <span className="mr-2">{t('cta.button')}</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5 transform transition-transform group-hover:translate-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 transform transition-transform group-hover:translate-x-1">
                     <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
                   </svg>
                 </Link>
                 <Link 
                   href="/work" 
-                  className="btn-lg bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white"
+                  className="px-5 py-2.5 bg-white/10 hover:bg-white/15 backdrop-blur-sm border border-white/20 text-white rounded-lg text-sm font-medium"
                 >
                   {t('hero.cta1')}
                 </Link>

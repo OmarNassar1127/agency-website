@@ -22,54 +22,6 @@ const Footer = () => {
   const { t } = useLanguage();
   return (
     <footer className="bg-gray-950 text-white">
-      {/* Newsletter & upper section */}
-      {/* <div className="border-b border-gray-800/50">
-        <div className="container py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h4 className="text-2xl font-display font-bold mb-4">{t('newsletter.heading')}</h4>
-              <p className="text-gray-400 mb-6 max-w-md">
-                {t('newsletter.description')}
-              </p>
-              
-              <form className="flex flex-col sm:flex-row gap-3">
-                <div className="flex-grow">
-                  <input 
-                    type="email" 
-                    placeholder={t('newsletter.placeholder')} 
-                    className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-500/50 text-white"
-                    required 
-                  />
-                </div>
-                <button 
-                  type="submit" 
-                  className="btn-primary rounded-xl px-6 py-3 whitespace-nowrap"
-                >
-                  {t('newsletter.button')}
-                </button>
-              </form>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold mb-1">10+</div>
-                <div className="text-gray-400 text-sm">{t('footer.yearsExperience')}</div>
-              </div>
-              <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold mb-1">250+</div>
-                <div className="text-gray-400 text-sm">{t('footer.projectsCompleted')}</div>
-              </div>
-              <div className="h-12 w-px bg-gradient-to-b from-transparent via-gray-700 to-transparent hidden sm:block"></div>
-              <div className="text-center">
-                <div className="text-3xl font-display font-bold mb-1">50+</div>
-                <div className="text-gray-400 text-sm">{t('footer.expertDevelopers')}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-      
       {/* Main footer content */}
       <div className="container py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
@@ -114,16 +66,16 @@ const Footer = () => {
           {/* Quick Links - 8 columns on large screens, divided into 3 sections */}
           <div className="lg:col-span-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-              {/* Services Column */}
+              {/* Services Column - UPDATED TO PLAIN TEXT */}
               <div>
                 <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.services')}</h4>
                 <ul className="space-y-4">
-                  <li><FooterLink href="/services/custom-software">{t('footer.serviceLinks.customSoftware')}</FooterLink></li>
-                  <li><FooterLink href="/services/web-development">{t('footer.serviceLinks.webDevelopment')}</FooterLink></li>
-                  <li><FooterLink href="/services/mobile-apps">{t('footer.serviceLinks.mobileDevelopment')}</FooterLink></li>
-                  <li><FooterLink href="/services/cloud-solutions">{t('footer.serviceLinks.cloudSolutions')}</FooterLink></li>
-                  <li><FooterLink href="/services/ai-ml">{t('footer.serviceLinks.aiML')}</FooterLink></li>
-                  <li><FooterLink href="/services/devops">{t('footer.serviceLinks.devOps')}</FooterLink></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.customSoftware')}</span></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.webDevelopment')}</span></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.mobileDevelopment')}</span></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.cloudSolutions')}</span></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.aiML')}</span></li>
+                  <li><span className="text-gray-400">{t('footer.serviceLinks.devOps')}</span></li>
                 </ul>
               </div>
               
