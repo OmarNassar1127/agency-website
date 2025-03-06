@@ -1,14 +1,43 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const FeaturedProjects = () => {
   const { t } = useLanguage();
+  const sectionRef = useRef(null);
+  
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '100px', // Start loading before section is fully in view
+      threshold: 0.01 // Trigger earlier for smoother transitions
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          entry.target.classList.add('section-visible');
+          entry.target.classList.remove('section-hidden');
+        }
+      });
+    }, options);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      <div ref={sectionRef} className="container mx-auto px-4 section-hidden">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             {t('featuredProjects.heading')}
@@ -20,7 +49,7 @@ const FeaturedProjects = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Project Card 1 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105">
+          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item" style={{ '--item-index': 0 } as React.CSSProperties}>
             <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
               <div className="text-center p-8">
                 <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 rounded-full flex items-center justify-center">
@@ -87,7 +116,7 @@ const FeaturedProjects = () => {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105">
+          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item" style={{ '--item-index': 1 } as React.CSSProperties}>
             <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
               <div className="text-center p-8">
                 <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 rounded-full flex items-center justify-center">
@@ -154,7 +183,7 @@ const FeaturedProjects = () => {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105">
+          <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item" style={{ '--item-index': 2 } as React.CSSProperties}>
             <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
               <div className="text-center p-8">
                 <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 rounded-full flex items-center justify-center">

@@ -1,9 +1,75 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Process = () => {
   const { t } = useLanguage();
+  
+  // Add intersection observer for animation triggers
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '200px', // Start loading even earlier for ultra-smooth transitions
+      threshold: 0.001 // Extremely low threshold to start as soon as any part is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Use requestAnimationFrame for smoother transitions
+          requestAnimationFrame(() => {
+            // Apply a very slight delay to make transitions even more fluid
+            setTimeout(() => {
+              entry.target.classList.add('is-visible');
+              entry.target.classList.add('section-visible');
+              entry.target.classList.remove('section-hidden');
+            }, 50);
+          });
+        }
+      });
+    }, options);
+
+    // First observe the main process section
+    const processSection = document.getElementById('process');
+    if (processSection) {
+      observer.observe(processSection);
+    }
+    
+    // Then set up a separate observer just for process steps
+    const stepsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Use a small timeout for smoother animations
+          setTimeout(() => {
+            entry.target.classList.add('is-visible');
+            entry.target.classList.add('section-visible');
+            entry.target.classList.remove('section-hidden');
+          }, 50);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '100px',
+      threshold: 0.05 // Lower threshold for earlier triggering
+    });
+    
+    // Observe each step individually
+    const stepElements = document.querySelectorAll('.process-step');
+    stepElements.forEach(element => {
+      stepsObserver.observe(element);
+    });
+
+    return () => {
+      if (processSection) {
+        observer.unobserve(processSection);
+      }
+      
+      stepElements.forEach(element => {
+        stepsObserver.unobserve(element);
+      });
+    };
+  }, []);
+  
   return (
     <section className="py-24 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
       {/* Background elements */}
@@ -37,10 +103,10 @@ const Process = () => {
           
           <div className="space-y-24">
             {/* Step 1: Discovery & Planning */}
-            <div className="relative">
+            <div className="relative process-step section-hidden" style={{ '--item-index': 0 } as React.CSSProperties}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Content */}
-                <div className="md:text-right order-2 md:order-1">
+                <div className="md:text-right order-2 md:order-1 step-content">
                   <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.discovery.phase')}</span>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.discovery.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -69,7 +135,7 @@ const Process = () => {
                 </div>
                 
                 {/* Step Illustration - REDUCED SIZE */}
-                <div className="order-1 md:order-2 relative">
+                <div className="order-1 md:order-2 relative animate-when-visible illustration">
                   <div className="absolute -inset-1 bg-gradient-to-br from-primary-500 to-secondary-500 opacity-20 blur-lg rounded-xl"></div>
                   <div className="relative bg-white dark:bg-gray-800 rounded-xl p-5 shadow-lg border border-gray-100 dark:border-gray-700">
                     <div className="absolute -left-4 md:left-auto md:-right-4 top-1/2 -translate-y-1/2 bg-primary-500 text-white h-8 w-8 rounded-full flex items-center justify-center shadow-lg md:transform md:translate-x-[calc(50%+0.5px)] z-10">
@@ -95,10 +161,10 @@ const Process = () => {
             </div>
             
             {/* Step 2: Design & Prototyping */}
-            <div className="relative">
+            <div className="relative process-step section-hidden" style={{ '--item-index': 1 } as React.CSSProperties}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Illustration - REDUCED SIZE */}
-                <div className="relative md:order-1">
+                <div className="relative md:order-1 animate-when-visible illustration">
                   <div className="absolute -inset-1 bg-gradient-to-br from-secondary-500 to-primary-500 opacity-20 blur-lg rounded-xl"></div>
                   <div className="relative bg-white dark:bg-gray-800 rounded-xl p-5 shadow-lg border border-gray-100 dark:border-gray-700">
                     <div className="absolute -right-4 md:right-auto md:-left-4 top-1/2 -translate-y-1/2 bg-secondary-500 text-white h-8 w-8 rounded-full flex items-center justify-center shadow-lg md:transform md:translate-x-[calc(-50%-0.5px)] z-10">
@@ -122,7 +188,7 @@ const Process = () => {
                 </div>
                 
                 {/* Step Content */}
-                <div className="text-left md:order-2">
+                <div className="text-left md:order-2 step-content">
                   <span className="inline-block text-sm text-white font-medium bg-secondary-600 dark:bg-secondary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.design.phase')}</span>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.design.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -153,10 +219,10 @@ const Process = () => {
             </div>
             
             {/* Step 3: Development */}
-            <div className="relative">
+            <div className="relative process-step section-hidden" style={{ '--item-index': 2 } as React.CSSProperties}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Content */}
-                <div className="md:text-right order-2 md:order-1">
+                <div className="md:text-right order-2 md:order-1 step-content">
                   <span className="inline-block text-sm text-white font-medium bg-primary-600 dark:bg-primary-500 py-1 px-3 rounded-full mb-4">{t('process.steps.development.phase')}</span>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.development.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -185,7 +251,7 @@ const Process = () => {
                 </div>
                 
                 {/* Step Illustration - REDUCED SIZE */}
-                <div className="order-1 md:order-2 relative">
+                <div className="order-1 md:order-2 relative animate-when-visible illustration">
                   <div className="absolute -inset-1 bg-gradient-to-br from-primary-500 to-purple-500 opacity-20 blur-lg rounded-xl"></div>
                   <div className="relative bg-white dark:bg-gray-800 rounded-xl p-5 shadow-lg border border-gray-100 dark:border-gray-700">
                     <div className="absolute -left-4 md:left-auto md:-right-4 top-1/2 -translate-y-1/2 bg-purple-500 text-white h-8 w-8 rounded-full flex items-center justify-center shadow-lg md:transform md:translate-x-[calc(50%+0.5px)] z-10">
@@ -211,10 +277,10 @@ const Process = () => {
             </div>
             
             {/* Step 4: Launch & Support */}
-            <div className="relative">
+            <div className="relative process-step section-hidden" style={{ '--item-index': 3 } as React.CSSProperties}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Step Illustration - REDUCED SIZE */}
-                <div className="relative md:order-1">
+                <div className="relative md:order-1 animate-when-visible illustration">
                   <div className="absolute -inset-1 bg-gradient-to-br from-teal-500 to-secondary-500 opacity-20 blur-lg rounded-xl"></div>
                   <div className="relative bg-white dark:bg-gray-800 rounded-xl p-5 shadow-lg border border-gray-100 dark:border-gray-700">
                     <div className="absolute -right-4 md:right-auto md:-left-4 top-1/2 -translate-y-1/2 bg-teal-500 text-white h-8 w-8 rounded-full flex items-center justify-center shadow-lg md:transform md:translate-x-[calc(-50%-0.5px)] z-10">
@@ -238,7 +304,7 @@ const Process = () => {
                 </div>
                 
                 {/* Step Content */}
-                <div className="text-left md:order-2">
+                <div className="text-left md:order-2 step-content">
                   <span className="inline-block text-sm text-white font-medium bg-teal-600 dark:bg-teal-500 py-1 px-3 rounded-full mb-4">{t('process.steps.support.phase')}</span>
                   <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{t('process.steps.support.title')}</h3>
                   <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
@@ -271,7 +337,7 @@ const Process = () => {
         </div>
         
         {/* CTA Banner */}
-        <div className="mt-20 text-center">
+        <div className="mt-20 text-center process-step section-hidden" style={{ '--item-index': 4 } as React.CSSProperties}>
           <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-gray-700 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">{t('process.cta.heading')}</h3>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">

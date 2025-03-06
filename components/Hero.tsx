@@ -242,16 +242,16 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left column - Content and tagline */}
           <div className="lg:col-span-5 order-1 px-4 flex flex-col justify-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-white fade-in-1">
               Building <span className="gradient-text">Digital</span> Experiences
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-200 font-light mb-8">
+            <p className="text-xl md:text-2xl text-gray-200 font-light mb-8 fade-in-2">
               {t('hero.subheading')}
             </p>
             
             {/* Call to action buttons */}
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2 mb-8">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2 mb-8 fade-in-3">
               <Link 
                 href="contact" 
                 className="btn btn-lg btn-primary group"
@@ -270,7 +270,7 @@ const Hero = () => {
             </div>
             
             {/* Stats highlights */}
-            <div className="grid grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-2 gap-4 mt-4 fade-in-3">
               <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
                 <div className="flex items-center space-x-3">
                   <div className="rounded-full w-10 h-10 flex items-center justify-center bg-primary-500/20">
@@ -302,7 +302,7 @@ const Hero = () => {
           </div>
           
           {/* Right column - Mac-style browser window animation */}
-          <div className="lg:col-span-7 order-2">
+          <div className="lg:col-span-7 order-2 card-item" style={{ '--item-index': 1 } as React.CSSProperties}>
             <div className="relative w-full max-w-3xl mx-auto">
               {/* Mac-style window frame */}
               <div className="rounded-xl overflow-hidden bg-[#1E1E1E] shadow-2xl border border-gray-700">
@@ -359,7 +359,7 @@ const Hero = () => {
         </div>
         
         {/* Trusted by brands */}
-        <div className="mt-24 relative">
+        <div className="mt-24 relative fade-in-3">
           <div className="divider mb-12"></div>
           <div className="text-center">
             <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">{t('hero.trustedBy.heading')}</h4>

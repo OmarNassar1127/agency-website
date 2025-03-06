@@ -1,11 +1,41 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const CTA = () => {
   const { t } = useLanguage();
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '100px', // Start loading before section is fully in view
+      threshold: 0.01 // Trigger earlier for smoother transitions
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          entry.target.classList.add('section-visible');
+          entry.target.classList.remove('section-hidden');
+        }
+      });
+    }, options);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+  
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background with layered gradients for depth */}
@@ -27,7 +57,7 @@ const CTA = () => {
         </div>
       </div>
       
-      <div className="container relative">
+      <div ref={sectionRef} className="container relative section-hidden">
         <div className="max-w-5xl mx-auto">
           {/* Two-column layout for larger screens */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -47,7 +77,7 @@ const CTA = () => {
               </p>
               
               {/* Statistics highlight */}
-              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-8 md:gap-10 mb-8 md:mb-12">
+              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 sm:gap-8 md:gap-10 mb-8 md:mb-12 card-item" style={{ '--item-index': 0 } as React.CSSProperties}>
                 <div className="text-center">
                   <div className="text-3xl font-display font-bold text-white mb-1">97%</div>
                   <p className="text-white/70 text-sm">{t('cta.stats.satisfaction')}</p>
@@ -63,7 +93,7 @@ const CTA = () => {
               </div>
               
               {/* CTA buttons - FIXED SIZE */}
-              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4">
+              <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-4 card-item" style={{ '--item-index': 1 } as React.CSSProperties}>
                 <Link 
                   href="/contact" 
                   className="px-5 py-2.5 bg-white text-primary-700 hover:bg-white/95 shadow-highlight transition-all group rounded-lg text-sm font-medium flex items-center"
@@ -83,7 +113,7 @@ const CTA = () => {
             </div>
             
             {/* Right column with form card */}
-            <div className="relative">
+            <div className="relative card-item" style={{ '--item-index': 2 } as React.CSSProperties}>
               {/* Card with subtle glow effect */}
               <div className="absolute -inset-1.5 bg-gradient-to-br from-white/20 to-white/0 rounded-3xl blur-sm"></div>
               <div className="card card-glass bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 p-8 relative">

@@ -201,6 +201,164 @@
 }
 
 /* Animation trigger classes */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(15px); /* Smaller offset for subtler movement */
+  transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+  transition-delay: 0.05s;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Special class for sections with background - only fade content not background */
+.section-fade-content {
+  position: relative;
+}
+
+.section-fade-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  z-index: -1;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+/* Initial page load animation for home section */
+#home.section-hidden {
+  opacity: 0;
+  transform: translateY(15px); /* Smaller Y offset for a subtle entry */
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Card staggered animations */
+.card-item {
+  opacity: 0;
+  transform: translateY(15px); /* Reduced movement for subtlety */
+  transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(var(--item-index, 0) * 120ms + 80ms);
+  will-change: opacity, transform;
+  /* Ensure transforms are properly executed */
+  backface-visibility: hidden;
+}
+
+.is-visible .card-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Process steps animation - visible and smooth fade-in */
+.process-step {
+  opacity: 0; /* Start completely invisible */
+  transform: translateY(20px); /* Add some movement for visible effect */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  /* Each process step will appear sequentially */
+  transition-delay: calc(var(--item-index, 0) * 200ms + 50ms);
+  will-change: opacity, transform;
+  pointer-events: auto !important;
+}
+
+.is-visible .process-step,
+.process-step.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reset nested opacity to prevent double-fade */
+.process-step .illustration,
+.process-step .step-content {
+  opacity: 1;
+  transform: none;
+}
+
+/* Remove nested animations to prevent conflicts */
+
+/* Individual section animations */
 #about.is-visible {
+  opacity: 1;
+}
+
+/* Fade-in sequence for text elements */
+.fade-in-1, .fade-in-2, .fade-in-3 {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.is-visible .fade-in-1 {
+  animation: fadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.05s;
+}
+
+.is-visible .fade-in-2 {
+  animation: fadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.15s;
+}
+
+.is-visible .fade-in-3 {
+  animation: fadeIn 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: 0.25s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade from left animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade from right animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade from bottom animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay animation until visible */
+.animate-when-visible {
+  animation-play-state: paused;
+  opacity: 0.2;
+  transition: opacity 0.6s ease-out;
+}
+
+.is-visible .animate-when-visible {
+  animation-play-state: running;
   opacity: 1;
 }

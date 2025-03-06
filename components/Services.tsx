@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -115,9 +115,40 @@ const getServiceData = (t: (key: string) => string) => [
 
 const Services = () => {
   const { t } = useLanguage();
+  const sectionRef = useRef(null);
+
+  // Add intersection observer for animation triggers
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '100px', // Start loading before section is fully in view
+      threshold: 0.01 // Trigger earlier for smoother transitions
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          entry.target.classList.add('section-visible');
+          entry.target.classList.remove('section-hidden');
+        }
+      });
+    }, options);
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="py-24 bg-white dark:bg-gray-950">
-      <div className="container mx-auto">
+      <div ref={sectionRef} className="container mx-auto section-hidden">
         <div className="max-w-4xl mx-auto text-center mb-20">
           {/* Section label */}
           <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
@@ -139,7 +170,8 @@ const Services = () => {
           {getServiceData(t).map((service) => (
             <div 
               key={service.id} 
-              className={`group card card-hover p-8 pb-10 bg-gradient-to-br ${service.bgClass} dark:bg-opacity-30 relative overflow-hidden`}
+              className={`group card card-hover p-8 pb-10 bg-gradient-to-br ${service.bgClass} dark:bg-opacity-30 relative overflow-hidden card-item`}
+              style={{ '--item-index': service.id - 1 } as React.CSSProperties}
             >
               {/* Icon with background */}
               <div className={`rounded-2xl w-16 h-16 flex items-center justify-center mb-6 ${service.iconBgClass} transition-transform group-hover:scale-110 duration-300`}>
