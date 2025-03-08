@@ -725,5 +725,10 @@
     "description": "Blijf op de hoogte van de nieuwste trends in softwareontwikkeling, technische inzichten en nieuws uit de branche.",
     "placeholder": "Voer uw e-mailadres in",
     "button": "Abonneren"
+  },
+  "404": {
+    "title": "Pagina Niet Gevonden",
+    "description": "Oeps! De pagina die je zoekt bestaat niet of is verplaatst.",
+    "backHome": "Terug naar Home"
   }
 }

@@ -83,11 +83,10 @@ const Footer = () => {
               <div>
                 <h4 className="text-lg font-semibold mb-6 text-white">{t('footer.links')}</h4>
                 <ul className="space-y-4">
-                  <li><FooterLink href="/about">{t('footer.about')}</FooterLink></li>
-                  <li><FooterLink href="/work">{t('footer.work')}</FooterLink></li>
-                  <li><FooterLink href="/process">{t('footer.howWeWork')}</FooterLink></li>
-                  <li><FooterLink href="/careers">{t('footer.careers')}</FooterLink></li>
-                  <li><FooterLink href="/contact">{t('footer.contact')}</FooterLink></li>
+                  <li><FooterLink href="/#about">{t('footer.about')}</FooterLink></li>
+                  <li><FooterLink href="/#work">{t('footer.work')}</FooterLink></li>
+                  <li><FooterLink href="/#process">{t('footer.howWeWork')}</FooterLink></li>
+                  <li><FooterLink href="/#contact">{t('footer.contact')}</FooterLink></li>
                 </ul>
               </div>
               

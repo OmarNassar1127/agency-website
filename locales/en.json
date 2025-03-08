@@ -725,5 +725,10 @@
     "description": "Stay updated with the latest trends in software development, tech insights, and industry news.",
     "placeholder": "Enter your email",
     "button": "Subscribe"
+  },
+  "404": {
+    "title": "Page Not Found",
+    "description": "Oops! The page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }
