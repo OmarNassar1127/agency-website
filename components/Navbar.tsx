@@ -115,7 +115,9 @@ const Navbar = () => {
   return (
     <header 
       className={`fixed w-full z-40 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-md' : 'bg-transparent'
+        scrolled 
+          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-md' 
+          : 'bg-white/90 dark:bg-transparent backdrop-blur-lg'
       } py-3`}
     >
       <div className="container mx-auto flex justify-between items-center">
