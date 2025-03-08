@@ -25,14 +25,32 @@ const ProjectModal = ({
 }) => {
   const { resolvedTheme } = useTheme();
   const modalRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   
   // Initialize portal once component mounts
   useEffect(() => {
     setMounted(true);
     return () => setMounted(false);
   }, []);
+
+  // Auto-rotate carousel images every 5 seconds
+  useEffect(() => {
+    if (!isOpen || !project || isPaused) return;
+    
+    const imageCount = project.images?.length || 3;
+    
+    const interval = setInterval(() => {
+      setActiveImageIndex(prevIndex => {
+        const nextIndex = prevIndex < imageCount - 1 ? prevIndex + 1 : 0;
+        return nextIndex;
+      });
+    }, 5000);
+    
+    return () => clearInterval(interval);
+  }, [isOpen, project, isPaused]);
 
   // Close modal when clicking outside
   useEffect(() => {
@@ -86,9 +104,10 @@ const ProjectModal = ({
       >
         {/* Close button */}
         <button 
-          onClick={onClose}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-700 dark:text-gray-300"
+          onClick={() => onClose()}
+          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:scale-110"
           aria-label="Close modal"
+          type="button"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -98,7 +117,12 @@ const ProjectModal = ({
         {/* Header image */}
         <div className="relative h-64 sm:h-80 md:h-96 bg-gray-200 dark:bg-gray-800 w-full overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
-          <div className="relative w-full h-full">
+          <div 
+            className="relative w-full h-full" 
+            ref={carouselRef}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
             {/* Image carousel */}
             <div className="flex transition-transform duration-500 h-full" style={{ transform: `translateX(-${activeImageIndex * 100}%)` }}>
               {projectImages.map((image, index) => (
@@ -155,13 +179,16 @@ const ProjectModal = ({
               {projectImages.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setActiveImageIndex(index)}
+                  onClick={() => {
+                    setActiveImageIndex(index);
+                  }}
                   className={`w-2 h-2 rounded-full transition-all ${
                     activeImageIndex === index 
                       ? 'bg-white w-4' 
                       : 'bg-white/40 hover:bg-white/60'
                   }`}
                   aria-label={`Go to image ${index + 1}`}
+                  type="button"
                 />
               ))}
             </div>
