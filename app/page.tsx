@@ -1,14 +1,10 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import FeaturedProjects from "../components/FeaturedProjects";
-import Statistics from "../components/Statistics";
-import Testimonials from "../components/Testimonials";
 import CTA from "../components/CTA";
-import Footer from "../components/Footer";
 import Process from "../components/Process";
 import { useLanguage } from "../contexts/LanguageContext";
 import "../styles/animations.css";

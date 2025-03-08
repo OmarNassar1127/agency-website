@@ -15,12 +15,12 @@ const Navbar = () => {
 
   // Navigation items with smooth scrolling for one-page layout
   const navItems = [
-    { name: t('navbar.home'), href: '/#home', path: '/', id: 'home' },
-    { name: t('navbar.services'), href: '/#services', path: '/services', id: 'services' },
-    { name: t('navbar.work'), href: '/#work', path: '/work', id: 'work' },
-    { name: t('navbar.process'), href: '/#process', path: '/process', id: 'process' },
-    { name: t('navbar.about'), href: '/#about', path: '/about', id: 'about' },
-    { name: t('navbar.contact'), href: '/#contact', path: '/contact', id: 'contact' }
+    { name: t('navbar.home'), href: '/#home', id: 'home' },
+    { name: t('navbar.services'), href: '/#services', id: 'services' },
+    { name: t('navbar.work'), href: '/#work', id: 'work' },
+    { name: t('navbar.process'), href: '/#process', id: 'process' },
+    { name: t('navbar.about'), href: '/#about', id: 'about' },
+    { name: t('navbar.contact'), href: '/#contact', id: 'contact' }
   ];
 
   // Handle scroll event for changing navbar appearance and tracking visible sections
@@ -107,15 +107,9 @@ const Navbar = () => {
     }
   };
 
-  // Check if a nav item is active based on current path or scroll position
-  const isItemActive = (item: { href: string, path: string, id: string }) => {
-    // If we're on the home page, check active section from scroll position
-    if (pathname === '/') {
-      return activeSection === item.id;
-    }
-    
-    // If we're on another page, check the pathname
-    return pathname === item.path || pathname.startsWith(`${item.path}/`);
+  // Check if a nav item is active based on scroll position
+  const isItemActive = (item: { href: string, id: string }) => {
+    return activeSection === item.id;
   };
 
   return (
