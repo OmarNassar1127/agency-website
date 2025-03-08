@@ -252,31 +252,26 @@
   transform: translateY(0);
 }
 
-/* Process steps animation - visible and smooth fade-in */
+/* Process steps animation */
 .process-step {
-  opacity: 0; /* Start completely invisible */
-  transform: translateY(20px); /* Add some movement for visible effect */
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  /* Each process step will appear sequentially */
-  transition-delay: calc(var(--item-index, 0) * 200ms + 50ms);
+  transition-delay: calc(var(--item-index, 0) * 200ms);
   will-change: opacity, transform;
-  pointer-events: auto !important;
 }
 
-.is-visible .process-step,
 .process-step.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Reset nested opacity to prevent double-fade */
+/* Ensure nested elements don't get double-animated */
 .process-step .illustration,
 .process-step .step-content {
   opacity: 1;
   transform: none;
 }
-
-/* Remove nested animations to prevent conflicts */
 
 /* Individual section animations */
 #about.is-visible {
