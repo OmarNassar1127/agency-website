@@ -98,18 +98,24 @@ const ProjectModal = ({
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 overflow-y-auto animate-fade-in">
       <div 
         ref={modalRef}
-        className={`w-full max-w-4xl max-h-[90vh] my-4 overflow-y-auto rounded-2xl ${
+        className={`relative w-full max-w-4xl max-h-[90vh] my-4 overflow-y-auto rounded-2xl ${
           resolvedTheme === 'dark' ? 'bg-gray-900' : 'bg-white'
         } shadow-2xl transition-all duration-300 transform animate-fadeInUp`}
       >
-        {/* Close button */}
+        {/* Close button - Updated z-index and positioning */}
         <button 
-          onClick={() => onClose()}
-          className="absolute top-4 right-4 z-10 p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:scale-110"
+          onClick={onClose}
+          className="fixed top-6 right-6 z-[60] p-2 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:scale-110 cursor-pointer"
           aria-label="Close modal"
           type="button"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-6 w-6 pointer-events-none" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
