@@ -60,6 +60,22 @@ const FeaturedProjects = () => {
         '/images/projects/kyc/image3.jpg'
       ]
     },
+    {
+      id: "ai",
+      title: t("featuredProjects.projects.ai.title"),
+      description: t("featuredProjects.projects.ai.description"),
+      technologies: [
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.tensorflow"),
+        t("featuredProjects.technologies.aws"),
+      ],
+      longDescription: t("featuredProjects.projects.ai.description_long"),
+      images: [
+        '/images/projects/ai/image1.jpg',
+        '/images/projects/ai/image2.jpg',
+        '/images/projects/ai/image3.jpg'
+      ]
+    },
   ];
 
   // Open project modal
@@ -135,6 +151,13 @@ const FeaturedProjects = () => {
                   {project.id === "kyc" && (
                     <img 
                       src="/images/projects/kyc/kyc-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "ai" && (
+                    <img 
+                      src="/images/projects/ai/ai-cover.png"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />

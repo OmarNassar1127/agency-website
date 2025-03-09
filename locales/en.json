@@ -209,6 +209,11 @@
         "title": "KYC Integrations",
         "description": "Automated secure user onboarding by integrating Onfido's KYC verification and third-party credit scoring, reducing operational time and debt risk.",
         "description_long": "Implemented a seamless onboarding solution by integrating Onfido's world-class KYC services alongside third-party credit verification providers. This automation significantly boosted application security, streamlined user verification processes, and reduced operational workloads. By selectively verifying high-quality users, the solution effectively lowered the overall debt per user, enhancing financial stability and operational efficiency for our client."
+      },
+      "ai": {
+        "title": "AI Solutions",
+        "description": "Developed innovative AI systems including research acceleration tools, intelligent personal assistants, and optimization engines that deliver substantial efficiency improvements and enhanced user experiences.",
+        "description_long": "Created a suite of transformative AI solutions across multiple domains, including a sophisticated Retrieval-Augmented Generation (RAG) system that significantly accelerates research and information retrieval, allowing users to quickly find answers to complex questions within large document collections. Developed an intelligent personal assistant with access to emails, calendars, and business systems that handles everything from writing draft responses and sending emails to scheduling meetings and summarizing information. Complementing these, I built a GPT-3.5 powered booking optimization engine that intelligently repositions vehicles based on historical data, and automated fine processing that reduced manual handling from 25 minutes to just 1 minute. These implementations demonstrate my ability to leverage cutting-edge AI technologies to solve complex business challenges, streamline workflows, and create innovative user experiences that deliver measurable ROI through improved productivity, cost reduction, and enhanced user satisfaction."
       }
     },
     "technologies": {

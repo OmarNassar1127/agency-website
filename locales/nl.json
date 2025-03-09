@@ -209,6 +209,11 @@
         "title": "KYC Integraties",
         "description": "Automatiseerde gebruikersregistratie met Onfido en geïntegreerde kredietchecks van derden, waardoor beveiliging werd verbeterd en schuldrisico verminderd.",
         "description_long": "Realiseerde een gestroomlijnde onboarding-oplossing door integratie van Onfido’s toonaangevende KYC-diensten en aanvullende kredietverificaties via derden. Dankzij deze automatisering verhoogden we aanzienlijk de beveiliging van de applicatie, verbeterden we de efficiëntie van verificatieprocessen en verminderden we operationele lasten. Door selectief hoogwaardige gebruikers te accepteren, hebben we de gemiddelde schuld per gebruiker verlaagd, wat resulteerde in betere financiële stabiliteit en operationele prestaties voor onze klant."
+      },
+      "ai": {
+        "title": "AI Oplossingen",
+        "description": "Ontwikkelde innovatieve AI-systemen waaronder onderzoeksversnellingstools, intelligente persoonlijke assistenten en optimalisatie-engines die aanzienlijke efficiëntieverbeteringen en verbeterde gebruikerservaringen leveren.",
+        "description_long": "Creëerde een reeks transformatieve AI-oplossingen in meerdere domeinen, waaronder een geavanceerd Retrieval-Augmented Generation (RAG) systeem dat onderzoek en informatieverzameling aanzienlijk versnelt, waardoor gebruikers snel antwoorden kunnen vinden op complexe vragen binnen grote documentcollecties. Ontwikkelde een intelligente persoonlijke assistent met toegang tot e-mails, kalenders en bedrijfssystemen die alles afhandelt, van het schrijven van conceptreacties en het verzenden van e-mails tot het plannen van vergaderingen en het samenvatten van informatie. Als aanvulling hierop bouwde ik een door GPT-3.5 aangedreven boekingsoptimalisatie-engine die intelligent voertuigen herpositioneert op basis van historische gegevens, en automatiseerde boeteverwerking die handmatige verwerking reduceerde van 25 minuten naar slechts 1 minuut. Deze implementaties tonen mijn vermogen om geavanceerde AI-technologieën in te zetten voor het oplossen van complexe zakelijke uitdagingen, het stroomlijnen van werkprocessen en het creëren van innovatieve gebruikerservaringen die meetbare ROI leveren door verbeterde productiviteit, kostenreductie en verbeterde gebruikerstevredenheid."
       }
     },
     "technologies": {
