@@ -19,7 +19,12 @@ const FeaturedProjects = () => {
       technologies: [
         t("featuredProjects.technologies.python"),
         t("featuredProjects.technologies.tensorflow"),
-        t("featuredProjects.technologies.aws"),
+        t("featuredProjects.technologies.nextjs"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.openai"),
+        t("featuredProjects.technologies.typescript"),
+        t("featuredProjects.technologies.react"),
       ],
       longDescription: t("featuredProjects.projects.ai.description_long"),
       images: [
@@ -36,6 +41,10 @@ const FeaturedProjects = () => {
         t("featuredProjects.technologies.react"),
         t("featuredProjects.technologies.nodejs"),
         t("featuredProjects.technologies.mongodb"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.stripe"),
+        t("featuredProjects.technologies.tradingview"),
+        t("featuredProjects.technologies.mailtrap"),
       ],
       longDescription: t("featuredProjects.projects.quotum.description_long"),
       images: [
@@ -49,9 +58,10 @@ const FeaturedProjects = () => {
       title: t("featuredProjects.projects.kyc.title"),
       description: t("featuredProjects.projects.kyc.description"),
       technologies: [
-        t("featuredProjects.technologies.python"),
-        t("featuredProjects.technologies.tensorflow"),
-        t("featuredProjects.technologies.aws"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.onfido"),
+        t("featuredProjects.technologies.reactNative"),
       ],
       longDescription: t("featuredProjects.projects.kyc.description_long"),
       images: [
@@ -65,9 +75,13 @@ const FeaturedProjects = () => {
       title: t("featuredProjects.projects.automations.title"),
       description: t("featuredProjects.projects.automations.description"),
       technologies: [
-        t("featuredProjects.technologies.reactNative"),
-        t("featuredProjects.technologies.firebase"),
-        t("featuredProjects.technologies.graphql"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.bol"),
+        t("featuredProjects.technologies.aws"),
+        t("featuredProjects.technologies.marktplaats"),
+        t("featuredProjects.technologies.mongodb"),
+        t("featuredProjects.technologies.mailtrap"),
       ],
       longDescription: t(
         "featuredProjects.projects.automations.description_long"

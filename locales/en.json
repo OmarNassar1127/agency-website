@@ -220,6 +220,7 @@
       "react": "React",
       "nodejs": "Node.js",
       "mongodb": "MongoDB",
+      "mysql": "MySQL",
       "reactNative": "React Native",
       "firebase": "Firebase",
       "graphql": "GraphQL",
@@ -235,7 +236,8 @@
       "openai": "OpenAI",
       "typescript": "TypeScript",
       "nextjs": "Next.js",
-      "laravel": "Laravel"
+      "laravel": "Laravel",
+      "mailtrap": "Mailtrap"
     }
   },
   "statistics": {
