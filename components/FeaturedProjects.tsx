@@ -93,6 +93,76 @@ const FeaturedProjects = () => {
         "/images/projects/automations/image3.jpg",
       ],
     },
+    {
+      id: "gdpr",
+      title: t("featuredProjects.projects.gdpr.title"),
+      description: t("featuredProjects.projects.gdpr.description"),
+      technologies: [
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mailtrap"),
+      ],
+      longDescription: t("featuredProjects.projects.gdpr.description_long"),
+      images: [
+        "/images/projects/gdpr/image1.jpg",
+        "/images/projects/gdpr/image2.jpg",
+        "/images/projects/gdpr/image3.jpg",
+      ],
+    },
+    {
+      id: "myteam",
+      title: t("featuredProjects.projects.myteam.title"),
+      description: t("featuredProjects.projects.myteam.description"),
+      technologies: [
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.react"),
+      ],
+      longDescription: t("featuredProjects.projects.myteam.description_long"),
+      images: [
+        "/images/projects/myteam/image1.jpg",
+        "/images/projects/myteam/image2.jpg",
+        "/images/projects/myteam/image3.jpg",
+      ],
+    },
+    {
+      id: "excel_automation",
+      title: t("featuredProjects.projects.excel_automation.title"),
+      description: t("featuredProjects.projects.excel_automation.description"),
+      technologies: [
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mailtrap"),
+      ],
+      longDescription: t(
+        "featuredProjects.projects.excel_automation.description_long"
+      ),
+      images: [
+        "/images/projects/excel_automation/image1.jpg",
+        "/images/projects/excel_automation/image2.jpg",
+        "/images/projects/excel_automation/image3.jpg",
+      ],
+    },
+    {
+      id: "debt-assistance",
+      title: t("featuredProjects.projects.debt_assistance.title"),
+      description: t("featuredProjects.projects.debt_assistance.description"),
+      technologies: [
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.react"),
+      ],
+      longDescription: t(
+        "featuredProjects.projects.debt_assistance.description_long"
+      ),
+      images: [
+        "/images/projects/debt-assistance/image1.jpg",
+        "/images/projects/debt-assistance/image2.jpg",
+        "/images/projects/debt-assistance/image3.jpg",
+      ],
+    }
   ];
 
   // Open project modal
@@ -175,6 +245,34 @@ const FeaturedProjects = () => {
                   {project.id === "ai" && (
                     <img
                       src="/images/projects/ai/ai-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "gdpr" && (
+                    <img
+                      src="/images/projects/gdpr/gdpr-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "myteam" && (
+                    <img
+                      src="/images/projects/myteam/myteam-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "excel_automation" && (
+                    <img
+                      src="/images/projects/excel/excel-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "debt-assistance" && (
+                    <img
+                      src="/images/projects/debt/debt-cover.png"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
