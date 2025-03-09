@@ -225,7 +225,17 @@
       "graphql": "GraphQL",
       "python": "Python",
       "tensorflow": "TensorFlow",
-      "aws": "AWS"
+      "aws": "AWS",
+      "stripe": "Stripe",
+      "tradingview": "TradingView",
+      "bol": "Bol.com",
+      "amazon": "Amazon",
+      "marktplaats": "Marktplaats",
+      "onfido": "Onfido",
+      "openai": "OpenAI",
+      "typescript": "TypeScript",
+      "nextjs": "Next.js",
+      "laravel": "Laravel"
     }
   },
   "statistics": {
