@@ -66,17 +66,17 @@
     "viewAllButton": "View All Projects",
     "viewCaseStudy": "View Case Study",
     "projects": {
-      "crm": {
-        "title": "Enterprise CRM Solution",
-        "description": "Custom CRM platform built for a Fortune 500 company to streamline customer management and sales processes."
+      "quotum": {
+        "title": "SaaS platform - Quotum",
+        "description": "Developed SaaS platform - Quotum.Cloud, a comprehensive financial SaaS solution designed for investors and traders. Built robust subscription management integrated with Stripe for seamless payments, created advanced charting tools with TradingView integration, and implemented a posts management system. Engineered a CRM system for easy coin management and developed an intricate wallet tracker featuring extensive API integrations and detailed financial calculations."
       },
-      "healthApp": {
-        "title": "HealthTrack Mobile App",
+      "automations": {
+        "title": "Shop Automations",
         "description": "A comprehensive health and fitness tracking mobile application for iOS and Android platforms."
       },
-      "aiAnalytics": {
-        "title": "AI-Powered Analytics Platform",
-        "description": "A machine learning platform that provides predictive analytics for e-commerce businesses."
+      "kyc": {
+        "title": "KYC Integrations",
+        "description": "Automated user onboarding with Onfido and integrated third-party credit checks, enhancing security and reducing debt risk."
       }
     },
     "technologies": {

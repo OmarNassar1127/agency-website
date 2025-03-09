@@ -147,17 +147,17 @@
     "viewAllButton": "Bekijk Alle Projecten",
     "viewCaseStudy": "Bekijk Case Study",
     "projects": {
-      "crm": {
-        "title": "Enterprise CRM Oplossing",
-        "description": "Aangepast CRM-platform gebouwd voor een Fortune 500-bedrijf om klantenbeheer en verkoopprocessen te stroomlijnen."
+      "quotum": {
+        "title": "SaaS platform - Quotum",
+        "description": "Ontwikkelde SaaS platform - Quotum.Cloud, een uitgebreide financiële SaaS-oplossing voor investeerders en handelaren. Bouwde een robuust abonnementssysteem geïntegreerd met Stripe voor soepele betalingen, creëerde geavanceerde grafiektools met TradingView-integratie en implementeerde een beheersysteem voor publicaties. Realiseerde een CRM-systeem voor eenvoudig beheer van cryptomunten en ontwikkelde een geavanceerde wallet-tracker met uitgebreide API-integraties en gedetailleerde financiële berekeningen."
       },
-      "healthApp": {
+      "automations": {
         "title": "HealthTrack Mobiele App",
         "description": "Een uitgebreide gezondheids- en fitness-tracking mobiele applicatie voor iOS en Android platforms."
       },
-      "aiAnalytics": {
-        "title": "AI-Gestuurde Analyseplatform",
-        "description": "Een machine learning platform dat voorspellende analyses biedt voor e-commerce bedrijven."
+      "kyc": {
+        "title": "KYC Integraties",
+        "description": "Automatiseerde gebruikersregistratie met Onfido en geïntegreerde kredietchecks van derden, waardoor beveiliging werd verbeterd en schuldrisico verminderd."
       }
     },
     "technologies": {

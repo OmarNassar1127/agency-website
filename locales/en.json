@@ -72,7 +72,13 @@
     },
     "trustedBy": {
       "heading": "Trusted by innovative companies worldwide",
-      "brands": ["TechCorp", "Innovate", "GlobalSoft", "FutureTech", "ZenithSystems"]
+      "brands": [
+        "TechCorp",
+        "Innovate",
+        "GlobalSoft",
+        "FutureTech",
+        "ZenithSystems"
+      ]
     },
     "techStack": {
       "react": "React",
@@ -189,17 +195,20 @@
     "viewAllButton": "View All Projects",
     "viewCaseStudy": "View Case Study",
     "projects": {
-      "crm": {
-        "title": "Enterprise CRM Solution",
-        "description": "Custom CRM platform built for a Fortune 500 company to streamline customer management and sales processes."
+      "quotum": {
+        "title": "SaaS platform - Quotum",
+        "description": "Developed SaaS platform - Quotum.Cloud, a financial SaaS for investors, featuring Stripe-integrated subscriptions, TradingView charts, CRM for coins, posts management, and advanced wallet tracking via API integrations.",
+        "description_long": "Developed SaaS platform - Quotum.Cloud, a comprehensive financial SaaS solution designed for investors and traders. Built robust subscription management integrated with Stripe for seamless payments, created advanced charting tools with TradingView integration, and implemented a posts management system. Engineered a CRM system for easy coin management and developed an intricate wallet tracker featuring extensive API integrations and detailed financial calculations."
       },
-      "healthApp": {
-        "title": "HealthTrack Mobile App",
-        "description": "A comprehensive health and fitness tracking mobile application for iOS and Android platforms."
+      "automations": {
+        "title": "Shop Automations",
+        "description": "Automated comprehensive e-commerce solutions for efficient order handling, smart pricing strategies, inventory management, and seamless integration with Bol.com, Amazon, and Marktplaats APIs.",
+        "description_long": "Developed extensive automation workflows tailored specifically for e-commerce platforms, integrating Bol.com, Amazon, and Marktplaats APIs. Streamlined complex order management systems, implemented sophisticated dynamic pricing algorithms to ensure competitive positioning, automated inventory restocking, and enabled real-time monitoring and analytics. Significantly boosted operational efficiency, accuracy, and profitability, empowering clients to effortlessly manage and scale their online businesses."
       },
-      "aiAnalytics": {
-        "title": "AI-Powered Analytics Platform",
-        "description": "A machine learning platform that provides predictive analytics for e-commerce businesses."
+      "kyc": {
+        "title": "KYC Integrations",
+        "description": "Automated secure user onboarding by integrating Onfido's KYC verification and third-party credit scoring, reducing operational time and debt risk.",
+        "description_long": "Implemented a seamless onboarding solution by integrating Onfido's world-class KYC services alongside third-party credit verification providers. This automation significantly boosted application security, streamlined user verification processes, and reduced operational workloads. By selectively verifying high-quality users, the solution effectively lowered the overall debt per user, enhancing financial stability and operational efficiency for our client."
       }
     },
     "technologies": {
@@ -678,16 +687,16 @@
       "button": "Get in Touch"
     },
     "projects": {
-      "crm": {
-        "title": "Enterprise CRM Platform",
+      "quotum": {
+        "title": "SaaS platform - Quotum",
         "description": "A custom CRM solution developed for a Fortune 500 company to streamline customer management and boost sales efficiency."
       },
-      "healthApp": {
-        "title": "HealthTrack Mobile App",
+      "automations": {
+        "title": "Shop Automations",
         "description": "A comprehensive health and fitness tracking mobile application for iOS and Android with personalized insights and coaching."
       },
-      "aiAnalytics": {
-        "title": "AI-Powered Analytics Platform",
+      "kyc": {
+        "title": "KYC Integrations",
         "description": "A machine learning platform that provides predictive analytics for e-commerce businesses, increasing conversion rates by 45%."
       },
       "ecommerce": {

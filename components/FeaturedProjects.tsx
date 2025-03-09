@@ -1,52 +1,55 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
-import ProjectModal, { Project } from './ProjectModal';
+import React, { useEffect, useRef, useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import ProjectModal, { Project } from "./ProjectModal";
 
 const FeaturedProjects = () => {
   const { t } = useLanguage();
   const sectionRef = useRef(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  
+
   // Example projects data derived from translations
   const projects: Project[] = [
     {
-      id: 'crm',
-      title: t('featuredProjects.projects.crm.title'),
-      description: t('featuredProjects.projects.crm.description'),
+      id: "quotum",
+      title: t("featuredProjects.projects.quotum.title"),
+      description: t("featuredProjects.projects.quotum.description"),
       technologies: [
-        t('featuredProjects.technologies.react'),
-        t('featuredProjects.technologies.nodejs'),
-        t('featuredProjects.technologies.mongodb')
+        t("featuredProjects.technologies.react"),
+        t("featuredProjects.technologies.nodejs"),
+        t("featuredProjects.technologies.mongodb"),
       ],
-      longDescription: "Our custom CRM platform was built for a Fortune 500 company looking to streamline their customer management and sales processes. The solution includes comprehensive contact management, sales pipeline visualization, automated lead scoring, and detailed analytics dashboards. The system integrates with their existing tools and has led to a 40% increase in sales team productivity and a 25% boost in conversion rates.",
+      longDescription:
+        "Our custom CRM platform was built for a Fortune 500 company looking to streamline their customer management and sales processes. The solution includes comprehensive contact management, sales pipeline visualization, automated lead scoring, and detailed analytics dashboards. The system integrates with their existing tools and has led to a 40% increase in sales team productivity and a 25% boost in conversion rates.",
     },
     {
-      id: 'healthApp',
-      title: t('featuredProjects.projects.healthApp.title'),
-      description: t('featuredProjects.projects.healthApp.description'),
+      id: "automations",
+      title: t("featuredProjects.projects.automations.title"),
+      description: t("featuredProjects.projects.automations.description"),
       technologies: [
-        t('featuredProjects.technologies.reactNative'),
-        t('featuredProjects.technologies.firebase'),
-        t('featuredProjects.technologies.graphql')
+        t("featuredProjects.technologies.reactNative"),
+        t("featuredProjects.technologies.firebase"),
+        t("featuredProjects.technologies.graphql"),
       ],
-      longDescription: "HealthTrack is a comprehensive health and fitness mobile application designed for both iOS and Android platforms. The app features personalized workout plans, nutrition tracking, health metrics monitoring, and social sharing capabilities. Users can set goals, track their progress with interactive charts, and receive AI-powered recommendations to optimize their health journey. The app has gained over 100,000 users since launch with a 4.8-star average rating.",
+      longDescription:
+        "HealthTrack is a comprehensive health and fitness mobile application designed for both iOS and Android platforms. The app features personalized workout plans, nutrition tracking, health metrics monitoring, and social sharing capabilities. Users can set goals, track their progress with interactive charts, and receive AI-powered recommendations to optimize their health journey. The app has gained over 100,000 users since launch with a 4.8-star average rating.",
     },
     {
-      id: 'aiAnalytics',
-      title: t('featuredProjects.projects.aiAnalytics.title'),
-      description: t('featuredProjects.projects.aiAnalytics.description'),
+      id: "kyc",
+      title: t("featuredProjects.projects.kyc.title"),
+      description: t("featuredProjects.projects.kyc.description"),
       technologies: [
-        t('featuredProjects.technologies.python'),
-        t('featuredProjects.technologies.tensorflow'),
-        t('featuredProjects.technologies.aws')
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.tensorflow"),
+        t("featuredProjects.technologies.aws"),
       ],
-      longDescription: "This AI-powered analytics platform provides predictive insights for e-commerce businesses. Using machine learning algorithms, the system analyzes customer behavior patterns, market trends, and inventory data to optimize pricing, marketing campaigns, and product recommendations. The platform includes real-time dashboards, automated reporting, and customizable alert systems. Clients using this platform have reported an average 45% increase in conversion rates and 30% improvement in inventory management efficiency.",
-    }
+      longDescription:
+        "This AI-powered analytics platform provides predictive insights for e-commerce businesses. Using machine learning algorithms, the system analyzes customer behavior patterns, market trends, and inventory data to optimize pricing, marketing campaigns, and product recommendations. The platform includes real-time dashboards, automated reporting, and customizable alert systems. Clients using this platform have reported an average 45% increase in conversion rates and 30% improvement in inventory management efficiency.",
+    },
   ];
-  
+
   // Open project modal
   const openProjectModal = (project: Project) => {
     setSelectedProject(project);
@@ -57,16 +60,16 @@ const FeaturedProjects = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '100px', // Start loading before section is fully in view
-      threshold: 0.01 // Trigger earlier for smoother transitions
+      rootMargin: "100px", // Start loading before section is fully in view
+      threshold: 0.01, // Trigger earlier for smoother transitions
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          entry.target.classList.add('section-visible');
-          entry.target.classList.remove('section-hidden');
+          entry.target.classList.add("is-visible");
+          entry.target.classList.add("section-visible");
+          entry.target.classList.remove("section-hidden");
         }
       });
     }, options);
@@ -81,26 +84,26 @@ const FeaturedProjects = () => {
       }
     };
   }, []);
-  
+
   return (
     <>
       <section className="py-20 bg-white dark:bg-gray-900">
         <div ref={sectionRef} className="container mx-auto px-4 section-hidden">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-              {t('featuredProjects.heading')}
+              {t("featuredProjects.heading")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              {t('featuredProjects.subheading')}
+              {t("featuredProjects.subheading")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mx-auto">
             {projects.map((project, index) => (
-              <div 
+              <div
                 key={project.id}
-                className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item" 
-                style={{ '--item-index': index } as React.CSSProperties}
+                className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item"
+                style={{ "--item-index": index } as React.CSSProperties}
               >
                 <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
                   <div className="text-center p-8">
@@ -152,7 +155,10 @@ const FeaturedProjects = () => {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300">
+                      <span
+                        key={techIndex}
+                        className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300"
+                      >
                         {tech}
                       </span>
                     ))}
@@ -161,7 +167,7 @@ const FeaturedProjects = () => {
                     onClick={() => openProjectModal(project)}
                     className="text-blue-600 dark:text-blue-400 font-medium flex items-center hover:text-blue-700 dark:hover:text-blue-300"
                   >
-                    {t('featuredProjects.viewCaseStudy')}
+                    {t("featuredProjects.viewCaseStudy")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 ml-1"
@@ -183,10 +189,10 @@ const FeaturedProjects = () => {
       </section>
 
       {/* Project details modal - now using the separate component with portal */}
-      <ProjectModal 
-        isOpen={modalOpen} 
-        onClose={() => setModalOpen(false)} 
-        project={selectedProject} 
+      <ProjectModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        project={selectedProject}
       />
     </>
   );
