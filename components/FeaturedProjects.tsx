@@ -21,8 +21,12 @@ const FeaturedProjects = () => {
         t("featuredProjects.technologies.nodejs"),
         t("featuredProjects.technologies.mongodb"),
       ],
-      longDescription:
-        "Our custom CRM platform was built for a Fortune 500 company looking to streamline their customer management and sales processes. The solution includes comprehensive contact management, sales pipeline visualization, automated lead scoring, and detailed analytics dashboards. The system integrates with their existing tools and has led to a 40% increase in sales team productivity and a 25% boost in conversion rates.",
+      longDescription: t("featuredProjects.projects.quotum.description_long"),
+      images: [
+        '/images/projects/quotum/image1.jpg',
+        '/images/projects/quotum/image2.jpg',
+        '/images/projects/quotum/image3.jpg'
+      ]
     },
     {
       id: "automations",
@@ -33,8 +37,12 @@ const FeaturedProjects = () => {
         t("featuredProjects.technologies.firebase"),
         t("featuredProjects.technologies.graphql"),
       ],
-      longDescription:
-        "HealthTrack is a comprehensive health and fitness mobile application designed for both iOS and Android platforms. The app features personalized workout plans, nutrition tracking, health metrics monitoring, and social sharing capabilities. Users can set goals, track their progress with interactive charts, and receive AI-powered recommendations to optimize their health journey. The app has gained over 100,000 users since launch with a 4.8-star average rating.",
+      longDescription: t("featuredProjects.projects.automations.description_long"),
+      images: [
+        '/images/projects/automations/image1.jpg',
+        '/images/projects/automations/image2.jpg',
+        '/images/projects/automations/image3.jpg'
+      ]
     },
     {
       id: "kyc",
@@ -45,8 +53,12 @@ const FeaturedProjects = () => {
         t("featuredProjects.technologies.tensorflow"),
         t("featuredProjects.technologies.aws"),
       ],
-      longDescription:
-        "This AI-powered analytics platform provides predictive insights for e-commerce businesses. Using machine learning algorithms, the system analyzes customer behavior patterns, market trends, and inventory data to optimize pricing, marketing campaigns, and product recommendations. The platform includes real-time dashboards, automated reporting, and customizable alert systems. Clients using this platform have reported an average 45% increase in conversion rates and 30% improvement in inventory management efficiency.",
+      longDescription: t("featuredProjects.projects.kyc.description_long"),
+      images: [
+        '/images/projects/kyc/image1.jpg',
+        '/images/projects/kyc/image2.jpg',
+        '/images/projects/kyc/image3.jpg'
+      ]
     },
   ];
 
