@@ -28,9 +28,9 @@ const FeaturedProjects = () => {
       ],
       longDescription: t("featuredProjects.projects.ai.description_long"),
       images: [
-        "/images/projects/ai/image1.jpg",
-        "/images/projects/ai/image2.jpg",
-        "/images/projects/ai/image3.jpg",
+        "/images/projects/ai/pop-up/rag.png",
+        "/images/projects/ai/pop-up/bookings.png",
+        "/images/projects/ai/pop-up/fines.png",
       ],
     },
     {
