@@ -121,7 +121,7 @@ const ProjectModal = ({
         </button>
 
         {/* Header image */}
-        <div className="relative h-64 sm:h-80 md:h-96 bg-gray-200 dark:bg-gray-800 w-full overflow-hidden">
+        <div className="relative h-48 sm:h-64 md:h-80 lg:h-96 bg-gray-200 dark:bg-gray-800 w-full overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-10"></div>
           <div 
             className="relative w-full h-full" 
@@ -134,12 +134,12 @@ const ProjectModal = ({
               {projectImages.map((image, index) => (
                 <div 
                   key={index} 
-                  className="min-w-full h-full relative bg-gray-900" // Changed from bg-red-500 to bg-gray-900
+                  className="min-w-full h-full relative bg-gray-900 border border-gray-700 dark:border-gray-600"
                 >
                   {/* Loading Spinner */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <svg 
-                      className="animate-spin h-12 w-12 text-primary-500" 
+                      className="animate-spin h-8 w-8 sm:h-12 sm:w-12 text-primary-500" 
                       xmlns="http://www.w3.org/2000/svg" 
                       fill="none" 
                       viewBox="0 0 24 24"
@@ -162,13 +162,12 @@ const ProjectModal = ({
                   <img
                     src={image}
                     alt={`Project image ${index + 1}`}
-                    className="w-full h-full object-cover relative z-10"
+                    className="w-full h-full object-contain md:object-cover relative z-10 border border-gray-700 dark:border-gray-600"
                     onError={(e) => {
                       console.error('Image failed to load:', image);
                       e.currentTarget.style.display = 'none';
                     }}
                     onLoad={(e) => {
-                      // Hide the loading spinner container when image loads
                       const spinnerContainer = e.currentTarget.previousSibling as HTMLElement;
                       if (spinnerContainer) {
                         spinnerContainer.style.display = 'none';
@@ -179,37 +178,35 @@ const ProjectModal = ({
               ))}
             </div>
 
-            {/* Carousel controls */}
+            {/* Carousel controls - made more touch-friendly */}
             <button 
               onClick={() => setActiveImageIndex(prev => (prev > 0 ? prev - 1 : projectImages.length - 1))}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white touch-manipulation"
               aria-label="Previous image"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button 
               onClick={() => setActiveImageIndex(prev => (prev < projectImages.length - 1 ? prev + 1 : 0))}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white touch-manipulation"
               aria-label="Next image"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
 
-            {/* Carousel indicators */}
-            <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
+            {/* Carousel indicators - made more touch-friendly */}
+            <div className="absolute bottom-2 sm:bottom-4 left-0 right-0 flex justify-center gap-2 z-20">
               {projectImages.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => {
-                    setActiveImageIndex(index);
-                  }}
-                  className={`w-2 h-2 rounded-full transition-all ${
+                  onClick={() => setActiveImageIndex(index)}
+                  className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all touch-manipulation ${
                     activeImageIndex === index 
-                      ? 'bg-white w-4' 
+                      ? 'bg-white w-4 sm:w-6' 
                       : 'bg-white/40 hover:bg-white/60'
                   }`}
                   aria-label={`Go to image ${index + 1}`}
