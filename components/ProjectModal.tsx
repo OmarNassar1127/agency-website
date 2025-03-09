@@ -225,9 +225,34 @@ const ProjectModal = ({
           
           {/* Project description */}
           <div className="prose prose-lg dark:prose-invert max-w-none mb-8">
-            <p className="text-gray-700 dark:text-gray-300">
-              {project.longDescription || project.description}
-            </p>
+            {project.longDescription ? (
+              <div className="space-y-6">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
+                  Project Overview
+                </h3>
+                {project.longDescription.split('.').filter(sentence => sentence.trim().length > 0).map((sentence, index) => {
+                  // Group sentences into sections
+                  if (index % 2 === 0 && index > 0) {
+                    const sectionTitle = index < 4 ? "Challenge & Solution" : 
+                                         index < 8 ? "Implementation Details" : 
+                                         "Results & Impact";
+                    return (
+                      <div key={index} className="mt-6">
+                        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-gray-200">
+                          {sectionTitle}
+                        </h3>
+                        <p className="text-gray-700 dark:text-gray-300">{sentence.trim()}.</p>
+                      </div>
+                    );
+                  }
+                  return <p key={index} className="text-gray-700 dark:text-gray-300">{sentence.trim()}.</p>;
+                })}
+              </div>
+            ) : (
+              <p className="text-gray-700 dark:text-gray-300">
+                {project.description}
+              </p>
+            )}
           </div>
           
           {/* Tech stack */}
