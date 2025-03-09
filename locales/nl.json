@@ -72,7 +72,13 @@
     },
     "trustedBy": {
       "heading": "Vertrouwd door innovatieve bedrijven wereldwijd",
-      "brands": ["TechCorp", "Innovate", "GlobalSoft", "FutureTech", "ZenithSystems"]
+      "brands": [
+        "TechCorp",
+        "Innovate",
+        "GlobalSoft",
+        "FutureTech",
+        "ZenithSystems"
+      ]
     },
     "techStack": {
       "react": "React",
@@ -189,29 +195,49 @@
     "viewAllButton": "Bekijk Alle Projecten",
     "viewCaseStudy": "Bekijk Case Study",
     "projects": {
-      "crm": {
-        "title": "Enterprise CRM Oplossing",
-        "description": "Aangepast CRM-platform gebouwd voor een Fortune 500-bedrijf om klantenbeheer en verkoopprocessen te stroomlijnen."
+      "quotum": {
+        "title": "SaaS platform - Quotum",
+        "description": "Ontwikkelde SaaS platform - Quotum.Cloud, een financiële SaaS voor investeerders, met Stripe-abonnementen, TradingView-grafieken, CRM voor cryptomunten, publicatiebeheer en geavanceerde wallet-tracking via API-integraties.",
+        "description_long": "Ontwikkelde SaaS platform - Quotum.Cloud, een uitgebreide financiële SaaS-oplossing voor investeerders en handelaren. Bouwde een robuust abonnementssysteem geïntegreerd met Stripe voor soepele betalingen, creëerde geavanceerde grafiektools met TradingView-integratie en implementeerde een beheersysteem voor publicaties. Realiseerde een CRM-systeem voor eenvoudig beheer van cryptomunten en ontwikkelde een geavanceerde wallet-tracker met uitgebreide API-integraties en gedetailleerde financiële berekeningen."
       },
-      "healthApp": {
-        "title": "HealthTrack Mobiele App",
-        "description": "Een uitgebreide gezondheids- en fitness-tracking mobiele applicatie voor iOS en Android platforms."
+      "automations": {
+        "title": "Shop Automaties",
+        "description": "Automatiseerde complete e-commerce oplossingen voor efficiënte orderverwerking, slimme prijsstrategieën, voorraadbeheer en naadloze integratie met Bol.com, Amazon en Marktplaats APIs.",
+        "description_long": "Ontwikkelde uitgebreide automatiseringsoplossingen specifiek voor e-commerce platformen met integratie van Bol.com, Amazon en Marktplaats APIs. Optimaliseerde complexe orderverwerkingssystemen, creëerde geavanceerde dynamische prijsalgoritmes om concurrerend te blijven, automatiseerde het voorraadbeheer en verzorgde real-time monitoring en analyses. Verbeterde hiermee aanzienlijk de operationele efficiëntie, nauwkeurigheid en winstgevendheid, waardoor klanten eenvoudig hun online business kunnen beheren en opschalen."
       },
-      "aiAnalytics": {
-        "title": "AI-Gestuurde Analyseplatform",
-        "description": "Een machine learning platform dat voorspellende analyses biedt voor e-commerce bedrijven."
+      "kyc": {
+        "title": "KYC Integraties",
+        "description": "Automatiseerde gebruikersregistratie met Onfido en geïntegreerde kredietchecks van derden, waardoor beveiliging werd verbeterd en schuldrisico verminderd.",
+        "description_long": "Realiseerde een gestroomlijnde onboarding-oplossing door integratie van Onfido’s toonaangevende KYC-diensten en aanvullende kredietverificaties via derden. Dankzij deze automatisering verhoogden we aanzienlijk de beveiliging van de applicatie, verbeterden we de efficiëntie van verificatieprocessen en verminderden we operationele lasten. Door selectief hoogwaardige gebruikers te accepteren, hebben we de gemiddelde schuld per gebruiker verlaagd, wat resulteerde in betere financiële stabiliteit en operationele prestaties voor onze klant."
+      },
+      "ai": {
+        "title": "AI Oplossingen",
+        "description": "Ontwikkelde innovatieve AI-systemen waaronder onderzoeksversnellingstools, intelligente persoonlijke assistenten en optimalisatie-engines die aanzienlijke efficiëntieverbeteringen en verbeterde gebruikerservaringen leveren.",
+        "description_long": "Creëerde een reeks transformatieve AI-oplossingen in meerdere domeinen, waaronder een geavanceerd Retrieval-Augmented Generation (RAG) systeem dat onderzoek en informatieverzameling aanzienlijk versnelt, waardoor gebruikers snel antwoorden kunnen vinden op complexe vragen binnen grote documentcollecties. Ontwikkelde een intelligente persoonlijke assistent met toegang tot e-mails, kalenders en bedrijfssystemen die alles afhandelt, van het schrijven van conceptreacties en het verzenden van e-mails tot het plannen van vergaderingen en het samenvatten van informatie. Als aanvulling hierop bouwde ik een door GPT-3.5 aangedreven boekingsoptimalisatie-engine die intelligent voertuigen herpositioneert op basis van historische gegevens, en automatiseerde boeteverwerking die handmatige verwerking reduceerde van 25 minuten naar slechts 1 minuut. Deze implementaties tonen mijn vermogen om geavanceerde AI-technologieën in te zetten voor het oplossen van complexe zakelijke uitdagingen, het stroomlijnen van werkprocessen en het creëren van innovatieve gebruikerservaringen die meetbare ROI leveren door verbeterde productiviteit, kostenreductie en verbeterde gebruikerstevredenheid."
       }
     },
     "technologies": {
       "react": "React",
       "nodejs": "Node.js",
       "mongodb": "MongoDB",
+      "mysql": "MySQL",
       "reactNative": "React Native",
       "firebase": "Firebase",
       "graphql": "GraphQL",
       "python": "Python",
       "tensorflow": "TensorFlow",
-      "aws": "AWS"
+      "aws": "AWS",
+      "stripe": "Stripe",
+      "tradingview": "TradingView",
+      "bol": "Bol.com",
+      "amazon": "Amazon",
+      "marktplaats": "Marktplaats",
+      "onfido": "Onfido",
+      "openai": "OpenAI",
+      "typescript": "TypeScript",
+      "nextjs": "Next.js",
+      "laravel": "Laravel",
+      "mailtrap": "Mailtrap"
     }
   },
   "statistics": {
@@ -678,15 +704,15 @@
       "button": "Neem Contact Op"
     },
     "projects": {
-      "crm": {
+      "quotum": {
         "title": "Enterprise CRM Platform",
         "description": "Een op maat gemaakte CRM-oplossing ontwikkeld voor een Fortune 500-bedrijf om klantenbeheer te stroomlijnen en verkoopefficiëntie te verhogen."
       },
-      "healthApp": {
+      "automations": {
         "title": "HealthTrack Mobiele App",
         "description": "Een uitgebreide gezondheids- en fitness-tracking mobiele applicatie voor iOS en Android met gepersonaliseerde inzichten en coaching."
       },
-      "aiAnalytics": {
+      "kyc": {
         "title": "AI-Gedreven Analyseplatform",
         "description": "Een machine learning platform dat voorspellende analyses biedt voor e-commerce bedrijven, waardoor conversiepercentages met 45% zijn toegenomen."
       },
