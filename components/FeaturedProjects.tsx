@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
       ],
       longDescription: t("featuredProjects.projects.quotum.description_long"),
       images: [
-        "/images/projects/quotum/image1.jpg",
+        "/images/projects/quotum/pop-up/test.png",
         "/images/projects/quotum/image2.jpg",
         "/images/projects/quotum/image3.jpg",
       ],
