@@ -13,6 +13,22 @@ const FeaturedProjects = () => {
   // Example projects data derived from translations
   const projects: Project[] = [
     {
+      id: "ai",
+      title: t("featuredProjects.projects.ai.title"),
+      description: t("featuredProjects.projects.ai.description"),
+      technologies: [
+        t("featuredProjects.technologies.python"),
+        t("featuredProjects.technologies.tensorflow"),
+        t("featuredProjects.technologies.aws"),
+      ],
+      longDescription: t("featuredProjects.projects.ai.description_long"),
+      images: [
+        "/images/projects/ai/image1.jpg",
+        "/images/projects/ai/image2.jpg",
+        "/images/projects/ai/image3.jpg",
+      ],
+    },
+    {
       id: "quotum",
       title: t("featuredProjects.projects.quotum.title"),
       description: t("featuredProjects.projects.quotum.description"),
@@ -23,26 +39,10 @@ const FeaturedProjects = () => {
       ],
       longDescription: t("featuredProjects.projects.quotum.description_long"),
       images: [
-        '/images/projects/quotum/image1.jpg',
-        '/images/projects/quotum/image2.jpg',
-        '/images/projects/quotum/image3.jpg'
-      ]
-    },
-    {
-      id: "automations",
-      title: t("featuredProjects.projects.automations.title"),
-      description: t("featuredProjects.projects.automations.description"),
-      technologies: [
-        t("featuredProjects.technologies.reactNative"),
-        t("featuredProjects.technologies.firebase"),
-        t("featuredProjects.technologies.graphql"),
+        "/images/projects/quotum/image1.jpg",
+        "/images/projects/quotum/image2.jpg",
+        "/images/projects/quotum/image3.jpg",
       ],
-      longDescription: t("featuredProjects.projects.automations.description_long"),
-      images: [
-        '/images/projects/automations/image1.jpg',
-        '/images/projects/automations/image2.jpg',
-        '/images/projects/automations/image3.jpg'
-      ]
     },
     {
       id: "kyc",
@@ -55,26 +55,28 @@ const FeaturedProjects = () => {
       ],
       longDescription: t("featuredProjects.projects.kyc.description_long"),
       images: [
-        '/images/projects/kyc/image1.jpg',
-        '/images/projects/kyc/image2.jpg',
-        '/images/projects/kyc/image3.jpg'
-      ]
+        "/images/projects/kyc/image1.jpg",
+        "/images/projects/kyc/image2.jpg",
+        "/images/projects/kyc/image3.jpg",
+      ],
     },
     {
-      id: "ai",
-      title: t("featuredProjects.projects.ai.title"),
-      description: t("featuredProjects.projects.ai.description"),
+      id: "automations",
+      title: t("featuredProjects.projects.automations.title"),
+      description: t("featuredProjects.projects.automations.description"),
       technologies: [
-        t("featuredProjects.technologies.python"),
-        t("featuredProjects.technologies.tensorflow"),
-        t("featuredProjects.technologies.aws"),
+        t("featuredProjects.technologies.reactNative"),
+        t("featuredProjects.technologies.firebase"),
+        t("featuredProjects.technologies.graphql"),
       ],
-      longDescription: t("featuredProjects.projects.ai.description_long"),
+      longDescription: t(
+        "featuredProjects.projects.automations.description_long"
+      ),
       images: [
-        '/images/projects/ai/image1.jpg',
-        '/images/projects/ai/image2.jpg',
-        '/images/projects/ai/image3.jpg'
-      ]
+        "/images/projects/automations/image1.jpg",
+        "/images/projects/automations/image2.jpg",
+        "/images/projects/automations/image3.jpg",
+      ],
     },
   ];
 
@@ -135,28 +137,28 @@ const FeaturedProjects = () => {
               >
                 <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
                   {project.id === "quotum" && (
-                    <img 
+                    <img
                       src="/images/projects/quotum/quotum-cover.png"
                       alt="Quotum Platform"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "automations" && (
-                    <img 
+                    <img
                       src="/images/projects/shop/shop-cover.png"
                       alt="Automations Platform"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "kyc" && (
-                    <img 
+                    <img
                       src="/images/projects/kyc/kyc-cover.png"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "ai" && (
-                    <img 
+                    <img
                       src="/images/projects/ai/ai-cover.png"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
