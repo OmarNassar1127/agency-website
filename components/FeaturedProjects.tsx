@@ -66,9 +66,7 @@ const FeaturedProjects = () => {
       ],
       longDescription: t("featuredProjects.projects.kyc.description_long"),
       images: [
-        "/images/projects/kyc/image1.jpg",
-        "/images/projects/kyc/image2.jpg",
-        "/images/projects/kyc/image3.jpg",
+        "/images/projects/kyc/pop-up/onfido.png",
       ],
     },
     {
