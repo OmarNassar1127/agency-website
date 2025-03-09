@@ -117,46 +117,28 @@ const FeaturedProjects = () => {
                 className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 transition-transform hover:scale-105 card-item"
                 style={{ "--item-index": index } as React.CSSProperties}
               >
-                <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-blue-500/20 rounded-full flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-8 w-8 text-blue-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        {index === 0 && (
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                          />
-                        )}
-                        {index === 1 && (
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                          />
-                        )}
-                        {index === 2 && (
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                          />
-                        )}
-                      </svg>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      Project Image Placeholder
-                    </p>
-                  </div>
+                <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+                  {project.id === "quotum" && (
+                    <img 
+                      src="/images/projects/quotum/quotum-cover.png"
+                      alt="Quotum Platform"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "automations" && (
+                    <img 
+                      src="/images/projects/shop/shop-cover.png"
+                      alt="Automations Platform"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {project.id === "kyc" && (
+                    <img 
+                      src="/images/projects/kyc/kyc-cover.png"
+                      alt="KYC Solution"
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
