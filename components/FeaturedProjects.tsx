@@ -88,9 +88,9 @@ const FeaturedProjects = () => {
         "featuredProjects.projects.automations.description_long"
       ),
       images: [
-        "/images/projects/automations/image1.jpg",
-        "/images/projects/automations/image2.jpg",
-        "/images/projects/automations/image3.jpg",
+        "/images/projects/shop/pop-up/amazon.png",
+        "/images/projects/shop/pop-up/bol.png",
+        "/images/projects/shop/pop-up/marktplaats.png",
       ],
     },
     {
