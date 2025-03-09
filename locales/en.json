@@ -214,6 +214,26 @@
         "title": "AI Solutions",
         "description": "Developed innovative AI systems including research acceleration tools, intelligent personal assistants, and optimization engines that deliver substantial efficiency improvements and enhanced user experiences.",
         "description_long": "Created a suite of transformative AI solutions across multiple domains, including a sophisticated Retrieval-Augmented Generation (RAG) system that significantly accelerates research and information retrieval, allowing users to quickly find answers to complex questions within large document collections. Developed an intelligent personal assistant with access to emails, calendars, and business systems that handles everything from writing draft responses and sending emails to scheduling meetings and summarizing information. Complementing these, I built a GPT-3.5 powered booking optimization engine that intelligently repositions vehicles based on historical data, and automated fine processing that reduced manual handling from 25 minutes to just 1 minute. These implementations demonstrate my ability to leverage cutting-edge AI technologies to solve complex business challenges, streamline workflows, and create innovative user experiences that deliver measurable ROI through improved productivity, cost reduction, and enhanced user satisfaction."
+      },
+      "gdpr": {
+        "title": "GDPR Compliance",
+        "description": "Implemented automated GDPR compliance for application Visconti, featuring scheduled data anonymization for reports older than five years, document management, and sensitive information redaction with placeholder substitution.",
+        "description_long": "Engineered a comprehensive GDPR compliance solution for Visconti, an application that processes official reports and handles sensitive personal data. Developed an automated system that intelligently identifies and anonymizes reports older than five years by replacing personal identifiers with 'XXXX' placeholders while maintaining data integrity. The solution includes robust document retrieval and secure deletion functionality for associated PDF attachments. Deployed as a console application configured with task scheduler to run daily, ensuring continuous regulatory compliance with minimal oversight. This implementation successfully balances legal requirements with operational needs, protecting individual privacy while preserving data structure for analytical purposes."
+      },
+      "myteam": {
+        "title": "MyTeam Sports Analytics",
+        "description": "Developed MyTeam, a comprehensive football analytics application enabling coaches to track player performance metrics, training session data, and match statistics for comprehensive performance evaluation and development planning.",
+        "description_long": "Designed and implemented MyTeam, an advanced sports analytics platform tailored specifically for football clubs. The application enables coaching staff to meticulously track and analyze both individual player performance and team dynamics across training sessions and competitive matches. Features include granular statistical tracking, performance trend visualization, player development monitoring, and customizable metrics to align with specific training objectives. The intuitive interface allows coaches to make data-driven decisions for lineup optimization, training focus areas, and player development strategies. This solution transforms traditional coaching approaches by providing actionable insights that highlight improvement patterns, identify areas for development, and validate training methodologies through concrete performance data."
+      },
+      "excel_automation": {
+        "title": "Excel Workflow Automation",
+        "description": "Engineered multiple console applications to automate critical Excel-based business processes, including helpdesk analytics generation and Scrum sprint hour calculations, significantly reducing manual data entry and improving reporting accuracy.",
+        "description_long": "Developed a suite of sophisticated console applications designed to streamline and automate Excel-dependent business workflows. Created an advanced helpdesk analytics system that automatically generates comprehensive statistical reports and visualizations tracking ticket resolution metrics and employee performance indicators. Additionally, implemented a sprint hour calculation tool that eliminated the Scrum Master's need to manually populate spreadsheets with employee hours each sprint. Both solutions operate as scheduled background processes that seamlessly generate accurate data based on predefined business rules and conditions. This automation initiative dramatically reduced administrative overhead, eliminated human error in data entry, ensured consistent reporting, and freed valuable team resources to focus on higher-value activities. The implementation demonstrates expertise in translating repetitive manual processes into efficient, reliable, and scalable automated solutions."
+      },
+      "debt_assistance": {
+        "title": "Debt Assistance Management System",
+        "description": "Enhanced debt assistance application with comprehensive UI/UX improvements, automated PDF reporting, advanced payment tracking, and integrated guardian management to streamline financial oversight for vulnerable clients.",
+        "description_long": "Upgraded and expanded a specialized debt assistance management system with multiple critical enhancements to improve efficiency and usability. Implemented robust payment tracking capabilities, including real-time outstanding balance monitoring, automated payment reconciliation, and integrated financial guardian management. Developed sophisticated data visualization features with automatic PDF report generation, customizable charts with proper titling, and weekly financial analysis graphs. Created intelligent client-guardian linking that dynamically populates appropriate contact information in correspondence based on representation status. Added advanced search functionality using national identification numbers (BSN) for secure client identification, alongside numerous UI optimizations including intuitive form layouts, conditional element visibility, and contextual information display. These improvements collectively transformed the application into a comprehensive platform that significantly streamlined the debt assistance process for financial counselors while ensuring accurate oversight of vulnerable clients' financial situations."
       }
     },
     "technologies": {
@@ -237,7 +257,16 @@
       "typescript": "TypeScript",
       "nextjs": "Next.js",
       "laravel": "Laravel",
-      "mailtrap": "Mailtrap"
+      "mailtrap": "Mailtrap",
+      ".net": ".Net",
+      "C#": "C#",
+      "asp.net": "Asp.net",
+      "javascript": "Javascript",
+      "tsql": "TSQL",
+      "ssms": "SSMS",
+      "Git": "Git",
+      "azure devops": "Azure DevOps",
+      "tailwind": "Tailwind"
     }
   },
   "statistics": {
@@ -702,48 +731,6 @@
       "heading": "Ready to Start Your Next Project?",
       "subheading": "Contact us today to discuss how we can help bring your vision to life with our expertise in digital solutions.",
       "button": "Get in Touch"
-    },
-    "projects": {
-      "quotum": {
-        "title": "SaaS platform - Quotum",
-        "description": "A custom CRM solution developed for a Fortune 500 company to streamline customer management and boost sales efficiency."
-      },
-      "automations": {
-        "title": "Shop Automations",
-        "description": "A comprehensive health and fitness tracking mobile application for iOS and Android with personalized insights and coaching."
-      },
-      "kyc": {
-        "title": "KYC Integrations",
-        "description": "A machine learning platform that provides predictive analytics for e-commerce businesses, increasing conversion rates by 45%."
-      },
-      "ecommerce": {
-        "title": "LuxuryGoods E-commerce Platform",
-        "description": "A high-end e-commerce platform featuring AR product visualization, personalized recommendations, and seamless checkout flow."
-      },
-      "banking": {
-        "title": "SecureBank Financial Dashboard",
-        "description": "A secure banking dashboard with real-time analytics, transaction monitoring, and advanced fraud detection systems."
-      },
-      "messaging": {
-        "title": "ConnectNow Messaging Platform",
-        "description": "A real-time messaging platform with end-to-end encryption, voice/video calls, and seamless file sharing capabilities."
-      },
-      "events": {
-        "title": "TicketMaster Event Platform",
-        "description": "A comprehensive event management platform with ticketing, seat selection, and real-time analytics for event organizers."
-      },
-      "iot": {
-        "title": "SmartHome IoT Control Center",
-        "description": "An integrated IoT platform for controlling smart home devices with voice commands, automation rules, and energy optimization."
-      },
-      "education": {
-        "title": "EduLearn Virtual Classroom",
-        "description": "An interactive virtual classroom platform with live sessions, collaborative tools, and comprehensive learning management features."
-      },
-      "financial": {
-        "title": "MarketInsight Analytics Dashboard",
-        "description": "A data visualization platform for financial markets with real-time updates, predictive models, and customizable dashboards."
-      }
     }
   },
   "newsletter": {

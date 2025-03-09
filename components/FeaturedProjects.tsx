@@ -92,6 +92,23 @@ const FeaturedProjects = () => {
         "/images/projects/automations/image3.jpg",
       ],
     },
+    {
+      id: "gdpr",
+      title: t("featuredProjects.projects.gdpr.title"),
+      description: t("featuredProjects.projects.gdpr.description"),
+      technologies: [
+        t("featuredProjects.technologies.laravel"),
+        t("featuredProjects.technologies.mysql"),
+        t("featuredProjects.technologies.onfido"),
+        t("featuredProjects.technologies.reactNative"),
+      ],
+      longDescription: t("featuredProjects.projects.gdpr.description_long"),
+      images: [
+        "/images/projects/gdpr/image1.jpg",
+        "/images/projects/gdpr/image2.jpg",
+        "/images/projects/gdpr/image3.jpg",
+      ],
+    },
   ];
 
   // Open project modal

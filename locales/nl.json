@@ -214,6 +214,26 @@
         "title": "AI Oplossingen",
         "description": "Ontwikkelde innovatieve AI-systemen waaronder onderzoeksversnellingstools, intelligente persoonlijke assistenten en optimalisatie-engines die aanzienlijke efficiëntieverbeteringen en verbeterde gebruikerservaringen leveren.",
         "description_long": "Creëerde een reeks transformatieve AI-oplossingen in meerdere domeinen, waaronder een geavanceerd Retrieval-Augmented Generation (RAG) systeem dat onderzoek en informatieverzameling aanzienlijk versnelt, waardoor gebruikers snel antwoorden kunnen vinden op complexe vragen binnen grote documentcollecties. Ontwikkelde een intelligente persoonlijke assistent met toegang tot e-mails, kalenders en bedrijfssystemen die alles afhandelt, van het schrijven van conceptreacties en het verzenden van e-mails tot het plannen van vergaderingen en het samenvatten van informatie. Als aanvulling hierop bouwde ik een door GPT-3.5 aangedreven boekingsoptimalisatie-engine die intelligent voertuigen herpositioneert op basis van historische gegevens, en automatiseerde boeteverwerking die handmatige verwerking reduceerde van 25 minuten naar slechts 1 minuut. Deze implementaties tonen mijn vermogen om geavanceerde AI-technologieën in te zetten voor het oplossen van complexe zakelijke uitdagingen, het stroomlijnen van werkprocessen en het creëren van innovatieve gebruikerservaringen die meetbare ROI leveren door verbeterde productiviteit, kostenreductie en verbeterde gebruikerstevredenheid."
+      },
+      "gdpr": {
+      "title": "Visconti AVG-Compliance",
+      "description": "Geïmplementeerde geautomatiseerde AVG-naleving voor Visconti-applicatie, met geplande data-anonimisering voor rapporten ouder dan vijf jaar, documentbeheer en redactie van gevoelige informatie met plaatsvervangende tekst.",
+      "description_long": "Een uitgebreide AVG-compliance oplossing ontworpen voor Visconti, een applicatie die officiële rapporten verwerkt en gevoelige persoonsgegevens beheert. Ontwikkelde een geautomatiseerd systeem dat intelligent rapporten ouder dan vijf jaar identificeert en anonimiseert door persoonlijke identificatiegegevens te vervangen met 'XXXX'-plaatshouders terwijl de data-integriteit behouden blijft. De oplossing omvat robuuste documentopvraging en veilige verwijderingsfunctionaliteit voor bijbehorende PDF-bijlagen. Geïmplementeerd als een console-applicatie geconfigureerd met taakplanner om dagelijks te draaien, waardoor continue naleving van regelgeving met minimaal toezicht wordt gegarandeerd. Deze implementatie balanceert met succes wettelijke vereisten met operationele behoeften, beschermt de privacy van individuen en behoudt tegelijkertijd de datastructuur voor analytische doeleinden."
+      },
+      "myteam": {
+        "title": "MyTeam",
+        "description": "Ontwikkelde MyTeam, een uitgebreide voetbalanalyse-applicatie waarmee coaches spelersprestatiemetrieken, trainingsessiegegevens en wedstrijdstatistieken kunnen bijhouden voor uitgebreide prestatie-evaluatie en ontwikkelingsplanning.",
+        "description_long": "Ontworpen en geïmplementeerd MyTeam, een geavanceerd sportanalyseplatform specifiek afgestemd op voetbalclubs. De applicatie stelt coachingpersoneel in staat om zowel individuele spelersprestaties als teamdynamiek tijdens trainingssessies en competitieve wedstrijden nauwkeurig bij te houden en te analyseren. Functies omvatten gedetailleerde statistische tracking, visualisatie van prestatietrends, monitoring van spelersontwikkeling en aanpasbare metrieken om af te stemmen op specifieke trainingsdoelstellingen. De intuïtieve interface stelt coaches in staat om datagestuurde beslissingen te nemen voor opsteloptimalisatie, trainingsfocusgebieden en spelersontwikkelingsstrategieën. Deze oplossing transformeert traditionele coachingbenaderingen door bruikbare inzichten te bieden die verbeteringspatronen benadrukken, ontwikkelingsgebieden identificeren en trainingsmethodologieën valideren met concrete prestatiegegevens."
+      },
+      "excel_automation": {
+        "title": "Excel Werkstroomautomatisering",
+        "description": "Ontwikkelde meerdere console-applicaties om kritieke Excel-gebaseerde bedrijfsprocessen te automatiseren, waaronder generatie van helpdeskanalyses en Scrum sprint-uurberekeningen, wat handmatige gegevensinvoer aanzienlijk vermindert en de rapportagenauwkeurigheid verbetert.",
+        "description_long": "Ontwikkelde een reeks geavanceerde console-applicaties ontworpen om Excel-afhankelijke bedrijfsworkflows te stroomlijnen en automatiseren. Creëerde een geavanceerd helpdesk-analytisch systeem dat automatisch uitgebreide statistische rapporten en visualisaties genereert die ticketoplosmetrieken en prestatie-indicatoren van medewerkers bijhouden. Daarnaast een sprint-uurberekeningtool geïmplementeerd die de noodzaak voor de Scrum Master om handmatig spreadsheets met werknemersuren per sprint in te vullen elimineerde. Beide oplossingen functioneren als geplande achtergrondprocessen die naadloos accurate gegevens genereren op basis van vooraf gedefinieerde bedrijfsregels en voorwaarden. Dit automatiseringsinitiatief verminderde drastisch administratieve overhead, elimineerde menselijke fouten bij gegevensinvoer, zorgde voor consistente rapportage en bevrijdde waardevolle teamresources om zich te concentreren op activiteiten met hogere waarde. De implementatie toont expertise in het vertalen van repetitieve handmatige processen naar efficiënte, betrouwbare en schaalbare geautomatiseerde oplossingen."
+      },
+      "debt_assistance": {
+        "title": "Schuldhulpverleningssysteem",
+        "description": "Verbeterde schuldhulpverleningsapplicatie met uitgebreide UI/UX-verbeteringen, geautomatiseerde PDF-rapportage, geavanceerde betalingsopvolging en geïntegreerd bewindvoerdersbeheer om financieel toezicht voor kwetsbare cliënten te stroomlijnen.",
+        "description_long": "Geüpgraded en uitgebreid schuldhulpverleningssysteem met meerdere kritieke verbeteringen om efficiëntie en bruikbaarheid te verhogen. Implementeerde robuuste betalingsvolgsystemen, waaronder real-time monitoring van openstaande saldi, geautomatiseerde betalingsreconciliatie en geïntegreerd beheer van financiële bewindvoerders. Ontwikkelde geavanceerde datavisualisatiefuncties met automatische PDF-rapportgeneratie, aanpasbare grafieken met correcte titels en wekelijkse financiële analysediagrammen. Creëerde intelligente cliënt-bewindvoerderkoppeling die dynamisch de juiste contactgegevens in correspondentie invult op basis van vertegenwoordigingsstatus. Toegevoegde geavanceerde zoekfunctionaliteit met burgerservicenummers (BSN) voor veilige cliëntidentificatie, naast talrijke UI-optimalisaties waaronder intuïtieve formulieropmaak, conditionele elementzichtbaarheid en contextuele informatieweergave. Deze verbeteringen hebben gezamenlijk de applicatie getransformeerd tot een uitgebreid platform dat het schuldhulpverleningsproces voor financiële adviseurs aanzienlijk vereenvoudigt terwijl nauwkeurig toezicht op de financiële situatie van kwetsbare cliënten wordt gegarandeerd."
       }
     },
     "technologies": {
@@ -237,7 +257,16 @@
       "typescript": "TypeScript",
       "nextjs": "Next.js",
       "laravel": "Laravel",
-      "mailtrap": "Mailtrap"
+      "mailtrap": "Mailtrap",
+      ".net": ".Net",
+      "C#": "C#",
+      "asp.net": "Asp.net",
+      "javascript": "Javascript",
+      "tsql": "TSQL",
+      "ssms": "SSMS",
+      "Git": "Git",
+      "azure devops": "Azure DevOps",
+      "tailwind": "Tailwind"
     }
   },
   "statistics": {
@@ -702,48 +731,6 @@
       "heading": "Klaar om Uw Volgende Project te Starten?",
       "subheading": "Neem vandaag nog contact met ons op om te bespreken hoe we uw visie tot leven kunnen brengen met onze expertise in digitale oplossingen.",
       "button": "Neem Contact Op"
-    },
-    "projects": {
-      "quotum": {
-        "title": "Enterprise CRM Platform",
-        "description": "Een op maat gemaakte CRM-oplossing ontwikkeld voor een Fortune 500-bedrijf om klantenbeheer te stroomlijnen en verkoopefficiëntie te verhogen."
-      },
-      "automations": {
-        "title": "HealthTrack Mobiele App",
-        "description": "Een uitgebreide gezondheids- en fitness-tracking mobiele applicatie voor iOS en Android met gepersonaliseerde inzichten en coaching."
-      },
-      "kyc": {
-        "title": "AI-Gedreven Analyseplatform",
-        "description": "Een machine learning platform dat voorspellende analyses biedt voor e-commerce bedrijven, waardoor conversiepercentages met 45% zijn toegenomen."
-      },
-      "ecommerce": {
-        "title": "LuxuryGoods E-commerce Platform",
-        "description": "Een high-end e-commerce platform met AR-productvisualisatie, gepersonaliseerde aanbevelingen en een naadloze checkout-flow."
-      },
-      "banking": {
-        "title": "SecureBank Financieel Dashboard",
-        "description": "Een veilig bankdashboard met realtime analyses, transactiemonitoring en geavanceerde fraudedetectiesystemen."
-      },
-      "messaging": {
-        "title": "ConnectNow Berichtenplatform",
-        "description": "Een realtime berichtenplatform met end-to-end encryptie, spraak/videogesprekken en naadloze bestandsdelingmogelijkheden."
-      },
-      "events": {
-        "title": "TicketMaster Evenementenplatform",
-        "description": "Een uitgebreid evenementenbeheerplatform met ticketing, stoelselectie en realtime analyses voor evenementorganisatoren."
-      },
-      "iot": {
-        "title": "SmartHome IoT Bedieningscentrum",
-        "description": "Een geïntegreerd IoT-platform voor het bedienen van smart home-apparaten met spraakopdrachten, automatiseringsregels en energieoptimalisatie."
-      },
-      "education": {
-        "title": "EduLearn Virtueel Klaslokaal",
-        "description": "Een interactief virtueel klaslokaalplatform met live sessies, samenwerkingstools en uitgebreide leermanagementfuncties."
-      },
-      "financial": {
-        "title": "MarketInsight Analysedashboard",
-        "description": "Een datavisualisatieplatform voor financiële markten met realtime updates, voorspellende modellen en aanpasbare dashboards."
-      }
     }
   },
   "newsletter": {
