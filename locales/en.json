@@ -258,15 +258,21 @@
       "nextjs": "Next.js",
       "laravel": "Laravel",
       "mailtrap": "Mailtrap",
-      ".net": ".Net",
-      "C#": "C#",
-      "asp.net": "Asp.net",
+      "dotnet": ".Net",
+      "c#": "C#",
+      "excel": "Excel",
+      "aspdotnet": "Asp.net",
       "javascript": "Javascript",
       "tsql": "TSQL",
       "ssms": "SSMS",
-      "Git": "Git",
-      "azure devops": "Azure DevOps",
-      "tailwind": "Tailwind"
+      "git": "Git",
+      "azuredevops": "Azure DevOps",
+      "tailwind": "Tailwind",
+      "winforms": "Windows Forms",
+      "stripe": "Stripe",
+      "php": "PHP",
+      "consoleapp": "Console Application",
+      "taskscheduler": "Task Scheduler"
     }
   },
   "statistics": {

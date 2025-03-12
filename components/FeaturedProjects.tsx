@@ -96,16 +96,17 @@ const FeaturedProjects = () => {
       title: t("featuredProjects.projects.gdpr.title"),
       description: t("featuredProjects.projects.gdpr.description"),
       technologies: [
-        t("featuredProjects.technologies.python"),
-        t("featuredProjects.technologies.mysql"),
-        t("featuredProjects.technologies.laravel"),
-        t("featuredProjects.technologies.mailtrap"),
+        t("featuredProjects.technologies.c#"),
+        t("featuredProjects.technologies.dotnet"),
+        t("featuredProjects.technologies.ssms"),
+        t("featuredProjects.technologies.consoleapp"),
+        t("featuredProjects.technologies.taskscheduler"),
       ],
       longDescription: t("featuredProjects.projects.gdpr.description_long"),
       images: [
-        "/images/projects/gdpr/image1.jpg",
-        "/images/projects/gdpr/image2.jpg",
-        "/images/projects/gdpr/image3.jpg",
+        "/images/projects/gdpr/pop-up/avg.png",
+        "/images/projects/gdpr/pop-up/task_scheduler.png",
+        "/images/projects/gdpr/pop-up/avg1.png",
       ],
     },
     {
@@ -116,12 +117,17 @@ const FeaturedProjects = () => {
         t("featuredProjects.technologies.laravel"),
         t("featuredProjects.technologies.mysql"),
         t("featuredProjects.technologies.react"),
+        t("featuredProjects.technologies.tailwind"),
+        t("featuredProjects.technologies.git"),
+        t("featuredProjects.technologies.php"),
+        t("featuredProjects.technologies.azuredevops"),
+        t("featuredProjects.technologies.javascript"),
       ],
       longDescription: t("featuredProjects.projects.myteam.description_long"),
       images: [
-        "/images/projects/myteam/image1.jpg",
-        "/images/projects/myteam/image2.jpg",
-        "/images/projects/myteam/image3.jpg",
+        "/images/projects/myteam/pop-up/myteam1.png",
+        "/images/projects/myteam/pop-up/myteam2.png",
+        "/images/projects/myteam/pop-up/myteam3.png",
       ],
     },
     {
@@ -129,18 +135,18 @@ const FeaturedProjects = () => {
       title: t("featuredProjects.projects.excel_automation.title"),
       description: t("featuredProjects.projects.excel_automation.description"),
       technologies: [
-        t("featuredProjects.technologies.python"),
-        t("featuredProjects.technologies.mysql"),
-        t("featuredProjects.technologies.laravel"),
-        t("featuredProjects.technologies.mailtrap"),
+        t("featuredProjects.technologies.excel"),
+        t("featuredProjects.technologies.c#"),
+        t("featuredProjects.technologies.dotnet"),
+        t("featuredProjects.technologies.aspdotnet"),
+        t("featuredProjects.technologies.ssms"),
       ],
       longDescription: t(
         "featuredProjects.projects.excel_automation.description_long"
       ),
       images: [
-        "/images/projects/excel_automation/image1.jpg",
-        "/images/projects/excel_automation/image2.jpg",
-        "/images/projects/excel_automation/image3.jpg",
+        "/images/projects/excel/pop-up/fo2xcel.png",
+        "/images/projects/excel/pop-up/ExcelAutomation.png",
       ],
     },
     {
@@ -148,17 +154,21 @@ const FeaturedProjects = () => {
       title: t("featuredProjects.projects.debt_assistance.title"),
       description: t("featuredProjects.projects.debt_assistance.description"),
       technologies: [
-        t("featuredProjects.technologies.laravel"),
-        t("featuredProjects.technologies.mysql"),
-        t("featuredProjects.technologies.react"),
+        t("featuredProjects.technologies.c#"),
+        t("featuredProjects.technologies.dotnet"),
+        t("featuredProjects.technologies.aspdotnet"),
+        t("featuredProjects.technologies.ssms"),
+        t("featuredProjects.technologies.winforms"),
+        t("featuredProjects.technologies.stripe"),
+        t("featuredProjects.technologies.tsql"),
       ],
       longDescription: t(
         "featuredProjects.projects.debt_assistance.description_long"
       ),
       images: [
-        "/images/projects/debt-assistance/image1.jpg",
-        "/images/projects/debt-assistance/image2.jpg",
-        "/images/projects/debt-assistance/image3.jpg",
+        "/images/projects/debt/pop-up/Bewindvoerders.png",
+        "/images/projects/debt/pop-up/Bewindvoerders1.png",
+        "/images/projects/debt/pop-up/Bewindvoerders2.png",
       ],
     }
   ];

@@ -216,7 +216,7 @@
         "description_long": "Wij hebben een reeks transformatieve AI-oplossingen voor onze klanten ontwikkeld. Ons team heeft een geavanceerd Retrieval-Augmented Generation (RAG) systeem gebouwd dat onderzoek en informatieverwerking aanzienlijk versnelt. Dit systeem stelt gebruikers in staat snel antwoorden te vinden op complexe vragen binnen grote documentcollecties. We hebben een intelligente persoonlijke assistent gecreëerd met toegang tot e-mails, kalenders en bedrijfssystemen die alles afhandelt, van het schrijven van conceptreacties tot het plannen van vergaderingen. We hebben een GPT-3.5 aangedreven boekingsoptimalisatie-engine geïmplementeerd die voertuigen intelligent herpositioneert op basis van historische gegevensanalyse. Onze geautomatiseerde boeteverwerkingsoplossing heeft de handmatige verwerkingstijd verminderd van 25 minuten naar slechts 1 minuut per geval. Deze implementaties tonen onze expertise in het benutten van geavanceerde AI-technologieën om complexe zakelijke uitdagingen op te lossen en innovatieve gebruikerservaringen te creëren die meetbare ROI opleveren."
       },
       "gdpr": {
-        "title": "Visconti AVG-Compliance",
+        "title": "AVG",
         "description": "Geïmplementeerde geautomatiseerde AVG-naleving voor Visconti-applicatie, met geplande data-anonimisering voor rapporten ouder dan vijf jaar, documentbeheer en redactie van gevoelige informatie met plaatsvervangende tekst.",
         "description_long": "Wij hebben een uitgebreide AVG-compliance oplossing ontworpen voor Visconti, een applicatie die officiële rapporten met gevoelige persoonsgegevens verwerkt. Ons team heeft een geautomatiseerd systeem ontwikkeld dat rapporten ouder dan vijf jaar intelligent identificeert en anonimiseert. Dit systeem vervangt persoonlijke identificatiegegevens door 'XXXX'-plaatshouders terwijl de data-integriteit voor analytisch gebruik behouden blijft. We hebben robuuste documentopvragingsmechanismen en veilige verwijderingsfunctionaliteit voor bijbehorende PDF-bijlagen gebouwd. Onze oplossing is geïmplementeerd als een console-applicatie die is geconfigureerd met taakplanner om dagelijks controles uit te voeren. Deze implementatie zorgt voor continue naleving van regelgeving met minimaal toezicht van de klant. Onze aanpak balanceert met succes wettelijke vereisten met operationele behoeften, beschermt de privacy van individuen en behoudt tegelijkertijd de datastructuur voor business intelligence doeleinden."
       },
@@ -258,15 +258,21 @@
       "nextjs": "Next.js",
       "laravel": "Laravel",
       "mailtrap": "Mailtrap",
-      ".net": ".Net",
-      "C#": "C#",
-      "asp.net": "Asp.net",
+      "dotnet": ".Net",
+      "c#": "C#",
+      "excel": "Excel",
+      "aspdotnet": "Asp.net",
       "javascript": "Javascript",
       "tsql": "TSQL",
       "ssms": "SSMS",
-      "Git": "Git",
-      "azure devops": "Azure DevOps",
-      "tailwind": "Tailwind"
+      "git": "Git",
+      "azuredevops": "Azure DevOps",
+      "tailwind": "Tailwind",
+      "winforms": "Windows Forms",
+      "stripe": "Stripe",
+      "php": "PHP",
+      "consoleapp": "Console Applicatie",
+      "taskscheduler": "Task Scheduler"
     }
   },
   "statistics": {
