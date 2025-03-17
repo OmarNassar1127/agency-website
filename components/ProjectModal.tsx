@@ -12,6 +12,14 @@ export type Project = {
   technologies: string[];
   longDescription?: string;
   images?: string[];
+  popup?: {
+    overview: string;
+    challenge: string;
+    solution: string;
+    features: string[];
+    technologies: string;
+    results: string;
+  };
 };
 
 const ProjectModal = ({ 
@@ -225,7 +233,55 @@ const ProjectModal = ({
           
           {/* Project description */}
           <div className="prose prose-lg dark:prose-invert max-w-none mb-8">
-            {project.longDescription ? (
+            {project.popup ? (
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Project Overview
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300">{project.popup.overview}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Challenge
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300">{project.popup.challenge}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Solution
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300">{project.popup.solution}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Key Features
+                  </h3>
+                  <ul className="list-disc pl-5 space-y-2">
+                    {project.popup.features.map((feature, idx) => (
+                      <li key={idx} className="text-gray-700 dark:text-gray-300">{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Technologies Used
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300">{project.popup.technologies}</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-3">
+                    Results & Impact
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300">{project.popup.results}</p>
+                </div>
+              </div>
+            ) : project.longDescription ? (
               <div className="space-y-6">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                   Project Overview

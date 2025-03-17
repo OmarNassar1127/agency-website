@@ -140,6 +140,48 @@
           "0": "End-to-end solutions",
           "1": "Scalable architecture",
           "2": "User-centered design"
+        },
+        "detailedContent": {
+          "overview": "Our custom software development service delivers tailored applications designed specifically for your unique business needs. Unlike off-the-shelf solutions, our bespoke software perfectly aligns with your workflows, automates complex processes, and provides a competitive advantage through technology that works exactly the way your business does.\n\nWe follow a collaborative, user-centered approach to create intuitive, scalable, and maintainable software solutions that solve your specific business challenges and support your long-term growth objectives.",
+          "approach": "Our development process begins with a thorough discovery phase to deeply understand your business objectives, user needs, and technical requirements. We create detailed specifications and wireframes, followed by iterative development with regular demos and feedback integration.\n\nWe employ Agile methodologies with two-week sprint cycles, maintaining transparency throughout the development process. Our cross-functional teams include senior developers, designers, QA specialists, and project managers working collaboratively to deliver exceptional results.",
+          "benefits": "• <span class='font-semibold'>Perfectly tailored to your needs</span> - Solutions built specifically for your unique business challenges and workflows\n• <span class='font-semibold'>Enhanced efficiency and productivity</span> - Automation of repetitive tasks and streamlined workflows\n• <span class='font-semibold'>Competitive advantage</span> - Unique capabilities that differentiate your business from competitors\n• <span class='font-semibold'>Scalability</span> - Architecture designed to grow as your business expands\n• <span class='font-semibold'>Integration capabilities</span> - Seamless connection with your existing systems and third-party applications\n• <span class='font-semibold'>Ongoing support</span> - Continuous improvements and updates as your business evolves",
+          "deliverables": [
+            "Comprehensive software requirements specification",
+            "User interface designs and interactive prototypes",
+            "Fully tested and documented application code",
+            "Database architecture and data migration",
+            "Deployment to production environment",
+            "User training and comprehensive documentation",
+            "Post-launch support and maintenance"
+          ],
+          "technologies": [
+            "Frontend: React, Angular, Vue.js",
+            "Backend: Node.js, Laravel, .NET Core",
+            "Mobile: React Native, Flutter, Swift, Kotlin",
+            "Databases: MySQL, PostgreSQL, MongoDB",
+            "Cloud: AWS, Azure, Google Cloud",
+            "DevOps: Docker, Kubernetes, CI/CD pipelines"
+          ],
+          "timeline": "Our custom software development projects typically follow this timeline:\n\n• Discovery & Planning: 2-4 weeks\n• Design & Prototyping: 2-3 weeks\n• Development & Testing: 8-16 weeks (depending on project scope)\n• Deployment & Training: 1-2 weeks\n• Post-launch support: Ongoing\n\nThe exact timeline depends on project complexity, scope, and specific requirements.",
+          "pricing": "We offer flexible pricing models to suit different project needs:\n\n• <span class='font-semibold'>Fixed price</span>: For well-defined projects with clear requirements\n• <span class='font-semibold'>Time & materials</span>: For projects requiring agility and evolving requirements\n• <span class='font-semibold'>Dedicated teams</span>: For long-term development needs with a consistent team\n\nCost factors include project complexity, timeline, features, integrations required, and ongoing support needs. Contact us for a personalized quote based on your specific requirements.",
+          "faq": [
+            {
+              "question": "How do you ensure the software will meet our specific business needs?",
+              "answer": "We begin with an in-depth discovery phase, working closely with your team to understand your business processes, pain points, and objectives. We create detailed specifications and wireframes that are reviewed and approved by stakeholders before development begins. Throughout the development process, we maintain regular communication and demos to ensure the solution aligns perfectly with your needs."
+            },
+            {
+              "question": "Can you integrate with our existing systems?",
+              "answer": "Yes, we specialize in creating custom software that integrates seamlessly with your existing ecosystem. Our developers are experienced in working with diverse APIs, databases, and legacy systems to ensure smooth data flow and functionality across your entire technology stack."
+            },
+            {
+              "question": "How do you ensure security and data protection?",
+              "answer": "Security is built into every stage of our development process. We implement industry best practices such as secure authentication, data encryption, input validation, and regular security testing. Our solutions comply with relevant data protection regulations, and we provide comprehensive documentation of security measures implemented."
+            },
+            {
+              "question": "What happens after the software is launched?",
+              "answer": "We offer flexible support and maintenance plans to ensure your software continues to perform optimally. This includes bug fixes, security updates, performance optimization, and feature enhancements. We can provide training for your team and establish knowledge transfer protocols to ensure you have the expertise to manage the solution effectively."
+            }
+          ]
         }
       },
       "webDev": {
@@ -149,6 +191,51 @@
           "0": "Modern frameworks",
           "1": "Responsive design",
           "2": "API integration"
+        },
+        "detailedContent": {
+          "overview": "Our web application development service creates powerful, scalable, and responsive web-based solutions that help businesses streamline operations, enhance customer engagement, and drive growth in today's digital landscape.\n\nFrom complex enterprise applications to customer-facing portals, we leverage modern frameworks and best practices to deliver intuitive, high-performance web applications that work flawlessly across all devices and provide compelling user experiences while solving critical business challenges.",
+          "approach": "We follow a proven development methodology that begins with thorough research and planning to understand your business goals and user needs. Our design-first approach ensures intuitive user experiences that align with your brand identity.\n\nDevelopment proceeds in Agile sprints with frequent demos and feedback integration. We implement automated testing and CI/CD pipelines to ensure quality and enable rapid iterations. Post-launch, we provide comprehensive analytics, support, and continuous improvement.",
+          "benefits": "• <span class='font-semibold'>Cross-platform functionality</span> - Applications that work seamlessly across devices and browsers\n• <span class='font-semibold'>Improved user engagement</span> - Intuitive interfaces that enhance user retention and satisfaction\n• <span class='font-semibold'>Increased operational efficiency</span> - Automation of manual processes and streamlined workflows\n• <span class='font-semibold'>Data-driven insights</span> - Analytics integration for informed business decisions\n• <span class='font-semibold'>Enhanced security</span> - Protection against common web vulnerabilities and threats\n• <span class='font-semibold'>Rapid scaling</span> - Architecture that accommodates growing user bases and expanded functionality",
+          "deliverables": [
+            "Comprehensive user experience research and wireframes",
+            "Responsive UI/UX designs with interactive prototypes",
+            "Fully tested frontend and backend code",
+            "RESTful or GraphQL APIs for data exchange",
+            "Database design and implementation",
+            "Security hardening and performance optimization",
+            "Deployment to production environment with CI/CD pipelines",
+            "Comprehensive documentation and maintenance support"
+          ],
+          "technologies": [
+            "Frontend: React, Next.js, Angular, Vue.js",
+            "Backend: Node.js, Express, Laravel, Django, ASP.NET Core",
+            "Databases: PostgreSQL, MongoDB, MySQL, Redis",
+            "APIs: RESTful, GraphQL",
+            "State Management: Redux, Context API, Vuex",
+            "UI Frameworks: Tailwind CSS, Material UI, Bootstrap",
+            "Testing: Jest, Cypress, Mocha",
+            "DevOps: Docker, GitHub Actions, AWS, Vercel"
+          ],
+          "timeline": "Our web application development projects typically follow this timeline:\n\n• Discovery & Requirements: 1-2 weeks\n• UX/UI Design: 2-4 weeks\n• Development: 8-12 weeks (varies by project scope)\n• Testing & QA: 2-3 weeks (concurrent with development)\n• Deployment & Launch: 1 week\n• Post-launch support: Ongoing\n\nWe can expedite timelines for MVPs or phase development for larger applications.",
+          "pricing": "We offer flexible pricing options based on project requirements:\n\n• <span class='font-semibold'>Fixed project quote</span>: Based on detailed scope of work\n• <span class='font-semibold'>Sprint-based pricing</span>: For Agile development with evolving requirements\n• <span class='font-semibold'>Retainer model</span>: For ongoing development and maintenance\n\nFactors affecting pricing include application complexity, feature set, third-party integrations, security requirements, and timeline constraints. Contact us for a tailored quote based on your specific needs.",
+          "faq": [
+            {
+              "question": "How do you ensure my web application will be responsive across all devices?",
+              "answer": "We implement mobile-first, responsive design principles from the start. Our development process includes testing on multiple device types, screen sizes, and browsers to ensure consistent functionality and appearance. We use modern CSS frameworks and responsive design techniques, implementing breakpoints for different screen sizes and ensuring optimal user experiences whether on desktop, tablet, or mobile devices."
+            },
+            {
+              "question": "How will you handle user authentication and data security?",
+              "answer": "We implement robust authentication systems with options including email/password, social logins, SSO, and MFA. For data security, we follow industry best practices including HTTPS encryption, secure cookie handling, input validation, parameterized queries to prevent SQL injection, and regular security audits. We can also implement role-based access control and comply with relevant regulations like GDPR or CCPA."
+            },
+            {
+              "question": "Can my web application integrate with other software we use?",
+              "answer": "Yes, we specialize in creating applications that integrate seamlessly with existing systems. We can develop custom APIs or leverage existing ones to connect with CRMs, ERPs, payment processors, marketing platforms, and other business tools. Our experience includes working with popular services like Salesforce, HubSpot, Stripe, and many others, as well as custom legacy systems."
+            },
+            {
+              "question": "How do you approach web application performance optimization?",
+              "answer": "Performance is a priority throughout development. We implement code splitting, lazy loading, and efficient asset management to optimize load times. We use server-side rendering or static generation where appropriate, optimize database queries, implement caching strategies, and compress assets. We conduct regular performance testing using tools like Lighthouse to identify and address bottlenecks before they impact users."
+            }
+          ]
         }
       },
       "mobileDev": {
@@ -158,6 +245,52 @@
           "0": "iOS & Android",
           "1": "Cross-platform",
           "2": "Offline capabilities"
+        },
+        "detailedContent": {
+          "overview": "Our mobile application development service creates engaging, high-performance apps for iOS and Android that help businesses connect with customers, streamline operations, and deliver value on the devices users interact with most.\n\nWhether you need native applications with platform-specific optimizations or cross-platform solutions for broader reach, we develop intuitive, feature-rich mobile experiences that align with your business goals while meeting the highest standards of performance, security, and user experience.",
+          "approach": "We begin with comprehensive research to understand your target audience, business objectives, and competitive landscape. Our UX/UI designers create intuitive, engaging interfaces optimized for mobile interaction patterns and accessibility.\n\nDevelopment follows either native (platform-specific) or cross-platform approaches based on project requirements. We implement rigorous testing across devices, conduct user testing with real participants, and provide comprehensive analytics to track performance after launch.",
+          "benefits": "• <span class='font-semibold'>Enhanced customer engagement</span> - Direct channel to users through personalized experiences\n• <span class='font-semibold'>Brand strengthening</span> - Increased visibility and regular engagement with your brand\n• <span class='font-semibold'>New revenue streams</span> - In-app purchases, subscriptions, or premium features\n• <span class='font-semibold'>Operational efficiency</span> - Streamlined processes and mobile access to business systems\n• <span class='font-semibold'>Valuable data insights</span> - Analytics on user behavior to inform business decisions\n• <span class='font-semibold'>Offline functionality</span> - Core features available without constant internet connection",
+          "deliverables": [
+            "Comprehensive market and user research",
+            "Wireframes and interactive prototypes",
+            "Intuitive UI/UX design aligned with platform guidelines",
+            "Clean, optimized application code",
+            "Backend API development and integration",
+            "Thorough testing across devices and platforms",
+            "App store submission and optimization",
+            "Analytics integration and post-launch support",
+            "Documentation and knowledge transfer"
+          ],
+          "technologies": [
+            "Native iOS: Swift, SwiftUI, UIKit",
+            "Native Android: Kotlin, Jetpack Compose",
+            "Cross-platform: React Native, Flutter",
+            "Backend: Node.js, Laravel, Firebase",
+            "Databases: SQLite, Realm, Firebase Realtime DB",
+            "Authentication: OAuth, JWT, Biometrics",
+            "Analytics: Firebase Analytics, Mixpanel, Amplitude",
+            "CI/CD: Fastlane, GitHub Actions, App Center"
+          ],
+          "timeline": "Our mobile app development timeline typically follows these phases:\n\n• Research & Planning: 1-2 weeks\n• UX/UI Design: 2-4 weeks\n• Development: 8-16 weeks (varies by complexity)\n• Testing & QA: 2-3 weeks (concurrent with development)\n• Beta Testing: 2 weeks\n• App Store Submission: 1-2 weeks\n• Post-launch support: Ongoing\n\nTimelines can be adjusted based on scope, complexity, and specific requirements.",
+          "pricing": "Our mobile app development pricing is structured to accommodate different project needs:\n\n• <span class='font-semibold'>Fixed project fee</span>: Based on detailed requirements and scope\n• <span class='font-semibold'>Milestone-based payment</span>: Linked to delivery of specific components\n• <span class='font-semibold'>Retainer model</span>: For ongoing development and maintenance\n\nFactors affecting cost include platform requirements (iOS, Android, or both), complexity of features, third-party integrations, backend requirements, and timeline. Contact us for a customized quote based on your specific needs.",
+          "faq": [
+            {
+              "question": "Should I choose native or cross-platform development?",
+              "answer": "This depends on your specific requirements. Native development (separate iOS and Android apps) offers optimal performance, full access to platform-specific features, and the best user experience. Cross-platform solutions (like React Native or Flutter) provide faster development, code reuse, and lower cost while still delivering good performance for many applications. We'll recommend the best approach based on your goals, budget, timeline, and application complexity."
+            },
+            {
+              "question": "How do you ensure the app will work across different devices and OS versions?",
+              "answer": "We implement comprehensive testing strategies including device labs with various physical devices, emulators/simulators for different screen sizes and OS versions, and automated testing tools. We follow platform design guidelines and best practices for backward compatibility, and we structure code to degrade gracefully on older devices while taking advantage of newer features when available."
+            },
+            {
+              "question": "How will you handle app store submission and approval?",
+              "answer": "We manage the entire submission process, including preparing all required assets (screenshots, descriptions, keywords), ensuring compliance with App Store and Google Play guidelines, setting up developer accounts if needed, and addressing any feedback from the review process. We implement App Store Optimization strategies to improve visibility and conversion rates, and we maintain the apps through regular updates to ensure ongoing compliance with evolving platform requirements."
+            },
+            {
+              "question": "What about app maintenance and updates after launch?",
+              "answer": "We offer flexible maintenance plans that include regular OS compatibility updates, performance optimizations, bug fixes, and security patches. We can provide ongoing feature development, A/B testing for optimization, and analytics monitoring to identify improvement opportunities. Our team can also handle user feedback management and implement regular update cycles to keep your app competitive and functioning optimally."
+            }
+          ]
         }
       },
       "cloudSolutions": {
@@ -167,6 +300,53 @@
           "0": "AWS & Azure expertise",
           "1": "Auto-scaling",
           "2": "Security focused"
+        },
+        "detailedContent": {
+          "overview": "Our cloud solutions service enables businesses to leverage the power of cloud computing to achieve unprecedented scalability, flexibility, and cost-efficiency. Whether you're migrating existing infrastructure to the cloud, optimizing current cloud resources, or building cloud-native applications, we provide expert guidance and implementation to transform your IT operations.\n\nWe design and implement secure, resilient cloud architectures that align with your business needs, ensuring high availability, performance, and resource optimization while reducing operational overhead and enhancing your ability to innovate rapidly.",
+          "approach": "We begin with a thorough assessment of your current infrastructure, applications, and business needs to develop a tailored cloud strategy. For migrations, we follow a methodical approach that minimizes disruption while ensuring data integrity and system continuity.\n\nFor new implementations, we architect solutions using infrastructure as code principles, enabling repeatability, consistency, and automated deployments. Throughout the process, we implement robust security controls, monitoring systems, and documented operational procedures.",
+          "benefits": "• <span class='font-semibold'>Enhanced scalability</span> - Easily adapt resources to match demand fluctuations\n• <span class='font-semibold'>Significant cost optimization</span> - Pay only for resources used with no upfront infrastructure costs\n• <span class='font-semibold'>Improved reliability</span> - High availability architectures with redundancy across regions\n• <span class='font-semibold'>Increased agility</span> - Rapidly deploy new features and applications\n• <span class='font-semibold'>Advanced security</span> - Leverage cloud provider security features and best practices\n• <span class='font-semibold'>Global reach</span> - Deploy resources closer to your users worldwide\n• <span class='font-semibold'>Reduced operational burden</span> - Shift from infrastructure maintenance to innovation",
+          "deliverables": [
+            "Comprehensive cloud strategy and architecture design",
+            "Infrastructure as code templates (Terraform, CloudFormation, etc.)",
+            "Secure landing zone implementation",
+            "Migration execution and validation",
+            "Automated CI/CD pipelines",
+            "Monitoring and alerting systems",
+            "Security controls and compliance documentation",
+            "Cost optimization recommendations",
+            "Knowledge transfer and documentation",
+            "Ongoing support and optimization"
+          ],
+          "technologies": [
+            "Cloud Platforms: AWS, Microsoft Azure, Google Cloud",
+            "IaC Tools: Terraform, CloudFormation, Pulumi",
+            "Containers: Docker, Kubernetes, ECS",
+            "CI/CD: GitHub Actions, GitLab CI, Jenkins",
+            "Monitoring: CloudWatch, Prometheus, Grafana",
+            "Security: IAM, Key Management, WAF, Network Security",
+            "Databases: RDS, DynamoDB, Cosmos DB, Cloud SQL",
+            "Serverless: Lambda, Azure Functions, Cloud Run"
+          ],
+          "timeline": "Our cloud projects typically follow these timeframes:\n\n• Assessment & Strategy: 1-3 weeks\n• Architecture Design: 2-4 weeks\n• Initial Implementation: 4-8 weeks\n• Migration (if applicable): 4-12 weeks (depends on complexity)\n• Optimization: 2-4 weeks\n• Knowledge Transfer: 1-2 weeks\n• Ongoing Support: As needed\n\nTimelines vary based on environment complexity, number of applications, and specific requirements.",
+          "pricing": "We offer flexible engagement models for our cloud services:\n\n• <span class='font-semibold'>Project-based</span>: Fixed fee for defined scope and deliverables\n• <span class='font-semibold'>Retainer model</span>: Ongoing support, optimization, and development\n• <span class='font-semibold'>Advisory services</span>: Expert guidance without implementation\n\nFactors affecting pricing include project scope, timeline requirements, complexity of current environment, migration needs, and level of ongoing support required. Contact us for a personalized quote based on your specific requirements.",
+          "faq": [
+            {
+              "question": "How do you ensure a smooth migration to the cloud without disrupting our operations?",
+              "answer": "We follow a methodical migration approach that includes thorough assessment, detailed planning, and phased execution. We implement comprehensive testing at each stage, maintain parallel environments during transition periods, and schedule migrations during low-traffic periods when possible. Our team develops detailed rollback plans for each migration phase and conducts dry runs for critical systems to identify and address potential issues before they impact production."
+            },
+            {
+              "question": "How do you address security and compliance in cloud environments?",
+              "answer": "We implement security by design in all cloud architectures, following industry best practices and compliance frameworks. This includes implementing proper identity and access management, network segmentation, encryption (at rest and in transit), security monitoring, and automated compliance checks. We design systems to meet specific regulatory requirements (GDPR, HIPAA, etc.) when needed and provide documentation of security controls for audit purposes."
+            },
+            {
+              "question": "How will cloud migration affect our current applications and databases?",
+              "answer": "Impact varies depending on application architecture and migration strategy. We assess each application to determine the optimal approach: rehosting (lift and shift), replatforming (lift and optimize), refactoring (modernizing for cloud-native capabilities), or replacing with SaaS alternatives. For databases, we implement strategies like schema conversion tools, replication for zero-downtime migration, or data pipelines for complex transformations, always ensuring data integrity and application compatibility."
+            },
+            {
+              "question": "How do you optimize cloud costs after migration?",
+              "answer": "We implement several cost optimization strategies including right-sizing instances, utilizing reserved instances or savings plans for predictable workloads, implementing auto-scaling for variable workloads, and identifying and removing unused resources. We set up detailed cost allocation tagging, implement resource scheduling for non-production environments, and use serverless architectures where appropriate. We also provide regular cost optimization reviews and recommendations as part of our ongoing service."
+            }
+          ]
         }
       },
       "aiMl": {
@@ -176,6 +356,52 @@
           "0": "Predictive analytics",
           "1": "Data visualization",
           "2": "ML model training"
+        },
+        "detailedContent": {
+          "overview": "Our AI & Machine Learning services transform your business data into powerful insights and intelligent automation. We develop custom AI solutions that enable predictive decision-making, automate complex tasks, and uncover patterns that drive strategic advantage.\n\nFrom natural language processing and computer vision to predictive analytics and recommendation systems, we leverage cutting-edge AI technologies to solve complex business challenges, optimize operations, and create new capabilities that were previously impossible with traditional approaches.",
+          "approach": "We follow a methodical process beginning with defining clear business objectives and identifying how AI can address specific challenges. Data collection, preparation, and exploration form the foundation of our approach, ensuring high-quality inputs for model development.\n\nWe select and develop appropriate models based on your specific needs, implement rigorous training and testing procedures, and focus on creating explainable AI solutions where decisions can be understood and trusted. Implementation includes integration with existing systems, monitoring capabilities, and continuous improvement mechanisms.",
+          "benefits": "• <span class='font-semibold'>Enhanced decision-making</span> - Data-driven insights for more accurate and timely decisions\n• <span class='font-semibold'>Operational efficiency</span> - Automation of complex, time-consuming tasks\n• <span class='font-semibold'>Personalized customer experiences</span> - Tailored interactions based on individual preferences and behaviors\n• <span class='font-semibold'>Predictive capabilities</span> - Anticipate trends, issues, and opportunities before they occur\n• <span class='font-semibold'>Competitive advantage</span> - Leverage insights and capabilities unavailable to competitors\n• <span class='font-semibold'>Cost reduction</span> - Optimize resource allocation and eliminate inefficiencies\n• <span class='font-semibold'>New business capabilities</span> - Enable previously impossible functionality and services",
+          "deliverables": [
+            "Comprehensive AI strategy aligned with business objectives",
+            "Data assessment and preparation pipelines",
+            "Custom ML models tailored to your specific needs",
+            "Integration with existing systems and workflows",
+            "User-friendly interfaces for AI-powered features",
+            "Performance monitoring and evaluation systems",
+            "Documentation and knowledge transfer",
+            "Model maintenance and improvement procedures",
+            "Ethical AI implementation with appropriate governance"
+          ],
+          "technologies": [
+            "Machine Learning: TensorFlow, PyTorch, scikit-learn",
+            "Natural Language Processing: BERT, GPT, Transformers",
+            "Computer Vision: OpenCV, YOLO, CNN architectures",
+            "Data Processing: Pandas, Apache Spark, Databricks",
+            "MLOps: MLflow, Kubeflow, Azure ML",
+            "Cloud AI: AWS SageMaker, Google AI, Azure ML",
+            "Big Data: Hadoop, Spark, Kafka",
+            "Visualization: Power BI, Tableau, D3.js"
+          ],
+          "timeline": "AI project timelines typically follow these phases:\n\n• Discovery & Strategy: 2-3 weeks\n• Data Collection & Preparation: 3-6 weeks\n• Model Development & Training: 4-12 weeks\n• Integration & Testing: 2-4 weeks\n• Deployment & Validation: 2-3 weeks\n• Monitoring & Refinement: Ongoing\n\nTimelines vary based on data availability, problem complexity, and integration requirements.",
+          "pricing": "We offer flexible pricing options for AI projects:\n\n• <span class='font-semibold'>Project-based</span>: Fixed price for defined scope\n• <span class='font-semibold'>Phased approach</span>: Separate pricing for discovery, proof of concept, and full implementation\n• <span class='font-semibold'>Ongoing service</span>: Model maintenance, retraining, and continuous improvement\n\nFactors affecting cost include data quality and availability, problem complexity, integration requirements, performance expectations, and timeline constraints. Contact us for a tailored quote based on your specific needs.",
+          "faq": [
+            {
+              "question": "What kind of data do we need to implement AI solutions successfully?",
+              "answer": "The quantity, quality, and type of data needed depend on the specific AI application. Generally, you'll need relevant, representative, and sufficient data for the problem you're trying to solve. For supervised learning, labeled data is essential. If you have limited data, we can employ techniques like transfer learning, data augmentation, or synthetic data generation. We begin every project with a data assessment to evaluate your current data assets and identify any collection or preparation needs."
+            },
+            {
+              "question": "How do you ensure AI systems are ethical, unbiased, and transparent?",
+              "answer": "We implement several practices to ensure ethical AI: rigorous data auditing to identify and mitigate bias, diverse training data to ensure representation, regular fairness assessments using established metrics, and model explainability techniques to provide transparency in decision-making. We design systems with appropriate human oversight and implement monitoring to detect drift or unexpected behaviors. Our approach aligns with emerging ethical AI frameworks and regulations, and we provide documentation of our methods and controls."
+            },
+            {
+              "question": "How long until we see results from AI implementation?",
+              "answer": "The timeline to results varies by project type. Simple automation projects or integrating pre-built AI services can show results in weeks. Custom machine learning models typically require 2-4 months from data preparation through deployment to demonstrate initial business value. Complex projects involving extensive data preparation, custom algorithm development, or integration with multiple systems may take 4-6 months to deliver measurable outcomes. We typically establish early proof points and can often deliver incremental value before full implementation."
+            },
+            {
+              "question": "How do you maintain and improve AI models after deployment?",
+              "answer": "We implement comprehensive MLOps practices including automated performance monitoring to detect model drift or degradation, A/B testing frameworks for evaluating improvements, regular retraining schedules with fresh data, and version control for models and datasets. We establish clear performance metrics aligned with business objectives and provide dashboards for visibility. For critical applications, we implement champion-challenger approaches where new models are validated against current production models before deployment."
+            }
+          ]
         }
       },
       "devOps": {
@@ -185,8 +411,72 @@
           "0": "CI/CD pipelines",
           "1": "Infrastructure as code",
           "2": "Monitoring & logging"
+        },
+        "detailedContent": {
+          "overview": "Our DevOps & CI/CD services transform software delivery capabilities by breaking down silos between development and operations, implementing automation throughout the software lifecycle, and establishing reliable, repeatable processes for building, testing, and deploying applications.\n\nWe help organizations increase deployment frequency, reduce lead time for changes, lower failure rates, and achieve faster recovery times. Our approach combines cultural transformation, process improvement, and technical implementation to create a high-performance software delivery organization.",
+          "approach": "We begin with a comprehensive assessment of your current development and deployment processes to identify bottlenecks and improvement opportunities. Based on this analysis, we design a tailored DevOps implementation roadmap.\n\nWe implement infrastructure as code, automated testing frameworks, and continuous integration/continuous delivery pipelines. Throughout implementation, we focus on knowledge transfer, documentation, and building self-service capabilities to empower your teams. Our approach emphasizes measuring key metrics to demonstrate improvements and guide further optimization.",
+          "benefits": "• <span class='font-semibold'>Accelerated delivery</span> - Shortened development cycles and faster time-to-market\n• <span class='font-semibold'>Improved quality</span> - Automated testing and validation at every stage\n• <span class='font-semibold'>Enhanced collaboration</span> - Breaking down silos between development and operations\n• <span class='font-semibold'>Increased stability</span> - Consistent, repeatable deployments with fewer failures\n• <span class='font-semibold'>Better resource utilization</span> - Automation of manual tasks frees up team time\n• <span class='font-semibold'>Greater visibility</span> - Comprehensive monitoring and feedback mechanisms\n• <span class='font-semibold'>Risk reduction</span> - Smaller, more frequent changes lower deployment risk",
+          "deliverables": [
+            "DevOps assessment and transformation roadmap",
+            "Infrastructure as code implementation",
+            "Automated testing frameworks (unit, integration, performance)",
+            "CI/CD pipeline design and implementation",
+            "Containerization and orchestration solutions",
+            "Monitoring, logging, and alerting systems",
+            "Security scanning and compliance validation",
+            "Self-service developer platforms",
+            "Documentation and knowledge transfer",
+            "Metrics and reporting dashboards"
+          ],
+          "technologies": [
+            "CI/CD: Jenkins, GitHub Actions, GitLab CI, Azure DevOps",
+            "Containers: Docker, Kubernetes, OpenShift",
+            "IaC: Terraform, Ansible, CloudFormation",
+            "Monitoring: Prometheus, Grafana, ELK Stack, Datadog",
+            "Testing: Selenium, JUnit, pytest, JMeter",
+            "Security: SonarQube, OWASP ZAP, Snyk, Trivy",
+            "Source Control: Git, GitHub, GitLab, Bitbucket",
+            "Artifact Management: Nexus, Artifactory, Docker Registry"
+          ],
+          "timeline": "DevOps transformation typically follows these phases:\n\n• Assessment & Strategy: 2-4 weeks\n• Initial Implementation (CI/CD, IaC): 4-8 weeks\n• Testing Automation: 3-6 weeks\n• Monitoring & Observability: 2-4 weeks\n• Security Integration: 2-4 weeks\n• Knowledge Transfer & Optimization: 4-8 weeks\n\nTimelines vary based on organizational complexity, technical debt, and readiness for change.",
+          "pricing": "We offer several engagement models for DevOps services:\n\n• <span class='font-semibold'>Assessment & Roadmap</span>: Fixed price engagement to evaluate current state and develop transformation strategy\n• <span class='font-semibold'>Implementation Project</span>: Scope-based pricing for specific DevOps capabilities\n• <span class='font-semibold'>DevOps Team Augmentation</span>: Staff augmentation with DevOps specialists\n• <span class='font-semibold'>Managed DevOps</span>: Ongoing service for pipeline maintenance and optimization\n\nCost factors include organizational size, technical complexity, desired level of automation, and timeframe. Contact us for a personalized quote based on your specific needs.",
+          "faq": [
+            {
+              "question": "How do you manage the cultural change required for DevOps adoption?",
+              "answer": "Cultural transformation is critical to DevOps success. We approach this through several methods: executive workshops to build leadership alignment, cross-functional team formation to break down silos, training and hands-on workshops to build skills, identifying and empowering DevOps champions within your organization, and establishing clear metrics to measure and demonstrate progress. We typically implement changes incrementally, starting with pilot projects that can demonstrate success and build momentum for broader adoption."
+            },
+            {
+              "question": "How do you incorporate security into the DevOps process?",
+              "answer": "We implement DevSecOps practices by integrating security throughout the development lifecycle rather than treating it as a final gate. This includes automated vulnerability scanning in CI/CD pipelines, infrastructure security validation, dependency scanning, secrets management, compliance as code, and security policy enforcement. We establish security baselines, implement automated security testing, and provide security dashboards to maintain visibility. Our approach ensures security is a shared responsibility across teams without becoming a bottleneck to delivery."
+            },
+            {
+              "question": "What metrics do you use to measure DevOps success?",
+              "answer": "We focus on four key metrics from the DORA research: deployment frequency (how often you successfully release to production), lead time for changes (time from code commit to production deployment), mean time to recover (how quickly you can recover from failures), and change failure rate (percentage of deployments causing failures). We also track team-focused metrics like sprint predictability and velocity, and business metrics like time-to-market for features and customer satisfaction. We implement dashboards to track these metrics and demonstrate improvement over time."
+            },
+            {
+              "question": "Can you implement DevOps in our legacy environment?",
+              "answer": "Yes, we have extensive experience implementing DevOps practices in legacy environments. While legacy systems present challenges, we can still achieve significant improvements. Our approach includes implementing CI/CD for components that can be isolated, creating automated testing around legacy components, employing feature flags to decouple deployment from release, and gradually modernizing components when possible. We often implement deployment automation first, then work backward to improve testing and build automation, demonstrating value at each stage of the transformation."
+            }
+          ]
         }
       }
+    },
+    "modal": {
+      "tabs": {
+        "overview": "Overview",
+        "approach": "Our Approach",
+        "benefits": "Benefits",
+        "faq": "FAQ"
+      },
+      "deliverables": "What You'll Get",
+      "technologies": "Technologies We Use",
+      "timeline": "Timeline",
+      "pricing": "Pricing",
+      "interested": "Interested in this service?",
+      "contactButton": "Contact Us",
+      "noApproachInfo": "Our tailored approach for this service will be discussed during initial consultation to ensure it meets your specific business needs.",
+      "noBenefitsInfo": "The benefits of this service will be customized to your specific business requirements and goals.",
+      "noFaqInfo": "Have questions? Contact us for more information about this service."
     }
   },
   "featuredProjects": {
@@ -198,42 +488,167 @@
       "quotum": {
         "title": "SaaS platform - Quotum",
         "description": "Developed SaaS platform - Quotum.Cloud, a financial SaaS for investors, featuring Stripe-integrated subscriptions, TradingView charts, CRM for coins, posts management, and advanced wallet tracking via API integrations.",
-        "description_long": "We developed Quotum.Cloud, a comprehensive financial SaaS solution designed for investors and traders. Our team built robust subscription management integrated with Stripe for seamless payments. We created advanced charting tools with TradingView integration, and implemented a sophisticated posts management system. Our engineers designed a CRM system for easy coin management and developed an intricate wallet tracker featuring extensive API integrations. We implemented detailed financial calculations to provide users with powerful insights and analytics."
+        "description_long": "We developed Quotum.Cloud, a comprehensive financial SaaS solution designed for investors and traders. Our team built robust subscription management integrated with Stripe for seamless payments. We created advanced charting tools with TradingView integration, and implemented a sophisticated posts management system. Our engineers designed a CRM system for easy coin management and developed an intricate wallet tracker featuring extensive API integrations. We implemented detailed financial calculations to provide users with powerful insights and analytics.",
+        "popup": {
+          "overview": "Quotum.Cloud is a comprehensive financial platform for cryptocurrency investors and traders seeking to optimize their portfolio management and investment strategies.",
+          "challenge": "Our client needed a sophisticated platform to help cryptocurrency traders track their investments, analyze market trends, and make data-driven decisions across multiple exchanges.",
+          "solution": "We developed a complete financial ecosystem with subscription-based access, real-time portfolio tracking, advanced analytics, and automated reporting features.",
+          "features": [
+            "Secure Stripe payment integration for subscription management",
+            "Interactive TradingView charts with custom technical indicators",
+            "Comprehensive CRM system for cryptocurrency asset management",
+            "Multi-wallet tracking across major exchanges via API connections",
+            "Automated tax reporting and portfolio performance analytics",
+            "Content management system for investment insights and market updates"
+          ],
+          "technologies": "React, Node.js, MongoDB, Laravel, Stripe API, TradingView widgets, REST APIs, WebSockets, JWT authentication",
+          "results": "The platform achieved 95% user retention rate, with subscribers reporting an average 22% improvement in trading performance through better portfolio visibility and analytics."
+        }
       },
       "automations": {
         "title": "Shop Automations",
         "description": "Automated comprehensive e-commerce solutions for efficient order handling, smart pricing strategies, inventory management, and seamless integration with Bol.com, Amazon, and Marktplaats APIs.",
-        "description_long": "We developed extensive automation workflows tailored specifically for e-commerce platforms, integrating Bol.com, Amazon, and Marktplaats APIs. Our team streamlined complex order management systems for our clients' online stores. We implemented sophisticated dynamic pricing algorithms to ensure competitive positioning in the marketplace. Our solution automated inventory restocking processes and enabled real-time monitoring with detailed analytics dashboards. These implementations significantly boosted operational efficiency, accuracy, and profitability for our clients, empowering them to effortlessly manage and scale their online businesses."
+        "description_long": "We developed extensive automation workflows tailored specifically for e-commerce platforms, integrating Bol.com, Amazon, and Marktplaats APIs. Our team streamlined complex order management systems for our clients' online stores. We implemented sophisticated dynamic pricing algorithms to ensure competitive positioning in the marketplace. Our solution automated inventory restocking processes and enabled real-time monitoring with detailed analytics dashboards. These implementations significantly boosted operational efficiency, accuracy, and profitability for our clients, empowering them to effortlessly manage and scale their online businesses.",
+        "popup": {
+          "overview": "Our Shop Automations solution provides e-commerce businesses with end-to-end automation for marketplace management, dynamic pricing, and inventory synchronization across multiple platforms.",
+          "challenge": "A growing e-commerce company was struggling to manage listings, pricing, and inventory across Bol.com, Amazon, and Marktplaats manually, resulting in overselling, pricing inefficiencies, and administrative overhead.",
+          "solution": "We built a comprehensive automation system that integrates with multiple marketplace APIs to centralize operations, optimize pricing strategies, and automate order fulfillment processes.",
+          "features": [
+            "Centralized inventory management synchronized across multiple marketplaces",
+            "AI-powered dynamic pricing algorithms that respond to market conditions",
+            "Automated order processing and fulfillment workflow",
+            "Smart replenishment recommendations based on sales velocity",
+            "Competitor price monitoring and automatic adjustment strategies",
+            "Real-time analytics dashboard with performance metrics and sales forecasting"
+          ],
+          "technologies": "Laravel, Python, MySQL, Bol.com API, Amazon Marketplace Web Service, Marktplaats API, MongoDB, AWS Lambda, CloudWatch",
+          "results": "Our solution reduced manual order processing time by 85%, improved profit margins by 15% through optimized pricing, and eliminated inventory discrepancies across platforms, enabling our client to scale from 500 to 2,000+ products without additional staff."
+        }
       },
       "kyc": {
         "title": "KYC Integrations",
         "description": "Automated secure user onboarding by integrating Onfido's KYC verification and third-party credit scoring, reducing operational time and debt risk.",
-        "description_long": "We implemented a seamless onboarding solution by integrating Onfido's world-class KYC services alongside third-party credit verification providers. Our automation significantly boosted application security for our client's platform. We streamlined user verification processes and reduced operational workloads through intelligent verification flows. Our solution selectively verifies high-quality users based on sophisticated criteria. By implementing this targeted approach, we effectively lowered the overall debt per user for our client, enhancing their financial stability and operational efficiency."
+        "description_long": "We implemented a seamless onboarding solution by integrating Onfido's world-class KYC services alongside third-party credit verification providers. Our automation significantly boosted application security for our client's platform. We streamlined user verification processes and reduced operational workloads through intelligent verification flows. Our solution selectively verifies high-quality users based on sophisticated criteria. By implementing this targeted approach, we effectively lowered the overall debt per user for our client, enhancing their financial stability and operational efficiency.",
+        "popup": {
+          "overview": "Our KYC Integration system provides financial service providers with a robust, automated user verification process that balances security, compliance, and user experience.",
+          "challenge": "A financial services client needed to streamline their customer verification process while enhancing fraud prevention and meeting strict regulatory requirements for identity verification and credit assessment.",
+          "solution": "We developed an integrated verification system combining Onfido's identity verification technology with custom credit assessment algorithms to create a seamless, secure onboarding experience.",
+          "features": [
+            "Biometric identity verification with document authenticity checks",
+            "Automated credit scoring and risk assessment",
+            "Custom verification workflows based on risk profiles",
+            "Real-time decision engine for applicant approval",
+            "Fraud pattern detection and prevention system",
+            "Compliance documentation and audit trail generation",
+            "Admin dashboard for verification oversight and manual review cases"
+          ],
+          "technologies": "Laravel, MySQL, React Native, Onfido API, credit bureau integrations, facial recognition technology, OCR processing",
+          "results": "The implementation reduced verification processing time from 2 days to under 3 minutes, decreased fraud incidents by 67%, and lowered default rates by 38% through better applicant screening, all while maintaining regulatory compliance."
+        }
       },
       "ai": {
         "title": "AI Solutions",
         "description": "Developed innovative AI systems including research acceleration tools, intelligent personal assistants, and optimization engines that deliver substantial efficiency improvements and enhanced user experiences.",
-        "description_long": "We created a suite of transformative AI solutions across multiple domains for our clients. Our team developed a sophisticated Retrieval-Augmented Generation (RAG) system that significantly accelerates research and information retrieval. This system allows users to quickly find answers to complex questions within large document collections, improving research efficiency. We built an intelligent personal assistant with access to emails, calendars, and business systems. Our assistant handles everything from writing draft responses and sending emails to scheduling meetings and summarizing information. We implemented a GPT-3.5 powered booking optimization engine that intelligently repositions vehicles based on historical data analysis. Our automated fine processing solution reduced manual handling time from 25 minutes to just 1 minute per case. These implementations showcase our expertise in leveraging cutting-edge AI technologies to solve complex business challenges, streamline workflows, and create innovative user experiences that deliver measurable ROI."
+        "description_long": "We created a suite of transformative AI solutions across multiple domains for our clients. Our team developed a sophisticated Retrieval-Augmented Generation (RAG) system that significantly accelerates research and information retrieval. This system allows users to quickly find answers to complex questions within large document collections, improving research efficiency. We built an intelligent personal assistant with access to emails, calendars, and business systems. Our assistant handles everything from writing draft responses and sending emails to scheduling meetings and summarizing information. We implemented a GPT-3.5 powered booking optimization engine that intelligently repositions vehicles based on historical data analysis. Our automated fine processing solution reduced manual handling time from 25 minutes to just 1 minute per case. These implementations showcase our expertise in leveraging cutting-edge AI technologies to solve complex business challenges, streamline workflows, and create innovative user experiences that deliver measurable ROI.",
+        "popup": {
+          "overview": "Our AI Solutions suite encompasses intelligent systems that augment human capabilities, automate complex processes, and extract actionable insights from enterprise data.",
+          "challenge": "Multiple clients across different sectors were struggling with information overload, repetitive manual processes, and inefficient resource allocation that impacted productivity and decision quality.",
+          "solution": "We developed tailored AI systems including RAG-powered knowledge bases, intelligent process automation, and predictive optimization engines that transform raw data into business intelligence.",
+          "features": [
+            "Retrieval-Augmented Generation (RAG) for efficient information access in large document collections",
+            "Intelligent assistants integrated with email, calendar, and business systems",
+            "Vehicle booking optimization using historical data and predictive algorithms",
+            "Automated fine processing with natural language understanding",
+            "Custom machine learning models for industry-specific applications",
+            "Seamless integration with existing enterprise systems"
+          ],
+          "technologies": "Python, TensorFlow, OpenAI API (GPT-3.5/4), Next.js, MySQL, Laravel, vector databases, large language models, custom embeddings",
+          "results": "Our AI implementations delivered remarkable efficiency gains: reducing research time by 73%, cutting administrative workloads by 40%, increasing vehicle utilization by 28%, and accelerating document processing from 25 minutes to just 1 minute per case."
+        }
       },
       "gdpr": {
         "title": "GDPR Compliance",
         "description": "Implemented automated GDPR compliance for application Visconti, featuring scheduled data anonymization for reports older than five years, document management, and sensitive information redaction with placeholder substitution.",
-        "description_long": "We engineered a comprehensive GDPR compliance solution for Visconti, an application that processes official reports containing sensitive personal data. Our team developed an automated system that intelligently identifies and anonymizes reports older than five years. This system replaces personal identifiers with 'XXXX' placeholders while maintaining data integrity for analytical use. We built robust document retrieval mechanisms and secure deletion functionality for associated PDF attachments. Our solution was deployed as a console application configured with task scheduler to run daily checks. This implementation ensures continuous regulatory compliance with minimal oversight required from the client. Our approach successfully balances legal requirements with operational needs, protecting individual privacy while preserving data structure for business intelligence purposes."
+        "description_long": "We engineered a comprehensive GDPR compliance solution for Visconti, an application that processes official reports containing sensitive personal data. Our team developed an automated system that intelligently identifies and anonymizes reports older than five years. This system replaces personal identifiers with 'XXXX' placeholders while maintaining data integrity for analytical use. We built robust document retrieval mechanisms and secure deletion functionality for associated PDF attachments. Our solution was deployed as a console application configured with task scheduler to run daily checks. This implementation ensures continuous regulatory compliance with minimal oversight required from the client. Our approach successfully balances legal requirements with operational needs, protecting individual privacy while preserving data structure for business intelligence purposes.",
+        "popup": {
+          "overview": "Our GDPR Compliance solution for Visconti automates personal data management to ensure regulatory compliance while preserving data utility for business operations.",
+          "challenge": "Visconti, an application handling sensitive personal information in official reports, needed to comply with GDPR requirements for data retention and privacy without compromising the analytical value of their historical records.",
+          "solution": "We developed an intelligent system that automatically identifies, anonymizes, and manages personal data according to GDPR requirements, with special focus on the 5-year retention rule.",
+          "features": [
+            "Automated identification and anonymization of personal data in reports older than five years",
+            "Intelligent redaction that preserves data structure and relationships",
+            "Secure PDF attachment management with automated deletion schedules",
+            "Comprehensive document retrieval and audit trail for compliance verification",
+            "Scheduled background processing that requires minimal oversight",
+            "Custom anonymization rules based on data type and sensitivity level"
+          ],
+          "technologies": "Python, MySQL, Laravel, PDF processing libraries, natural language processing for data identification, Windows Task Scheduler",
+          "results": "The solution achieved 100% GDPR compliance while reducing manual privacy management by 95%. The automated system has successfully processed over 50,000 documents, removing personal identifiers while maintaining data usability for analysis."
+        }
       },
       "myteam": {
         "title": "MyTeam Sports Analytics",
         "description": "Developed MyTeam, a comprehensive football analytics application enabling coaches to track player performance metrics, training session data, and match statistics for comprehensive performance evaluation and development planning.",
-        "description_long": "We designed and implemented MyTeam, an advanced sports analytics platform tailored specifically for football clubs. Our application enables coaching staff to meticulously track and analyze both individual player performance and team dynamics. We integrated comprehensive data collection across training sessions and competitive matches for holistic analysis. Our solution features granular statistical tracking, intuitive performance trend visualization, and detailed player development monitoring. We implemented customizable metrics to align with specific training objectives and coaching philosophies. The intuitive interface we designed allows coaches to make data-driven decisions for lineup optimization and training focus areas. Our platform transforms traditional coaching approaches by providing actionable insights that highlight improvement patterns and identify areas for development. The system validates training methodologies through concrete performance data, creating a feedback loop for continuous improvement."
+        "description_long": "We designed and implemented MyTeam, an advanced sports analytics platform tailored specifically for football clubs. Our application enables coaching staff to meticulously track and analyze both individual player performance and team dynamics. We integrated comprehensive data collection across training sessions and competitive matches for holistic analysis. Our solution features granular statistical tracking, intuitive performance trend visualization, and detailed player development monitoring. We implemented customizable metrics to align with specific training objectives and coaching philosophies. The intuitive interface we designed allows coaches to make data-driven decisions for lineup optimization and training focus areas. Our platform transforms traditional coaching approaches by providing actionable insights that highlight improvement patterns and identify areas for development. The system validates training methodologies through concrete performance data, creating a feedback loop for continuous improvement.",
+        "popup": {
+          "overview": "MyTeam is a comprehensive sports analytics platform that transforms raw performance data into actionable insights for football coaches and sports organizations.",
+          "challenge": "Football clubs were collecting abundant performance data but struggled to translate it into meaningful insights that could inform coaching decisions, player development, and tactical planning.",
+          "solution": "We created a specialized analytics platform that tracks, processes, and visualizes performance metrics across training sessions and competitive matches to support data-driven coaching and talent development.",
+          "features": [
+            "Comprehensive player performance tracking with customizable metrics",
+            "Integrated analysis of training session and match data",
+            "Performance trend visualization with comparative benchmarking",
+            "Tactical analysis tools with formation and positioning evaluation",
+            "Development progress tracking for individual athletes",
+            "Team dynamics and chemistry analytics",
+            "Mobile-friendly interface for sideline and on-field access"
+          ],
+          "technologies": "Laravel, MySQL, React, data visualization libraries, statistical analysis algorithms, responsive design for multiple devices",
+          "results": "Teams using MyTeam reported a 34% improvement in targeted performance metrics, more effective training sessions, and enhanced player development outcomes. Coaches cited a significant improvement in their ability to identify performance patterns and implement data-backed strategies."
+        }
       },
       "excel_automation": {
         "title": "Excel Workflow Automation",
         "description": "Engineered multiple console applications to automate critical Excel-based business processes, including helpdesk analytics generation and Scrum sprint hour calculations, significantly reducing manual data entry and improving reporting accuracy.",
-        "description_long": "We developed a suite of sophisticated console applications designed to streamline and automate Excel-dependent business workflows for our client. Our team created an advanced helpdesk analytics system that automatically generates comprehensive statistical reports and visualizations. This system tracks ticket resolution metrics and employee performance indicators without manual intervention. We implemented a sprint hour calculation tool that eliminated the Scrum Master's need to manually populate spreadsheets with employee hours each sprint. Both our solutions operate as scheduled background processes that seamlessly generate accurate data based on predefined business rules. Our automation initiative dramatically reduced administrative overhead and eliminated human error in data entry. We ensured consistent reporting quality and freed valuable team resources to focus on higher-value activities. Our implementation demonstrates our expertise in translating repetitive manual processes into efficient, reliable, and scalable automated solutions."
+        "description_long": "We developed a suite of sophisticated console applications designed to streamline and automate Excel-dependent business workflows for our client. Our team created an advanced helpdesk analytics system that automatically generates comprehensive statistical reports and visualizations. This system tracks ticket resolution metrics and employee performance indicators without manual intervention. We implemented a sprint hour calculation tool that eliminated the Scrum Master's need to manually populate spreadsheets with employee hours each sprint. Both our solutions operate as scheduled background processes that seamlessly generate accurate data based on predefined business rules. Our automation initiative dramatically reduced administrative overhead and eliminated human error in data entry. We ensured consistent reporting quality and freed valuable team resources to focus on higher-value activities. Our implementation demonstrates our expertise in translating repetitive manual processes into efficient, reliable, and scalable automated solutions.",
+        "popup": {
+          "overview": "Our Excel Workflow Automation solution transforms manual, spreadsheet-dependent processes into automated, efficient workflows that eliminate repetitive data entry and enhance reporting accuracy.",
+          "challenge": "A client was spending excessive staff hours on manual Excel data entry for critical business processes, including helpdesk analytics reporting and Scrum sprint calculations, leading to delays, errors, and inefficient resource allocation.",
+          "solution": "We developed a suite of console applications that automate data collection, processing, and report generation, eliminating manual spreadsheet manipulation while maintaining familiar Excel-based outputs.",
+          "features": [
+            "Automated helpdesk analytics with comprehensive statistical reporting",
+            "Ticket resolution metrics and employee performance tracking",
+            "Scrum sprint hour calculation with automated timesheet population",
+            "Scheduled background processing requiring zero manual intervention",
+            "Customizable report generation with template-based outputs",
+            "Error detection and validation rules to ensure data integrity",
+            "Integration with existing business systems for seamless data flow"
+          ],
+          "technologies": "Python, Excel libraries (openpyxl, pandas), data visualization tools, SQL integrations, Windows Task Scheduler, custom API connectors",
+          "results": "The automation reduced report generation time from 5 hours to 3 minutes per week, eliminated data entry errors completely, and freed approximately 250 staff hours annually. The improved data quality also led to more informed business decisions and resource allocations."
+        }
       },
       "debt_assistance": {
         "title": "Debt Assistance Management System",
         "description": "Enhanced debt assistance application with comprehensive UI/UX improvements, automated PDF reporting, advanced payment tracking, and integrated guardian management to streamline financial oversight for vulnerable clients.",
-        "description_long": "We upgraded and expanded a specialized debt assistance management system with multiple critical enhancements to improve efficiency and usability. Our team implemented robust payment tracking capabilities, including real-time outstanding balance monitoring. We built automated payment reconciliation systems and integrated financial guardian management functionality. Our developers created sophisticated data visualization features with automatic PDF report generation for client reviews. We designed customizable charts with proper titling and weekly financial analysis graphs to track progress. Our solution includes intelligent client-guardian linking that dynamically populates appropriate contact information in correspondence based on representation status. We added advanced search functionality using national identification numbers (BSN) for secure client identification. The user interface was enhanced with intuitive form layouts, conditional element visibility, and contextual information display. These improvements collectively transformed the application into a comprehensive platform that significantly streamlined the debt assistance process for financial counselors while ensuring accurate oversight of vulnerable clients' financial situations."
+        "description_long": "We upgraded and expanded a specialized debt assistance management system with multiple critical enhancements to improve efficiency and usability. Our team implemented robust payment tracking capabilities, including real-time outstanding balance monitoring. We built automated payment reconciliation systems and integrated financial guardian management functionality. Our developers created sophisticated data visualization features with automatic PDF report generation for client reviews. We designed customizable charts with proper titling and weekly financial analysis graphs to track progress. Our solution includes intelligent client-guardian linking that dynamically populates appropriate contact information in correspondence based on representation status. We added advanced search functionality using national identification numbers (BSN) for secure client identification. The user interface was enhanced with intuitive form layouts, conditional element visibility, and contextual information display. These improvements collectively transformed the application into a comprehensive platform that significantly streamlined the debt assistance process for financial counselors while ensuring accurate oversight of vulnerable clients' financial situations.",
+        "popup": {
+          "overview": "Our Debt Assistance Management System provides financial counselors with comprehensive tools to support vulnerable clients through debt management and financial recovery processes.",
+          "challenge": "Financial counselors supporting vulnerable clients needed a more efficient system to track payments, manage guardian relationships, generate reports, and provide clear financial oversight for people in complex debt situations.",
+          "solution": "We enhanced an existing application with advanced payment tracking, guardian management, automated reporting, and intuitive UI/UX improvements to create a comprehensive debt assistance platform.",
+          "features": [
+            "Real-time outstanding balance monitoring with payment reconciliation",
+            "Integrated financial guardian management for represented clients",
+            "Automated PDF report generation with customizable templates",
+            "Visual financial analysis with weekly progress tracking",
+            "Dynamic correspondence system that adapts to representation status",
+            "Secure client identification through national ID (BSN) search",
+            "Intuitive interface with conditional elements and contextual information",
+            "Comprehensive financial history visualization"
+          ],
+          "technologies": "C#, .NET, ASP.NET, TSQL, SSMS, PDF generation libraries, data visualization components, secure authentication system",
+          "results": "The enhanced system reduced case processing time by 42%, improved payment tracking accuracy to 99.8%, and enabled counselors to handle 35% more clients effectively. Financial institutions reported improved recovery rates and client satisfaction scores increased significantly."
+        }
       }
     },
     "technologies": {

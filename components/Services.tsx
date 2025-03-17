@@ -1,121 +1,223 @@
-import React, { useEffect, useRef } from 'react';
+"use client";
+
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
-
-const getServiceData = (t: (key: string) => string) => [
-  {
-    id: 1,
-    title: t('services.items.customSoftware.title'),
-    description: t('services.items.customSoftware.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-      </svg>
-    ),
-    link: '/services/custom-software',
-    bgClass: 'from-blue-500/5 to-indigo-500/5',
-    iconBgClass: 'bg-blue-50 dark:bg-blue-950/30 text-blue-500 dark:text-blue-400',
-    highlights: [
-      t('services.items.customSoftware.highlights.0'),
-      t('services.items.customSoftware.highlights.1'),
-      t('services.items.customSoftware.highlights.2')
-    ]
-  },
-  {
-    id: 2,
-    title: t('services.items.webDev.title'),
-    description: t('services.items.webDev.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-      </svg>
-    ),
-    link: '/services/web-development',
-    bgClass: 'from-purple-500/5 to-pink-500/5',
-    iconBgClass: 'bg-purple-50 dark:bg-purple-950/30 text-purple-500 dark:text-purple-400',
-    highlights: [
-      t('services.items.webDev.highlights.0'),
-      t('services.items.webDev.highlights.1'),
-      t('services.items.webDev.highlights.2')
-    ]
-  },
-  {
-    id: 3,
-    title: t('services.items.mobileDev.title'),
-    description: t('services.items.mobileDev.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    ),
-    link: '/services/mobile-apps',
-    bgClass: 'from-indigo-500/5 to-blue-500/5',
-    iconBgClass: 'bg-indigo-50 dark:bg-indigo-950/30 text-indigo-500 dark:text-indigo-400',
-    highlights: [
-      t('services.items.mobileDev.highlights.0'),
-      t('services.items.mobileDev.highlights.1'),
-      t('services.items.mobileDev.highlights.2')
-    ]
-  },
-  {
-    id: 4,
-    title: t('services.items.cloudSolutions.title'),
-    description: t('services.items.cloudSolutions.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-      </svg>
-    ),
-    link: '/services/cloud-solutions',
-    bgClass: 'from-sky-500/5 to-cyan-500/5',
-    iconBgClass: 'bg-sky-50 dark:bg-sky-950/30 text-sky-500 dark:text-sky-400',
-    highlights: [
-      t('services.items.cloudSolutions.highlights.0'),
-      t('services.items.cloudSolutions.highlights.1'),
-      t('services.items.cloudSolutions.highlights.2')
-    ]
-  },
-  {
-    id: 5,
-    title: t('services.items.aiMl.title'),
-    description: t('services.items.aiMl.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-      </svg>
-    ),
-    link: '/services/ai-ml',
-    bgClass: 'from-rose-500/5 to-orange-500/5',
-    iconBgClass: 'bg-rose-50 dark:bg-rose-950/30 text-rose-500 dark:text-rose-400',
-    highlights: [
-      t('services.items.aiMl.highlights.0'),
-      t('services.items.aiMl.highlights.1'),
-      t('services.items.aiMl.highlights.2')
-    ]
-  },
-  {
-    id: 6,
-    title: t('services.items.devOps.title'),
-    description: t('services.items.devOps.description'),
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-      </svg>
-    ),
-    link: '/services/devops',
-    bgClass: 'from-teal-500/5 to-green-500/5',
-    iconBgClass: 'bg-teal-50 dark:bg-teal-950/30 text-teal-500 dark:text-teal-400',
-    highlights: [
-      t('services.items.devOps.highlights.0'),
-      t('services.items.devOps.highlights.1'),
-      t('services.items.devOps.highlights.2')
-    ]
-  }
-];
+import ServiceModal, { Service } from './ServiceModal';
 
 const Services = () => {
   const { t } = useLanguage();
   const sectionRef = useRef(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Get service data with translations
+  const getServiceData = (t: (key: string) => string): Service[] => [
+    {
+      id: 1,
+      title: t('services.items.customSoftware.title'),
+      description: t('services.items.customSoftware.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        </svg>
+      ),
+      link: '/services/custom-software',
+      bgClass: 'from-blue-500/5 to-indigo-500/5',
+      iconBgClass: 'bg-blue-50 dark:bg-blue-950/30 text-blue-500 dark:text-blue-400',
+      highlights: [
+        t('services.items.customSoftware.highlights.0'),
+        t('services.items.customSoftware.highlights.1'),
+        t('services.items.customSoftware.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.customSoftware.detailedContent.overview'),
+        approach: t('services.items.customSoftware.detailedContent.approach'),
+        benefits: t('services.items.customSoftware.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.customSoftware.detailedContent.deliverables')) 
+          ? t('services.items.customSoftware.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.customSoftware.detailedContent.technologies')) 
+          ? t('services.items.customSoftware.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.customSoftware.detailedContent.timeline'),
+        pricing: t('services.items.customSoftware.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.customSoftware.detailedContent.faq'))
+          ? t('services.items.customSoftware.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    },
+    {
+      id: 2,
+      title: t('services.items.webDev.title'),
+      description: t('services.items.webDev.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        </svg>
+      ),
+      link: '/services/web-development',
+      bgClass: 'from-purple-500/5 to-pink-500/5',
+      iconBgClass: 'bg-purple-50 dark:bg-purple-950/30 text-purple-500 dark:text-purple-400',
+      highlights: [
+        t('services.items.webDev.highlights.0'),
+        t('services.items.webDev.highlights.1'),
+        t('services.items.webDev.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.webDev.detailedContent.overview'),
+        approach: t('services.items.webDev.detailedContent.approach'),
+        benefits: t('services.items.webDev.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.webDev.detailedContent.deliverables')) 
+          ? t('services.items.webDev.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.webDev.detailedContent.technologies')) 
+          ? t('services.items.webDev.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.webDev.detailedContent.timeline'),
+        pricing: t('services.items.webDev.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.webDev.detailedContent.faq'))
+          ? t('services.items.webDev.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    },
+    {
+      id: 3,
+      title: t('services.items.mobileDev.title'),
+      description: t('services.items.mobileDev.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      ),
+      link: '/services/mobile-apps',
+      bgClass: 'from-indigo-500/5 to-blue-500/5',
+      iconBgClass: 'bg-indigo-50 dark:bg-indigo-950/30 text-indigo-500 dark:text-indigo-400',
+      highlights: [
+        t('services.items.mobileDev.highlights.0'),
+        t('services.items.mobileDev.highlights.1'),
+        t('services.items.mobileDev.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.mobileDev.detailedContent.overview'),
+        approach: t('services.items.mobileDev.detailedContent.approach'),
+        benefits: t('services.items.mobileDev.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.mobileDev.detailedContent.deliverables')) 
+          ? t('services.items.mobileDev.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.mobileDev.detailedContent.technologies')) 
+          ? t('services.items.mobileDev.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.mobileDev.detailedContent.timeline'),
+        pricing: t('services.items.mobileDev.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.mobileDev.detailedContent.faq'))
+          ? t('services.items.mobileDev.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    },
+    {
+      id: 4,
+      title: t('services.items.cloudSolutions.title'),
+      description: t('services.items.cloudSolutions.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+        </svg>
+      ),
+      link: '/services/cloud-solutions',
+      bgClass: 'from-sky-500/5 to-cyan-500/5',
+      iconBgClass: 'bg-sky-50 dark:bg-sky-950/30 text-sky-500 dark:text-sky-400',
+      highlights: [
+        t('services.items.cloudSolutions.highlights.0'),
+        t('services.items.cloudSolutions.highlights.1'),
+        t('services.items.cloudSolutions.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.cloudSolutions.detailedContent.overview'),
+        approach: t('services.items.cloudSolutions.detailedContent.approach'),
+        benefits: t('services.items.cloudSolutions.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.cloudSolutions.detailedContent.deliverables')) 
+          ? t('services.items.cloudSolutions.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.cloudSolutions.detailedContent.technologies')) 
+          ? t('services.items.cloudSolutions.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.cloudSolutions.detailedContent.timeline'),
+        pricing: t('services.items.cloudSolutions.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.cloudSolutions.detailedContent.faq'))
+          ? t('services.items.cloudSolutions.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    },
+    {
+      id: 5,
+      title: t('services.items.aiMl.title'),
+      description: t('services.items.aiMl.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      ),
+      link: '/services/ai-ml',
+      bgClass: 'from-rose-500/5 to-orange-500/5',
+      iconBgClass: 'bg-rose-50 dark:bg-rose-950/30 text-rose-500 dark:text-rose-400',
+      highlights: [
+        t('services.items.aiMl.highlights.0'),
+        t('services.items.aiMl.highlights.1'),
+        t('services.items.aiMl.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.aiMl.detailedContent.overview'),
+        approach: t('services.items.aiMl.detailedContent.approach'),
+        benefits: t('services.items.aiMl.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.aiMl.detailedContent.deliverables')) 
+          ? t('services.items.aiMl.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.aiMl.detailedContent.technologies')) 
+          ? t('services.items.aiMl.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.aiMl.detailedContent.timeline'),
+        pricing: t('services.items.aiMl.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.aiMl.detailedContent.faq'))
+          ? t('services.items.aiMl.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    },
+    {
+      id: 6,
+      title: t('services.items.devOps.title'),
+      description: t('services.items.devOps.description'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        </svg>
+      ),
+      link: '/services/devops',
+      bgClass: 'from-teal-500/5 to-green-500/5',
+      iconBgClass: 'bg-teal-50 dark:bg-teal-950/30 text-teal-500 dark:text-teal-400',
+      highlights: [
+        t('services.items.devOps.highlights.0'),
+        t('services.items.devOps.highlights.1'),
+        t('services.items.devOps.highlights.2')
+      ],
+      detailedContent: {
+        overview: t('services.items.devOps.detailedContent.overview'),
+        approach: t('services.items.devOps.detailedContent.approach'),
+        benefits: t('services.items.devOps.detailedContent.benefits'),
+        deliverables: (Array.isArray(t('services.items.devOps.detailedContent.deliverables')) 
+          ? t('services.items.devOps.detailedContent.deliverables') 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.devOps.detailedContent.technologies')) 
+          ? t('services.items.devOps.detailedContent.technologies') 
+          : []) as string[],
+        timeline: t('services.items.devOps.detailedContent.timeline'),
+        pricing: t('services.items.devOps.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.devOps.detailedContent.faq'))
+          ? t('services.items.devOps.detailedContent.faq') as unknown as { question: string; answer: string; }[]
+          : []
+      }
+    }
+  ];
 
   // Add intersection observer for animation triggers
   useEffect(() => {
@@ -146,6 +248,20 @@ const Services = () => {
     };
   }, []);
 
+  // Open modal with selected service
+  const handleServiceClick = (service: Service) => {
+    setSelectedService(service);
+    setIsModalOpen(true);
+  };
+
+  // Close modal handler
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  // Get services data
+  const services = getServiceData(t);
+
   return (
     <section className="py-24 bg-white dark:bg-gray-950">
       <div ref={sectionRef} className="container mx-auto section-hidden">
@@ -167,11 +283,12 @@ const Services = () => {
         
         {/* Service cards in grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-          {getServiceData(t).map((service) => (
+          {services.map((service) => (
             <div 
               key={service.id} 
-              className={`group card card-hover p-8 pb-10 bg-gradient-to-br ${service.bgClass} dark:bg-opacity-30 relative overflow-hidden card-item`}
+              className={`group card card-hover p-8 pb-10 bg-gradient-to-br ${service.bgClass} dark:bg-opacity-30 relative overflow-hidden card-item cursor-pointer`}
               style={{ '--item-index': service.id - 1 } as React.CSSProperties}
+              onClick={() => handleServiceClick(service)}
             >
               {/* Icon with background */}
               <div className={`rounded-2xl w-16 h-16 flex items-center justify-center mb-6 ${service.iconBgClass} transition-transform group-hover:scale-110 duration-300`}>
@@ -201,8 +318,7 @@ const Services = () => {
               </div>
               
               {/* Learn more link with animation */}
-              <Link 
-                href={service.link} 
+              <div 
                 className="absolute bottom-8 inline-flex items-center font-medium group-hover:font-semibold text-primary-600 dark:text-primary-400 transition-all"
               >
                 <span className="mr-1">{t('services.learnMore')}</span>
@@ -214,7 +330,7 @@ const Services = () => {
                 >
                   <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </Link>
+              </div>
               
               {/* Decorative gradient corner */}
               <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-gradient-to-br from-primary-400/10 to-primary-600/10 blur-sm rounded-tl-3xl"></div>
@@ -238,6 +354,13 @@ const Services = () => {
           </div>
         </div>
       </div>
+      
+      {/* Service Modal */}
+      <ServiceModal 
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        service={selectedService}
+      />
     </section>
   );
 };

@@ -10,7 +10,7 @@ type LanguageContextType = {
   isLoaded: boolean;
 };
 
-const defaultLanguage: Language = 'nl';
+const defaultLanguage: Language = 'en';
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
@@ -83,20 +83,29 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   }, [language, isLoaded]);
 
   // Translation helper function
-  const t = (key: string): string => {
+  const t = (key: string): any => {
     // Split the key by dots to access nested properties
     const keys = key.split('.');
     let result = translations;
+    
+    // Check if key contains "detailedContent" and we're in Dutch
+    const isDetailedContentInDutch = language === 'nl' && key.includes('detailedContent');
     
     for (const k of keys) {
       if (result && result[k]) {
         result = result[k];
       } else {
+        // For Dutch detailed content, try to load English version
+        if (isDetailedContentInDutch) {
+          console.log('Missing Dutch detailed content, attempting to load English version for:', key);
+          // For now, let's do a console log
+          // In a full implementation, we would fetch from English translations
+        }
         return key; // Fallback to key if translation not found
       }
     }
     
-    return typeof result === 'string' ? result : key;
+    return result;
   };
 
   return (
