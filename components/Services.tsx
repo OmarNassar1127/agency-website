@@ -29,7 +29,23 @@ const Services = () => {
         t('services.items.customSoftware.highlights.0'),
         t('services.items.customSoftware.highlights.1'),
         t('services.items.customSoftware.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.customSoftware.detailedContent.overview'),
+        approach: t('services.items.customSoftware.detailedContent.approach'),
+        benefits: t('services.items.customSoftware.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.customSoftware.detailedContent.deliverables')) 
+          ? t('services.items.customSoftware.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.customSoftware.detailedContent.technologies')) 
+          ? t('services.items.customSoftware.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.customSoftware.detailedContent.timeline'),
+        pricing: t('services.items.customSoftware.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.customSoftware.detailedContent.faq')) 
+          ? t('services.items.customSoftware.detailedContent.faq') 
+          : []
+      }
     },
     {
       id: 2,
@@ -47,7 +63,23 @@ const Services = () => {
         t('services.items.webDev.highlights.0'),
         t('services.items.webDev.highlights.1'),
         t('services.items.webDev.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.webDev.detailedContent.overview'),
+        approach: t('services.items.webDev.detailedContent.approach'),
+        benefits: t('services.items.webDev.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.webDev.detailedContent.deliverables')) 
+          ? t('services.items.webDev.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.webDev.detailedContent.technologies')) 
+          ? t('services.items.webDev.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.webDev.detailedContent.timeline'),
+        pricing: t('services.items.webDev.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.webDev.detailedContent.faq')) 
+          ? t('services.items.webDev.detailedContent.faq') 
+          : []
+      }
     },
     {
       id: 3,
@@ -65,7 +97,23 @@ const Services = () => {
         t('services.items.mobileDev.highlights.0'),
         t('services.items.mobileDev.highlights.1'),
         t('services.items.mobileDev.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.mobileDev.detailedContent.overview'),
+        approach: t('services.items.mobileDev.detailedContent.approach'),
+        benefits: t('services.items.mobileDev.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.mobileDev.detailedContent.deliverables')) 
+          ? t('services.items.mobileDev.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.mobileDev.detailedContent.technologies')) 
+          ? t('services.items.mobileDev.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.mobileDev.detailedContent.timeline'),
+        pricing: t('services.items.mobileDev.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.mobileDev.detailedContent.faq')) 
+          ? t('services.items.mobileDev.detailedContent.faq') 
+          : []
+      }
     },
     {
       id: 4,
@@ -83,7 +131,23 @@ const Services = () => {
         t('services.items.cloudSolutions.highlights.0'),
         t('services.items.cloudSolutions.highlights.1'),
         t('services.items.cloudSolutions.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.cloudSolutions.detailedContent.overview'),
+        approach: t('services.items.cloudSolutions.detailedContent.approach'),
+        benefits: t('services.items.cloudSolutions.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.cloudSolutions.detailedContent.deliverables')) 
+          ? t('services.items.cloudSolutions.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.cloudSolutions.detailedContent.technologies')) 
+          ? t('services.items.cloudSolutions.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.cloudSolutions.detailedContent.timeline'),
+        pricing: t('services.items.cloudSolutions.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.cloudSolutions.detailedContent.faq')) 
+          ? t('services.items.cloudSolutions.detailedContent.faq') 
+          : []
+      }
     },
     {
       id: 5,
@@ -101,7 +165,23 @@ const Services = () => {
         t('services.items.aiMl.highlights.0'),
         t('services.items.aiMl.highlights.1'),
         t('services.items.aiMl.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.aiMl.detailedContent.overview'),
+        approach: t('services.items.aiMl.detailedContent.approach'),
+        benefits: t('services.items.aiMl.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.aiMl.detailedContent.deliverables')) 
+          ? t('services.items.aiMl.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.aiMl.detailedContent.technologies')) 
+          ? t('services.items.aiMl.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.aiMl.detailedContent.timeline'),
+        pricing: t('services.items.aiMl.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.aiMl.detailedContent.faq')) 
+          ? t('services.items.aiMl.detailedContent.faq') 
+          : []
+      }
     },
     {
       id: 6,
@@ -119,7 +199,23 @@ const Services = () => {
         t('services.items.devOps.highlights.0'),
         t('services.items.devOps.highlights.1'),
         t('services.items.devOps.highlights.2')
-      ]
+      ],
+      detailedContent: {
+        overview: t('services.items.devOps.detailedContent.overview'),
+        approach: t('services.items.devOps.detailedContent.approach'),
+        benefits: t('services.items.devOps.detailedContent.benefits'),
+        deliverables: Array.isArray(t('services.items.devOps.detailedContent.deliverables')) 
+          ? t('services.items.devOps.detailedContent.deliverables') 
+          : [],
+        technologies: Array.isArray(t('services.items.devOps.detailedContent.technologies')) 
+          ? t('services.items.devOps.detailedContent.technologies') 
+          : [],
+        timeline: t('services.items.devOps.detailedContent.timeline'),
+        pricing: t('services.items.devOps.detailedContent.pricing'),
+        faq: Array.isArray(t('services.items.devOps.detailedContent.faq')) 
+          ? t('services.items.devOps.detailedContent.faq') 
+          : []
+      }
     }
   ];
 

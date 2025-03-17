@@ -169,9 +169,9 @@ const ServiceModal = ({
           {activeTab === "overview" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300">
-                  {service.detailedContent?.overview || service.description}
-                </p>
+                <div className="text-gray-700 dark:text-gray-300" 
+                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.overview || service.description }}>
+                </div>
               </div>
 
               {/* Deliverables */}
@@ -231,10 +231,9 @@ const ServiceModal = ({
           {activeTab === "approach" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300">
-                  {service.detailedContent?.approach ||
-                    t("services.modal.noApproachInfo")}
-                </p>
+                <div className="text-gray-700 dark:text-gray-300"
+                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.approach || t("services.modal.noApproachInfo") }}>
+                </div>
               </div>
 
               {/* Timeline */}
@@ -243,9 +242,9 @@ const ServiceModal = ({
                   <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                     {t("services.modal.timeline")}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    {service.detailedContent.timeline}
-                  </p>
+                  <div className="text-gray-700 dark:text-gray-300"
+                       dangerouslySetInnerHTML={{ __html: service.detailedContent.timeline }}>
+                  </div>
                 </div>
               )}
             </div>
@@ -255,10 +254,9 @@ const ServiceModal = ({
           {activeTab === "benefits" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300">
-                  {service.detailedContent?.benefits ||
-                    t("services.modal.noBenefitsInfo")}
-                </p>
+                <div className="text-gray-700 dark:text-gray-300"
+                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.benefits || t("services.modal.noBenefitsInfo") }}>
+                </div>
               </div>
 
               {/* Pricing info */}
@@ -267,9 +265,9 @@ const ServiceModal = ({
                   <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                     {t("services.modal.pricing")}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    {service.detailedContent.pricing}
-                  </p>
+                  <div className="text-gray-700 dark:text-gray-300"
+                       dangerouslySetInnerHTML={{ __html: service.detailedContent.pricing }}>
+                  </div>
                 </div>
               )}
             </div>
@@ -278,7 +276,7 @@ const ServiceModal = ({
           {/* FAQ Tab */}
           {activeTab === "faq" && (
             <div className="space-y-6">
-              {service.detailedContent?.faq ? (
+              {service.detailedContent?.faq && service.detailedContent.faq.length > 0 ? (
                 service.detailedContent.faq.map((item, index) => (
                   <div
                     key={index}
@@ -287,9 +285,9 @@ const ServiceModal = ({
                     <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">
                       {item.question}
                     </h3>
-                    <p className="text-gray-700 dark:text-gray-300">
-                      {item.answer}
-                    </p>
+                    <div className="text-gray-700 dark:text-gray-300"
+                         dangerouslySetInnerHTML={{ __html: item.answer }}>
+                    </div>
                   </div>
                 ))
               ) : (
