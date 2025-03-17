@@ -134,39 +134,219 @@
     },
     "items": {
       "customSoftware": {
-        "title": "Op Maat Gemaakte Softwareontwikkeling",
-        "description": "Oplossingen op maat die zorgvuldig zijn afgestemd op uw specifieke bedrijfsprocessen, uitdagingen en groeidoelstellingen.",
+        "title": "Maatwerk Software",
+        "description": "Op maat gemaakte softwareoplossingen die zorgvuldig zijn afgestemd op uw specifieke bedrijfsprocessen, uitdagingen en groeidoelstellingen.",
         "highlights": {
           "0": "End-to-end oplossingen",
           "1": "Schaalbare architectuur",
           "2": "Gebruikersgerichte ontwerpen"
+        },
+        "detailedContent": {
+          "overview": "Onze maatwerk softwareontwikkelingsservice levert op maat gemaakte applicaties die specifiek zijn ontworpen voor uw unieke bedrijfsbehoeften. In tegenstelling tot standaardoplossingen sluit onze software perfect aan bij uw werkprocessen, automatiseert complexe processen en biedt een concurrentievoordeel door technologie die precies werkt zoals uw bedrijf dat doet.\n\nWij volgen een samenwerkingsgerichte, gebruikersgerichte aanpak om intuïtieve, schaalbare en onderhoudbare softwareoplossingen te creëren die uw specifieke bedrijfsuitdagingen oplossen en uw langetermijndoelstellingen voor groei ondersteunen.",
+          "approach": "Ons ontwikkelingsproces begint met een grondige ontdekkingsfase om uw bedrijfsdoelstellingen, gebruikersbehoeften en technische vereisten diepgaand te begrijpen. We maken gedetailleerde specificaties en wireframes, gevolgd door iteratieve ontwikkeling met regelmatige demo's en feedbackintegratie.\n\nWe passen Agile-methodologieën toe met tweeweekse sprintcycli en behouden transparantie gedurende het hele ontwikkelingsproces. Onze multifunctionele teams bestaan uit senior ontwikkelaars, ontwerpers, QA-specialisten en projectmanagers die samenwerken om uitzonderlijke resultaten te leveren.",
+          "benefits": "• <span class='font-semibold'>Perfect op maat gemaakt voor uw behoeften</span> - Oplossingen specifiek gebouwd voor uw unieke bedrijfsuitdagingen en werkprocessen\n• <span class='font-semibold'>Verbeterde efficiëntie en productiviteit</span> - Automatisering van repetitieve taken en gestroomlijnde werkprocessen\n• <span class='font-semibold'>Concurrentievoordeel</span> - Unieke mogelijkheden die uw bedrijf onderscheiden van concurrenten\n• <span class='font-semibold'>Schaalbaarheid</span> - Architectuur ontworpen om mee te groeien met uw bedrijf\n• <span class='font-semibold'>Integratiemogelijkheden</span> - Naadloze verbinding met uw bestaande systemen en applicaties van derden\n• <span class='font-semibold'>Doorlopende ondersteuning</span> - Continue verbeteringen en updates naarmate uw bedrijf evolueert",
+          "deliverables": [
+            "Uitgebreide softwarevereistenspecificatie",
+            "Gebruikersinterface-ontwerpen en interactieve prototypes",
+            "Volledig geteste en gedocumenteerde applicatiecode",
+            "Database-architectuur en datamigratie",
+            "Implementatie in productieomgeving",
+            "Gebruikerstraining en uitgebreide documentatie",
+            "Ondersteuning en onderhoud na lancering"
+          ],
+          "technologies": [
+            "Frontend: React, Angular, Vue.js",
+            "Backend: Node.js, Laravel, .NET Core",
+            "Mobile: React Native, Flutter, Swift, Kotlin",
+            "Databases: MySQL, PostgreSQL, MongoDB",
+            "Cloud: AWS, Azure, Google Cloud",
+            "DevOps: Docker, Kubernetes, CI/CD pipelines"
+          ],
+          "timeline": "Onze maatwerkprojecten voor softwareontwikkeling volgen doorgaans deze tijdlijn:\n\n• Ontdekking & Planning: 2-4 weken\n• Ontwerp & Prototyping: 2-3 weken\n• Ontwikkeling & Testen: 8-16 weken (afhankelijk van projectomvang)\n• Implementatie & Training: 1-2 weken\n• Ondersteuning na lancering: Doorlopend\n\nDe exacte tijdlijn is afhankelijk van projectcomplexiteit, omvang en specifieke vereisten.",
+          "pricing": "We bieden flexibele prijsmodellen die passen bij verschillende projectbehoeften:\n\n• <span class='font-semibold'>Vaste prijs</span>: Voor goed gedefinieerde projecten met duidelijke vereisten\n• <span class='font-semibold'>Tijd & materialen</span>: Voor projecten die flexibiliteit en evoluerende vereisten vereisen\n• <span class='font-semibold'>Toegewijde teams</span>: Voor ontwikkelingsbehoeften op lange termijn met een consistent team\n\nKostenfactoren zijn onder andere projectcomplexiteit, tijdlijn, functies, vereiste integraties en doorlopende ondersteuningsbehoeften. Neem contact met ons op voor een gepersonaliseerde offerte op basis van uw specifieke vereisten.",
+          "faq": [
+            {
+              "question": "Hoe zorgt u ervoor dat de software aan onze specifieke bedrijfsbehoeften voldoet?",
+              "answer": "We beginnen met een diepgaande ontdekkingsfase, waarbij we nauw samenwerken met uw team om uw bedrijfsprocessen, pijnpunten en doelstellingen te begrijpen. We maken gedetailleerde specificaties en wireframes die worden beoordeeld en goedgekeurd door belanghebbenden voordat de ontwikkeling begint. Gedurende het hele ontwikkelingsproces onderhouden we regelmatige communicatie en demo's om ervoor te zorgen dat de oplossing perfect aansluit bij uw behoeften."
+            },
+            {
+              "question": "Kunt u integreren met onze bestaande systemen?",
+              "answer": "Ja, we zijn gespecialiseerd in het creëren van maatwerksoftware die naadloos integreert met uw bestaande ecosysteem. Onze ontwikkelaars hebben ervaring met het werken met diverse API's, databases en legacy-systemen om een soepele gegevensstroom en functionaliteit in uw gehele technologiestack te garanderen."
+            },
+            {
+              "question": "Hoe waarborgt u beveiliging en gegevensbescherming?",
+              "answer": "Beveiliging is ingebouwd in elke fase van ons ontwikkelingsproces. We implementeren best practices uit de industrie zoals veilige authenticatie, gegevensversleuteling, invoervalidatie en regelmatige beveiligingstests. Onze oplossingen voldoen aan relevante regelgeving voor gegevensbescherming, en we leveren uitgebreide documentatie van geïmplementeerde beveiligingsmaatregelen."
+            },
+            {
+              "question": "Wat gebeurt er nadat de software is gelanceerd?",
+              "answer": "We bieden flexibele ondersteunings- en onderhoudsplannen om ervoor te zorgen dat uw software optimaal blijft presteren. Dit omvat bugfixes, beveiligingsupdates, prestatie-optimalisatie en functieverbeteringen. We kunnen training voor uw team verzorgen en kennisoverdrachtsprotocollen opstellen om ervoor te zorgen dat u over de expertise beschikt om de oplossing effectief te beheren."
+            }
+          ]
         }
       },
       "webDev": {
-        "title": "Web Applicatie Ontwikkeling",
-        "description": "Krachtige, responsieve webapplicaties gebouwd met geavanceerde technologieën die zorgen voor uitzonderlijke gebruikerservaringen en robuuste functionaliteit.",
+        "title": "Webapplicatie Ontwikkeling",
+        "description": "Krachtige, responsieve webapplicaties gebouwd met geavanceerde technologieën die uitzonderlijke gebruikerservaringen en robuuste functionaliteit leveren.",
         "highlights": {
           "0": "Moderne frameworks",
           "1": "Responsief ontwerp",
           "2": "API-integratie"
+        },
+        "detailedContent": {
+          "overview": "Onze webapplicatie ontwikkelingsservice creëert krachtige, schaalbare en responsieve webgebaseerde oplossingen die bedrijven helpen om operaties te stroomlijnen, klantbetrokkenheid te verbeteren en groei te stimuleren in het huidige digitale landschap.\n\nVan complexe bedrijfsapplicaties tot klantgerichte portals, we maken gebruik van moderne frameworks en best practices om intuïtieve, hoogwaardige webapplicaties te leveren die feilloos werken op alle apparaten en overtuigende gebruikerservaringen bieden terwijl ze kritieke bedrijfsuitdagingen oplossen.",
+          "approach": "We volgen een bewezen ontwikkelingsmethodologie die begint met grondig onderzoek en planning om uw bedrijfsdoelen en gebruikersbehoeften te begrijpen. Onze design-first benadering zorgt voor intuïtieve gebruikerservaringen die aansluiten bij uw merkidentiteit.\n\nOntwikkeling verloopt in Agile-sprints met frequente demo's en feedbackintegratie. We implementeren geautomatiseerd testen en CI/CD-pipelines om kwaliteit te waarborgen en snelle iteraties mogelijk te maken. Na de lancering bieden we uitgebreide analyses, ondersteuning en continue verbetering.",
+          "benefits": "• <span class='font-semibold'>Cross-platform functionaliteit</span> - Applicaties die naadloos werken op alle apparaten en browsers\n• <span class='font-semibold'>Verbeterde gebruikersbetrokkenheid</span> - Intuïtieve interfaces die gebruikersbehoud en tevredenheid verbeteren\n• <span class='font-semibold'>Verhoogde operationele efficiëntie</span> - Automatisering van handmatige processen en gestroomlijnde werkstromen\n• <span class='font-semibold'>Data-gedreven inzichten</span> - Analytische integratie voor geïnformeerde zakelijke beslissingen\n• <span class='font-semibold'>Verbeterde beveiliging</span> - Bescherming tegen veelvoorkomende webkwetsbaarheden en bedreigingen\n• <span class='font-semibold'>Snelle schaalbaarheid</span> - Architectuur die groeiende gebruikersgroepen en uitgebreide functionaliteit accommodeert",
+          "deliverables": [
+            "Uitgebreid gebruikerservaringsonderzoek en wireframes",
+            "Responsieve UI/UX-ontwerpen met interactieve prototypes",
+            "Volledig geteste frontend- en backend-code",
+            "RESTful of GraphQL API's voor gegevensuitwisseling",
+            "Database-ontwerp en implementatie",
+            "Beveiligingsversterking en prestatie-optimalisatie",
+            "Implementatie in productieomgeving met CI/CD-pipelines",
+            "Uitgebreide documentatie en onderhoudsondersteuning"
+          ],
+          "technologies": [
+            "Frontend: React, Next.js, Angular, Vue.js",
+            "Backend: Node.js, Express, Laravel, Django, ASP.NET Core",
+            "Databases: PostgreSQL, MongoDB, MySQL, Redis",
+            "APIs: RESTful, GraphQL",
+            "State Management: Redux, Context API, Vuex",
+            "UI Frameworks: Tailwind CSS, Material UI, Bootstrap",
+            "Testing: Jest, Cypress, Mocha",
+            "DevOps: Docker, GitHub Actions, AWS, Vercel"
+          ],
+          "timeline": "Onze webapplicatie ontwikkelingsprojecten volgen doorgaans deze tijdlijn:\n\n• Ontdekking & Vereisten: 1-2 weken\n• UX/UI-ontwerp: 2-4 weken\n• Ontwikkeling: 8-12 weken (varieert per projectomvang)\n• Testen & QA: 2-3 weken (gelijktijdig met ontwikkeling)\n• Implementatie & Lancering: 1 week\n• Ondersteuning na lancering: Doorlopend\n\nWe kunnen tijdlijnen versnellen voor MVP's of faseontwikkeling voor grotere applicaties.",
+          "pricing": "We bieden flexibele prijsopties op basis van projectvereisten:\n\n• <span class='font-semibold'>Vaste projectofferte</span>: Gebaseerd op gedetailleerde werkomvang\n• <span class='font-semibold'>Sprint-gebaseerde prijzen</span>: Voor Agile-ontwikkeling met evoluerende vereisten\n• <span class='font-semibold'>Retainer-model</span>: Voor doorlopende ontwikkeling en onderhoud\n\nFactoren die de prijs beïnvloeden zijn onder andere applicatiecomplexiteit, functieset, integraties met derden, beveiligingsvereisten en tijdlijnbeperkingen. Neem contact met ons op voor een op maat gemaakte offerte op basis van uw specifieke behoeften.",
+          "faq": [
+            {
+              "question": "Hoe zorgt u ervoor dat mijn webapplicatie responsief is op alle apparaten?",
+              "answer": "We implementeren vanaf het begin mobile-first, responsieve ontwerpprincipes. Ons ontwikkelingsproces omvat testen op meerdere apparaattypes, schermformaten en browsers om consistente functionaliteit en uiterlijk te garanderen. We gebruiken moderne CSS-frameworks en responsieve ontwerptechnieken, implementeren breekpunten voor verschillende schermformaten en zorgen voor optimale gebruikerservaringen, of het nu op desktop, tablet of mobiel is."
+            },
+            {
+              "question": "Hoe gaat u om met gebruikersauthenticatie en gegevensbeveiliging?",
+              "answer": "We implementeren robuuste authenticatiesystemen met opties zoals e-mail/wachtwoord, sociale logins, SSO en MFA. Voor gegevensbeveiliging volgen we best practices uit de industrie, waaronder HTTPS-versleuteling, veilige cookie-afhandeling, invoervalidatie, geparametriseerde query's om SQL-injectie te voorkomen en regelmatige beveiligingsaudits. We kunnen ook rolgebaseerde toegangscontrole implementeren en voldoen aan relevante regelgeving zoals AVG of CCPA."
+            },
+            {
+              "question": "Kan mijn webapplicatie integreren met andere software die we gebruiken?",
+              "answer": "Ja, we zijn gespecialiseerd in het creëren van applicaties die naadloos integreren met bestaande systemen. We kunnen aangepaste API's ontwikkelen of bestaande gebruiken om verbinding te maken met CRM's, ERP's, betalingsverwerkers, marketingplatforms en andere bedrijfstools. Onze ervaring omvat het werken met populaire diensten zoals Salesforce, HubSpot, Stripe en vele andere, evenals aangepaste legacy-systemen."
+            },
+            {
+              "question": "Hoe benadert u prestatie-optimalisatie van webapplicaties?",
+              "answer": "Prestatie is een prioriteit gedurende de hele ontwikkeling. We implementeren codesplitsing, lazy loading en efficiënt assetbeheer om laadtijden te optimaliseren. We gebruiken server-side rendering of statische generatie waar passend, optimaliseren database-query's, implementeren cachingstrategieën en comprimeren assets. We voeren regelmatig prestatietests uit met tools zoals Lighthouse om knelpunten te identificeren en aan te pakken voordat ze gebruikers beïnvloeden."
+            }
+          ]
         }
       },
       "mobileDev": {
         "title": "Mobiele Applicatie Ontwikkeling",
-        "description": "Native en cross-platform mobiele applicaties die naadloze ervaringen bieden op alle apparaten met gebruikmaking van platformspecifieke functies.",
+        "description": "Native en cross-platform mobiele applicaties die naadloze ervaringen bieden op alle apparaten terwijl ze platformspecifieke functies benutten.",
         "highlights": {
           "0": "iOS & Android",
           "1": "Cross-platform",
           "2": "Offline mogelijkheden"
+        },
+        "detailedContent": {
+          "overview": "Onze mobiele applicatie ontwikkelingsservice creëert aantrekkelijke, hoogwaardige apps voor iOS en Android die bedrijven helpen verbinding te maken met klanten, operaties te stroomlijnen en waarde te leveren op de apparaten waarmee gebruikers het meest interactie hebben.\n\nOf u nu native applicaties nodig heeft met platformspecifieke optimalisaties of cross-platform oplossingen voor een breder bereik, wij ontwikkelen intuïtieve, functierijke mobiele ervaringen die aansluiten bij uw bedrijfsdoelen en voldoen aan de hoogste normen van prestaties, beveiliging en gebruikerservaring.",
+          "approach": "We beginnen met uitgebreid onderzoek om uw doelgroep, bedrijfsdoelstellingen en concurrentielandschap te begrijpen. Onze UX/UI-ontwerpers creëren intuïtieve, aantrekkelijke interfaces die zijn geoptimaliseerd voor mobiele interactiepatronen en toegankelijkheid.\n\nOntwikkeling volgt native (platformspecifieke) of cross-platform benaderingen op basis van projectvereisten. We implementeren rigoureus testen op verschillende apparaten, voeren gebruikerstests uit met echte deelnemers en bieden uitgebreide analyses om prestaties na de lancering te volgen.",
+          "benefits": "• <span class='font-semibold'>Verbeterde klantbetrokkenheid</span> - Direct kanaal naar gebruikers via gepersonaliseerde ervaringen\n• <span class='font-semibold'>Merkversterking</span> - Verhoogde zichtbaarheid en regelmatige interactie met uw merk\n• <span class='font-semibold'>Nieuwe inkomstenstromen</span> - In-app aankopen, abonnementen of premium functies\n• <span class='font-semibold'>Operationele efficiëntie</span> - Gestroomlijnde processen en mobiele toegang tot bedrijfssystemen\n• <span class='font-semibold'>Waardevolle data-inzichten</span> - Analyses van gebruikersgedrag om zakelijke beslissingen te informeren\n• <span class='font-semibold'>Offline functionaliteit</span> - Kernfuncties beschikbaar zonder constante internetverbinding",
+          "deliverables": [
+            "Uitgebreid markt- en gebruikersonderzoek",
+            "Wireframes en interactieve prototypes",
+            "Intuïtief UI/UX-ontwerp afgestemd op platformrichtlijnen",
+            "Schone, geoptimaliseerde applicatiecode",
+            "Backend API-ontwikkeling en integratie",
+            "Grondig testen op verschillende apparaten en platforms",
+            "App store indiening en optimalisatie",
+            "Integratie van analyses en ondersteuning na lancering",
+            "Documentatie en kennisoverdracht"
+          ],
+          "technologies": [
+            "Native iOS: Swift, SwiftUI, UIKit",
+            "Native Android: Kotlin, Jetpack Compose",
+            "Cross-platform: React Native, Flutter",
+            "Backend: Node.js, Laravel, Firebase",
+            "Databases: SQLite, Realm, Firebase Realtime DB",
+            "Authenticatie: OAuth, JWT, Biometrie",
+            "Analytics: Firebase Analytics, Mixpanel, Amplitude",
+            "CI/CD: Fastlane, GitHub Actions, App Center"
+          ],
+          "timeline": "Onze mobiele app ontwikkelingstijdlijn volgt doorgaans deze fasen:\n\n• Onderzoek & Planning: 1-2 weken\n• UX/UI-ontwerp: 2-4 weken\n• Ontwikkeling: 8-16 weken (varieert per complexiteit)\n• Testen & QA: 2-3 weken (gelijktijdig met ontwikkeling)\n• Bètatesten: 2 weken\n• App Store Indiening: 1-2 weken\n• Ondersteuning na lancering: Doorlopend\n\nTijdlijnen kunnen worden aangepast op basis van omvang, complexiteit en specifieke vereisten.",
+          "pricing": "Onze prijzen voor mobiele app-ontwikkeling zijn gestructureerd om verschillende projectbehoeften te accommoderen:\n\n• <span class='font-semibold'>Vast projecttarief</span>: Gebaseerd op gedetailleerde vereisten en omvang\n• <span class='font-semibold'>Mijlpaal-gebaseerde betaling</span>: Gekoppeld aan levering van specifieke componenten\n• <span class='font-semibold'>Retainer-model</span>: Voor doorlopende ontwikkeling en onderhoud\n\nFactoren die van invloed zijn op de kosten zijn platformvereisten (iOS, Android of beide), complexiteit van functies, integraties met derden, backend-vereisten en tijdlijn. Neem contact met ons op voor een aangepaste offerte op basis van uw specifieke behoeften.",
+          "faq": [
+            {
+              "question": "Moet ik kiezen voor native of cross-platform ontwikkeling?",
+              "answer": "Dit hangt af van uw specifieke vereisten. Native ontwikkeling (afzonderlijke iOS- en Android-apps) biedt optimale prestaties, volledige toegang tot platformspecifieke functies en de beste gebruikerservaring. Cross-platform oplossingen (zoals React Native of Flutter) bieden snellere ontwikkeling, hergebruik van code en lagere kosten terwijl ze nog steeds goede prestaties leveren voor veel toepassingen. We raden de beste aanpak aan op basis van uw doelen, budget, tijdlijn en applicatiecomplexiteit."
+            },
+            {
+              "question": "Hoe zorgt u ervoor dat de app werkt op verschillende apparaten en OS-versies?",
+              "answer": "We implementeren uitgebreide teststrategieën, waaronder apparaatlabs met verschillende fysieke apparaten, emulatoren/simulatoren voor verschillende schermformaten en OS-versies, en geautomatiseerde testtools. We volgen platformontwerprichtlijnen en best practices voor achterwaartse compatibiliteit, en we structureren code om elegant te degraderen op oudere apparaten terwijl we gebruik maken van nieuwere functies wanneer beschikbaar."
+            },
+            {
+              "question": "Hoe gaat u om met app store indiening en goedkeuring?",
+              "answer": "We beheren het hele indieningsproces, inclusief het voorbereiden van alle vereiste assets (screenshots, beschrijvingen, trefwoorden), zorgen voor naleving van App Store- en Google Play-richtlijnen, opzetten van ontwikkelaarsaccounts indien nodig, en het adresseren van feedback uit het reviewproces. We implementeren App Store Optimalisatie-strategieën om zichtbaarheid en conversiepercentages te verbeteren, en we onderhouden de apps via regelmatige updates om doorlopende naleving van evoluerende platformvereisten te garanderen."
+            },
+            {
+              "question": "Wat gebeurt er met app-onderhoud en updates na de lancering?",
+              "answer": "We bieden flexibele onderhoudsplannen die regelmatige OS-compatibiliteitsupdates, prestatie-optimalisaties, bugfixes en beveiligingspatches omvatten. We kunnen doorlopende functieontwikkeling, A/B-testen voor optimalisatie en analytische monitoring bieden om verbeteringsmogelijkheden te identificeren. Ons team kan ook gebruikersfeedbackbeheer verzorgen en regelmatige updatecycli implementeren om uw app concurrerend en optimaal functionerend te houden."
+            }
+          ]
         }
       },
       "cloudSolutions": {
         "title": "Cloud Oplossingen",
-        "description": "Veilige, schaalbare cloud-infrastructuur en migratiestrategieën die prestaties optimaliseren, kosten verlagen en operationele efficiëntie verbeteren.",
+        "description": "Veilige, schaalbare cloudinfrastructuur en migratiestrategieën die prestaties optimaliseren, kosten verlagen en de operationele efficiëntie verbeteren.",
         "highlights": {
           "0": "AWS & Azure expertise",
           "1": "Automatisch schalen",
-          "2": "Focus op veiligheid"
+          "2": "Gericht op veiligheid"
+        },
+        "detailedContent": {
+          "overview": "Onze cloudoplossingendienst stelt bedrijven in staat om de kracht van cloud computing te benutten voor ongekende schaalbaarheid, flexibiliteit en kostenefficiëntie. Of u nu bestaande infrastructuur naar de cloud migreert, huidige cloudbronnen optimaliseert of cloud-native applicaties bouwt, wij bieden deskundige begeleiding en implementatie om uw IT-operaties te transformeren.\n\nWij ontwerpen en implementeren veilige, veerkrachtige cloudarchitecturen die aansluiten bij uw zakelijke behoeften, zorgen voor hoge beschikbaarheid, prestaties en optimalisatie van middelen, terwijl we de operationele overhead verminderen en uw vermogen om snel te innoveren verbeteren.",
+          "approach": "We beginnen met een grondige beoordeling van uw huidige infrastructuur, applicaties en zakelijke behoeften om een op maat gemaakte cloudstrategie te ontwikkelen. Voor migraties volgen we een methodische aanpak die verstoring minimaliseert en tegelijkertijd data-integriteit en systeemcontinuïteit waarborgt.\n\nVoor nieuwe implementaties ontwerpen we oplossingen volgens 'infrastructure as code'-principes, waardoor herhaalbaarheid, consistentie en geautomatiseerde deployments mogelijk worden. Gedurende het hele proces implementeren we robuuste beveiligingscontroles, monitoringsystemen en gedocumenteerde operationele procedures.",
+          "benefits": "• <span class='font-semibold'>Verbeterde schaalbaarheid</span> - Pas middelen eenvoudig aan bij schommelingen in de vraag\n• <span class='font-semibold'>Aanzienlijke kostenoptimalisatie</span> - Betaal alleen voor gebruikte bronnen zonder voorafgaande infrastructuurkosten\n• <span class='font-semibold'>Verbeterde betrouwbaarheid</span> - Hoge beschikbaarheidsarchitecturen met redundantie over regio's\n• <span class='font-semibold'>Verhoogde wendbaarheid</span> - Implementeer snel nieuwe functies en applicaties\n• <span class='font-semibold'>Geavanceerde beveiliging</span> - Benut de beveiligingsfuncties en best practices van cloudproviders\n• <span class='font-semibold'>Wereldwijd bereik</span> - Implementeer middelen dichter bij uw gebruikers wereldwijd\n• <span class='font-semibold'>Verminderde operationele belasting</span> - Verschuif van infrastructuuronderhoud naar innovatie",
+          "deliverables": [
+            "Uitgebreide cloudstrategie en architectuurontwerp",
+            "Infrastructure as code templates (Terraform, CloudFormation, etc.)",
+            "Implementatie van beveiligde landingszones",
+            "Migratie-uitvoering en validatie",
+            "Geautomatiseerde CI/CD-pijplijnen",
+            "Monitoring- en waarschuwingssystemen",
+            "Beveiligingscontroles en compliancedocumentatie",
+            "Aanbevelingen voor kostenoptimalisatie",
+            "Kennisoverdracht en documentatie",
+            "Doorlopende ondersteuning en optimalisatie"
+          ],
+          "technologies": [
+            "Cloudplatforms: AWS, Microsoft Azure, Google Cloud",
+            "IaC-tools: Terraform, CloudFormation, Pulumi",
+            "Containers: Docker, Kubernetes, ECS",
+            "CI/CD: GitHub Actions, GitLab CI, Jenkins",
+            "Monitoring: CloudWatch, Prometheus, Grafana",
+            "Beveiliging: IAM, Key Management, WAF, Netwerkbeveiliging",
+            "Databases: RDS, DynamoDB, Cosmos DB, Cloud SQL",
+            "Serverless: Lambda, Azure Functions, Cloud Run"
+          ],
+          "timeline": "Onze cloudprojecten volgen meestal deze tijdlijnen:\n\n• Beoordeling & Strategie: 1-3 weken\n• Architectuurontwerp: 2-4 weken\n• Initiële implementatie: 4-8 weken\n• Migratie (indien van toepassing): 4-12 weken (afhankelijk van complexiteit)\n• Optimalisatie: 2-4 weken\n• Kennisoverdracht: 1-2 weken\n• Doorlopende ondersteuning: Naar behoefte\n\nTijdlijnen variëren op basis van omgevingscomplexiteit, aantal applicaties en specifieke vereisten.",
+          "pricing": "We bieden flexibele engagementsmodellen voor onze clouddiensten:\n\n• <span class='font-semibold'>Projectgebaseerd</span>: Vaste vergoeding voor gedefinieerde scope en deliverables\n• <span class='font-semibold'>Retainermodel</span>: Doorlopende ondersteuning, optimalisatie en ontwikkeling\n• <span class='font-semibold'>Adviesdiensten</span>: Deskundige begeleiding zonder implementatie\n\nFactoren die de prijs beïnvloeden zijn onder andere projectomvang, tijdlijnvereisten, complexiteit van de huidige omgeving, migratiebehoeften en het niveau van doorlopende ondersteuning. Neem contact met ons op voor een gepersonaliseerde offerte op basis van uw specifieke vereisten.",
+          "faq": [
+            {
+              "question": "Hoe zorgt u voor een soepele migratie naar de cloud zonder onze activiteiten te verstoren?",
+              "answer": "We volgen een methodische migratieaanpak die grondige beoordeling, gedetailleerde planning en gefaseerde uitvoering omvat. We implementeren uitgebreide tests in elke fase, onderhouden parallelle omgevingen tijdens overgangsperiodes en plannen migraties indien mogelijk tijdens periodes met weinig verkeer. Ons team ontwikkelt gedetailleerde rollback-plannen voor elke migratiefase en voert oefeningen uit voor kritieke systemen om potentiële problemen te identificeren en aan te pakken voordat ze invloed hebben op de productie."
+            },
+            {
+              "question": "Hoe pakt u beveiliging en compliance aan in cloudomgevingen?",
+              "answer": "We implementeren security by design in alle cloudarchitecturen, volgens industriestandaarden en compliance-frameworks. Dit omvat het implementeren van goede identiteits- en toegangsbeheer, netwerksegmentatie, versleuteling (in rust en tijdens overdracht), beveiligingsmonitoring en geautomatiseerde compliance-controles. We ontwerpen systemen om te voldoen aan specifieke regelgevingsvereisten (GDPR, HIPAA, etc.) wanneer nodig en bieden documentatie van beveiligingscontroles voor auditdoeleinden."
+            },
+            {
+              "question": "Hoe zal cloudmigratie onze huidige applicaties en databases beïnvloeden?",
+              "answer": "De impact varieert afhankelijk van applicatiearchitectuur en migratiestrategie. We beoordelen elke applicatie om de optimale aanpak te bepalen: rehosting (lift and shift), replatforming (lift and optimize), refactoring (modernisering voor cloud-native mogelijkheden) of vervanging door SaaS-alternatieven. Voor databases implementeren we strategieën zoals schema-conversietools, replicatie voor migratie zonder downtime, of datapijplijnen voor complexe transformaties, waarbij we altijd data-integriteit en applicatiecompatibiliteit waarborgen."
+            },
+            {
+              "question": "Hoe optimaliseert u cloudkosten na migratie?",
+              "answer": "We implementeren verschillende kostenoptimalisatiestrategieën, waaronder right-sizing van instances, het gebruik van gereserveerde instances of savings plans voor voorspelbare workloads, het implementeren van automatisch schalen voor variabele workloads, en het identificeren en verwijderen van ongebruikte resources. We zetten gedetailleerde kostenallocatie-tagging op, implementeren resource-scheduling voor non-productieomgevingen en gebruiken waar mogelijk serverloze architecturen. We bieden ook regelmatige kostenoptimalisatiereviews en aanbevelingen als onderdeel van onze doorlopende service."
+            }
+          ]
         }
       },
       "aiMl": {
@@ -176,15 +356,108 @@
           "0": "Voorspellende analyses",
           "1": "Datavisualisatie",
           "2": "ML-modeltraining"
+        },
+        "detailedContent": {
+          "overview": "Onze AI & Machine Learning-diensten transformeren uw bedrijfsgegevens in krachtige inzichten en intelligente automatisering. We ontwikkelen aangepaste AI-oplossingen die voorspellende besluitvorming mogelijk maken, complexe taken automatiseren en patronen blootleggen die strategisch voordeel opleveren.\n\nVan natuurlijke taalverwerking en computer vision tot voorspellende analyses en aanbevelingssystemen, we benutten geavanceerde AI-technologieën om complexe zakelijke uitdagingen op te lossen, operaties te optimaliseren en nieuwe mogelijkheden te creëren die voorheen onmogelijk waren met traditionele benaderingen.",
+          "approach": "We volgen een methodisch proces beginnend met het definiëren van duidelijke bedrijfsdoelstellingen en het identificeren hoe AI specifieke uitdagingen kan aanpakken. Dataverzameling, -voorbereiding en -verkenning vormen de basis van onze aanpak, zodat kwalitatief hoogwaardige input voor modelontwikkeling wordt gegarandeerd.\n\nWe selecteren en ontwikkelen geschikte modellen op basis van uw specifieke behoeften, implementeren rigoureuze training- en testprocedures, en richten ons op het creëren van verklaarbare AI-oplossingen waarbij beslissingen kunnen worden begrepen en vertrouwd. Implementatie omvat integratie met bestaande systemen, monitoringmogelijkheden en mechanismen voor continue verbetering.",
+          "benefits": "• <span class='font-semibold'>Verbeterde besluitvorming</span> - Data-gedreven inzichten voor nauwkeurigere en tijdige beslissingen\n• <span class='font-semibold'>Operationele efficiëntie</span> - Automatisering van complexe, tijdrovende taken\n• <span class='font-semibold'>Gepersonaliseerde klantenervaringen</span> - Op maat gemaakte interacties op basis van individuele voorkeuren en gedrag\n• <span class='font-semibold'>Voorspellende mogelijkheden</span> - Anticipeer op trends, problemen en kansen voordat ze zich voordoen\n• <span class='font-semibold'>Concurrentievoordeel</span> - Benut inzichten en mogelijkheden die niet beschikbaar zijn voor concurrenten\n• <span class='font-semibold'>Kostenverlaging</span> - Optimaliseer middelentoewijzing en elimineer inefficiënties\n• <span class='font-semibold'>Nieuwe bedrijfsmogelijkheden</span> - Maak voorheen onmogelijke functionaliteit en diensten mogelijk",
+          "deliverables": [
+            "Uitgebreide AI-strategie afgestemd op bedrijfsdoelstellingen",
+            "Databeoordeling en voorbereidingspijplijnen",
+            "Aangepaste ML-modellen op maat van uw specifieke behoeften",
+            "Integratie met bestaande systemen en workflows",
+            "Gebruiksvriendelijke interfaces voor AI-gestuurde functies",
+            "Prestatietoezicht en evaluatiesystemen",
+            "Documentatie en kennisoverdracht",
+            "Modelonderhoud en verbeteringsprocedures",
+            "Ethische AI-implementatie met passende governance"
+          ],
+          "technologies": [
+            "Machine Learning: TensorFlow, PyTorch, scikit-learn",
+            "Natuurlijke taalverwerking: BERT, GPT, Transformers",
+            "Computer Vision: OpenCV, YOLO, CNN-architecturen",
+            "Dataverwerking: Pandas, Apache Spark, Databricks",
+            "MLOps: MLflow, Kubeflow, Azure ML",
+            "Cloud AI: AWS SageMaker, Google AI, Azure ML",
+            "Big Data: Hadoop, Spark, Kafka",
+            "Visualisatie: Power BI, Tableau, D3.js"
+          ],
+          "timeline": "AI-projecttijdlijnen volgen doorgaans deze fasen:\n\n• Ontdekking & Strategie: 2-3 weken\n• Dataverzameling & Voorbereiding: 3-6 weken\n• Modelontwikkeling & Training: 4-12 weken\n• Integratie & Testen: 2-4 weken\n• Implementatie & Validatie: 2-3 weken\n• Monitoring & Verfijning: Doorlopend\n\nTijdlijnen variëren op basis van databeschikbaarheid, probleemcomplexiteit en integratievereisten.",
+          "pricing": "We bieden flexibele prijsopties voor AI-projecten:\n\n• <span class='font-semibold'>Projectgebaseerd</span>: Vaste prijs voor gedefinieerde scope\n• <span class='font-semibold'>Gefaseerde aanpak</span>: Afzonderlijke prijzen voor ontdekking, proof of concept en volledige implementatie\n• <span class='font-semibold'>Doorlopende service</span>: Modelonderhoud, hertraining en continue verbetering\n\nKostenfactoren omvatten datakwaliteit en -beschikbaarheid, probleemcomplexiteit, integratievereisten, prestatieverwachtingen en tijdsbeperkingen. Neem contact met ons op voor een op maat gemaakte offerte op basis van uw specifieke behoeften.",
+          "faq": [
+            {
+              "question": "Welk soort gegevens hebben we nodig om AI-oplossingen succesvol te implementeren?",
+              "answer": "De hoeveelheid, kwaliteit en het type gegevens dat nodig is, hangt af van de specifieke AI-toepassing. Over het algemeen heeft u relevante, representatieve en voldoende gegevens nodig voor het probleem dat u probeert op te lossen. Voor gesuperviseerd leren zijn gelabelde gegevens essentieel. Als u beperkte gegevens heeft, kunnen we technieken toepassen zoals transfer learning, data-augmentatie of het genereren van synthetische gegevens. We beginnen elk project met een databeoordeling om uw huidige data-assets te evalueren en eventuele verzamelings- of voorbereidingsbehoeften te identificeren."
+            },
+            {
+              "question": "Hoe zorgt u ervoor dat AI-systemen ethisch, onbevooroordeeld en transparant zijn?",
+              "answer": "We implementeren verschillende praktijken om ethische AI te waarborgen: rigoureuze data-audits om vooroordelen te identificeren en te beperken, diverse trainingsgegevens om representatie te garanderen, regelmatige eerlijkheidsbeoordelingen met behulp van vastgestelde meetgegevens, en modelverduidelijkingstechnieken om transparantie in besluitvorming te bieden. We ontwerpen systemen met passend menselijk toezicht en implementeren monitoring om afwijkingen of onverwacht gedrag te detecteren. Onze aanpak sluit aan bij opkomende ethische AI-frameworks en -regelgeving, en we bieden documentatie van onze methoden en controles."
+            },
+            {
+              "question": "Hoe lang duurt het voordat we resultaten zien van AI-implementatie?",
+              "answer": "De tijdlijn naar resultaten varieert per projecttype. Eenvoudige automatiseringsprojecten of het integreren van voorgebouwde AI-diensten kunnen binnen weken resultaten laten zien. Aangepaste machine learning-modellen hebben doorgaans 2-4 maanden nodig, van datavoorbereiding tot implementatie, om initiële bedrijfswaarde aan te tonen. Complexe projecten met uitgebreide datavoorbereiding, aangepaste algoritme-ontwikkeling of integratie met meerdere systemen kunnen 4-6 maanden duren om meetbare resultaten op te leveren. We stellen doorgaans vroege bewijspunten vast en kunnen vaak incrementele waarde leveren vóór volledige implementatie."
+            },
+            {
+              "question": "Hoe onderhoudt en verbetert u AI-modellen na implementatie?",
+              "answer": "We implementeren uitgebreide MLOps-praktijken, waaronder geautomatiseerde prestatiemonitoring om modelverschuiving of -degradatie te detecteren, A/B-testingframeworks voor het evalueren van verbeteringen, regelmatige hertrainingschema's met nieuwe gegevens, en versiebeheer voor modellen en datasets. We stellen duidelijke prestatiemetrieken vast die zijn afgestemd op bedrijfsdoelstellingen en bieden dashboards voor zichtbaarheid. Voor kritische toepassingen implementeren we champion-challenger-benaderingen waarbij nieuwe modellen worden gevalideerd tegen huidige productiemodellen vóór implementatie."
+            }
+          ]
         }
       },
       "devOps": {
         "title": "DevOps & CI/CD",
-        "description": "Gestroomlijnde ontwikkelingsoperaties met geautomatiseerd testen, continue integratie en efficiënte implementatiepijplijnen voor snellere marktintroductie.",
+        "description": "Gestroomlijnde ontwikkelingsoperaties met geautomatiseerd testen, continue integratie en efficiënte implementatiepijplijnen voor snellere time-to-market.",
         "highlights": {
           "0": "CI/CD-pijplijnen",
-          "1": "Infrastructuur als code",
+          "1": "Infrastructure as code",
           "2": "Monitoring & logging"
+        },
+        "detailedContent": {
+          "overview": "Onze DevOps & CI/CD-diensten transformeren softwareontwikkelingscapaciteiten door silo's tussen ontwikkeling en operaties af te breken, automatisering door de hele softwarelevenscyclus te implementeren, en betrouwbare, herhaalbare processen voor het bouwen, testen en implementeren van applicaties te vestigen.\n\nWe helpen organisaties de implementatiefrequentie te verhogen, de doorlooptijd voor wijzigingen te verkorten, faalpercentages te verlagen en snellere hersteltijden te bereiken. Onze aanpak combineert culturele transformatie, procesverbetering en technische implementatie om een hoogwaardige organisatie voor softwarelevering te creëren.",
+          "approach": "We beginnen met een uitgebreide beoordeling van uw huidige ontwikkelings- en implementatieprocessen om knelpunten en verbetermogelijkheden te identificeren. Op basis van deze analyse ontwerpen we een op maat gemaakte DevOps-implementatie roadmap.\n\nWe implementeren infrastructure as code, geautomatiseerde testframeworks en continuous integration/continuous delivery-pijplijnen. Gedurende de implementatie richten we ons op kennisoverdracht, documentatie en het bouwen van self-service mogelijkheden om uw teams te versterken. Onze aanpak benadrukt het meten van belangrijke metrieken om verbeteringen aan te tonen en verdere optimalisatie te sturen.",
+          "benefits": "• <span class='font-semibold'>Versnelde levering</span> - Verkorte ontwikkelingscycli en snellere time-to-market\n• <span class='font-semibold'>Verbeterde kwaliteit</span> - Geautomatiseerd testen en validatie in elke fase\n• <span class='font-semibold'>Verbeterde samenwerking</span> - Afbreken van silo's tussen ontwikkeling en operaties\n• <span class='font-semibold'>Verhoogde stabiliteit</span> - Consistente, herhaalbare implementaties met minder fouten\n• <span class='font-semibold'>Beter gebruik van middelen</span> - Automatisering van handmatige taken maakt teamtijd vrij\n• <span class='font-semibold'>Grotere zichtbaarheid</span> - Uitgebreide monitoring en feedbackmechanismen\n• <span class='font-semibold'>Risicovermindering</span> - Kleinere, frequentere wijzigingen verlagen implementatierisico",
+          "deliverables": [
+            "DevOps-beoordeling en transformatie roadmap",
+            "Infrastructure as code-implementatie",
+            "Geautomatiseerde testframeworks (unit, integratie, prestaties)",
+            "CI/CD-pijplijnontwerp en -implementatie",
+            "Containerisatie- en orchestratieoplossingen",
+            "Monitoring-, logging- en waarschuwingssystemen",
+            "Beveiligingsscanning en compliance-validatie",
+            "Self-service ontwikkelaarsplatformen",
+            "Documentatie en kennisoverdracht",
+            "Metrieken en rapportagedashboards"
+          ],
+          "technologies": [
+            "CI/CD: Jenkins, GitHub Actions, GitLab CI, Azure DevOps",
+            "Containers: Docker, Kubernetes, OpenShift",
+            "IaC: Terraform, Ansible, CloudFormation",
+            "Monitoring: Prometheus, Grafana, ELK Stack, Datadog",
+            "Testen: Selenium, JUnit, pytest, JMeter",
+            "Beveiliging: SonarQube, OWASP ZAP, Snyk, Trivy",
+            "Bronbeheer: Git, GitHub, GitLab, Bitbucket",
+            "Artifactbeheer: Nexus, Artifactory, Docker Registry"
+          ],
+          "timeline": "DevOps-transformatie volgt meestal deze fasen:\n\n• Beoordeling & Strategie: 2-4 weken\n• Initiële implementatie (CI/CD, IaC): 4-8 weken\n• Testautomatisering: 3-6 weken\n• Monitoring & Observeerbaarheid: 2-4 weken\n• Beveiligingsintegratie: 2-4 weken\n• Kennisoverdracht & Optimalisatie: 4-8 weken\n\nTijdlijnen variëren op basis van organisatorische complexiteit, technische schuld en bereidheid tot verandering.",
+          "pricing": "We bieden verschillende engagementsmodellen voor DevOps-diensten:\n\n• <span class='font-semibold'>Beoordeling & Roadmap</span>: Vaste prijs engagement om huidige staat te evalueren en transformatiestrategie te ontwikkelen\n• <span class='font-semibold'>Implementatieproject</span>: Scope-gebaseerde prijzen voor specifieke DevOps-capaciteiten\n• <span class='font-semibold'>DevOps-teamuitbreiding</span>: Personeelsuitbreiding met DevOps-specialisten\n• <span class='font-semibold'>Managed DevOps</span>: Doorlopende service voor pijplijnonderhoud en -optimalisatie\n\nKostenfactoren zijn onder andere organisatiegrootte, technische complexiteit, gewenst niveau van automatisering en tijdsbestek. Neem contact met ons op voor een gepersonaliseerde offerte op basis van uw specifieke behoeften.",
+          "faq": [
+            {
+              "question": "Hoe beheert u de culturele verandering die nodig is voor DevOps-adoptie?",
+              "answer": "Culturele transformatie is cruciaal voor DevOps-succes. We benaderen dit via verschillende methoden: executive workshops om leiderschapsafstemming op te bouwen, vorming van cross-functionele teams om silo's af te breken, training en praktische workshops om vaardigheden op te bouwen, identificeren en stimuleren van DevOps-kampioenen binnen uw organisatie, en het vaststellen van duidelijke metrieken om voortgang te meten en aan te tonen. We implementeren veranderingen meestal incrementeel, beginnend met pilotprojecten die succes kunnen aantonen en momentum kunnen opbouwen voor bredere adoptie."
+            },
+            {
+              "question": "Hoe integreert u beveiliging in het DevOps-proces?",
+              "answer": "We implementeren DevSecOps-praktijken door beveiliging te integreren in de hele ontwikkelingslevenscyclus in plaats van het te behandelen als een eindpoort. Dit omvat geautomatiseerde kwetsbaarheidsscanning in CI/CD-pijplijnen, validatie van infrastructuurbeveiliging, afhankelijkheidsscanning, geheimenbeheer, compliance as code en handhaving van beveiligingsbeleid. We stellen beveiligingsbaselines vast, implementeren geautomatiseerd beveiligingstesten en bieden beveiligingsdashboards om zichtbaarheid te behouden. Onze aanpak zorgt ervoor dat beveiliging een gedeelde verantwoordelijkheid is tussen teams zonder een knelpunt te worden voor levering."
+            },
+            {
+              "question": "Welke metrieken gebruikt u om DevOps-succes te meten?",
+              "answer": "We richten ons op vier belangrijke metrieken uit het DORA-onderzoek: implementatiefrequentie (hoe vaak u succesvol naar productie releaseert), doorlooptijd voor wijzigingen (tijd van codewijziging tot productie-implementatie), gemiddelde hersteltijd (hoe snel u kunt herstellen van storingen) en wijzigingsfaalpercentage (percentage implementaties dat storingen veroorzaakt). We volgen ook teamgerichte metrieken zoals sprintvoorspelbaarheid en -snelheid, en zakelijke metrieken zoals time-to-market voor functies en klanttevredenheid. We implementeren dashboards om deze metrieken bij te houden en verbetering in de loop van de tijd aan te tonen."
+            },
+            {
+              "question": "Kunt u DevOps implementeren in onze legacy-omgeving?",
+              "answer": "Ja, we hebben uitgebreide ervaring met het implementeren van DevOps-praktijken in legacy-omgevingen. Hoewel legacy-systemen uitdagingen presenteren, kunnen we nog steeds aanzienlijke verbeteringen bereiken. Onze aanpak omvat het implementeren van CI/CD voor componenten die kunnen worden geïsoleerd, het creëren van geautomatiseerde tests rond legacy-componenten, het inzetten van feature flags om implementatie van release te ontkoppelen, en het geleidelijk moderniseren van componenten wanneer mogelijk. We implementeren vaak eerst implementatie-automatisering, en werken dan terug om testen en bouwautomatisering te verbeteren, waarbij we in elke fase van de transformatie waarde aantonen."
+            }
+          ]
         }
       }
     },
