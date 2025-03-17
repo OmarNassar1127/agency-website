@@ -42,6 +42,20 @@ const ServiceModal = ({
   const modalRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
   const [activeTab, setActiveTab] = useState<string>("overview");
+  const [expandedFaqs, setExpandedFaqs] = useState<Set<number>>(new Set());
+
+  // Add this function to handle toggling FAQ items
+  const toggleFaq = (index: number) => {
+    setExpandedFaqs(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
 
   // Initialize portal once component mounts
   useEffect(() => {
@@ -280,13 +294,42 @@ const ServiceModal = ({
                 service.detailedContent.faq.map((item, index) => (
                   <div
                     key={index}
-                    className="border-b border-gray-200 dark:border-gray-800 pb-4 mb-4 last:border-0"
+                    className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden"
                   >
-                    <h3 className="text-lg font-semibold mb-2 text-gray-800 dark:text-gray-200">
-                      {item.question}
-                    </h3>
-                    <div className="text-gray-700 dark:text-gray-300"
-                         dangerouslySetInnerHTML={{ __html: item.answer }}>
+                    <button
+                      onClick={() => toggleFaq(index)}
+                      className="w-full px-4 py-3 flex justify-between items-center text-left bg-gray-50 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                    >
+                      <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                        {item.question}
+                      </h3>
+                      <svg
+                        className={`w-5 h-5 text-gray-500 transform transition-transform duration-200 ${
+                          expandedFaqs.has(index) ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-200 ${
+                        expandedFaqs.has(index)
+                          ? 'max-h-[1000px] opacity-100'
+                          : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div 
+                        className="p-4 text-gray-700 dark:text-gray-300"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </div>
                   </div>
                 ))
