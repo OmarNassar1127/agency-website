@@ -34,16 +34,16 @@ const Services = () => {
         overview: t('services.items.customSoftware.detailedContent.overview'),
         approach: t('services.items.customSoftware.detailedContent.approach'),
         benefits: t('services.items.customSoftware.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.customSoftware.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.customSoftware.detailedContent.deliverables')) 
           ? t('services.items.customSoftware.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.customSoftware.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.customSoftware.detailedContent.technologies')) 
           ? t('services.items.customSoftware.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.customSoftware.detailedContent.timeline'),
         pricing: t('services.items.customSoftware.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.customSoftware.detailedContent.faq')) 
-          ? t('services.items.customSoftware.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.customSoftware.detailedContent.faq'))
+          ? t('services.items.customSoftware.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     },
@@ -68,16 +68,16 @@ const Services = () => {
         overview: t('services.items.webDev.detailedContent.overview'),
         approach: t('services.items.webDev.detailedContent.approach'),
         benefits: t('services.items.webDev.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.webDev.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.webDev.detailedContent.deliverables')) 
           ? t('services.items.webDev.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.webDev.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.webDev.detailedContent.technologies')) 
           ? t('services.items.webDev.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.webDev.detailedContent.timeline'),
         pricing: t('services.items.webDev.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.webDev.detailedContent.faq')) 
-          ? t('services.items.webDev.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.webDev.detailedContent.faq'))
+          ? t('services.items.webDev.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     },
@@ -102,16 +102,16 @@ const Services = () => {
         overview: t('services.items.mobileDev.detailedContent.overview'),
         approach: t('services.items.mobileDev.detailedContent.approach'),
         benefits: t('services.items.mobileDev.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.mobileDev.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.mobileDev.detailedContent.deliverables')) 
           ? t('services.items.mobileDev.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.mobileDev.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.mobileDev.detailedContent.technologies')) 
           ? t('services.items.mobileDev.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.mobileDev.detailedContent.timeline'),
         pricing: t('services.items.mobileDev.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.mobileDev.detailedContent.faq')) 
-          ? t('services.items.mobileDev.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.mobileDev.detailedContent.faq'))
+          ? t('services.items.mobileDev.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     },
@@ -136,16 +136,16 @@ const Services = () => {
         overview: t('services.items.cloudSolutions.detailedContent.overview'),
         approach: t('services.items.cloudSolutions.detailedContent.approach'),
         benefits: t('services.items.cloudSolutions.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.cloudSolutions.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.cloudSolutions.detailedContent.deliverables')) 
           ? t('services.items.cloudSolutions.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.cloudSolutions.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.cloudSolutions.detailedContent.technologies')) 
           ? t('services.items.cloudSolutions.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.cloudSolutions.detailedContent.timeline'),
         pricing: t('services.items.cloudSolutions.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.cloudSolutions.detailedContent.faq')) 
-          ? t('services.items.cloudSolutions.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.cloudSolutions.detailedContent.faq'))
+          ? t('services.items.cloudSolutions.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     },
@@ -170,16 +170,16 @@ const Services = () => {
         overview: t('services.items.aiMl.detailedContent.overview'),
         approach: t('services.items.aiMl.detailedContent.approach'),
         benefits: t('services.items.aiMl.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.aiMl.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.aiMl.detailedContent.deliverables')) 
           ? t('services.items.aiMl.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.aiMl.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.aiMl.detailedContent.technologies')) 
           ? t('services.items.aiMl.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.aiMl.detailedContent.timeline'),
         pricing: t('services.items.aiMl.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.aiMl.detailedContent.faq')) 
-          ? t('services.items.aiMl.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.aiMl.detailedContent.faq'))
+          ? t('services.items.aiMl.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     },
@@ -204,16 +204,16 @@ const Services = () => {
         overview: t('services.items.devOps.detailedContent.overview'),
         approach: t('services.items.devOps.detailedContent.approach'),
         benefits: t('services.items.devOps.detailedContent.benefits'),
-        deliverables: Array.isArray(t('services.items.devOps.detailedContent.deliverables')) 
+        deliverables: (Array.isArray(t('services.items.devOps.detailedContent.deliverables')) 
           ? t('services.items.devOps.detailedContent.deliverables') 
-          : [],
-        technologies: Array.isArray(t('services.items.devOps.detailedContent.technologies')) 
+          : []) as string[],
+        technologies: (Array.isArray(t('services.items.devOps.detailedContent.technologies')) 
           ? t('services.items.devOps.detailedContent.technologies') 
-          : [],
+          : []) as string[],
         timeline: t('services.items.devOps.detailedContent.timeline'),
         pricing: t('services.items.devOps.detailedContent.pricing'),
-        faq: Array.isArray(t('services.items.devOps.detailedContent.faq')) 
-          ? t('services.items.devOps.detailedContent.faq') 
+        faq: Array.isArray(t('services.items.devOps.detailedContent.faq'))
+          ? t('services.items.devOps.detailedContent.faq') as unknown as { question: string; answer: string; }[]
           : []
       }
     }
