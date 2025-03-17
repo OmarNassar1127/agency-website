@@ -187,6 +187,23 @@
           "2": "Monitoring & logging"
         }
       }
+    },
+    "modal": {
+      "tabs": {
+        "overview": "Overzicht",
+        "approach": "Onze Aanpak",
+        "benefits": "Voordelen",
+        "faq": "FAQ"
+      },
+      "deliverables": "Wat U Krijgt",
+      "technologies": "Technologieën Die We Gebruiken",
+      "timeline": "Tijdlijn",
+      "pricing": "Prijzen",
+      "interested": "Geïnteresseerd in deze dienst?",
+      "contactButton": "Neem Contact Op",
+      "noApproachInfo": "Onze op maat gemaakte aanpak voor deze dienst wordt besproken tijdens de eerste consultatie om ervoor te zorgen dat deze aan uw specifieke bedrijfsbehoeften voldoet.",
+      "noBenefitsInfo": "De voordelen van deze dienst worden aangepast aan uw specifieke bedrijfsvereisten en doelen.",
+      "noFaqInfo": "Heeft u vragen? Neem contact met ons op voor meer informatie over deze dienst."
     }
   },
   "featuredProjects": {

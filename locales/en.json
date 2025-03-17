@@ -187,6 +187,23 @@
           "2": "Monitoring & logging"
         }
       }
+    },
+    "modal": {
+      "tabs": {
+        "overview": "Overview",
+        "approach": "Our Approach",
+        "benefits": "Benefits",
+        "faq": "FAQ"
+      },
+      "deliverables": "What You'll Get",
+      "technologies": "Technologies We Use",
+      "timeline": "Timeline",
+      "pricing": "Pricing",
+      "interested": "Interested in this service?",
+      "contactButton": "Contact Us",
+      "noApproachInfo": "Our tailored approach for this service will be discussed during initial consultation to ensure it meets your specific business needs.",
+      "noBenefitsInfo": "The benefits of this service will be customized to your specific business requirements and goals.",
+      "noFaqInfo": "Have questions? Contact us for more information about this service."
     }
   },
   "featuredProjects": {
