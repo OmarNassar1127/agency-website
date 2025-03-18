@@ -9,12 +9,12 @@
     "startProject": "Start een project",
     "getQuote": "Vraag offerte aan",
     "logo": {
-      "first": "Nexus",
-      "second": "Digital"
+      "first": "Dominium",
+      "second": "Labs"
     },
     "contactInfo": {
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com"
+      "email": "dominiumlabs.info@gmail.com"
     }
   },
   "footer": {
@@ -35,14 +35,14 @@
     "termsOfService": "Algemene Voorwaarden",
     "cookiePolicy": "Cookiebeleid",
     "sitemap": "Sitemap",
-    "copyright": "© 2025 Nexus Digital. Alle rechten voorbehouden.",
+    "copyright": "© 2025 Dominium Labs. Alle rechten voorbehouden.",
     "companyDescription": "Wij bouwen innovatieve digitale oplossingen die bedrijven in staat stellen te gedijen in een steeds meer verbonden wereld. Onze aangepaste software transformeert bedrijfsprocessen en zorgt voor concurrentievoordeel.",
     "yearsExperience": "Jaren Ervaring",
     "projectsCompleted": "Voltooide Projecten",
     "expertDevelopers": "Expert Ontwikkelaars",
     "logo": {
-      "first": "Nexus",
-      "second": "Digital"
+      "first": "Dominium",
+      "second": "Labs"
     },
     "serviceLinks": {
       "customSoftware": "Maatwerk Software",
@@ -55,7 +55,7 @@
     "contactDetails": {
       "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com"
+      "email": "dominiumlabs.info@gmail.com"
     }
   },
   "hero": {
@@ -436,7 +436,7 @@
             "Testen: Selenium, JUnit, pytest, JMeter",
             "Beveiliging: SonarQube, OWASP ZAP, Snyk, Trivy",
             "Bronbeheer: Git, GitHub, GitLab, Bitbucket",
-            "Artifactbeheer: Nexus, Artifactory, Docker Registry"
+            "Artifactbeheer: Dominium, Artifactory, Docker Registry"
           ],
           "timeline": "DevOps-transformatie volgt meestal deze fasen:\n\n• Beoordeling & Strategie: 2-4 weken\n• Initiële implementatie (CI/CD, IaC): 4-8 weken\n• Testautomatisering: 3-6 weken\n• Monitoring & Observeerbaarheid: 2-4 weken\n• Beveiligingsintegratie: 2-4 weken\n• Kennisoverdracht & Optimalisatie: 4-8 weken\n\nTijdlijnen variëren op basis van organisatorische complexiteit, technische schuld en bereidheid tot verandering.",
           "pricing": "We bieden verschillende engagementsmodellen voor DevOps-diensten:\n\n• <span class='font-semibold'>Beoordeling & Roadmap</span>: Vaste prijs engagement om huidige staat te evalueren en transformatiestrategie te ontwikkelen\n• <span class='font-semibold'>Implementatieproject</span>: Scope-gebaseerde prijzen voor specifieke DevOps-capaciteiten\n• <span class='font-semibold'>DevOps-teamuitbreiding</span>: Personeelsuitbreiding met DevOps-specialisten\n• <span class='font-semibold'>Managed DevOps</span>: Doorlopende service voor pijplijnonderhoud en -optimalisatie\n\nKostenfactoren zijn onder andere organisatiegrootte, technische complexiteit, gewenst niveau van automatisering en tijdsbestek. Neem contact met ons op voor een gepersonaliseerde offerte op basis van uw specifieke behoeften.",
@@ -713,12 +713,12 @@
       "value": "40% Minder",
       "description": "Gereduceerde ontwikkelingscyclustijd vergeleken met traditionele methodologieën, waardoor onze klanten concurrentievoordeel behalen met snellere markttoetreding."
     },
-    "testimonialQuote": "Samenwerken met Nexus Digital heeft ons bedrijf volledig getransformeerd. De aangepaste software die ze hebben ontwikkeld, heeft onze operationele efficiëntie met 45% verhoogd en ons geholpen snel op te schalen.",
+    "testimonialQuote": "Samenwerken met Dominium Labs heeft ons bedrijf volledig getransformeerd. De aangepaste software die ze hebben ontwikkeld, heeft onze operationele efficiëntie met 45% verhoogd en ons geholpen snel op te schalen.",
     "testimonialAuthor": "— Michael Chen, CTO bij TechCorp"
   },
   "whyChooseUs": {
     "label": "Ons Voordeel",
-    "heading": "Waarom Kiezen voor Nexus Digital",
+    "heading": "Waarom Kiezen voor Dominium Labs",
     "description": "We combineren technische expertise met diepgaande branchekennis om uitzonderlijke softwareoplossingen te leveren die echte bedrijfswaarde creëren.",
     "reasons": {
       "experts": {
@@ -825,7 +825,7 @@
     "description": "We hebben bedrijven van alle groottes geholpen hun digitale aanwezigheid te transformeren en opmerkelijke resultaten te behalen.",
     "items": {
       "0": {
-        "content": "Nexus Digital heeft ons verouderde systeem getransformeerd in een modern, efficiënt platform dat onze productiviteit met 40% heeft verhoogd. Hun team begreep onze bedrijfsbehoeften echt en leverde een oplossing die onze verwachtingen overtrof.",
+        "content": "Dominium Labs heeft ons verouderde systeem getransformeerd in een modern, efficiënt platform dat onze productiviteit met 40% heeft verhoogd. Hun team begreep onze bedrijfsbehoeften echt en leverde een oplossing die onze verwachtingen overtrof.",
         "author": "Sarah Johnson",
         "position": "CTO, Innovate Inc.",
         "company": "Innovate Inc.",
@@ -833,7 +833,7 @@
         "service": "Op Maat Gemaakte Softwareontwikkeling"
       },
       "1": {
-        "content": "Samenwerken met Nexus Digital was een game-changer voor ons verkoopteam. Hun aangepaste CRM-oplossing hielp ons leads effectiever te koesteren, wat resulteerde in een stijging van 25% in conversieratio's binnen slechts drie maanden. De aandacht voor detail was indrukwekkend.",
+        "content": "Samenwerken met Dominium Labs was een game-changer voor ons verkoopteam. Hun aangepaste CRM-oplossing hielp ons leads effectiever te koesteren, wat resulteerde in een stijging van 25% in conversieratio's binnen slechts drie maanden. De aandacht voor detail was indrukwekkend.",
         "author": "Michael Chen",
         "position": "Directeur Verkoop",
         "company": "GrowthTech",
@@ -841,7 +841,7 @@
         "service": "Web Applicatie Ontwikkeling"
       },
       "2": {
-        "content": "De mobiele app die Nexus Digital voor ons heeft ontwikkeld, overtrof alle verwachtingen. Ze leverden niet alleen op tijd en binnen budget, maar ze gaven ook waardevolle inzichten die het eindproduct aanzienlijk verbeterden. De betrokkenheid van onze gebruikers is met 60% toegenomen.",
+        "content": "De mobiele app die Dominium Labs voor ons heeft ontwikkeld, overtrof alle verwachtingen. Ze leverden niet alleen op tijd en binnen budget, maar ze gaven ook waardevolle inzichten die het eindproduct aanzienlijk verbeterden. De betrokkenheid van onze gebruikers is met 60% toegenomen.",
         "author": "Jessica Martinez",
         "position": "Product Manager",
         "company": "AppWorks",
@@ -849,7 +849,7 @@
         "service": "Mobiele Applicatie Ontwikkeling"
       },
       "3": {
-        "content": "De cloud-migratiestrategie van Nexus Digital bespaarde ons 30% op infrastructuurkosten terwijl de prestaties verbeterden. Hun expertise in AWS was duidelijk gedurende het hele project, en de overgang verliep naadloos zonder downtime.",
+        "content": "De cloud-migratiestrategie van Dominium Labs bespaarde ons 30% op infrastructuurkosten terwijl de prestaties verbeterden. Hun expertise in AWS was duidelijk gedurende het hele project, en de overgang verliep naadloos zonder downtime.",
         "author": "David Wilson",
         "position": "IT Director",
         "company": "Global Enterprises",
@@ -874,7 +874,7 @@
       "selectType": "Selecteer projecttype",
       "guarantee": "Geen verplichting, 100% veilig & vertrouwelijk"
     },
-    "testimonial": "Samenwerken met Nexus Digital is transformerend geweest voor ons bedrijf. — CEO, TechCorp"
+    "testimonial": "Samenwerken met Dominium Labs is transformerend geweest voor ons bedrijf. — CEO, TechCorp"
   },
   "contact": {
     "heading": "Neem Contact Op",
@@ -901,7 +901,7 @@
       "heading": "Hoe U Ons Kunt Bereiken",
       "address": "123 Innovatielaan<br/>Amsterdam, 1012 AB",
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com",
+      "email": "dominiumlabs.info@gmail.com",
       "hours": "Maandag - Vrijdag: 9:00 - 17:00",
       "callUsDirectly": "Bel Ons Direct",
       "emailUs": "E-mail Ons",
@@ -929,15 +929,15 @@
     "ourStory": "Ons Verhaal",
     "heading": {
       "start": "Wij Zijn",
-      "highlight": "Nexus Digital"
+      "highlight": "Dominium Labs"
     },
     "subheading": "Een collectief van digitale ambachtslieden die innovatieve ideeën omzetten in buitengewone digitale ervaringen.",
     "codeAnimation": {
-      "line1": "const nexusTeam = [",
+      "line1": "const DominiumTeam = [",
       "line2": "passie, expertise, innovatie, creativiteit",
       "line3": "];",
       "line4": "function creëerDigitaleMagie() {",
-      "line5": "return nexusTeam.reduce((product, value) =>",
+      "line5": "return DominiumTeam.reduce((product, value) =>",
       "line6": "product.verbeterdMet(value),",
       "line7": "new Oplossing()",
       "line8": ");",
@@ -950,7 +950,7 @@
     "timeline": {
       "2015": {
         "label": "Het Begin",
-        "title": "2015 - Nexus Digital Opgericht",
+        "title": "2015 - Dominium Labs Opgericht",
         "description": "Opgericht door drie studievrienden met een gedeelde visie om te transformeren hoe bedrijven met technologie omgaan. Begonnen in een klein appartement met slechts 3 klanten."
       },
       "2017": {
@@ -1007,7 +1007,7 @@
       "description": "Ons diverse team brengt ervaring samen van enkele van 's werelds meest innovatieve bedrijven."
     },
     "teamOrbit": {
-      "title": "Nexus Team",
+      "title": "Dominium Team",
       "description": "80+ Digitale Experts"
     },
     "teamMembers": {
@@ -1098,7 +1098,7 @@
         "label": "Jaren van Excellentie"
       }
     },
-    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Nexus Digital gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid.",
+    "journey": "Opgericht in 2015 met een missie om de kloof tussen bedrijfsstrategie en technologische innovatie te overbruggen, is Dominium Labs gegroeid van een klein team van gepassioneerde ontwikkelaars tot een full-service digitaal bureau met wereldwijd bereik. Onze reis wordt gekenmerkt door continu leren, aanpassing en een onvermoeibare toewijding aan uitmuntendheid.",
     "cta": {
       "heading": "Klaar om met ons samen te werken?",
       "description": "Laten we bespreken hoe we u kunnen helpen uw digitale doelen te bereiken en uitzonderlijke ervaringen voor uw gebruikers te creëren.",

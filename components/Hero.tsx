@@ -314,7 +314,7 @@ const Hero = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                   <div className="mx-auto text-center text-xs text-gray-400 font-mono">
-                    nexusdigital.cloud - Building Your Website
+                    dominiumlabs.com - Building Your Website
                   </div>
                 </div>
                 

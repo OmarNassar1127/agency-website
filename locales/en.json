@@ -9,12 +9,12 @@
     "startProject": "Start a project",
     "getQuote": "Get a Quote",
     "logo": {
-      "first": "Nexus",
-      "second": "Digital"
+      "first": "Dominium",
+      "second": "Labs"
     },
     "contactInfo": {
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com"
+      "email": "dominiumlabs.info@gmail.com"
     }
   },
   "footer": {
@@ -35,14 +35,14 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "sitemap": "Sitemap",
-    "copyright": "© 2025 Nexus Digital. All rights reserved.",
+    "copyright": "© 2025 Dominium Labs. All rights reserved.",
     "companyDescription": "We build innovative digital solutions that empower businesses to thrive in an increasingly connected world. Our custom software transforms operations and drives competitive advantage.",
     "yearsExperience": "Years of Experience",
     "projectsCompleted": "Projects Completed",
     "expertDevelopers": "Expert Developers",
     "logo": {
-      "first": "Nexus",
-      "second": "Digital"
+      "first": "Dominium",
+      "second": "Labs"
     },
     "serviceLinks": {
       "customSoftware": "Custom Software",
@@ -55,11 +55,11 @@
     "contactDetails": {
       "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com"
+      "email": "dominiumlabs.info@gmail.com"
     }
   },
   "hero": {
-    "preheading": "Revolutionizing Digital Solutions",
+    "preheading": "Revolutionizing Labs Solutions",
     "heading": "Transform your business with cutting-edge digital solutions",
     "subheading": "We build custom software and web applications that help businesses thrive in the digital age.",
     "cta1": "Our Services",
@@ -91,12 +91,12 @@
     "subheading": "Comprehensive digital solutions tailored to your business needs",
     "sectionLabel": "What We Offer",
     "titleStart": "Comprehensive",
-    "titleHighlight": "Digital Solutions",
+    "titleHighlight": "Labs Solutions",
     "description": "We deliver end-to-end software development services that empower businesses to innovate, scale, and thrive in today's competitive marketplace.",
     "learnMore": "Learn more",
     "exploreServices": "Explore Services",
     "getInTouch": "Get in Touch",
-    "preheading": "Innovative Digital Solutions",
+    "preheading": "Innovative Labs Solutions",
     "pageSubheading": "We offer comprehensive digital solutions tailored to your business needs, from custom software development to digital marketing and beyond.",
     "processHeading": "How We Deliver Results",
     "processDescription": "Our streamlined process ensures effective communication, on-time delivery, and exceptional quality.",
@@ -121,7 +121,7 @@
       "description": "User-focused design that enhances user experience and engagement."
     },
     "digitalMarketing": {
-      "title": "Digital Marketing",
+      "title": "Labs Marketing",
       "description": "Strategic marketing solutions to grow your online presence."
     },
     "cloudSolutions": {
@@ -436,7 +436,7 @@
             "Testing: Selenium, JUnit, pytest, JMeter",
             "Security: SonarQube, OWASP ZAP, Snyk, Trivy",
             "Source Control: Git, GitHub, GitLab, Bitbucket",
-            "Artifact Management: Nexus, Artifactory, Docker Registry"
+            "Artifact Management: Dominium, Artifactory, Docker Registry"
           ],
           "timeline": "DevOps transformation typically follows these phases:\n\n• Assessment & Strategy: 2-4 weeks\n• Initial Implementation (CI/CD, IaC): 4-8 weeks\n• Testing Automation: 3-6 weeks\n• Monitoring & Observability: 2-4 weeks\n• Security Integration: 2-4 weeks\n• Knowledge Transfer & Optimization: 4-8 weeks\n\nTimelines vary based on organizational complexity, technical debt, and readiness for change.",
           "pricing": "We offer several engagement models for DevOps services:\n\n• <span class='font-semibold'>Assessment & Roadmap</span>: Fixed price engagement to evaluate current state and develop transformation strategy\n• <span class='font-semibold'>Implementation Project</span>: Scope-based pricing for specific DevOps capabilities\n• <span class='font-semibold'>DevOps Team Augmentation</span>: Staff augmentation with DevOps specialists\n• <span class='font-semibold'>Managed DevOps</span>: Ongoing service for pipeline maintenance and optimization\n\nCost factors include organizational size, technical complexity, desired level of automation, and timeframe. Contact us for a personalized quote based on your specific needs.",
@@ -713,12 +713,12 @@
       "value": "40% Less",
       "description": "Reduced development cycle time compared to traditional methodologies, helping our clients gain competitive advantage with faster market entry."
     },
-    "testimonialQuote": "Working with Nexus Digital transformed our business completely. The custom software they developed increased our operational efficiency by 45% and helped us scale rapidly.",
+    "testimonialQuote": "Working with Dominium Labs transformed our business completely. The custom software they developed increased our operational efficiency by 45% and helped us scale rapidly.",
     "testimonialAuthor": "— Michael Chen, CTO at TechCorp"
   },
   "whyChooseUs": {
     "label": "Our Advantage",
-    "heading": "Why Choose Nexus Digital",
+    "heading": "Why Choose Dominium Labs",
     "description": "We combine technical expertise with deep industry knowledge to deliver exceptional software solutions that drive real business value.",
     "reasons": {
       "experts": {
@@ -825,7 +825,7 @@
     "description": "We've helped businesses of all sizes transform their digital presence and achieve remarkable results.",
     "items": {
       "0": {
-        "content": "Nexus Digital transformed our outdated system into a modern, efficient platform that's increased our productivity by 40%. Their team truly understood our business needs and delivered a solution that exceeded our expectations.",
+        "content": "Dominium Labs transformed our outdated system into a modern, efficient platform that's increased our productivity by 40%. Their team truly understood our business needs and delivered a solution that exceeded our expectations.",
         "author": "Sarah Johnson",
         "position": "CTO, Innovate Inc.",
         "company": "Innovate Inc.",
@@ -833,7 +833,7 @@
         "service": "Custom Software Development"
       },
       "1": {
-        "content": "Working with Nexus Digital was a game-changer for our sales team. Their custom CRM solution helped us nurture leads more effectively, resulting in a 25% increase in conversion rates within just three months. The attention to detail was impressive.",
+        "content": "Working with Dominium Labs was a game-changer for our sales team. Their custom CRM solution helped us nurture leads more effectively, resulting in a 25% increase in conversion rates within just three months. The attention to detail was impressive.",
         "author": "Michael Chen",
         "position": "Director of Sales",
         "company": "GrowthTech",
@@ -841,7 +841,7 @@
         "service": "Web Application Development"
       },
       "2": {
-        "content": "The mobile app Nexus Digital developed for us exceeded all expectations. Not only did they deliver on time and within budget, but they also provided valuable insights that significantly improved the final product. Our user engagement has increased by 60%.",
+        "content": "The mobile app Dominium Labs developed for us exceeded all expectations. Not only did they deliver on time and within budget, but they also provided valuable insights that significantly improved the final product. Our user engagement has increased by 60%.",
         "author": "Jessica Martinez",
         "position": "Product Manager",
         "company": "AppWorks",
@@ -849,7 +849,7 @@
         "service": "Mobile Application Development"
       },
       "3": {
-        "content": "Nexus Digital's cloud migration strategy saved us 30% on infrastructure costs while improving performance. Their expertise in AWS was evident throughout the project, and the transition was seamless with zero downtime.",
+        "content": "Dominium Labs's cloud migration strategy saved us 30% on infrastructure costs while improving performance. Their expertise in AWS was evident throughout the project, and the transition was seamless with zero downtime.",
         "author": "David Wilson",
         "position": "IT Director",
         "company": "Global Enterprises",
@@ -859,7 +859,7 @@
     }
   },
   "cta": {
-    "badge": "Start Your Digital Transformation",
+    "badge": "Start Your Labs Transformation",
     "heading": "Ready to start your project?",
     "subheading": "Contact us today for a free consultation and quote.",
     "button": "Get in Touch",
@@ -874,7 +874,7 @@
       "selectType": "Select project type",
       "guarantee": "No obligation, 100% secure & confidential"
     },
-    "testimonial": "Working with Nexus Digital has been transformative for our business. — CEO, TechCorp"
+    "testimonial": "Working with Dominium Labs has been transformative for our business. — CEO, TechCorp"
   },
   "contact": {
     "heading": "Contact Us",
@@ -901,7 +901,7 @@
       "heading": "How to Reach Us",
       "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
       "phone": "(555) 123-4567",
-      "email": "info@nexusdigital.com",
+      "email": "dominiumlabs.info@gmail.com",
       "hours": "Monday - Friday: 9am - 6pm PST",
       "callUsDirectly": "Call Us Directly",
       "emailUs": "Email Us",
@@ -929,15 +929,15 @@
     "ourStory": "Our Story",
     "heading": {
       "start": "We Are",
-      "highlight": "Nexus Digital"
+      "highlight": "Dominium Labs"
     },
     "subheading": "A collective of digital craftspeople turning innovative ideas into extraordinary digital experiences.",
     "codeAnimation": {
-      "line1": "const nexusTeam = [",
+      "line1": "const DominiumTeam = [",
       "line2": "passion, expertise, innovation, creativity",
       "line3": "];",
       "line4": "function createDigitalMagic() {",
-      "line5": "return nexusTeam.reduce((product, value) =>",
+      "line5": "return DominiumTeam.reduce((product, value) =>",
       "line6": "product.enhancedWith(value),",
       "line7": "new Solution()",
       "line8": ");",
@@ -950,7 +950,7 @@
     "timeline": {
       "2015": {
         "label": "The Beginning",
-        "title": "2015 - Nexus Digital Founded",
+        "title": "2015 - Dominium Labs Founded",
         "description": "Founded by three college friends with a shared vision to transform how businesses interact with technology. Started in a small apartment with just 3 clients."
       },
       "2017": {
@@ -975,7 +975,7 @@
       },
       "present": {
         "label": "Today",
-        "title": "Present - Shaping Digital Futures",
+        "title": "Present - Shaping Labs Futures",
         "description": "Continuing to push boundaries and create transformative digital experiences for forward-thinking businesses around the world."
       }
     },
@@ -1007,8 +1007,8 @@
       "description": "Our diverse team brings together experience from some of the world's most innovative companies."
     },
     "teamOrbit": {
-      "title": "Nexus Team",
-      "description": "80+ Digital Experts"
+      "title": "Dominium Team",
+      "description": "80+ Labs Experts"
     },
     "teamMembers": {
       "leadership": {
@@ -1109,7 +1109,7 @@
         "button": "Contact Us"
       }
     },
-    "journey": "Founded in 2015 with a mission to bridge the gap between business strategy and technological innovation, Nexus Digital has grown from a small team of passionate developers to a full-service digital agency with global reach. Our journey has been marked by continuous learning, adaptation, and a relentless commitment to excellence."
+    "journey": "Founded in 2015 with a mission to bridge the gap between business strategy and technological innovation, Dominium Labs has grown from a small team of passionate developers to a full-service digital agency with global reach. Our journey has been marked by continuous learning, adaptation, and a relentless commitment to excellence."
   },
   "settings": {
     "language": "Language",

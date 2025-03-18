@@ -20,21 +20,21 @@ export default function Home() {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '200px', // Start loading even earlier for ultra-smooth transitions 
-      threshold: 0.001 // Extremely low threshold to trigger as soon as any part is visible
+      rootMargin: "200px", // Start loading even earlier for ultra-smooth transitions
+      threshold: 0.001, // Extremely low threshold to trigger as soon as any part is visible
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         // Smoothly handle visibility changes
         if (entry.isIntersecting) {
           // Use requestAnimationFrame to make it smoother
           requestAnimationFrame(() => {
             // Apply a very slight delay to make transitions even more fluid
             setTimeout(() => {
-              entry.target.classList.add('is-visible');
-              entry.target.classList.add('section-visible');
-              entry.target.classList.remove('section-hidden');
+              entry.target.classList.add("is-visible");
+              entry.target.classList.add("section-visible");
+              entry.target.classList.remove("section-hidden");
             }, 50);
           });
         }
@@ -42,13 +42,13 @@ export default function Home() {
     }, options);
 
     // Add special handling for home section - make it visible immediately
-    const homeSection = document.getElementById('home');
+    const homeSection = document.getElementById("home");
     if (homeSection) {
       // Add a small timeout to make the animation visible
       setTimeout(() => {
-        homeSection.classList.add('is-visible');
-        homeSection.classList.add('section-visible');
-        homeSection.classList.remove('section-hidden');
+        homeSection.classList.add("is-visible");
+        homeSection.classList.add("section-visible");
+        homeSection.classList.remove("section-hidden");
       }, 100);
     }
 
@@ -57,23 +57,23 @@ export default function Home() {
       servicesSectionRef.current,
       workSectionRef.current,
       contactSectionRef.current,
-      document.getElementById('process')
+      document.getElementById("process"),
     ].filter(Boolean);
 
-    sectionRefs.forEach(section => {
+    sectionRefs.forEach((section) => {
       if (section) {
         observer.observe(section);
       }
     });
 
     return () => {
-      sectionRefs.forEach(section => {
+      sectionRefs.forEach((section) => {
         if (section) {
           observer.unobserve(section);
         }
       });
     };
- }, []);
+  }, []);
 
   return (
     <main>
@@ -96,7 +96,11 @@ export default function Home() {
       </div>
 
       {/* About Section - Hero Section with Animated Elements */}
-      <div id="about" ref={aboutSectionRef} className="section-hidden section-fade-content">
+      <div
+        id="about"
+        ref={aboutSectionRef}
+        className="section-hidden section-fade-content"
+      >
         <section className="relative bg-gradient-to-br from-gray-950 via-primary-900 to-secondary-900 py-24 text-white overflow-hidden">
           {/* Background elements */}
           <div className="absolute inset-0 z-0">
@@ -149,27 +153,30 @@ export default function Home() {
             <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm fade-in-1">
               <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
               <span className="text-sm font-medium text-white/80">
-                {t('about.ourStory')}
+                {t("about.ourStory")}
               </span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 fade-in-2">
-              {t('about.heading.start')}{" "}
+              {t("about.heading.start")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 animate-gradient-x animate-when-visible">
-                {t('about.heading.highlight')}
+                {t("about.heading.highlight")}
               </span>
             </h1>
             <p className="text-xl text-white/80 max-w-2xl mx-auto mb-8 fade-in-3">
-              {t('about.subheading')}
+              {t("about.subheading")}
             </p>
 
             {/* Creative intro animation - replacing standard buttons */}
-            <div className="flex flex-wrap justify-center mt-12 relative card-item" style={{ '--item-index': 2 } as React.CSSProperties}>
+            <div
+              className="flex flex-wrap justify-center mt-12 relative card-item"
+              style={{ "--item-index": 2 } as React.CSSProperties}
+            >
               <div className="relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur p-6 max-w-3xl mx-auto">
                 <div className="typing-animation relative pl-4 border-l-2 border-primary-400 animate-when-visible">
                   <p className="text-md md:text-lg text-left font-mono text-white/90">
                     <span className="text-primary-400">const</span>{" "}
-                    <span className="text-secondary-400">nexusTeam</span> = [
+                    <span className="text-secondary-400">dominiumTeam</span> = [
                     <br />
                     <span className="ml-4">
                       {t("about.codeAnimation.line2")}
@@ -186,11 +193,15 @@ export default function Home() {
                     <br />
                     <span className="ml-4">
                       <span className="text-primary-400">return</span>{" "}
-                      nexusTeam.reduce((product, value) =&gt; <br />{" "}
+                      dominiumTeam.reduce((product, value) =&gt; <br />{" "}
                     </span>
-                    <span className="ml-8">{t("about.codeAnimation.line6")}</span>
+                    <span className="ml-8">
+                      {t("about.codeAnimation.line6")}
+                    </span>
                     <br />
-                    <span className="ml-8">{t("about.codeAnimation.line7")}</span>
+                    <span className="ml-8">
+                      {t("about.codeAnimation.line7")}
+                    </span>
                     <br />
                     <span className="ml-4">);</span>
                     <br />
@@ -207,9 +218,13 @@ export default function Home() {
           </div>
         </section>
       </div>
-      
+
       {/* <Testimonials /> */}
-      <div id="contact" ref={contactSectionRef} className="section-hidden section-fade-content">
+      <div
+        id="contact"
+        ref={contactSectionRef}
+        className="section-hidden section-fade-content"
+      >
         <CTA />
       </div>
     </main>
