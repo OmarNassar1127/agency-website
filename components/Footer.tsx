@@ -28,6 +28,13 @@ const Footer = () => {
           {/* Company Info - 4 columns on large screens */}
           <div className="lg:col-span-4">
             <div className="flex items-center mb-6">
+              <img 
+                src="/images/logo/DominiumLabs.png" 
+                alt="Dominium Labs Logo" 
+                width={50} 
+                height={50} 
+                className="mr-2"
+              />
               <h3 className="text-2xl font-display font-bold">
                 <span className="gradient-text">{t('footer.logo.first')}</span>
                 <span className="ml-1 text-white">{t('footer.logo.second')}</span>

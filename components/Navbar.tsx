@@ -121,9 +121,16 @@ const Navbar = () => {
       } py-3`}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
+      {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
+            <img 
+              src="/images/logo/DominiumLabs.png" 
+              alt="Dominium Labs Logo" 
+              width={50} 
+              height={50} 
+              className="mr-2"
+            />
             <span className="text-2xl font-display font-bold mr-1">
               <span className="gradient-text">{t('navbar.logo.first')}</span>
             </span>
