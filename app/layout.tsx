@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata = {
   title: 'Digital Agency - Custom Software Solutions',
   description: 'We create custom software solutions tailored to your business needs.',
+  verification: {
+    google: 'pBZLxv_mBZJc-RT2QfvVrFKHf754_YlU2pflrUX9uDE',
+  },
 };
 
 export default function RootLayout({
