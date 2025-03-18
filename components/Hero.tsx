@@ -253,7 +253,7 @@ const Hero = () => {
             {/* Call to action buttons */}
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-2 mb-8 fade-in-3">
               <Link 
-                href="contact" 
+                href="#contact" 
                 className="btn btn-lg btn-primary group"
               >
                 <span className="mr-2">{t('hero.cta2')}</span>
@@ -262,7 +262,7 @@ const Hero = () => {
                 </svg>
               </Link>
               <Link 
-                href="services" 
+                href="#services" 
                 className="btn btn-lg border-2 border-white/20 text-white hover:bg-white/10"
               >
                 <span>{t('hero.cta1')}</span>
