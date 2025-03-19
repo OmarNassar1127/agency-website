@@ -13,6 +13,34 @@ export const metadata = {
   verification: {
     google: 'pBZLxv_mBZJc-RT2QfvVrFKHf754_YlU2pflrUX9uDE',
   },
+  openGraph: {
+    title: 'Dominium Labs - Custom Software Solutions',
+    description: 'We create custom software solutions tailored to your business needs.',
+    url: 'https://dominiumlabs.com',
+    siteName: 'Dominium Labs',
+    images: [
+      {
+        url: '/images/logo/DominiumLabs.png',
+        width: 800,
+        height: 800,
+        alt: 'Dominium Labs Logo',
+      },
+    ],
+    locale: 'nl_NL',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dominium Labs - Custom Software Solutions',
+    description: 'We create custom software solutions tailored to your business needs.',
+    images: ['/images/logo/DominiumLabs.png'],
+    creator: '@dominiumlabs',
+  },
+  icons: {
+    icon: '/images/logo/DominiumLabs.png',
+    shortcut: '/images/logo/DominiumLabs.png',
+    apple: '/images/logo/DominiumLabs.png',
+  },
 };
 
 export default function RootLayout({
