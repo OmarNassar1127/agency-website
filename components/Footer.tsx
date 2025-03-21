@@ -122,7 +122,7 @@ const Footer = () => {
                   </li>
                   <li className="pt-4">
                     <Link 
-                      href="/contact" 
+                      href="/#contact" 
                       className="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium"
                     >
                       <span>{t('footer.getInTouch')}</span>
