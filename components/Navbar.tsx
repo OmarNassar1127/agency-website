@@ -125,7 +125,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img 
-              src="/images/logo/DominiumLabs1.png" 
+              src="/images/logo/DominiumLabs.png" 
               alt="Dominium Labs Logo" 
               width={50} 
               height={50} 
