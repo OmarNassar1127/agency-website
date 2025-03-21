@@ -267,8 +267,8 @@ const Services = () => {
       <div ref={sectionRef} className="container mx-auto section-hidden">
         <div className="max-w-4xl mx-auto text-center mb-20">
           {/* Section label */}
-          <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-primary-50 dark:bg-primary-950/60">
-            <span className="text-sm font-medium text-primary-700 dark:text-primary-300">{t('services.sectionLabel')}</span>
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/50 to-blue-600/80 text-white font-medium text-sm tracking-wider mb-4 shadow-lg backdrop-blur-sm">
+            {t('services.sectionLabel')}
           </div>
           
           {/* Heading with gradient text */}

@@ -20,7 +20,7 @@ export const metadata = {
     siteName: 'Dominium Labs',
     images: [
       {
-        url: '/images/logo/DominiumLabs.png',
+        url: '/images/logo/DominiumLabs1.png',
         width: 800,
         height: 800,
         alt: 'Dominium Labs Logo',
@@ -33,13 +33,13 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Dominium Labs - Custom Software Solutions',
     description: 'We create custom software solutions tailored to your business needs.',
-    images: ['/images/logo/DominiumLabs.png'],
+    images: ['/images/logo/DominiumLabs1.png'],
     creator: '@dominiumlabs',
   },
   icons: {
-    icon: '/images/logo/DominiumLabs.png',
-    shortcut: '/images/logo/DominiumLabs.png',
-    apple: '/images/logo/DominiumLabs.png',
+    icon: '/images/logo/DominiumLabs1.png',
+    shortcut: '/images/logo/DominiumLabs1.png',
+    apple: '/images/logo/DominiumLabs1.png',
   },
 };
 

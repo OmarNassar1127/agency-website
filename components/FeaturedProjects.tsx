@@ -212,9 +212,16 @@ const FeaturedProjects = () => {
     <>
       <section className="py-20 bg-white dark:bg-gray-900">
         <div ref={sectionRef} className="container mx-auto px-4 section-hidden">
+          <div className="flex justify-center w-full mb-4">
+            <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/40 to-blue-600/70 text-white font-medium text-sm tracking-wider shadow-lg backdrop-blur-sm">
+              <span className="text-sm font-medium text-white">
+                {t("featuredProjects.heading")}
+              </span>
+            </div>
+          </div>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-              {t("featuredProjects.heading")}
+              {t("featuredProjects.headingtitle")}
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               {t("featuredProjects.subheading")}

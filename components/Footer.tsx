@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="lg:col-span-4">
             <div className="flex items-center mb-6">
               <img 
-                src="/images/logo/DominiumLabs.png" 
+                src="/images/logo/DominiumLabs1.png" 
                 alt="Dominium Labs Logo" 
                 width={50} 
                 height={50} 

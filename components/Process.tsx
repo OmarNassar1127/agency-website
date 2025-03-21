@@ -51,8 +51,8 @@ const Process = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800">
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/40 to-blue-600/70 text-white font-medium text-sm tracking-wider mb-4 shadow-lg backdrop-blur-sm">
+            <span className="text-sm font-medium text-white">
               {t("process.heading")}
             </span>
           </div>

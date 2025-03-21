@@ -150,12 +150,13 @@ export default function Home() {
           </div>
 
           <div className="container relative z-10 mx-auto px-4 text-center">
-            <div className="inline-flex items-center mb-6 px-3 py-1.5 border border-white/10 rounded-full bg-white/5 backdrop-blur-sm fade-in-1">
-              <span className="inline-block w-2 h-2 rounded-full bg-primary-400 mr-2 animate-pulse-slow"></span>
-              <span className="text-sm font-medium text-white/80">
-                {t("about.ourStory")}
-              </span>
-            </div>
+          <div className="flex justify-center w-full mb-4">
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/40 to-blue-600/70 text-white font-medium text-sm tracking-wider shadow-lg backdrop-blur-sm">
+            <span className="text-sm font-medium text-white">
+              {t("about.ourStory")}
+            </span>
+          </div>
+        </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 fade-in-2">
               {t("about.heading.start")}{" "}
