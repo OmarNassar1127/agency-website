@@ -1,0 +1,36 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Dominium Labs",
+  "url": "https://dominiumlabs.com",
+  "description": "We create custom software solutions tailored to your business needs.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://dominiumlabs.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "sameAs": [
+    "#your-social-media-links"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Digital Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Web Development",
+        "url": "https://dominiumlabs.com/#services"
+      },
+      {
+        "@type": "Offer",
+        "name": "Mobile App Development",
+        "url": "https://dominiumlabs.com/#services"
+      },
+      {
+        "@type": "Offer",
+        "name": "Custom Software Solutions",
+        "url": "https://dominiumlabs.com/#services"
+      }
+    ]
+  }
+}

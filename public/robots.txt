@@ -1,0 +1,9 @@
+# robots.txt for dominiumlabs.com
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas if needed
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://dominiumlabs.com/sitemap.xml
