@@ -893,6 +893,7 @@
       "descriptionPlaceholder": "Tell us about your project...",
       "success": "Message sent successfully!",
       "error": "Failed to send message. Please try again.",
+      "sending": "Sending...",
       "submit": "Send Message",
       "heading": "Let's Build Something Extraordinary",
       "startProject": "Start Your Project",
