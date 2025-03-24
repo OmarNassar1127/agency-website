@@ -1,10 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "framer-motion";
 
 const Process = () => {
   const { t } = useLanguage();
+  const [countdownText, setCountdownText] = useState('T-10');
+
+  useEffect(() => {
+    const texts = ['T-10', 'T-09', 'T-08', 'T-07', 'T-06', 'T-05', 'T-04', 'T-03', 'T-02', 'T-01', 'LIFTOFF'];
+    let currentIndex = 0;
+
+    const updateText = () => {
+      setCountdownText(texts[currentIndex]);
+      currentIndex = (currentIndex + 1) % texts.length;
+    };
+
+    const interval = setInterval(updateText, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Add intersection observer for animation triggers
   useEffect(() => {
@@ -678,17 +692,33 @@ const Process = () => {
                     <div className="h-[220px] flex items-center justify-center">
                       <div className="relative w-full max-w-[220px] aspect-square">
                         <div className="w-full h-full rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-                          {/* Development Illustration - Animated Code Editor */}
+                          {/* Development Illustration - Live Coding Animation */}
                           <div className="w-[160px] h-[160px] relative">
                             {/* Code Editor Window */}
-                            <div className="w-full h-full bg-gray-800 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg relative">
+                            <motion.div 
+                              className="w-full h-full bg-gray-800 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg relative"
+                              animate={{ boxShadow: ['0px 4px 12px rgba(0,0,0,0.1)', '0px 8px 24px rgba(0,0,0,0.15)', '0px 4px 12px rgba(0,0,0,0.1)'] }}
+                              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            >
                               {/* Window Header */}
                               <div className="h-6 bg-gray-700 dark:bg-gray-800 flex items-center px-2">
-                                <div className="w-2 h-2 rounded-full bg-red-500 mr-1"></div>
-                                <div className="w-2 h-2 rounded-full bg-yellow-500 mr-1"></div>
-                                <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                                <motion.div 
+                                  className="w-2 h-2 rounded-full bg-red-500 mr-1"
+                                  whileInView={{ scale: [1, 1.2, 1] }}
+                                  transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
+                                ></motion.div>
+                                <motion.div 
+                                  className="w-2 h-2 rounded-full bg-yellow-500 mr-1"
+                                  whileInView={{ scale: [1, 1.2, 1] }}
+                                  transition={{ duration: 2, repeat: Infinity, repeatType: "mirror", delay: 0.3 }}
+                                ></motion.div>
+                                <motion.div 
+                                  className="w-2 h-2 rounded-full bg-green-500"
+                                  whileInView={{ scale: [1, 1.2, 1] }}
+                                  transition={{ duration: 2, repeat: Infinity, repeatType: "mirror", delay: 0.6 }}
+                                ></motion.div>
                               </div>
-
+                              
                               {/* Code Editor Content */}
                               <div className="p-2 text-left">
                                 {/* Line numbers */}
@@ -702,141 +732,111 @@ const Process = () => {
                                   <span>7</span>
                                   <span>8</span>
                                 </div>
-
-                                {/* Code lines */}
+                                
+                                {/* Code lines - Live Coding Effect */}
                                 <div className="ml-3 flex flex-col text-[6px] font-mono">
-                                  <motion.div
+                                  <motion.div 
                                     className="flex items-center text-blue-400 dark:text-blue-300"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
+                                    initial={{ opacity: 0, x: -5 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
+                                    viewport={{ once: false }}
                                   >
                                     <span>function</span>
-                                    <span className="text-green-400 dark:text-green-300 ml-1">
-                                      createApp
-                                    </span>
+                                    <span className="text-green-400 dark:text-green-300 ml-1">createApp</span>
                                     <span className="text-gray-300">()</span>
                                     <span className="text-gray-300 ml-1">{`{`}</span>
                                   </motion.div>
-
-                                  <motion.div
+                                  
+                                  <motion.div 
                                     className="ml-2 text-purple-400 dark:text-purple-300 flex"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
+                                    initial={{ opacity: 0, x: -5 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.5, delay: 0.6 }}
+                                    viewport={{ once: false }}
                                   >
                                     <span>const</span>
-                                    <span className="text-gray-300 ml-1">
-                                      app
-                                    </span>
-                                    <span className="text-gray-300 ml-1">
-                                      =
-                                    </span>
-                                    <span className="text-blue-400 dark:text-blue-300 ml-1">
-                                      new
-                                    </span>
-                                    <span className="text-yellow-400 dark:text-yellow-300 ml-1">
-                                      App();
-                                    </span>
+                                    <span className="text-gray-300 ml-1">app</span>
+                                    <span className="text-gray-300 ml-1">=</span>
+                                    <span className="text-blue-400 dark:text-blue-300 ml-1">new</span>
+                                    <span className="text-yellow-400 dark:text-yellow-300 ml-1">App();</span>
                                   </motion.div>
-
-                                  <motion.div
-                                    className="ml-2 flex items-center"
-                                    initial={{ opacity: 0, width: 0 }}
-                                    animate={{ opacity: 1, width: "auto" }}
-                                    transition={{ duration: 0.8, delay: 1.0 }}
+                                  
+                                  {/* Animated cursor effect */}
+                                  <motion.div 
+                                    className="ml-2 flex items-center h-2"
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    transition={{ duration: 0.3, delay: 1.0 }}
+                                    viewport={{ once: false }}
                                   >
-                                    <motion.span
-                                      className="inline-block h-2 w-[30px] bg-gray-700"
-                                      animate={{ opacity: [0.5, 0.7, 0.5] }}
-                                      transition={{
-                                        duration: 1.5,
-                                        repeat: Infinity,
+                                    <motion.span 
+                                      className="inline-block h-2 w-[2px] bg-white"
+                                      animate={{ opacity: [1, 0, 1], x: [0, 30, 30] }}
+                                      transition={{ 
+                                        opacity: { duration: 0.8, repeat: Infinity, repeatType: "loop" },
+                                        x: { duration: 1.5, times: [0, 0.7, 0.7], repeat: Infinity, repeatType: "loop" }
                                       }}
                                     ></motion.span>
+                                    <motion.span 
+                                      className="text-green-400 dark:text-green-300"
+                                      initial={{ opacity: 0, width: 0 }}
+                                      animate={{ opacity: 1, width: "auto" }}
+                                      transition={{ duration: 1.5, delay: 1.5, repeat: Infinity, repeatDelay: 6 }}
+                                    >
+                                      app.initialize();
+                                    </motion.span>
                                   </motion.div>
-
-                                  <motion.div
-                                    className="ml-2 text-green-400 dark:text-green-300"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 1.4 }}
-                                  >
-                                    <span>app.initialize();</span>
-                                  </motion.div>
-
-                                  <motion.div
+                                  
+                                  <motion.div 
                                     className="ml-2 text-orange-400 dark:text-orange-300"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 1.8 }}
+                                    initial={{ opacity: 0, x: -5 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 2.8 }}
+                                    viewport={{ once: false }}
                                   >
                                     <span>return app;</span>
                                   </motion.div>
-
-                                  <motion.div
+                                  
+                                  <motion.div 
                                     className="text-gray-300"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5, delay: 2.2 }}
+                                    initial={{ opacity: 0, x: -5 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.5, delay: 3.3 }}
+                                    viewport={{ once: false }}
                                   >
                                     <span>{`}`}</span>
                                   </motion.div>
                                 </div>
                               </div>
-                            </div>
-
+                            </motion.div>
+                            
                             {/* Floating code elements */}
-                            <motion.div
+                            <motion.div 
                               className="absolute -top-2 -right-2 w-8 h-8 bg-purple-500/30 dark:bg-purple-400/20 rounded-md p-1 flex items-center justify-center"
-                              animate={{
-                                y: [0, -3, 0],
-                                rotate: [0, 5, 0],
+                              animate={{ 
+                                y: [0, -5, 0],
+                                rotate: [0, 8, 0],
+                                scale: [1, 1.05, 1]
                               }}
-                              transition={{
-                                duration: 3,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                              }}
+                              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-4 w-4 text-purple-700 dark:text-purple-300"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-purple-700 dark:text-purple-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <polyline points="16 18 22 12 16 6"></polyline>
                                 <polyline points="8 6 2 12 8 18"></polyline>
                               </svg>
                             </motion.div>
-
-                            <motion.div
+                            
+                            <motion.div 
                               className="absolute -bottom-3 -left-2 w-7 h-7 bg-blue-500/30 dark:bg-blue-400/20 rounded-md p-1 flex items-center justify-center"
-                              animate={{
-                                y: [0, 3, 0],
-                                rotate: [0, -5, 0],
+                              animate={{ 
+                                y: [0, 5, 0],
+                                rotate: [0, -8, 0],
+                                scale: [1, 1.05, 1]
                               }}
-                              transition={{
-                                duration: 3.5,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                                delay: 0.5,
-                              }}
+                              transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                             >
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-4 w-4 text-blue-700 dark:text-blue-300"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              >
+                              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-blue-700 dark:text-blue-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <circle cx="18" cy="18" r="3"></circle>
                                 <circle cx="6" cy="6" r="3"></circle>
                                 <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
@@ -906,132 +906,239 @@ const Process = () => {
                     <div className="h-[220px] flex items-center justify-center">
                       <div className="relative w-full max-w-[220px] aspect-square">
                         <div className="w-full h-full rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-                          {/* Launch Illustration - Animated Rocket Launch */}
-                          <div className="relative w-full h-full">
-                            {/* Sky background with stars */}
-                            <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-purple-900/80 dark:from-blue-900 dark:to-purple-900">
-                              {/* Stars */}
-                              <motion.div
-                                className="absolute top-2 left-5 w-1 h-1 bg-white rounded-full"
-                                animate={{ opacity: [0.2, 1, 0.2] }}
-                                transition={{
-                                  duration: 2,
-                                  repeat: Infinity,
-                                  repeatType: "mirror",
+                          {/* Launch Illustration - Enhanced Rocket Launch Animation */}
+                          <div className="relative w-full h-full overflow-hidden">
+                            {/* Space background with animated stars and nebula */}
+                            <motion.div 
+                              className="absolute inset-0 bg-gradient-to-b from-blue-950 via-purple-950 to-indigo-950 dark:from-blue-950 dark:via-purple-950 dark:to-indigo-950"
+                              animate={{ 
+                                background: [
+                                  'linear-gradient(to bottom, #172554, #4c1d95, #312e81)',
+                                  'linear-gradient(to bottom, #1e1b4b, #581c87, #1e3a8a)',
+                                  'linear-gradient(to bottom, #172554, #4c1d95, #312e81)'
+                                ]
+                              }}
+                              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                            >
+                              {/* Stars with twinkling effect - added more stars */}
+                              {[...Array(12)].map((_, i) => (
+                                <motion.div 
+                                  key={i}
+                                  className={`absolute w-${Math.random() > 0.7 ? '1.5' : '0.5'} h-${Math.random() > 0.7 ? '1.5' : '0.5'} bg-white rounded-full`}
+                                  style={{
+                                    top: `${Math.random() * 100}%`,
+                                    left: `${Math.random() * 100}%`,
+                                    opacity: Math.random() * 0.5 + 0.3
+                                  }}
+                                  animate={{ 
+                                    opacity: [0.4, 1, 0.4],
+                                    scale: [1, 1.2, 1]
+                                  }}
+                                  transition={{ 
+                                    duration: 1 + Math.random() * 3,
+                                    repeat: Infinity,
+                                    repeatType: "mirror",
+                                    delay: Math.random() * 2
+                                  }}
+                                />
+                              ))}
+                              
+                              {/* Nebula/galaxy effect */}
+                              <motion.div 
+                                className="absolute top-5 right-10 w-14 h-14 bg-purple-500/10 dark:bg-purple-400/10 rounded-full blur-xl"
+                                animate={{ 
+                                  opacity: [0.1, 0.2, 0.1],
+                                  scale: [1, 1.1, 1]
                                 }}
-                              ></motion.div>
-                              <motion.div
-                                className="absolute top-5 left-12 w-1 h-1 bg-white rounded-full"
-                                animate={{ opacity: [0.5, 1, 0.5] }}
-                                transition={{
-                                  duration: 3,
-                                  repeat: Infinity,
-                                  repeatType: "mirror",
-                                  delay: 0.5,
+                                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                              />
+                              <motion.div 
+                                className="absolute bottom-10 left-5 w-16 h-16 bg-blue-500/10 dark:bg-blue-400/10 rounded-full blur-xl"
+                                animate={{ 
+                                  opacity: [0.1, 0.3, 0.1],
+                                  scale: [1, 1.15, 1]
                                 }}
-                              ></motion.div>
-                              <motion.div
-                                className="absolute top-3 right-8 w-1 h-1 bg-white rounded-full"
-                                animate={{ opacity: [0.3, 1, 0.3] }}
-                                transition={{
-                                  duration: 2.5,
-                                  repeat: Infinity,
-                                  repeatType: "mirror",
-                                  delay: 0.3,
-                                }}
-                              ></motion.div>
-                              <motion.div
-                                className="absolute top-10 right-15 w-0.5 h-0.5 bg-white rounded-full"
-                                animate={{ opacity: [0.4, 1, 0.4] }}
-                                transition={{
-                                  duration: 1.5,
-                                  repeat: Infinity,
-                                  repeatType: "mirror",
-                                  delay: 0.7,
-                                }}
-                              ></motion.div>
-                              <motion.div
-                                className="absolute top-15 left-20 w-0.5 h-0.5 bg-white rounded-full"
-                                animate={{ opacity: [0.3, 1, 0.3] }}
-                                transition={{
-                                  duration: 2.2,
-                                  repeat: Infinity,
-                                  repeatType: "mirror",
-                                  delay: 0.1,
-                                }}
-                              ></motion.div>
+                                transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                              />
+                            </motion.div>
+                            
+                            {/* Enhanced launch platform */}
+                            <div className="absolute bottom-0 left-0 w-full h-12 bg-gray-800/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-b-lg">
+                              {/* Launch platform with glowing elements */}
+                              <motion.div 
+                                className="absolute left-1/2 bottom-0 w-24 h-4 bg-gray-700 dark:bg-gray-800 -translate-x-1/2 rounded-t-lg flex justify-center items-center overflow-hidden"
+                                animate={{ boxShadow: ['0 0 0px rgba(20,184,166,0.2)', '0 0 10px rgba(20,184,166,0.5)', '0 0 0px rgba(20,184,166,0.2)'] }}
+                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                              >
+                                {/* Launch pad lights */}
+                                <motion.div 
+                                  className="absolute top-1 w-16 h-0.5 flex justify-between"
+                                >
+                                  {[...Array(5)].map((_, i) => (
+                                    <motion.div 
+                                      key={i}
+                                      className="w-0.5 h-0.5 bg-teal-500 rounded-full"
+                                      animate={{ opacity: [0.3, 1, 0.3] }}
+                                      transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.3 }}
+                                    />
+                                  ))}
+                                </motion.div>
+                              </motion.div>
                             </div>
-
-                            {/* Ground/Launch pad */}
-                            <div className="absolute bottom-0 left-0 w-full h-12 bg-gray-800 dark:bg-gray-900 rounded-b-lg">
-                              <div className="absolute left-1/2 bottom-0 w-16 h-3 bg-gray-700 dark:bg-gray-800 -translate-x-1/2"></div>
-                            </div>
-
-                            {/* Rocket */}
-                            <motion.div
+                            
+                            {/* Enhanced rocket with more detailed animation */}
+                            <motion.div 
                               className="absolute left-1/2 bottom-6 -translate-x-1/2"
-                              animate={{ y: [0, -30, -30, 0] }}
-                              transition={{
-                                duration: 6,
-                                times: [0, 0.4, 0.8, 1],
-                                repeat: Infinity,
-                                repeatType: "loop",
-                                ease: "easeInOut",
+                              animate={{ 
+                                y: [0, -50, -80, -120],
+                                scale: [1, 1, 1, 0.8],
+                                opacity: [1, 1, 1, 0.8]
+                              }}
+                              transition={{ 
+                                duration: 5, 
+                                times: [0, 0.3, 0.6, 1],
+                                repeat: Infinity, 
+                                repeatDelay: 1,
+                                ease: [0.25, 0.1, 0.25, 1] // custom cubic-bezier for realistic motion
                               }}
                             >
                               <div className="relative">
-                                {/* Rocket body */}
-                                <div className="w-10 h-16 bg-white dark:bg-gray-100 rounded-t-full rounded-b-lg relative">
-                                  {/* Window */}
-                                  <div className="absolute top-4 left-1/2 w-4 h-4 bg-teal-200 dark:bg-teal-300 rounded-full -translate-x-1/2 border-2 border-teal-500"></div>
-
-                                  {/* Fins */}
-                                  <div className="absolute -left-2 bottom-0 w-2 h-4 bg-teal-500 dark:bg-teal-400 rounded-l-md"></div>
-                                  <div className="absolute -right-2 bottom-0 w-2 h-4 bg-teal-500 dark:bg-teal-400 rounded-r-md"></div>
-
-                                  {/* Rocket body stripes */}
-                                  <div className="absolute top-10 left-0 w-full h-1 bg-teal-500 dark:bg-teal-400"></div>
-                                  <div className="absolute top-13 left-0 w-full h-1 bg-teal-500 dark:bg-teal-400"></div>
-                                </div>
-
-                                {/* Flames */}
+                                {/* Enhanced rocket body */}
+                                <motion.div 
+                                  className="w-12 h-20 bg-gradient-to-b from-white to-gray-100 dark:from-gray-100 dark:to-gray-200 rounded-t-full rounded-b-lg relative"
+                                  animate={{ boxShadow: ['0 0 5px rgba(255,255,255,0.3)', '0 0 15px rgba(255,255,255,0.5)', '0 0 5px rgba(255,255,255,0.3)'] }}
+                                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                >
+                                  {/* Glowing window */}
+                                  <motion.div 
+                                    className="absolute top-5 left-1/2 w-5 h-5 bg-teal-200 dark:bg-teal-300 rounded-full -translate-x-1/2 border-2 border-teal-500"
+                                    animate={{ boxShadow: ['0 0 0px rgba(20,184,166,0)', '0 0 8px rgba(20,184,166,0.6)', '0 0 0px rgba(20,184,166,0)'] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                  >
+                                    {/* Astronaut silhouette */}
+                                    <motion.div 
+                                      className="w-2 h-2 bg-teal-800 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+                                      animate={{ scale: [1, 1.1, 1], opacity: [0.7, 0.9, 0.7] }}
+                                      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                                    />
+                                  </motion.div>
+                                  
+                                  {/* Enhanced fins */}
+                                  <motion.div 
+                                    className="absolute -left-3 bottom-0 w-3 h-6 bg-gradient-to-l from-teal-500 to-teal-600 dark:from-teal-400 dark:to-teal-500 rounded-l-md"
+                                    animate={{ rotate: [-3, 0, -3] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                  />
+                                  <motion.div 
+                                    className="absolute -right-3 bottom-0 w-3 h-6 bg-gradient-to-r from-teal-500 to-teal-600 dark:from-teal-400 dark:to-teal-500 rounded-r-md"
+                                    animate={{ rotate: [3, 0, 3] }}
+                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                  />
+                                  
+                                  {/* Rocket body details */}
+                                  <div className="absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 dark:from-teal-500 dark:via-teal-400 dark:to-teal-500"></div>
+                                  <div className="absolute top-16 left-0 w-full h-1 bg-gradient-to-r from-teal-600 via-teal-500 to-teal-600 dark:from-teal-500 dark:via-teal-400 dark:to-teal-500"></div>
+                                  
+                                  {/* Rocket logo */}
+                                  <div className="absolute top-8 left-1/2 -translate-x-1/2 w-6 h-3 flex justify-center items-center">
+                                    <div className="text-teal-700 dark:text-teal-600 text-[4px] font-bold">AGENCY</div>
+                                  </div>
+                                </motion.div>
+                                
+                                {/* Enhanced rocket flames */}
                                 <motion.div
-                                  className="absolute -bottom-5 left-1/2 -translate-x-1/2"
-                                  animate={{
+                                  className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center"
+                                  initial={{ opacity: 0.7, scale: 0.8 }}
+                                  animate={{ 
                                     opacity: [0.7, 1, 0.7],
-                                    scale: [0.8, 1.2, 0.8],
+                                    scale: [0.8, 1.3, 0.8]
                                   }}
-                                  transition={{
-                                    duration: 0.5,
-                                    repeat: Infinity,
-                                    repeatType: "mirror",
+                                  transition={{ 
+                                    duration: 0.5, 
+                                    repeat: Infinity, 
+                                    repeatType: "mirror"
                                   }}
                                 >
-                                  <div className="w-6 h-6 bg-gradient-to-t from-yellow-500 to-red-500 rounded-b-full rounded-t-sm"></div>
-                                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-4 bg-gradient-to-t from-blue-500 to-yellow-500 rounded-b-full rounded-t-sm"></div>
+                                  {/* Main flame */}
+                                  <div className="w-8 h-10 bg-gradient-to-t from-orange-600 via-yellow-500 to-red-500 rounded-b-full rounded-t-sm blur-[1px]"></div>
+                                  
+                                  {/* Center blue flame */}
+                                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-4 h-6 bg-gradient-to-t from-blue-600 via-blue-400 to-yellow-300 rounded-b-full rounded-t-sm blur-[1px]"></div>
+                                  
+                                  {/* Flame particles */}
+                                  <motion.div 
+                                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-2"
+                                  >
+                                    {[...Array(6)].map((_, i) => (
+                                      <motion.div 
+                                        key={i}
+                                        className="absolute w-1 h-1 bg-orange-500 rounded-full"
+                                        style={{
+                                          left: `${Math.random() * 100}%`,
+                                          bottom: `${Math.random() * 100}%`
+                                        }}
+                                        animate={{ 
+                                          y: [0, 10],
+                                          opacity: [1, 0],
+                                          scale: [1, 0]
+                                        }}
+                                        transition={{ 
+                                          duration: 0.5 + Math.random() * 0.5,
+                                          repeat: Infinity,
+                                          delay: Math.random() * 0.5
+                                        }}
+                                      />
+                                    ))}
+                                  </motion.div>
                                 </motion.div>
                               </div>
                             </motion.div>
-
-                            {/* Launch status indicators */}
-                            <div className="absolute top-2 left-2">
-                              <motion.div
+                            
+                            {/* Mission control indicators */}
+                            <div className="absolute top-2 left-2 flex space-x-1">
+                              <motion.div 
                                 className="w-3 h-3 rounded-full bg-green-500"
-                                animate={{ opacity: [0.5, 1, 0.5] }}
-                                transition={{ duration: 2, repeat: Infinity }}
-                              ></motion.div>
+                                animate={{ opacity: [0.5, 1, 0.5], boxShadow: ['0 0 0px rgba(34,197,94,0)', '0 0 5px rgba(34,197,94,0.7)', '0 0 0px rgba(34,197,94,0)'] }}
+                                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                              />
+                              <motion.div 
+                                className="w-3 h-3 rounded-full bg-blue-500"
+                                animate={{ opacity: [0.5, 1, 0.5], boxShadow: ['0 0 0px rgba(59,130,246,0)', '0 0 5px rgba(59,130,246,0.7)', '0 0 0px rgba(59,130,246,0)'] }}
+                                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                              />
                             </div>
-                            <div className="absolute top-2 right-2">
-                              <motion.div
+                            <div className="absolute top-2 right-2 flex space-x-1">
+                              <motion.div 
                                 className="w-3 h-3 rounded-full bg-teal-500"
-                                animate={{ opacity: [0.7, 1, 0.7] }}
-                                transition={{
-                                  duration: 1.5,
-                                  repeat: Infinity,
-                                  delay: 0.5,
-                                }}
-                              ></motion.div>
+                                animate={{ opacity: [0.5, 1, 0.5], boxShadow: ['0 0 0px rgba(20,184,166,0)', '0 0 5px rgba(20,184,166,0.7)', '0 0 0px rgba(20,184,166,0)'] }}
+                                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                              />
+                              <motion.div 
+                                className="w-3 h-3 rounded-full bg-purple-500"
+                                animate={{ opacity: [0.5, 1, 0.5], boxShadow: ['0 0 0px rgba(168,85,247,0)', '0 0 5px rgba(168,85,247,0.7)', '0 0 0px rgba(168,85,247,0)'] }}
+                                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                              />
                             </div>
+                            
+                            {/* Countdown display */}
+                            <motion.div 
+                              className="absolute bottom-3 right-3 p-1 bg-gray-900/70 backdrop-blur-sm rounded text-[6px] font-mono text-white flex items-center justify-center w-8 h-3"
+                              animate={{ opacity: [0.7, 1, 0.7] }}
+                              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                            >
+                              <motion.span
+                                animate={{ 
+                                  opacity: [0.7, 1, 0.7]
+                                }}
+                                transition={{
+                                  duration: 1,
+                                  repeat: Infinity,
+                                  ease: "easeInOut"
+                                }}
+                              >
+                                {countdownText}
+                              </motion.span>
+                            </motion.div>
                           </div>
                         </div>
 
