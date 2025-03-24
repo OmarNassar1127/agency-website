@@ -6,6 +6,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Ensure proper static exports
+  distDir: 'out',
+  // Improved settings for Next.js 14
+  reactStrictMode: true,
+  swcMinify: true,
+  experimental: {
+    optimizePackageImports: ['framer-motion'],
+  },
 }
 
 module.exports = nextConfig
