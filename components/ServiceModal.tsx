@@ -46,7 +46,7 @@ const ServiceModal = ({
 
   // Add this function to handle toggling FAQ items
   const toggleFaq = (index: number) => {
-    setExpandedFaqs(prev => {
+    setExpandedFaqs((prev) => {
       const newSet = new Set(prev);
       if (newSet.has(index)) {
         newSet.delete(index);
@@ -183,9 +183,13 @@ const ServiceModal = ({
           {activeTab === "overview" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div className="text-gray-700 dark:text-gray-300" 
-                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.overview || service.description }}>
-                </div>
+                <div
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      service.detailedContent?.overview || service.description,
+                  }}
+                ></div>
               </div>
 
               {/* Deliverables */}
@@ -245,9 +249,14 @@ const ServiceModal = ({
           {activeTab === "approach" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div className="text-gray-700 dark:text-gray-300"
-                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.approach || t("services.modal.noApproachInfo") }}>
-                </div>
+                <div
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      service.detailedContent?.approach ||
+                      t("services.modal.noApproachInfo"),
+                  }}
+                ></div>
               </div>
 
               {/* Timeline */}
@@ -256,9 +265,12 @@ const ServiceModal = ({
                   <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                     {t("services.modal.timeline")}
                   </h3>
-                  <div className="text-gray-700 dark:text-gray-300"
-                       dangerouslySetInnerHTML={{ __html: service.detailedContent.timeline }}>
-                  </div>
+                  <div
+                    className="text-gray-700 dark:text-gray-300"
+                    dangerouslySetInnerHTML={{
+                      __html: service.detailedContent.timeline,
+                    }}
+                  ></div>
                 </div>
               )}
             </div>
@@ -268,9 +280,14 @@ const ServiceModal = ({
           {activeTab === "benefits" && (
             <div className="space-y-6">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div className="text-gray-700 dark:text-gray-300"
-                     dangerouslySetInnerHTML={{ __html: service.detailedContent?.benefits || t("services.modal.noBenefitsInfo") }}>
-                </div>
+                <div
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      service.detailedContent?.benefits ||
+                      t("services.modal.noBenefitsInfo"),
+                  }}
+                ></div>
               </div>
 
               {/* Pricing info */}
@@ -279,9 +296,12 @@ const ServiceModal = ({
                   <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">
                     {t("services.modal.pricing")}
                   </h3>
-                  <div className="text-gray-700 dark:text-gray-300"
-                       dangerouslySetInnerHTML={{ __html: service.detailedContent.pricing }}>
-                  </div>
+                  <div
+                    className="text-gray-700 dark:text-gray-300"
+                    dangerouslySetInnerHTML={{
+                      __html: service.detailedContent.pricing,
+                    }}
+                  ></div>
                 </div>
               )}
             </div>
@@ -290,7 +310,8 @@ const ServiceModal = ({
           {/* FAQ Tab */}
           {activeTab === "faq" && (
             <div className="space-y-6">
-              {service.detailedContent?.faq && service.detailedContent.faq.length > 0 ? (
+              {service.detailedContent?.faq &&
+              service.detailedContent.faq.length > 0 ? (
                 service.detailedContent.faq.map((item, index) => (
                   <div
                     key={index}
@@ -305,7 +326,7 @@ const ServiceModal = ({
                       </h3>
                       <svg
                         className={`w-5 h-5 text-gray-500 transform transition-transform duration-200 ${
-                          expandedFaqs.has(index) ? 'rotate-180' : ''
+                          expandedFaqs.has(index) ? "rotate-180" : ""
                         }`}
                         fill="none"
                         viewBox="0 0 24 24"
@@ -322,11 +343,11 @@ const ServiceModal = ({
                     <div
                       className={`overflow-hidden transition-all duration-200 ${
                         expandedFaqs.has(index)
-                          ? 'max-h-[1000px] opacity-100'
-                          : 'max-h-0 opacity-0'
+                          ? "max-h-[1000px] opacity-100"
+                          : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div 
+                      <div
                         className="p-4 text-gray-700 dark:text-gray-300"
                         dangerouslySetInnerHTML={{ __html: item.answer }}
                       />
@@ -347,7 +368,7 @@ const ServiceModal = ({
               <p className="text-gray-700 dark:text-gray-300">
                 {t("services.modal.interested")}
               </p>
-              <Link href="/contact" className="btn btn-primary">
+              <Link href="/#contact" className="btn btn-primary">
                 {t("services.modal.contactButton")}
               </Link>
             </div>
