@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const CTA = () => {
   const { t } = useLanguage();
   const sectionRef = useRef(null);
+  const [formStatus, setFormStatus] = useState({
+    submitting: false,
+    success: false,
+    error: false
+  });
 
   useEffect(() => {
     const options = {
@@ -119,13 +124,47 @@ const CTA = () => {
               <div className="card card-glass bg-white/10 backdrop-blur-md rounded-2xl border border-white/10 p-8 relative">
                 <h3 className="text-2xl font-display font-bold text-white mb-6">{t('cta.form.heading')}</h3>
                 
-                <form className="space-y-5">
+                <form 
+                  className="space-y-5" 
+                  action="https://formspree.io/f/xkgjbyag" 
+                  method="POST"
+                  onSubmit={(e) => {
+                    e.preventDefault(); // Prevent default form submission
+                    setFormStatus({ submitting: true, success: false, error: false });
+                    const form = e.target as HTMLFormElement;
+                    const formData = new FormData(form);
+                    
+                    fetch("https://formspree.io/f/xkgjbyag", {
+                      method: "POST",
+                      body: formData,
+                      headers: {
+                        'Accept': 'application/json'
+                      }
+                    })
+                    .then(response => {
+                      if (response.ok) {
+                        setFormStatus({ submitting: false, success: true, error: false });
+                        form.reset();
+                        // Reset success message after 5 seconds
+                        setTimeout(() => setFormStatus(prev => ({ ...prev, success: false })), 5000);
+                      } else {
+                        response.json().then(data => {
+                          setFormStatus({ submitting: false, success: false, error: true });
+                        });
+                      }
+                    })
+                    .catch(() => {
+                      setFormStatus({ submitting: false, success: false, error: true });
+                    });
+                  }}
+                >
                   {/* Name field */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.name')}</label>
                     <input 
                       type="text" 
-                      id="name" 
+                      id="name"
+                      name="name" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
                       placeholder={t('contact.form.name')}
                     />
@@ -136,7 +175,8 @@ const CTA = () => {
                     <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.email')}</label>
                     <input 
                       type="email" 
-                      id="email" 
+                      id="email"
+                      name="email" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
                       placeholder={t('newsletter.placeholder')}
                     />
@@ -146,7 +186,8 @@ const CTA = () => {
                   <div>
                     <label htmlFor="project-type" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.subject')}</label>
                     <select 
-                      id="project-type" 
+                      id="project-type"
+                      name="project-type" 
                       className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-white/25 appearance-none"
                       style={{ backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`, backgroundPosition: "right 0.5rem center", backgroundRepeat: "no-repeat", backgroundSize: "1.5em 1.5em", paddingRight: "2.5rem" }}
                     >
@@ -159,12 +200,48 @@ const CTA = () => {
                     </select>
                   </div>
                   
+                  {/* Description field */}
+                  <div>
+                    <label htmlFor="description" className="block text-sm font-medium text-white/80 mb-1.5">{t('contact.form.description') || 'Description'}</label>
+                    <textarea 
+                      id="description" 
+                      name="description"
+                      rows={4}
+                      className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/25"
+                      placeholder={t('contact.form.descriptionPlaceholder') || 'Tell us about your project...'}
+                    />
+                  </div>
+                  
+                  {/* Form status messages */}
+                  {formStatus.success && (
+                    <div className="bg-green-500/20 border border-green-500/30 text-white rounded-xl p-3 text-center">
+                      {t('contact.form.success') || 'Message sent successfully!'}
+                    </div>
+                  )}
+                  
+                  {formStatus.error && (
+                    <div className="bg-red-500/20 border border-red-500/30 text-white rounded-xl p-3 text-center">
+                      {t('contact.form.error') || 'Failed to send message. Please try again.'}
+                    </div>
+                  )}
+                  
                   {/* Submit button */}
                   <button
                     type="submit"
-                    className="w-full bg-white hover:bg-white/95 text-primary-700 font-bold rounded-xl py-3 transition-all shadow-md hover:shadow-lg mt-2"
+                    disabled={formStatus.submitting}
+                    className="w-full bg-white hover:bg-white/95 text-primary-700 font-bold rounded-xl py-3 transition-all shadow-md hover:shadow-lg mt-2 disabled:opacity-70 disabled:cursor-not-allowed"
                   >
-                    {t('contact.form.submit')}
+                    {formStatus.submitting ? (
+                      <span className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-2 h-4 w-4 text-primary-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        {t('contact.form.sending') || 'Sending...'}
+                      </span>
+                    ) : (
+                      t('contact.form.submit')
+                    )}
                   </button>
                 </form>
                 

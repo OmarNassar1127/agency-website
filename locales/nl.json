@@ -889,13 +889,16 @@
       "phone": "Telefoonnummer (Optioneel)",
       "message": "Bericht",
       "subject": "Onderwerp",
+      "descriptionPlaceholder": "Vertel ons over uw project...",
+      "success": "Bericht verzonden!",
+      "error": "Bericht verzenden mislukt. Probeer het opnieuw.",
       "submit": "Verstuur Bericht",
       "heading": "Laten we Iets Buitengewoons Bouwen",
       "startProject": "Start Uw Project",
       "formDescription": "Vul het onderstaande formulier in en we nemen binnen 24 uur contact met u op.",
       "submitButton": "Verstuur Aanvraag",
       "secure": "Uw informatie is veilig en versleuteld",
-      "description": "Of u nu een specifiek project in gedachten heeft of gewoon mogelijkheden wilt verkennen, ons team staat klaar om u te helpen navigeren in het digitale landschap en uw doelen te bereiken."
+      "description": "Ons team staat klaar om u te helpen uw digitale doelen te bereiken."
     },
     "info": {
       "heading": "Hoe U Ons Kunt Bereiken",
