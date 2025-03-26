@@ -105,8 +105,16 @@ const CookieConsent = () => {
 
   // Add to window object so it can be called from outside
   useEffect(() => {
-    // @ts-ignore
-    window.openCookieSettings = openCookieSettings;
+    if (typeof window !== 'undefined') {
+      window.openCookieSettings = openCookieSettings;
+    }
+    
+    return () => {
+      if (typeof window !== 'undefined') {
+        // Clean up when component unmounts
+        delete window.openCookieSettings;
+      }
+    };
   }, []);
 
   if (!isOpen) return null;

@@ -52,8 +52,7 @@ export const isCookieAllowed = (type: keyof Omit<CookiePreferences, 'accepted'>)
  * Open the cookie settings modal
  */
 export const openCookieSettings = (): void => {
-  if (typeof window !== 'undefined' && window.openCookieSettings) {
-    // @ts-ignore - This function is added to window in the CookieConsent component
-    window.openCookieSettings();
+  if (typeof window !== 'undefined' && 'openCookieSettings' in window) {
+    window.openCookieSettings?.();
   }
 };

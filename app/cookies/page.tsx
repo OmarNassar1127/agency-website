@@ -10,9 +10,8 @@ const CookiePolicy = () => {
   
   // Function to open cookie settings modal
   const handleOpenCookieSettings = () => {
-    if (typeof window !== 'undefined' && window.openCookieSettings) {
-      // @ts-ignore - This function is added to window in the CookieConsent component
-      window.openCookieSettings();
+    if (typeof window !== 'undefined' && 'openCookieSettings' in window) {
+      window.openCookieSettings?.();
     }
   };
 
