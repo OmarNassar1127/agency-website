@@ -483,7 +483,7 @@
     "heading": "Onze Uitgelichte Projecten",
     "subheading": "Bekijk enkele van onze recente werkzaamheden die onze expertise en innovatieve oplossingen demonstreren.",
     "viewAllButton": "Bekijk Alle Projecten",
-    "viewCaseStudy": "Bekijk Case Study",
+    "viewCaseStudy": "Meer lezen",
     "projects": {
       "quotum": {
         "title": "SaaS platform - Quotum",
@@ -889,13 +889,17 @@
       "phone": "Telefoonnummer (Optioneel)",
       "message": "Bericht",
       "subject": "Onderwerp",
+      "descriptionPlaceholder": "Vertel ons over uw project...",
+      "success": "Bericht verzonden!",
+      "error": "Bericht verzenden mislukt. Probeer het opnieuw.",
+      "sending": "Versturen...",
       "submit": "Verstuur Bericht",
       "heading": "Laten we Iets Buitengewoons Bouwen",
       "startProject": "Start Uw Project",
       "formDescription": "Vul het onderstaande formulier in en we nemen binnen 24 uur contact met u op.",
       "submitButton": "Verstuur Aanvraag",
       "secure": "Uw informatie is veilig en versleuteld",
-      "description": "Of u nu een specifiek project in gedachten heeft of gewoon mogelijkheden wilt verkennen, ons team staat klaar om u te helpen navigeren in het digitale landschap en uw doelen te bereiken."
+      "description": "Ons team staat klaar om u te helpen uw digitale doelen te bereiken."
     },
     "info": {
       "heading": "Hoe U Ons Kunt Bereiken",
@@ -1206,5 +1210,124 @@
     "title": "Pagina Niet Gevonden",
     "description": "Oeps! De pagina die je zoekt bestaat niet of is verplaatst.",
     "backHome": "Terug naar Home"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacybeleid",
+      "lastUpdated": "Laatst Bijgewerkt",
+      "intro": "Bij Dominium Labs nemen we je privacy serieus. Dit Privacybeleid legt uit hoe we je persoonlijke gegevens verzamelen, gebruiken en beschermen wanneer je onze website en diensten gebruikt.",
+      "sections": {
+        "informationCollection": {
+          "title": "Informatie die we verzamelen",
+          "content": "We kunnen persoonlijke gegevens verzamelen die je rechtstreeks aan ons verstrekt, zoals je naam, e-mailadres, telefoonnummer en andere informatie die je kiest te verstrekken wanneer je contact met ons opneemt, je inschrijft voor onze nieuwsbrief of onze diensten gebruikt. We verzamelen ook automatisch bepaalde informatie over je apparaat, waaronder informatie over je webbrowser, IP-adres, tijdzone en sommige cookies die op je apparaat zijn geïnstalleerd."
+        },
+        "informationUse": {
+          "title": "Hoe we je informatie gebruiken",
+          "content": "We gebruiken de informatie die we verzamelen om onze website en diensten te leveren, te onderhouden en te verbeteren, om met je te communiceren, om trends, gebruik en activiteiten in verband met onze website te controleren en te analyseren, en voor andere legitieme zakelijke doeleinden."
+        },
+        "informationSharing": {
+          "title": "Informatie delen en openbaarmaking",
+          "content": "We verkopen, verhandelen of dragen je persoonlijke gegevens niet over aan externe partijen, behalve zoals beschreven in dit beleid. Dit omvat niet vertrouwde derden die ons helpen bij het beheren van onze website, het uitvoeren van onze activiteiten of het verlenen van diensten aan jou, zolang deze partijen ermee instemmen deze informatie vertrouwelijk te houden. We kunnen je informatie ook vrijgeven wanneer we van mening zijn dat vrijgave gepast is om te voldoen aan de wet, ons sitebeleid te handhaven of onze rechten of die van anderen, eigendom of veiligheid te beschermen."
+        },
+        "cookies": {
+          "title": "Cookies en trackingtechnologieën",
+          "content": "We gebruiken cookies en vergelijkbare trackingtechnologieën om activiteiten op onze website bij te houden en bepaalde informatie te bewaren. Cookies zijn bestanden met een kleine hoeveelheid gegevens die een anonieme unieke identificator kunnen bevatten. Je kunt je browser opdracht geven om alle cookies te weigeren of om aan te geven wanneer een cookie wordt verzonden."
+        },
+        "dataRetention": {
+          "title": "Gegevensbewaring",
+          "content": "We bewaren je persoonlijke gegevens zolang als nodig is om de doeleinden te vervullen waarvoor we ze hebben verzameld, waaronder het voldoen aan wettelijke, boekhoudkundige of rapportagevereisten."
+        },
+        "dataSecurity": {
+          "title": "Gegevensbeveiliging",
+          "content": "We hebben passende beveiligingsmaatregelen geïmplementeerd om te voorkomen dat je persoonlijke gegevens per ongeluk verloren gaan, worden gebruikt of toegankelijk zijn op een ongeautoriseerde manier, worden gewijzigd of openbaar gemaakt. Wees je er echter van bewust dat geen enkele methode van overdracht via internet of elektronische opslag 100% veilig is."
+        },
+        "yourRights": {
+          "title": "Je rechten",
+          "content": "Afhankelijk van je locatie heb je mogelijk bepaalde rechten met betrekking tot je persoonlijke gegevens, zoals het recht op toegang, correctie, verwijdering of beperking van de verwerking van je persoonlijke gegevens. Je hebt mogelijk ook het recht om een kopie van je persoonlijke gegevens te ontvangen in een gestructureerd, algemeen gebruikt en machineleesbaar formaat."
+        },
+        "changes": {
+          "title": "Wijzigingen in dit Privacybeleid",
+          "content": "We kunnen ons Privacybeleid van tijd tot tijd bijwerken. We zullen je op de hoogte stellen van eventuele wijzigingen door het nieuwe Privacybeleid op deze pagina te plaatsen en de datum 'Laatst bijgewerkt' bij te werken."
+        },
+        "contact": {
+          "title": "Neem contact met ons op",
+          "content": "Als je vragen hebt over dit Privacybeleid, neem dan contact met ons op via dominiumlabs@gmail.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Servicevoorwaarden",
+      "lastUpdated": "Laatst Bijgewerkt",
+      "intro": "Lees deze Servicevoorwaarden zorgvuldig door voordat je de website gebruikt die wordt beheerd door Dominium Labs. Je toegang tot en gebruik van de website is afhankelijk van je aanvaarding van en naleving van deze Voorwaarden.",
+      "sections": {
+        "acceptance": {
+          "title": "Aanvaarding van Voorwaarden",
+          "content": "Door onze website te bezoeken of te gebruiken, ga je ermee akkoord gebonden te zijn aan deze Voorwaarden en ons Privacybeleid. Als je het niet eens bent met enig deel van de voorwaarden, dan mag je geen toegang hebben tot onze website of onze diensten gebruiken."
+        },
+        "changes": {
+          "title": "Wijzigingen in Voorwaarden",
+          "content": "We behouden ons het recht voor om, naar eigen goeddunken, deze Voorwaarden op elk moment te wijzigen of te vervangen. Als een herziening materieel is, zullen we proberen minstens 30 dagen van tevoren kennisgeving te geven voordat nieuwe voorwaarden van kracht worden. Wat een materiële wijziging vormt, wordt bepaald naar ons eigen goeddunken."
+        },
+        "intellectualProperty": {
+          "title": "Intellectueel eigendom",
+          "content": "Onze website en de originele inhoud, functies en functionaliteit zijn en blijven het exclusieve eigendom van Dominium Labs en zijn licentiegevers. Onze handelsmerken en handelsmerk mogen niet worden gebruikt in verband met enig product of dienst zonder voorafgaande schriftelijke toestemming van Dominium Labs."
+        },
+        "userConduct": {
+          "title": "Gebruikersgedrag",
+          "content": "Je stemt ermee in om onze website niet te gebruiken: Op een manier die in strijd is met toepasselijke nationale of internationale wet- of regelgeving. Om reclame- of promotiemateriaal te verzenden of te laten verzenden, inclusief 'junk mail', 'kettingbrief', 'spam' of andere soortgelijke verzoeken. Om je voor te doen als of te proberen je voor te doen als Dominium Labs, een medewerker van Dominium Labs, een andere gebruiker of een andere persoon of entiteit."
+        },
+        "indemnification": {
+          "title": "Vrijwaring",
+          "content": "Je stemt ermee in om Dominium Labs, zijn aannemers en zijn licentiegevers, en hun respectieve directeuren, functionarissen, werknemers en agenten te verdedigen, te vrijwaren en schadeloos te stellen tegen alle claims en kosten, inclusief advocatenkosten, die voortvloeien uit je gebruik van onze website, inclusief maar niet beperkt tot je schending van deze Voorwaarden."
+        },
+        "disclaimer": {
+          "title": "Disclaimer",
+          "content": "Je gebruik van onze website is op eigen risico. De website wordt geleverd op een 'AS IS' en 'AS AVAILABLE' basis. De website wordt geleverd zonder garanties van welke aard dan ook, expliciet of impliciet, inclusief, maar niet beperkt tot, impliciete garanties van verkoopbaarheid, geschiktheid voor een bepaald doel, niet-inbreuk of prestaties."
+        },
+        "limitations": {
+          "title": "Beperking van aansprakelijkheid",
+          "content": "In geen geval zullen Dominium Labs, noch zijn directeuren, werknemers, partners, agenten, leveranciers of gelieerde ondernemingen, aansprakelijk zijn voor enige indirecte, incidentele, speciale, gevolgschade of punitieve schade, inclusief maar niet beperkt tot, verlies van winst, gegevens, gebruik, goodwill of andere immateriële verliezen, die voortvloeien uit je toegang tot of gebruik van of onvermogen om toegang te krijgen tot of gebruik te maken van de website."
+        },
+        "governingLaw": {
+          "title": "Toepasselijk recht",
+          "content": "Deze Voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van Nederland, zonder rekening te houden met de bepalingen inzake conflicterende wetgeving. Ons verzuim om enig recht of bepaling van deze Voorwaarden af te dwingen, wordt niet beschouwd als een verklaring van afstand van die rechten."
+        },
+        "contact": {
+          "title": "Neem contact met ons op",
+          "content": "Als je vragen hebt over deze Voorwaarden, neem dan contact met ons op via dominiumlabs@gmail.com."
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookiebeleid",
+      "lastUpdated": "Laatst Bijgewerkt",
+      "intro": "Dit Cookiebeleid legt uit hoe Dominium Labs cookies en vergelijkbare technologieën gebruikt om je te herkennen wanneer je onze website bezoekt. Het legt uit wat deze technologieën zijn en waarom we ze gebruiken, evenals je rechten om onze gebruik ervan te controleren.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "Wat zijn cookies",
+          "content": "Cookies zijn kleine gegevensbestanden die op je computer of mobiele apparaat worden geplaatst wanneer je een website bezoekt. Cookies worden veel gebruikt door website-eigenaren om hun websites te laten werken, of efficiënter te laten werken, en om rapportage-informatie te verstrekken. Cookies die door de eigenaar van de website (in dit geval Dominium Labs) worden ingesteld, worden 'first-party cookies' genoemd. Cookies die door andere partijen dan de eigenaar van de website worden ingesteld, worden 'third-party cookies' genoemd. Third-party cookies maken functies of functionaliteiten van derden mogelijk op of via de website (bijvoorbeeld reclame, interactieve inhoud en analyses)."
+        },
+        "whyWeUse": {
+          "title": "Waarom we cookies gebruiken",
+          "content": "We gebruiken first-party en third-party cookies om verschillende redenen. Sommige cookies zijn om technische redenen vereist om onze website te laten functioneren, en we noemen deze 'essentiële' of 'strikt noodzakelijke' cookies. Andere cookies stellen ons ook in staat om de interesses van onze gebruikers te volgen en te targeten om de ervaring op onze website te verbeteren. Derden plaatsen cookies via onze website voor reclame, analyses en andere doeleinden."
+        },
+        "typesOfCookies": {
+          "title": "Soorten cookies die we gebruiken",
+          "content": "Essentiële cookies: Deze cookies zijn strikt noodzakelijk om je diensten aan te bieden via onze website en om sommige functies ervan te gebruiken, zoals toegang tot beveiligde gebieden. Prestatiecookies: Deze cookies worden gebruikt om te analyseren hoe bezoekers een website gebruiken, bijvoorbeeld welke pagina's bezoekers het vaakst bezoeken, om een betere gebruikerservaring te bieden. Functionaliteitscookies: Met deze cookies kunnen we keuzes onthouden die je maakt wanneer je onze website gebruikt, zoals het onthouden van je taalvoorkeuren of het onthouden van je inloggegevens. Targeting cookies: Deze cookies worden gebruikt om advertenties te tonen die relevanter zijn voor jou en je interesses."
+        },
+        "control": {
+          "title": "Hoe je cookies kunt beheren",
+          "content": "Je hebt het recht om te beslissen of je cookies accepteert of weigert. Je kunt je cookierechten uitoefenen door je voorkeuren in te stellen in de Cookie Consent Manager. Met de Cookie Consent Manager kun je selecteren welke categorieën cookies je accepteert of weigert. Essentiële cookies kunnen niet worden geweigerd omdat ze strikt noodzakelijk zijn om je diensten te verlenen. Als je ervoor kiest om cookies te weigeren, kun je onze website nog steeds gebruiken, maar je toegang tot sommige functionaliteiten en gebieden van onze website kan worden beperkt."
+        },
+        "updates": {
+          "title": "Updates van dit Cookiebeleid",
+          "content": "We kunnen dit Cookiebeleid van tijd tot tijd bijwerken om bijvoorbeeld veranderingen in de cookies die we gebruiken of andere operationele, juridische of regelgevende redenen weer te geven. Bezoek dit Cookiebeleid daarom regelmatig opnieuw om op de hoogte te blijven van ons gebruik van cookies en gerelateerde technologieën."
+        },
+        "contact": {
+          "title": "Neem contact met ons op",
+          "content": "Als je vragen hebt over ons gebruik van cookies of andere technologieën, neem dan contact met ons op via dominiumlabs@gmail.com."
+        }
+      }
+    }
   }
 }

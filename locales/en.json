@@ -484,7 +484,7 @@
     "headingtitle": "Our Featured Projects",
     "subheading": "Take a look at some of our recent work that showcases our expertise and innovative solutions.",
     "viewAllButton": "View All Projects",
-    "viewCaseStudy": "View Case Study",
+    "viewCaseStudy": "Learn More",
     "projects": {
       "quotum": {
         "title": "SaaS platform - Quotum",
@@ -890,17 +890,21 @@
       "phone": "Phone Number (Optional)",
       "message": "Message",
       "subject": "Subject",
+      "descriptionPlaceholder": "Tell us about your project...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again.",
+      "sending": "Sending...",
       "submit": "Send Message",
       "heading": "Let's Build Something Extraordinary",
       "startProject": "Start Your Project",
       "formDescription": "Fill out the form below and we'll get back to you within 24 hours.",
       "submitButton": "Submit Request",
       "secure": "Your information is secure and encrypted",
-      "description": "Whether you have a specific project in mind or just want to explore possibilities, our team is ready to help you navigate the digital landscape and achieve your goals."
+      "description": "Our team is ready to help you achieve your digital goals. Let's explore the possibilities together."
     },
     "info": {
       "heading": "How to Reach Us",
-      "address": "123 Innovation Drive<br/>San Francisco, CA 94105",
+      "address": "123 Innovatielaan<br/>Amsterdam, 1012 AB",
       "phone": "(555) 123-4567",
       "email": "dominiumlabs@gmail.com",
       "hours": "Monday - Friday: 9am - 6pm PST",
@@ -1207,5 +1211,124 @@
     "title": "Page Not Found",
     "description": "Oops! The page you are looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last Updated",
+      "intro": "At Dominium Labs, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website and services.",
+      "sections": {
+        "informationCollection": {
+          "title": "Information We Collect",
+          "content": "We may collect personal information that you provide directly to us, such as your name, email address, phone number, and any other information you choose to provide when you contact us, sign up for our newsletter, or use our services. We also automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device."
+        },
+        "informationUse": {
+          "title": "How We Use Your Information",
+          "content": "We use the information we collect to provide, maintain, and improve our website and services, to communicate with you, to monitor and analyze trends, usage, and activities in connection with our website, and for other legitimate business purposes."
+        },
+        "informationSharing": {
+          "title": "Information Sharing and Disclosure",
+          "content": "We do not sell, trade, or otherwise transfer your personal information to outside parties except as described in this policy. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety."
+        },
+        "cookies": {
+          "title": "Cookies and Tracking Technologies",
+          "content": "We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+        },
+        "dataRetention": {
+          "title": "Data Retention",
+          "content": "We will retain your personal information for as long as necessary to fulfill the purposes for which we collected it, including to satisfy any legal, accounting, or reporting requirements."
+        },
+        "dataSecurity": {
+          "title": "Data Security",
+          "content": "We have implemented appropriate security measures to prevent your personal information from being accidentally lost, used, or accessed in an unauthorized way, altered, or disclosed. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure."
+        },
+        "yourRights": {
+          "title": "Your Rights",
+          "content": "Depending on your location, you may have certain rights regarding your personal information, such as the right to access, correct, delete, or restrict processing of your personal information. You may also have the right to receive a copy of your personal information in a structured, commonly used, and machine-readable format."
+        },
+        "changes": {
+          "title": "Changes to This Privacy Policy",
+          "content": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date."
+        },
+        "contact": {
+          "title": "Contact Us",
+          "content": "If you have any questions about this Privacy Policy, please contact us at dominiumlabs@gmail.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last Updated",
+      "intro": "Please read these Terms of Service carefully before using the website operated by Dominium Labs. Your access to and use of the website is conditioned on your acceptance of and compliance with these Terms.",
+      "sections": {
+        "acceptance": {
+          "title": "Acceptance of Terms",
+          "content": "By accessing or using our website, you agree to be bound by these Terms and our Privacy Policy. If you disagree with any part of the terms, then you may not access our website or use our services."
+        },
+        "changes": {
+          "title": "Changes to Terms",
+          "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+        },
+        "intellectualProperty": {
+          "title": "Intellectual Property",
+          "content": "Our website and its original content, features, and functionality are and will remain the exclusive property of Dominium Labs and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Dominium Labs."
+        },
+        "userConduct": {
+          "title": "User Conduct",
+          "content": "You agree not to use our website: In any way that violates any applicable national or international law or regulation. To transmit, or procure the sending of, any advertising or promotional material, including any 'junk mail', 'chain letter', 'spam', or any other similar solicitation. To impersonate or attempt to impersonate Dominium Labs, a Dominium Labs employee, another user, or any other person or entity."
+        },
+        "indemnification": {
+          "title": "Indemnification",
+          "content": "You agree to defend, indemnify, and hold harmless Dominium Labs, its contractors, and its licensors, and their respective directors, officers, employees, and agents from and against any and all claims and expenses, including attorneys' fees, arising out of your use of our website, including but not limited to your violation of these Terms."
+        },
+        "disclaimer": {
+          "title": "Disclaimer",
+          "content": "Your use of our website is at your sole risk. The website is provided on an 'AS IS' and 'AS AVAILABLE' basis. The website is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance."
+        },
+        "limitations": {
+          "title": "Limitations of Liability",
+          "content": "In no event shall Dominium Labs, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the website."
+        },
+        "governingLaw": {
+          "title": "Governing Law",
+          "content": "These Terms shall be governed and construed in accordance with the laws of the Netherlands, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights."
+        },
+        "contact": {
+          "title": "Contact Us",
+          "content": "If you have any questions about these Terms, please contact us at dominiumlabs@gmail.com."
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "lastUpdated": "Last Updated",
+      "intro": "This Cookie Policy explains how Dominium Labs uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "What Are Cookies",
+          "content": "Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information. Cookies set by the website owner (in this case, Dominium Labs) are called 'first-party cookies'. Cookies set by parties other than the website owner are called 'third-party cookies'. Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics)."
+        },
+        "whyWeUse": {
+          "title": "Why We Use Cookies",
+          "content": "We use first-party and third-party cookies for several reasons. Some cookies are required for technical reasons in order for our website to operate, and we refer to these as 'essential' or 'strictly necessary' cookies. Other cookies also enable us to track and target the interests of our users to enhance the experience on our website. Third parties serve cookies through our website for advertising, analytics, and other purposes."
+        },
+        "typesOfCookies": {
+          "title": "Types of Cookies We Use",
+          "content": "Essential cookies: These cookies are strictly necessary to provide you with services available through our website and to use some of its features, such as access to secure areas. Performance cookies: These cookies are used to analyze how visitors use a website, for instance which pages visitors go to most often, in order to provide a better user experience. Functionality cookies: These cookies allow us to remember choices you make when you use our website, such as remembering your language preferences or remembering your login details. Targeting cookies: These cookies are used to deliver advertisements more relevant to you and your interests."
+        },
+        "control": {
+          "title": "How Can You Control Cookies",
+          "content": "You have the right to decide whether to accept or reject cookies. You can exercise your cookie rights by setting your preferences in the Cookie Consent Manager. The Cookie Consent Manager allows you to select which categories of cookies you accept or reject. Essential cookies cannot be rejected as they are strictly necessary to provide you with services. If you choose to reject cookies, you may still use our website though your access to some functionality and areas of our website may be restricted."
+        },
+        "updates": {
+          "title": "Updates to This Cookie Policy",
+          "content": "We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies."
+        },
+        "contact": {
+          "title": "Contact Us",
+          "content": "If you have any questions about our use of cookies or other technologies, please contact us at dominiumlabs@gmail.com."
+        }
+      }
+    }
   }
 }

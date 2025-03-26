@@ -343,7 +343,7 @@ const Services = () => {
           <div className="inline-flex flex-col sm:flex-row gap-4 sm:gap-2 items-center justify-center bg-gray-50 dark:bg-gray-900 p-2 rounded-full">
             <span className="text-gray-700 dark:text-gray-300 px-4">{t('services.cta.question')}</span>
             <Link 
-              href="/services" 
+              href="/#services" 
               className="btn-sm btn-primary rounded-full inline-flex items-center"
             >
               <span className="mr-2">{t('services.cta.button')}</span>

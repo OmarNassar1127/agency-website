@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import Script from 'next/script';
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import FeaturedProjects from "../components/FeaturedProjects";
@@ -228,6 +229,70 @@ export default function Home() {
       >
         <CTA />
       </div>
+
+      {/* Structured Data for SEO */}
+      <Script
+        id="structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Dominium Labs',
+            url: 'https://dominiumlabs.com',
+            logo: 'https://dominiumlabs.com/images/logo/DominiumLabs.png',
+            description: 'We create custom software solutions tailored to your business needs.',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Netherlands',
+              addressCountry: 'NL'
+            },
+            contactPoint: {
+              '@type': 'ContactPoint',
+              contactType: 'customer service',
+              email: 'contact@dominiumlabs.com',
+            },
+            // Define main entity to help with one-page structure
+            mainEntity: [
+              {
+                '@type': 'WebPage',
+                '@id': 'https://dominiumlabs.com/#about',
+                name: 'About Dominium Labs',
+                url: 'https://dominiumlabs.com/#about'
+              },
+              {
+                '@type': 'WebPage',
+                '@id': 'https://dominiumlabs.com/#services',
+                name: 'Our Services',
+                url: 'https://dominiumlabs.com/#services'
+              },
+              {
+                '@type': 'WebPage',
+                '@id': 'https://dominiumlabs.com/#work',
+                name: 'Our Work',
+                url: 'https://dominiumlabs.com/#work'
+              },
+              {
+                '@type': 'WebPage',
+                '@id': 'https://dominiumlabs.com/#process',
+                name: 'Our Process',
+                url: 'https://dominiumlabs.com/#process'
+              },
+              {
+                '@type': 'WebPage',
+                '@id': 'https://dominiumlabs.com/#contact',
+                name: 'Contact Us',
+                url: 'https://dominiumlabs.com/#contact'
+              }
+            ],
+            sameAs: [
+              // Add your social media profiles here
+              // 'https://twitter.com/dominiumlabs',
+              // 'https://www.linkedin.com/company/dominiumlabs'
+            ]
+          })
+        }}
+      />
     </main>
   );
 }
