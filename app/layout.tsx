@@ -4,8 +4,12 @@ import { Inter } from 'next/font/google';
 import { Providers } from '../contexts/Providers';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import dynamic from 'next/dynamic';
 
 const inter = Inter({ subsets: ['latin'] });
+
+// Dynamically import CookieConsent to avoid SSR issues with localStorage
+const CookieConsent = dynamic(() => import('../components/CookieConsent'), { ssr: false });
 
 export const metadata = {
   manifest: '/manifest.json',
@@ -97,6 +101,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <CookieConsent />
         </Providers>
       </body>
     </html>

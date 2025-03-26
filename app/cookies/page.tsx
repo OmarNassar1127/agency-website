@@ -5,8 +5,16 @@ import { useLanguage } from '../../contexts/LanguageContext';
 import Link from 'next/link';
 
 const CookiePolicy = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const lastUpdated = "March 25, 2025";
+  
+  // Function to open cookie settings modal
+  const handleOpenCookieSettings = () => {
+    if (typeof window !== 'undefined' && window.openCookieSettings) {
+      // @ts-ignore - This function is added to window in the CookieConsent component
+      window.openCookieSettings();
+    }
+  };
 
   return (
     <div className="bg-white dark:bg-gray-900">
@@ -60,14 +68,25 @@ const CookiePolicy = () => {
           
           {/* Related Links */}
           <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
-            <h3 className="text-lg font-semibold mb-4">{t('footer.legalInfo')}</h3>
-            <div className="flex flex-wrap gap-4">
-              <Link href="/privacy" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
-                {t('footer.privacyPolicy')}
-              </Link>
-              <Link href="/terms" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
-                {t('footer.termsOfService')}
-              </Link>
+            <div className="flex flex-col md:flex-row justify-between items-start mb-8">
+              <div>
+                <h3 className="text-lg font-semibold mb-4">{t('footer.legalInfo')}</h3>
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/privacy" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+                    {t('footer.privacyPolicy')}
+                  </Link>
+                  <Link href="/terms" className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+                    {t('footer.termsOfService')}
+                  </Link>
+                </div>
+              </div>
+              
+              <button
+                onClick={handleOpenCookieSettings}
+                className="mt-4 md:mt-0 px-5 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-md transition-colors"
+              >
+                {language === 'nl' ? 'Cookievoorkeuren beheren' : 'Manage Cookie Preferences'}
+              </button>
             </div>
           </div>
         </div>
