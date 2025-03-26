@@ -5,6 +5,7 @@ import { Providers } from '../contexts/Providers';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -76,6 +77,16 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <head>
+        {/* Google Analytics Tracking */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-H6Q0RT2S3R" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-H6Q0RT2S3R');
+          `}
+        </Script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
