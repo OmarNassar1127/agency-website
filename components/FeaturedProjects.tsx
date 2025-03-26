@@ -238,56 +238,56 @@ const FeaturedProjects = () => {
                 <div className="h-56 bg-gray-300 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
                   {project.id === "quotum" && (
                     <img
-                      src="/images/projects/quotum/quotum-cover.png"
+                      src="/images/projects/quotum/quotumcloud-cover.jpg"
                       alt="Quotum Platform"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "automations" && (
                     <img
-                      src="/images/projects/shop/shop-cover.png"
+                      src="/images/projects/shop/shopautomations-cover.jpg"
                       alt="Automations Platform"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "kyc" && (
                     <img
-                      src="/images/projects/kyc/kyc-cover.png"
+                      src="/images/projects/kyc/kycintegration-cover.JPG"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "ai" && (
                     <img
-                      src="/images/projects/ai/ai-cover.png"
+                      src="/images/projects/ai/aisolutions-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "gdpr" && (
                     <img
-                      src="/images/projects/gdpr/gdpr-cover.png"
+                      src="/images/projects/gdpr/gdprcompliance-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "myteam" && (
                     <img
-                      src="/images/projects/myteam/myteam-cover.png"
+                      src="/images/projects/myteam/myteam-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "excel_automation" && (
                     <img
-                      src="/images/projects/excel/excel-cover.png"
+                      src="/images/projects/excel/excel-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
                   )}
                   {project.id === "debt-assistance" && (
                     <img
-                      src="/images/projects/debt/debt-cover.png"
+                      src="/images/projects/debt/debtassistance-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
