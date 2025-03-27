@@ -252,7 +252,7 @@ const FeaturedProjects = () => {
                   )}
                   {project.id === "kyc" && (
                     <img
-                      src="/images/projects/kyc/kycintegration-cover.JPG"
+                      src="/images/projects/kyc/kycintegration-cover.jpg"
                       alt="KYC Solution"
                       className="w-full h-full object-cover"
                     />
