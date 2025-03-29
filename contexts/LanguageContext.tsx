@@ -10,7 +10,7 @@ type LanguageContextType = {
   isLoaded: boolean;
 };
 
-const defaultLanguage: Language = 'en';
+const defaultLanguage: Language = 'nl';
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
