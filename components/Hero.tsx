@@ -364,7 +364,7 @@ const Hero = () => {
           <div className="text-center">
             <h4 className="text-sm text-gray-400 uppercase tracking-wider mb-8">{t('hero.trustedBy.heading')}</h4>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-              {['TechCorp', 'Innovate', 'GlobalSoft', 'FutureTech', 'ZenithSystems'].map((brand, index) => (
+              {['CSDM', 'HTM', 'VLOTO', 'TCS', 'QUOTUM'].map((brand, index) => (
                 <div key={index} className="text-white/50 font-bold font-display text-xl md:text-2xl">
                   {brand}
                 </div>

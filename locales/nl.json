@@ -72,13 +72,7 @@
     },
     "trustedBy": {
       "heading": "Vertrouwd door innovatieve bedrijven wereldwijd",
-      "brands": [
-        "TechCorp",
-        "Innovate",
-        "GlobalSoft",
-        "FutureTech",
-        "ZenithSystems"
-      ]
+      "brands": ["CSDM", "HTML", "VLOTO", "TCS", "QUOTUM"]
     },
     "techStack": {
       "react": "React",
