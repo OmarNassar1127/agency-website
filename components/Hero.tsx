@@ -243,7 +243,7 @@ const Hero = () => {
           {/* Left column - Content and tagline */}
           <div className="lg:col-span-5 order-1 px-4 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-white fade-in-1">
-              Building <span className="gradient-text">Digital</span> Experiences
+              ZZP <span className="gradient-text">Software</span> Ontwikkelaars
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 font-light mb-8 fade-in-2">

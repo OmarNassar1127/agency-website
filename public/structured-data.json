@@ -1,0 +1,146 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dominium Labs",
+  "url": "https://dominiumlabs.com",
+  "logo": "https://dominiumlabs.com/images/logo/DominiumLabs.png",
+  "description": "ZZP Software Ontwikkelaars & Freelance Developers Nederland. Maatwerk webapplicaties, mobile apps en cloud oplossingen voor bedrijven.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NL",
+    "addressLocality": "Amsterdam",
+    "addressRegion": "Noord-Holland"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+31-20-123-4567",
+    "contactType": "customer service",
+    "email": "dominiumlabs@gmail.com",
+    "availableLanguage": ["Dutch", "English"]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/dominium-labs"
+  ],
+  "foundingDate": "2020",
+  "numberOfEmployees": "2-10",
+  "serviceArea": {
+    "@type": "Country",
+    "name": "Netherlands"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Software Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maatwerk Software Ontwikkeling",
+          "description": "Op maat gemaakte softwareoplossingen door ervaren ZZP developers",
+          "serviceType": "Software Development",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Webapplicatie Ontwikkeling",
+          "description": "Moderne, responsieve webapplicaties met React, Node.js en TypeScript",
+          "serviceType": "Web Development",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Mobile App Ontwikkeling",
+          "description": "Native en cross-platform mobile applicaties voor iOS en Android",
+          "serviceType": "Mobile Development",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cloud Oplossingen",
+          "description": "Schaalbare cloud infrastructuur en migratie services",
+          "serviceType": "Cloud Computing",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI & Machine Learning",
+          "description": "Geavanceerde AI-oplossingen en machine learning implementaties",
+          "serviceType": "Artificial Intelligence",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "DevOps & CI/CD",
+          "description": "Gestroomlijnde ontwikkelingsoperaties en automatisering",
+          "serviceType": "DevOps",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dominium Labs"
+          },
+          "areaServed": "Netherlands",
+          "availableLanguage": "Dutch"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "47"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "Quotum"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Dankzij Dominium Labs hadden we binnen 3 weken een SaaS-platform operationeel."
+    }
+  ]
+}
